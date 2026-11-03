@@ -1,0 +1,5 @@
+#!/bin/sh
+# 首次启动：强制 LuCI 中文界面（aurora 主题已由 30_luci-theme-aurora 设默认）
+uci set luci.main.lang=zh_cn
+uci commit luci
+exit 0

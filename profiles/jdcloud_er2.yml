@@ -99,6 +99,13 @@ packages:
   - kmod-crypto-sha256
   - kmod-crypto-sha512
 
+  # --- 用户界面：aurora 主题 + 中文（本地 extras feed）----------------
+  - luci-mod-admin-full
+  - luci-theme-aurora
+  - luci-app-aurora-config
+  - luci-i18n-base-zh-cn
+  - luci-i18n-firewall-zh-cn
+
 #include:
 #  - ucentral-ap
 diffconfig: |

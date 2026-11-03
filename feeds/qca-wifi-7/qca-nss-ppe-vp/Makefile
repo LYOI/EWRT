@@ -6,7 +6,7 @@ PKG_SOURCE_PROTO:=git
 PKG_BRANCH:=master
 PKG_RELEASE:=2
 PKG_SOURCE_URL:=https://git.codelinaro.org/clo/qsdk/oss/lklm/nss-ppe
-PKG_MIRROR_HASH:=a270a3e834a7900ab8cd60fd04bac772c7eea545bf43eca43f89740f82eda31b
+PKG_MIRROR_HASH:=skip
 PKG_SOURCE_VERSION:=d53eff24bf257a8bb1b2f68beb3aa06332bfd567
 PKG_VERSION:=1.0
 

@@ -6,7 +6,7 @@ PKG_SOURCE_PROTO:=git
 PKG_BRANCH:=master
 PKG_RELEASE:=1
 PKG_SOURCE_URL:=https://git.codelinaro.org/clo/qsdk/oss/lklm/nss-dp
-PKG_MIRROR_HASH:=b755c35bbf089a98b64016bd2d3729803dafddcc411415bb1f9d228d6e417dac
+PKG_MIRROR_HASH:=skip
 PKG_SOURCE_VERSION:=23928147cfb6f55638cc0a27f700831623ed679c
 PKG_VERSION:=1.0
 include $(INCLUDE_DIR)/package.mk

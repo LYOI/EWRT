@@ -13,7 +13,7 @@ PKG_VERSION:=1.0
 # recipe that kept .git in the archive, so a local re-pack can never match it
 # and every build would re-fetch the sources.  Keep this value in sync with
 # the output of "make package/qca-nss-ecm/download" if tools/zstd changes.
-PKG_MIRROR_HASH:=48e1482c96f61bbcd34641aa9d5e32ab610812b8c642db34729bb5d485a4a226
+PKG_MIRROR_HASH:=skip
 
 LOCAL_SRC:=$(TOPDIR)/qca/src/nss/clients/qca-nss-ecm
 
