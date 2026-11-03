@@ -1,0 +1,51 @@
+From: leerep <leerep@163.com>
+Date: Tue, 3 Nov 2026 11:00:00 +0800
+Subject: [PATCH] tools/quilt: fix the -j build race on po/quilt.pot
+
+quilt 0.69 builds the po/quilt.pot prerequisite list with
+$(wildcard */*.in), evaluated when make reads the Makefile.  The list
+therefore contains compat/column.in only while that file still exists, but
+configure deletes compat/column.in as soon as it finds a column(1) on the
+host and replaces it with a symlink.  When the two steps overlap the
+prerequisite is recorded and then disappears:
+
+  make[4]: *** No rule to make target 'compat/column.in', needed by 'po/quilt.pot'.  Stop.
+
+A serialised build never hits it because the delete and the read cannot
+overlap; under -j$(nproc) the quilt host tool fails and the build stops
+before the target tree is even started.
+
+Recreate the file right before the build so the prerequisite always
+resolves, and build quilt serially: it is a small host tool that gains
+nothing from parallel compilation.
+
+Signed-off-by: leerep <leerep@163.com>
+---
+ tools/quilt/Makefile | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+
+diff --git a/tools/quilt/Makefile b/tools/quilt/Makefile
+index 8fe69ca1e8..da588daaf8 100644
+--- a/tools/quilt/Makefile
++++ b/tools/quilt/Makefile
+@@ -22,7 +22,16 @@ define Host/Configure
+ endef
+ 
+ define Host/Compile
+-	$(MAKE) -C $(HOST_BUILD_DIR) SHELL="$(BASH)" all
++	# quilt 0.69 computes the po/quilt.pot prerequisites with $(wildcard */*.in)
++	# when make reads this Makefile, so compat/column.in is listed while it still
++	# exists; configure removes it as soon as the host has column(1) and replaces
++	# it with a symlink.  Under -j the delete can land between the read and the
++	# rule, leaving a prerequisite that can never be built:
++	#   No rule to make target 'compat/column.in', needed by 'po/quilt.pot'
++	# Recreate the file so the prerequisite always resolves, and build quilt
++	# serially: it is a small host tool that gains nothing from parallelism.
++	mkdir -p $(HOST_BUILD_DIR)/compat && touch $(HOST_BUILD_DIR)/compat/column.in
++	$(MAKE) -j1 -C $(HOST_BUILD_DIR) SHELL="$(BASH)" all
+ endef
+ 
+ define Host/Install
+
+-- 
+2.43.0
