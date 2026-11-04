@@ -132,7 +132,7 @@ sudo apt install build-essential libncurses5-dev gawk git libssl-dev gettext \
 
 ```bash
 # 1. 取本分支（er2）
-git clone -b er2 https://github.com/zt406600/wlan-ap.git wlan-ap-er2
+git clone -b er2 https://github.com/LYOI/wlan-ap-er2-sfp.git wlan-ap-er2
 cd wlan-ap-er2
 
 # 2. 拉 OpenWrt 源码（config.yml 里固定到 openwrt-25.12 @ f0a60eee，即 v25.12.5 基线，默认走 gh-proxy 镜像）
