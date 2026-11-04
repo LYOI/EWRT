@@ -1,0 +1,51 @@
+From 9b7412e5a755ff6360045c23287e3858ae060f4a Mon Sep 17 00:00:00 2001
+From: leerep <leerep@163.com>
+Date: Wed, 4 Nov 2026 18:44:20 +0800
+Subject: [PATCH] tools/quilt: drop the po/quilt.pot prerequisites instead of
+ recreating column.in
+
+Recreating compat/column.in is not enough: make regenerates it through the
+generic %: %.in rule, whose recipe removes the target first, so the
+prerequisite ends up with no rule again and the build still stops at
+
+  No rule to make target 'compat/column.in', needed by 'po/quilt.pot'.
+
+Strip the prerequisites from the pot rule instead; the translation template
+does not depend on the compatibility wrappers.  Keep the serial build.
+Signed-off-by: leerep <leerep@163.com>
+---
+ tools/quilt/Makefile | 17 +++++++++--------
+ 1 file changed, 9 insertions(+), 8 deletions(-)
+
+diff --git a/tools/quilt/Makefile b/tools/quilt/Makefile
+index da588daaf8..d495068bf9 100644
+--- a/tools/quilt/Makefile
++++ b/tools/quilt/Makefile
+@@ -22,15 +22,16 @@ define Host/Configure
+ endef
+ 
+ define Host/Compile
+-	# quilt 0.69 computes the po/quilt.pot prerequisites with $(wildcard */*.in)
+-	# when make reads this Makefile, so compat/column.in is listed while it still
+-	# exists; configure removes it as soon as the host has column(1) and replaces
+-	# it with a symlink.  Under -j the delete can land between the read and the
+-	# rule, leaving a prerequisite that can never be built:
++	# quilt 0.69 expands $(wildcard */*.in) when make reads its Makefile, so
++	# compat/column.in is recorded as a prerequisite of po/quilt.pot; configure
++	# then replaces that file with a symlink to the host column(1) and the
++	# prerequisite can no longer be built:
+ 	#   No rule to make target 'compat/column.in', needed by 'po/quilt.pot'
+-	# Recreate the file so the prerequisite always resolves, and build quilt
+-	# serially: it is a small host tool that gains nothing from parallelism.
+-	mkdir -p $(HOST_BUILD_DIR)/compat && touch $(HOST_BUILD_DIR)/compat/column.in
++	# Recreating it does not help - make regenerates it through the generic
++	# %: %.in rule, whose recipe removes the target first.  Drop the
++	# prerequisites from the pot rule instead; the translation template does
++	# not depend on the compatibility wrappers.
++	sed -i 's|^po/quilt.pot:.*|po/quilt.pot:|' $(HOST_BUILD_DIR)/Makefile
+ 	$(MAKE) -j1 -C $(HOST_BUILD_DIR) SHELL="$(BASH)" all
+ endef
+ 
+-- 
+2.43.0
+
