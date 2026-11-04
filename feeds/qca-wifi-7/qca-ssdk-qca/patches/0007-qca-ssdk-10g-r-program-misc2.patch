@@ -1,0 +1,19 @@
+--- a/src/adpt/hppe/adpt_hppe_uniphy.c
++++ b/src/adpt/hppe/adpt_hppe_uniphy.c
+@@ -742,6 +742,16 @@
+ 	memset(&uniphy_instance_link_detect, 0, sizeof(uniphy_instance_link_detect));
+ 	ADPT_DEV_ID_CHECK(dev_id);
+ 
++	/* Program the SerDes MISC2 for 10GBASE-R.  uxgmii and usxgmii mode set
++	 * both write UNIPHY_MISC2_REG_VALUE (0x70), but the 10GBASE-R path only
++	 * enabled XPCS and left the analog side at whatever the previous mode
++	 * programmed (SGMII 0x30 / SGMII+ 0x50).  The digital side then runs
++	 * XPCS at 10.3125G while the SerDes stays at 1.25G/3.125G, link
++	 * training never completes and the port reports no carrier.
++	 * On JDCloud RE-CS-08 (IPQ5332) this makes the SFP+ port come up at
++	 * 10000/Full. */
++	hppe_uniphy_reg_set(dev_id, UNIPHY_MISC2_REG_OFFSET, uniphy_index,
++			    UNIPHY_MISC2_REG_VALUE);
+ 	/* keep xpcs to reset status */
+ 	__adpt_hppe_gcc_uniphy_xpcs_reset(dev_id, uniphy_index, A_TRUE);
+ 
