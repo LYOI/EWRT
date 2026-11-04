@@ -1,0 +1,11 @@
+--- a/src/init/ssdk_plat.c
++++ b/src/init/ssdk_plat.c
+@@ -80,7 +80,7 @@
+ 
+ static int ssdk_dev_id = 0;
+ /*qca808x_start*/
+-a_uint32_t ssdk_log_level = SSDK_LOG_LEVEL_DEFAULT;
++a_uint32_t ssdk_log_level = SSDK_LOG_LEVEL_DEBUG;
+ /*qca808x_end*/
+ 
+ sw_error_t qca_mii_bus_lock(a_uint32_t dev_id, a_bool_t enable)
