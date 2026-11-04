@@ -58,11 +58,68 @@ QCA NSS/PPE/ECM 硬件加速补丁和默认配置都在本分支里。有两种�
 
 | 方式 | 命令 | 结果 |
 | --- | --- | --- |
-| A. 脚本构建 | `./build.sh jdcloud_er2` | 按 `profiles/jdcloud_er2.yml` 生成 `.config`（base system + 内核/NSS 相关包，约 80 个包），**不含 LuCI 网页界面** |
+| A. 脚本构建 | `./build.sh jdcloud_er2` | 按 `profiles/jdcloud_er2.yml` 生成 `.config`（base system、内核/NSS/SSDK、aurora 主题与简体中文 LuCI），即 **v2-a 交付基线** |
 | B. 手动构建 | 见下文「手动构建」 | 使用仓库自带的完整配置 `defconfig/jdc-er2.config`（351 个 `CONFIG_PACKAGE_*=y`），含完整 LuCI 网页界面 |
 
 > 两种方式不要混用：`./build.sh` 会用 `gen_config.py` 重新生成 `.config`，把已有配置覆盖掉。
 > 想要自由裁剪软件包，用手动构建（方式 B）。
+
+### v2-a 交付基线（已知稳定的构建形态）
+
+本文里的 **v2-a** 指本分支 `er2` 当前 HEAD 编出来的固件，也是目前在 ER2 实机上跑通全部
+场景的版本。用方式 A 直接构建即可产出一致的镜像，不需要任何手工改文件：
+
+```bash
+./build.sh jdcloud_er2
+# 产物：openwrt/bin/targets/ipq53xx/generic/openwrt-ipq53xx-jdcloud_er2-squashfs-factory.bin
+```
+
+相对上游 `a57beed6`，构成 v2-a 的改动只有四处：
+
+| # | 位置 | 内容 | 作用 |
+| --- | --- | --- | --- |
+| 1 | `patches-25.12/0214` | `tools/quilt` 的 `po/quilt.pot` 并行竞态修复 | `make -j` 下 host 工具不再随机失败 |
+| 2 | `patches-25.12/0213` + `feeds/extras/` | aurora 主题、简体中文、空 root 密码 | 板级开箱可用 |
+| 3 | `feeds/qca-wifi-7/qca-ssdk-qca/patches/0007` | 10GBASE-R 模式补写 SerDes `MISC2 = 0x70` | SFP+ 10000/Full；2.5G 猫棒仍走原生 SGMII+（`0x50`） |
+| 4 | `profiles/jdcloud_er2.yml` | 方式 A 的包集合（含 LuCI、NSS/PPE/ECM、SSDK） | `gen_config.py` 据此生成 `.config` |
+
+OpenWrt 树本身由 `config.yml` 锁定：`openwrt-25.12` @ `f0a60eee`（v25.12.5）再按文件名顺序
+应用 `patches-25.12/` 的 156 个补丁，结果等于 `f4ff112898`。换机器、重新 clone 都是同一棵树。
+
+明确**不要**做的三件事（做了就不是 v2-a）：
+
+- 不要启用 `feeds/qca-wifi-7/qca-ssdk-qca/patches-disabled/0008-qca-ssdk-enable-debug-log-by-default.patch.disabled`。
+  它只把 `ssdk_log_level` 从 `SSDK_LOG_LEVEL_DEFAULT`(2) 抬到 `SSDK_LOG_LEVEL_DEBUG`(3)，
+  同一棵树只改这一个值，冷启动就从 `19.99s link 2500` 变成 282 秒内一次 link 都没有。
+  补丁留在 `patches-disabled/` 里是为了让这个对照实验可复现，构建时不会被应用。
+- 不要给 `feeds/qca-wifi-7/ipq53xx/dts/ipq5332-jdcloud-er2.dts` 加 `sfp_rx_los_pin` /
+  `sfp_tx_dis_pin`。v2-a 的 dtb 里没有这两个属性；加上之后 SSDK 会从硬件 LOS 检测切到
+  软件读 GPIO45，冷启动不建链。`bootargs-append` 保持只有 `clk_ignore_unused`。
+- 不要用 `defconfig/jdc-er2.config`（方式 B）代替方式 A。v2-a 是方式 A 的产物，
+  方式 B 的包集合不同，不能拿来对照。
+
+#### 验证点
+
+2.5G SFP ONU 常插、整机断电冷启动：
+
+- `dmesg` 里约 19.99s 出现 `nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500`
+- `/sys/class/net/eth0/carrier` 为 `1`，`operstate` 为 `up`
+- 10G 模块冷启动 17.9s link 10000，热插拔 7s
+- 同一笼子 10G ↔ 2.5G 来回换模块可自动切换（10000 → 2500 → 10000）
+
+#### 可选：16M 日志缓冲
+
+`log_buf_len=16M` 不在源码里，是 uboot 环境变量，按需加（不加也能正常建链）：
+
+```bash
+fw_setenv bootargs "$(fw_printenv -n bootargs) log_buf_len=16M"
+```
+
+#### 已知边界
+
+SFP 端口在启动路径里只做一次 link 判定：那一刻没拿到 carrier 就不会再主动重试，
+要等模块重新插拔触发初始化。v2-a 实测的六类场景——断电冷启动、软重启、刷机重启、
+猫棒热插拔、10G 冷热、双速率切换——全部通过；这里记录的是机制边界，不是已知故障。
 
 ### 手动构建
 
