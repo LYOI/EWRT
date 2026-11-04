@@ -103,12 +103,17 @@ packages:
   - luci-mod-admin-full
   - luci-theme-aurora
   - luci-app-aurora-config
+  - luci-i18n-aurora-config-zh-cn
   - luci-i18n-base-zh-cn
   - luci-i18n-firewall-zh-cn
 
 #include:
 #  - ucentral-ap
 diffconfig: |
+  # 中文界面：luci 的 luci-i18n-*-zh-cn 翻译包只有在打开对应语言后才会出现在
+  # kconfig 里，否则上面 packages 里列的 zh-cn 条目会被 make defconfig 静默丢弃。
+  CONFIG_LUCI_LANG_zh_Hans=y
+
   CONFIG_KERNEL_IPQ_MEM_PROFILE=0
   CONFIG_ARCH_QCOM=y
   # SAWF/telemetry steering is not used on this board; the qca feed enables it
