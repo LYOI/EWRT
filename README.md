@@ -4,8 +4,10 @@
 同一份固件、不改任何配置，插 2.5G 猫棒或 10G 光模块都能起链，冷启动、软重启、
 热插拔、模块互换全部可用。
 
-树基于 OpenWiFi AP NOS（`openwrt-25.12` @ `f0a60eee`，即 v25.12.5），
-ER2 板级支持、QCA NSS/PPE/ECM 硬件加速和 SFP 修复补丁都在本仓库内。
+> 本仓库是 **[Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap)**
+> （TIP OpenWiFi AP NOS，BSD-3-Clause）的 fork，基线 `a57beed6`（2026-11-02），
+> 在上游基础上集中解决 ER2 这一个板子的 SFP 问题。
+> 上游的通用文档（其他目标 profile、uCentral、Docker 构建）原样保存在 `OPENWIFI_README.md`。
 
 ```
 硬件   IPQ5332  ·  SFP 口 eth0 (dp1)  ·  2.5G 电口 eth1 (dp2)
@@ -15,7 +17,41 @@ ER2 板级支持、QCA NSS/PPE/ECM 硬件加速和 SFP 修复补丁都在本仓�
 
 ---
 
-## 一、快速开始
+## 一、上游与来源
+
+| 项 | 内容 |
+|---|---|
+| 上游项目 | [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) — TIP OpenWiFi 的 AP NOS |
+| fork 基线 | `a57beed6`（2026-11-02，上游 main） |
+| OpenWrt 树 | `openwrt-25.12` @ `f0a60eee`（v25.12.5），叠加 `patches-25.12/` 共 157 个补丁 |
+| 板级代码 | `feeds/qca-wifi-7/`（QCA NSS / PPE / ECM / SSDK、ipq53xx target、ER2 DTS） |
+| 许可 | BSD-3-Clause，Copyright (c) 2024 Telecom Infra Project（见 `LICENSE`） |
+
+### 与上游的差异
+
+| 维度 | 上游 `wlan-ap` | 本仓库 |
+|---|---|---|
+| 目标 | 通用 AP NOS，约 70 个 board profile | 只维护 ER2 |
+| ER2 profile | 有 `profiles/jdcloud_er2.yml` | 有，并调整了包集合（aurora 主题、zh_Hans） |
+| SSDK 补丁 | `0001` / `0005` / `0006` | 追加 `0007`（10G SerDes MISC2）、`0901`（模式弹跳恢复）、`0902`（2.5G 候选档保持） |
+| 内核载荷 | `kernel-bin \| gzip \| fit gzip` | `kernel-bin \| lzma \| fit lzma`（给 vendor blobs 腾空间） |
+| 热复位后 SFP | 不建链，无法自行恢复 | 12/30/60 tick 重试 + `23↔4` / `27↔4` 模式弹跳 |
+| 默认主题 | argon（vendored v3.1.2） | 增加 aurora 主题并设为默认，含简体中文 LuCI |
+| 刷机 | `sysupgrade` | uboot web（ER2 的 `platform.sh` 没有该分支，见[已知限制](#六已知限制)） |
+| 文档 | 通用 README | 本 README，上游原文见 `OPENWIFI_README.md` |
+
+### 跟上游同步
+
+```bash
+./setup.py --rebase     # 把 OpenWrt 树重置到 config.yml 里的 revision，再按序重打补丁
+```
+
+`patches-25.12/` 的 `01xx` 段**留给上游**（每次同步都会在末尾追加打包升级补丁），
+本仓库自有补丁一律从 `0200` 起，这样同步上游时不会产生编号冲突。
+
+---
+
+## 二、快速开始
 
 ```bash
 # 1. 取源码
@@ -29,7 +65,7 @@ cd wlan-ap-er2
 ls openwrt/bin/targets/ipq53xx/generic/openwrt-ipq53xx-jdcloud_er2-squashfs-factory.bin
 ```
 
-刷机走 **uboot web**，不要用 `sysupgrade`（原因见[已知限制](#五已知限制)）：
+刷机走 **uboot web**，不要用 `sysupgrade`（原因见[已知限制](#六已知限制)）：
 
 ```bash
 # 断电 → 按住 reset 上电 → 进 uboot web（http://192.168.1.1/）
@@ -39,11 +75,11 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 ---
 
-## 二、SFP 双速率兼容
+## 三、SFP 双速率兼容
 
 ### 现象
 
-原版代码（`a57beed6` 之前）在**热复位**后 SFP 口不建链：冷启动能起来，
+上游代码在**热复位**后 SFP 口不建链：冷启动能起来，
 但 `reboot` 之后就一直是 `carrier=0 / speed=65535`，插拔模块也不恢复，
 等多久都不会自己好。
 
@@ -102,8 +138,8 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 | 固件 | 软重启表现 | dmesg 证据 |
 |---|---|---|
-| 原包（无补丁） | **303s 仍 down，永不自愈** | 只有 `sfp_phy_init`，零 pulse |
-| 本固件 | **39.03s 起链，1 次 pulse** | `mode bounce 23->4->23` |
+| 上游基线（无补丁） | **303s 仍 down，永不自愈** | 只有 `sfp_phy_init`，零 pulse |
+| 本仓库 | **39.03s 起链，1 次 pulse** | `mode bounce 23->4->23` |
 
 同一台机、同一支模块、同一根光纤，同一时段内前后对照 → 恢复能力确实来自模式弹跳。
 
@@ -119,7 +155,7 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 ---
 
-## 三、构建
+## 四、构建
 
 ### 方式 A：脚本构建（推荐，产物即验收过的形态）
 
@@ -162,7 +198,7 @@ make -j$(nproc) V=s
 |---|---|
 | 启用 `patches-disabled/0008-...debug-log....disabled` | 它把 `ssdk_log_level` 从 2 抬到 3，冷启动从 19.99s 变成 282 秒一次 link 都没有；留在 `patches-disabled/` 只为复现该对照实验 |
 | 给 `ipq5332-jdcloud-er2.dts` 加 `sfp_rx_los_pin` / `sfp_tx_dis_pin` | 加上后 SSDK 从硬件 LOS 切到软件读 GPIO45，冷启动不建链；`bootargs-append` 保持只有 `clk_ignore_unused` |
-| 用 `sysupgrade` 刷机 | 见下节 |
+| 用 `sysupgrade` 刷机 | 见[已知限制](#六已知限制) |
 
 ### 产物
 
@@ -176,7 +212,7 @@ make -j$(nproc) V=s
 
 ---
 
-## 四、刷机
+## 五、刷机
 
 `/lib/upgrade/platform.sh` 的 `platform_do_upgrade` **没有 `jdcloud,er2` 分支**，
 `sysupgrade` 只会重启、不写盘（rootfs 是 squashfs + tmpfs overlay，`/etc` 改动不持久）。
@@ -200,7 +236,7 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 ---
 
-## 五、已知限制
+## 六、已知限制
 
 | 项 | 状态 |
 |---|---|
@@ -219,7 +255,7 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 ---
 
-## 六、补丁清单
+## 七、补丁清单
 
 | 文件 | 作用 |
 |---|---|
@@ -230,13 +266,15 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 | `feeds/qca-wifi-7/ipq53xx/image/Makefile` | FIT 内核 gzip → lzma，给 vendor blobs 腾空间 |
 | `feeds/qca-wifi-7/qca-ssdk-qca/Makefile` | `PKG_MIRROR_HASH:=skip`，见上节 |
 
+上游已有的 `0001`（RTL 支持）、`0005`（QCA8385 VLAN）、`0006`（SFP GPIO `cansleep`）原样保留未改。
+
 补丁、构建源码、实机运行的 `qca-ssdk.ko` 三者已逐层核对一致
 （`patch -R --dry-run` 无 fuzz、`ko` md5 `a5377b72…` 与设备一致、`strings` 能捞到
 `mode bounce %d->%d->%d` 等日志格式串）。
 
 ---
 
-## 七、仓库结构
+## 八、仓库结构
 
 ```
 build.sh             构建入口（setup + gen_config + feed patches + 编译）
@@ -247,14 +285,23 @@ defconfig/           完整 .config（方式 B）
 patches-25.12/       打进 OpenWrt 树的补丁（0200 段起为本仓库自有）
 feeds-patches/       针对 feed 包的补丁（luci 等）
 feeds/qca-wifi-7/    qca feed：ipq53xx target、NSS/SSDK、DTS、内核补丁
-feeds/extras/        vendored 第三方包（argon 主题等）
+feeds/extras/        vendored 第三方包（argon / aurora 主题）
+OPENWIFI_README.md   上游 README 原文
 ```
-
-上游 OpenWiFi AP NOS 的通用说明（uCentral、其他目标 profile、Docker 构建）
-见 `OPENWIFI_*.md` 与上游仓库，本仓库只维护 ER2 这一条线。
 
 ---
 
-## 八、许可
+## 九、致谢与许可
 
-沿用上游 OpenWiFi AP NOS 的许可（见 `LICENSE`）。内置第三方组件的许可随各自目录。
+本仓库的绝大部分工作来自上游与这些项目，特此致谢：
+
+| 项目 | 作用 |
+|---|---|
+| [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) | 本仓库的上游：OpenWiFi AP NOS、板级支持、`patches-25.12` 系列 |
+| [OpenWrt](https://openwrt.org/) | 固件框架与 25.12 树 |
+| QCA / qca-wifi-7 feed | NSS / PPE / ECM / SSDK 驱动（本仓库的 SFP 补丁即打在 `qca-ssdk-qca` 上） |
+| [jerrykuku/luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon) | argon 主题 v3.1.2（vendored） |
+| [eamonxg/luci-theme-aurora](https://github.com/eamonxg/luci-theme-aurora) | aurora 主题（本仓库默认主题） |
+
+许可沿用上游 **BSD 3-Clause**（`LICENSE`，Copyright (c) 2024, Telecom Infra Project）。
+内置第三方组件的许可随各自目录（例如 `feeds/extras/*/LICENSE`）。
