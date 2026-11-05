@@ -102,8 +102,11 @@ packages:
   - luci-mod-admin-full
   - luci-theme-aurora
   - luci-app-aurora-config
+  - luci-app-firewall
   - luci-i18n-aurora-config-zh-cn
   - luci-i18n-base-zh-cn
+  # firewall 的中文包依赖 luci-app-firewall 本身：app 没选中时这个 i18n 符号
+  # 在 Kconfig 里根本不存在，make defconfig 会静默丢掉这一行。
   - luci-i18n-firewall-zh-cn
 
 #include:

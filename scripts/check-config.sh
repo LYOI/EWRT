@@ -39,20 +39,45 @@ TOTAL=$(echo "$PROFILE_PKGS" | grep -c . || true)
 MISSING=$(echo "$PROFILE_PKGS" | grep . | grep -vxF -e "$TARGET_NAME" -e "$SUBTARGET_NAME" |
 	comm -23 - <(echo "$DEFCONFIG_PKGS") )
 
-MISS_COUNT=$(echo "$MISSING" | grep -c . || true)
+# 分两类：
+#   硬缺失 - 非 kmod 包不在 defconfig 里，一定是漏配或残留的死条目
+#   软缺失 - kmod-* 里带 HIDDEN:=1 的包（如 crypto-acompress）只在被别的包依赖时
+#            才出现在 Kconfig，没人依赖就必然被 make defconfig 丢掉，不算漏配
+HARD=""
+SOFT=""
+while IFS= read -r pkg; do
+	[ -z "$pkg" ] && continue
+	case "$pkg" in
+	kmod-*) SOFT="$SOFT$pkg
+" ;;
+	*) HARD="$HARD$pkg
+" ;;
+	esac
+done <<EOF
+$MISSING
+EOF
+
+HARD_COUNT=$(echo "$HARD" | grep -c . || true)
+SOFT_COUNT=$(echo "$SOFT" | grep -c . || true)
 
 echo "profile   : $PROFILE  ($TOTAL 条)"
 echo "defconfig : $DEFCONFIG  ($(echo "$DEFCONFIG_PKGS" | grep -c .) 个 =y 包)"
 
-if [ "$MISS_COUNT" -eq 0 ]; then
+if [ "$SOFT_COUNT" -gt 0 ]; then
+	echo "提示 有 $SOFT_COUNT 个 kmod 未进 defconfig（HIDDEN 包，仅在被依赖时生效）："
+	echo "$SOFT" | grep . | sed 's/^/  ~ /'
+fi
+
+if [ "$HARD_COUNT" -eq 0 ]; then
 	echo "RESULT OK profile 声明的包全部在 defconfig 里"
 	exit 0
 fi
 
-echo "RESULT FAIL 有 $MISS_COUNT 个包只在 profile 里，defconfig 没配："
-echo "$MISSING" | sed 's/^/  - /'
+echo "RESULT FAIL 有 $HARD_COUNT 个包只在 profile 里，defconfig 没配："
+echo "$HARD" | grep . | sed 's/^/  - /'
 echo
 echo "处理方式："
 echo "  1. 确认该包在 defconfig 里是需要的 -> 加上 CONFIG_PACKAGE_<name>=y"
 echo "  2. 确认是有意精简掉的            -> 从 profile 里删掉，别让两处说法不一致"
+echo "  3. 依赖没选中导致符号不存在      -> 先补依赖包，否则这行永远被静默丢弃"
 exit 1
