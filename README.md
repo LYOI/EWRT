@@ -166,7 +166,7 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 | 分支 | 定位 | 配置来源 | 包数 |
 |---|---|---|---|
-| `main` | **最全、最稳定**。功能齐全，只有实测过的改动才进得来 | `defconfig/jdc-er2.config`（手工维护） | 325 |
+| `main` | **最全、最稳定**。功能齐全，只有实测过的改动才进得来 | `defconfig/jdc-er2.config`（手工维护） | 323 |
 | `Base-test` | **基础齐全 + 随时加东西**。换内核、换驱动、试补丁都在这里 | `profiles/jdcloud_er2.yml` → `gen_config.py` | 277 |
 
 两条线的流动方向是**单向**的：
@@ -213,7 +213,7 @@ make -j$(nproc) V=s
 不是手工堆的。改 profile 后必须重新生成一次快照再提交，否则两者会漂移。
 
 > ⚠️ `gen_config.py` 会按 profile 裁剪 `openwrt/package/feeds/`（1756 条 → 53 条）。
-> 切回 `main` 构建前**必须先跑 `./scripts/feeds install -a`**，否则 main 的 325 个包会
+> 切回 `main` 构建前**必须先跑 `./scripts/feeds install -a`**，否则 main 的 323 个包会
 > 静默掉 50 个，`make defconfig` 一声不响。
 
 ### 方式 B：手动构建（`main` 分支）
