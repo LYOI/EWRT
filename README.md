@@ -162,16 +162,14 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 ## 四、构建
 
-### 方式 A：脚本构建（推荐，产物即验收过的形态）
+本仓库有两套构建入口，分属两条分支，**不要混用**：
 
-```bash
-./build.sh jdcloud_er2
-```
+| 分支 | 入口 | 配置来源 | 用途 |
+|---|---|---|---|
+| `main` | 方式 B | `defconfig/jdc-er2.config` | 出镜像的唯一路径，验收数据都来自这条 |
+| `Base-test` | 方式 A | `profiles/jdcloud_er2.yml` | 板级最小集验证，跟随 `main` rebase |
 
-按 `profiles/jdcloud_er2.yml` 生成 `.config`：base system、内核/NSS/PPE/ECM/SSDK、
-aurora 主题、简体中文 LuCI。
-
-### 方式 B：手动构建（需要裁剪软件包时）
+### 方式 B：手动构建（`main` 的默认路径）
 
 ```bash
 sudo apt install build-essential libncurses5-dev gawk git libssl-dev gettext \
@@ -192,7 +190,18 @@ make -j$(nproc) download V=s
 make -j$(nproc) V=s
 ```
 
-> 两种方式不要混用：`./build.sh` 会用 `gen_config.py` 重新生成 `.config`，覆盖手工改动。
+### 方式 A：脚本构建（`Base-test` 分支）
+
+```bash
+git checkout Base-test
+./build.sh jdcloud_er2
+```
+
+按 `profiles/jdcloud_er2.yml` 生成 `.config`。profile 只声明板子本身需要什么（74 个包：
+target、NSS/PPE/ECM/SSDK 驱动栈、aurora 主题、简体中文），userspace 应用由该分支的
+defconfig 补齐。这条线用来验证「最小板级集能否独立起来」，产物不等同 `main`。
+
+> 两个方案不要混用：`./build.sh` 会用 `gen_config.py` 重新生成 `.config`，覆盖手工改动。
 
 国内网络下 `feeds update` / 部分包 Makefile 会访问 `github.com`、`codeload.github.com`，
 建议先设代理，或按需给 git 配镜像。
