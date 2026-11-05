@@ -169,6 +169,13 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 | `main` | 方式 B | `defconfig/jdc-er2.config` | 出镜像的唯一路径，验收数据都来自这条 |
 | `Base-test` | 方式 A | `profiles/jdcloud_er2.yml` | 板级最小集验证，跟随 `main` rebase |
 
+改完配置先跑一次校验，确认两处说法一致：
+
+```bash
+./scripts/check-config.sh
+# RESULT OK profile 声明的包全部在 defconfig 里
+```
+
 ### 方式 B：手动构建（`main` 的默认路径）
 
 ```bash

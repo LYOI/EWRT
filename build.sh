@@ -10,6 +10,13 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
+BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+if [ "$BRANCH" = "main" ]; then
+	echo "警告：main 的 profile 只保留 defconfig 实际会用到的包，"
+	echo "      用它出镜像不等同出厂镜像；出镜像请按 README「方式 B」走 defconfig。"
+	echo "      A 方式的完整板级集在 Base-test 分支。"
+fi
+
 if [ ! "$(ls -A $BUILD_DIR)" ]; then
 	python3 setup.py --setup || exit 1
     
