@@ -42,8 +42,6 @@ packages:
   - kmod-phylink
   - kmod-phy-aquantia
   # --- storage / filesystem / boot (base system) ------------------------
-  # main 是最全最稳的一条线：分区、块设备、加密这几批都保留，
-  # zt 的精简（44a90e66）没有带到 main 上来。
   - block-mount
   - blockd
   - uboot-envtools
