@@ -162,21 +162,61 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 ## 四、构建
 
-本仓库有两套构建入口，分属两条分支，**不要混用**：
+本仓库有两条分支，分工固定：**`main` 是稳定版，`Base-test` 是试验场**。
 
-| 分支 | 入口 | 配置来源 | 用途 |
+| 分支 | 定位 | 配置来源 | 包数 |
 |---|---|---|---|
-| `main` | 方式 B | `defconfig/jdc-er2.config` | 出镜像的唯一路径，验收数据都来自这条 |
-| `Base-test` | 方式 A | `profiles/jdcloud_er2.yml` | 板级最小集验证，跟随 `main` rebase |
+| `main` | **最全、最稳定**。功能齐全，只有实测过的改动才进得来 | `defconfig/jdc-er2.config`（手工维护） | 325 |
+| `Base-test` | **基础齐全 + 随时加东西**。换内核、换驱动、试补丁都在这里 | `profiles/jdcloud_er2.yml` → `gen_config.py` | 277 |
 
-改完配置先跑一次校验，确认两处说法一致：
+两条线的流动方向是**单向**的：
 
-```bash
-./scripts/check-config.sh
-# RESULT OK profile 声明的包全部在 defconfig 里
+```
+Base-test  ← rebase main            承接 main 的稳定成果，不落后
+Base-test  → 手工择项 → main        先在 Base-test 上验证，稳定后决定加什么、去什么
 ```
 
-### 方式 B：手动构建（`main` 的默认路径）
+Base-test 不是"残缺版"，它的底线是**基础功能一样不少**：板级、NSS/PPE/ECM/SSDK 驱动栈、
+全套排障工具（curl / ethtool-full / i2c-tools / tcpdump / iperf3 / conntrack / jq / htop /
+nvme-cli / smartmontools）、LuCI 全套（aurora 主题、软件包管理、防火墙、PPP/IPv6、中文）。
+差别只在于 main 还额外带一批应用（upnp、argon、ssl 证书链、额外的 nft/kmod 集合等）。
+
+Base-test 上允许做的事，`main` 上一律不做：
+
+- 换 Linux 内核版本 / 换 SSDK 分支，验证光口在新驱动下的行为
+- 大改 devicetree、改 PPE / ECM 参数
+- 加或删一整批软件包，看对起链时间和内存的影响
+
+验证稳了以后，把"要的"合并进 main、"不要的"留在 Base-test 或丢掉；main 始终只保留结论。
+
+### 方式 A：试验构建（`Base-test` 分支）
+
+```bash
+git checkout Base-test
+./scripts/check-config.sh            # profile 与 defconfig 是否一致
+
+cd openwrt
+rm -rf tmp
+./scripts/gen_config.py jdcloud_er2  # profile -> .config
+./scripts/feeds update -a
+./scripts/feeds install -a
+cd .. && ./setup.py --feed-patches
+
+cd openwrt
+cp ../defconfig/jdc-er2.config .config   # 用本分支存好的快照，保证可复现
+make defconfig
+make -j$(nproc) download V=s
+make -j$(nproc) V=s
+```
+
+`defconfig/jdc-er2.config` 在本分支上是 `gen_config.py` + `make defconfig` 的**真实产物**，
+不是手工堆的。改 profile 后必须重新生成一次快照再提交，否则两者会漂移。
+
+> ⚠️ `gen_config.py` 会按 profile 裁剪 `openwrt/package/feeds/`（1756 条 → 53 条）。
+> 切回 `main` 构建前**必须先跑 `./scripts/feeds install -a`**，否则 main 的 325 个包会
+> 静默掉 50 个，`make defconfig` 一声不响。
+
+### 方式 B：手动构建（`main` 分支）
 
 ```bash
 sudo apt install build-essential libncurses5-dev gawk git libssl-dev gettext \
@@ -196,17 +236,6 @@ make defconfig
 make -j$(nproc) download V=s
 make -j$(nproc) V=s
 ```
-
-### 方式 A：脚本构建（`Base-test` 分支）
-
-```bash
-git checkout Base-test
-./build.sh jdcloud_er2
-```
-
-按 `profiles/jdcloud_er2.yml` 生成 `.config`。profile 只声明板子本身需要什么（74 个包：
-target、NSS/PPE/ECM/SSDK 驱动栈、aurora 主题、简体中文），userspace 应用由该分支的
-defconfig 补齐。这条线用来验证「最小板级集能否独立起来」，产物不等同 `main`。
 
 > 两个方案不要混用：`./build.sh` 会用 `gen_config.py` 重新生成 `.config`，覆盖手工改动。
 
