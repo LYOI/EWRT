@@ -19,7 +19,7 @@ ER2 板级支持、QCA NSS/PPE/ECM 硬件加速和 SFP 修复补丁都在本仓�
 
 ```bash
 # 1. 取源码
-git clone -b er2 https://github.com/LYOI/wlan-ap-er2-sfp.git wlan-ap-er2
+git clone https://github.com/LYOI/wlan-ap-er2-sfp.git wlan-ap-er2
 cd wlan-ap-er2
 
 # 2. 构建（自动拉 OpenWrt 树、打补丁、生成 .config）
