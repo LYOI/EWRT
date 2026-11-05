@@ -7,6 +7,22 @@ image: bin/targets/ipq53xx/generic/openwrt-ipq53xx-jdcloud_er2-squashfs-sysupgra
 feeds:
   - name: qca
     path: ../../feeds/qca-wifi-7
+  # 第三方应用源（Base-test 的试验场用；main 不收未验证的源）。
+  # OpenClash 仓库根目录下就是 luci-app-openclash/，可以直接当 feed 用。
+  - name: openclash
+    uri: https://github.com/vernesong/OpenClash.git
+    branch: master
+  # VIKINGYFY/packages 是多包源，luci-app-wolultra 在这个源里。
+  - name: viking
+    uri: https://github.com/VIKINGYFY/packages.git
+    branch: main
+  # 注意：GuNanOvO/openwrt-tailscale 与 packages 源里的 tailscale 同名
+  # (PKG_NAME:=tailscale)，两个源同时启用时 feeds install 的落盘结果取决于
+  # 源顺序，不可复现。要用那个 fork 就换成下面两行、并确认 packages 源的
+  # tailscale 没被选中：
+  # - name: tailscale-fork
+  #   uri: https://github.com/GuNanOvO/openwrt-tailscale.git
+  #   branch: main
     
 include:
   - webui
@@ -141,6 +157,21 @@ packages:
   - luci-i18n-firewall-zh-cn
   - luci-i18n-package-manager-zh-cn
 
+  # --- 第三方应用（本地验证用，未实测前不进 main）----------------------
+  # 下载器：aria2 后端 + AriaNg 前端 + LuCI 管理页
+  - aria2
+  - ariang
+  - luci-app-aria2
+  - luci-i18n-aria2-zh-cn
+  # 组网：tailscale 来自 packages 源（1.98.3），前端用 luci 源的 community 版
+  - tailscale
+  - luci-app-tailscale-community
+  # 代理：OpenClash 来自 vernesong 源
+  - luci-app-openclash
+  # 网络唤醒：wolultra 来自 VIKINGYFY 源
+  - luci-app-wolultra
+  - luci-i18n-wolultra-zh-cn
+
 #include:
 #  - ucentral-ap
 diffconfig: |
@@ -148,6 +179,10 @@ diffconfig: |
   # kconfig 里，否则上面 packages 里列的 zh-cn 条目会被 make defconfig 静默丢弃。
   CONFIG_LUCI_LANG_zh_Hans=y
 
+  # OpenClash 依赖 dnsmasq-full（ipset/nftset 版本）。基础镜像默认带的是
+  # dnsmasq，两个包都装会在打包阶段撞 /usr/sbin/dnsmasq，所以显式换成 full。
+  CONFIG_PACKAGE_dnsmasq-full=y
+  # CONFIG_PACKAGE_dnsmasq is not set
   CONFIG_KERNEL_IPQ_MEM_PROFILE=0
   CONFIG_ARCH_QCOM=y
   # SAWF/telemetry steering is not used on this board; the qca feed enables it

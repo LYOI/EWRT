@@ -166,8 +166,8 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 | 分支 | 定位 | 配置来源 | 包数 |
 |---|---|---|---|
-| `main` | **最全、最稳定**。功能齐全，只有实测过的改动才进得来 | `defconfig/jdc-er2.config`（手工维护） | 325 |
-| `Base-test` | **基础齐全 + 随时加东西**。换内核、换驱动、试补丁都在这里 | `profiles/jdcloud_er2.yml` → `gen_config.py` | 277 |
+| `main` | **最全、最稳定**。功能齐全，只有实测过的改动才进得来 | `defconfig/jdc-er2.config`（手工维护） | 323 |
+| `Base-test` | **基础齐全 + 随时加东西**。换内核、换驱动、试补丁都在这里 | `profiles/jdcloud_er2.yml` → `gen_config.py` | 317 |
 
 两条线的流动方向是**单向**的：
 
@@ -213,8 +213,32 @@ make -j$(nproc) V=s
 不是手工堆的。改 profile 后必须重新生成一次快照再提交，否则两者会漂移。
 
 > ⚠️ `gen_config.py` 会按 profile 裁剪 `openwrt/package/feeds/`（1756 条 → 53 条）。
-> 切回 `main` 构建前**必须先跑 `./scripts/feeds install -a`**，否则 main 的 325 个包会
+> 切回 `main` 构建前**必须先跑 `./scripts/feeds install -a`**，否则 main 的 323 个包会
 > 静默掉 50 个，`make defconfig` 一声不响。
+
+### 第三方应用源（只有 `Base-test` 挂）
+
+`Base-test` 是试验场，所以额外挂了两个社区源，用来验证「这些应用能不能在 ER2 上
+编出来、跑起来」。`main` 不挂，等这里实测过了再挑着往 main 搬。
+
+| 来源 | 引入的包 | 备注 |
+|---|---|---|
+| `vernesong/OpenClash` | `luci-app-openclash` | DEPENDS 拉进 ruby / ruby-yaml / bash / ip-full / unzip；同时把 `dnsmasq` 换成 `dnsmasq-full`（两个包都装会撞 `/usr/sbin/dnsmasq`，profile 的 diffconfig 里已显式关掉基础版） |
+| `VIKINGYFY/packages` | `luci-app-wolultra` + 中文翻译 | 依赖 `etherwake` |
+| 官方 packages / luci 源 | `aria2`、`ariang`、`luci-app-aria2`、`tailscale`、`luci-app-tailscale-community` | 这三个仓库（aria2 / AriaNg / Tailscale 前端）本身不用加源，官方源里就有 |
+
+`Base-test` 的包数因此从 277 涨到 317，多出来的 40 个基本都是这些应用的依赖。
+
+两个没进来的仓库，原因写在这里免得下次又踩：
+
+- **`GuNanOvO/openwrt-tailscale`**：它的 `PKG_NAME` 就是 `tailscale`，和官方 packages
+  源的 `tailscale` 同名。两个源同时启用时 `feeds install` 谁覆盖谁取决于源顺序，
+  不可复现，所以先用官方源的 1.98.3。要用那个 fork（1.104.5、UPX 压缩）就打开
+  profile 里注释掉的那两行，并保证只有一个 `tailscale` 包被选中。
+- **`PBH-BTN/PeerBanHelper`**：上游只出 deb / FreeBSD pkg / 群晖 / 桌面版，没有
+  OpenWrt 打包；它本体是 Java，要 JRE 21，而本树里没有任何 java 运行时包。上板得先
+  自己解决 JRE（约 +80 MB）和内存（这块板 1 GB，跑 JVM 很紧），不是加个源能了事的，
+  暂时挂着——要真上，单独开一条 `Base-test` 分支上的试验线。
 
 ### 方式 B：手动构建（`main` 分支）
 
