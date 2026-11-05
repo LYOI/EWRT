@@ -42,21 +42,25 @@ packages:
   - kmod-phylink
   - kmod-phy-aquantia
   # --- storage / filesystem / boot (base system) ------------------------
-  # 注：本分支（main）的 defconfig 按 B 方式精简了存储/加密批次。
-  # 这里只列 main 实际会装的包；完整板级集在 Base-test 分支的 profile 里。
-  # 两处不一致请跑 ./scripts/check-config.sh 对比。
+  # main 是最全最稳的一条线：分区、块设备、加密这几批都保留，
+  # zt 的精简（44a90e66）没有带到 main 上来。
   - block-mount
+  - blockd
   - uboot-envtools
   - e2fsprogs
   - resize2fs
+  - blkid
   - lsblk
+  - cfdisk
   - fdisk
+  - sgdisk
   - parted
   - losetup
   - kmod-loop
   - kmod-nvme
   - kmod-fs-ext4
   - kmod-fs-squashfs
+  - kmod-fs-autofs4
   # --- base networking --------------------------------------------------
   - tc-tiny
   - resolveip
@@ -81,13 +85,18 @@ packages:
   - kmod-nls-utf8
   # --- kernel: crypto (wireguard / IPsec / dm-crypt) --------------------
   - kmod-crypto-acompress
+  - kmod-crypto-ccm
   - kmod-crypto-cmac
   - kmod-crypto-crc32c
+  - kmod-crypto-ctr
+  - kmod-crypto-gcm
   - kmod-crypto-gf128
   - kmod-crypto-ghash
   - kmod-crypto-hmac
+  - kmod-crypto-md4
   - kmod-crypto-md5
   - kmod-crypto-rng
+  - kmod-crypto-seqiv
   - kmod-crypto-sha256
   - kmod-crypto-sha512
 
