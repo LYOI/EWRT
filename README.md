@@ -1,12 +1,14 @@
-# JDCloud ER2 (IPQ5332) OpenWrt 固件
+# EWRT — JDCloud ER2 (IPQ5332) OpenWrt 固件
 
-京东云 ER2 的 OpenWrt 固件，重点是 **SFP 光口的 2.5G / 10G 双速率兼容**：
-同一份固件、不改任何配置，插 2.5G 猫棒或 10G 光模块都能起链，冷启动、软重启、
-热插拔、模块互换全部可用。
+EWRT 是一个独立维护的 OpenWrt 固件项目，目前只服务一个目标：京东云 ER2。
+核心是 **SFP 光口的 2.5G / 10G 双速率兼容**——同一份固件、不改任何配置，
+插 2.5G 猫棒或 10G 光模块都能起链，冷启动、软重启、热插拔、模块互换全部可用。
 
-> 本仓库是 **[Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap)**
-> （TIP OpenWiFi AP NOS，BSD-3-Clause）的 fork，基线 `a57beed6`（2026-11-02），
-> 在上游基础上集中解决 ER2 这一个板子的 SFP 问题。
+> 本项目不是 GitHub 意义上的 fork 分支，而是独立仓库：以
+> **[Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap)**
+> （TIP OpenWiFi AP NOS，BSD-3-Clause）为上游主线，ER2 的板级支持起步于
+> **[zt406600/wlan-ap](https://github.com/zt406600/wlan-ap)** 的 `er2` 分支。
+> 这条线没有 ER2 目标，两份上游的工作是前提，详见[致谢](#九致谢与许可)。
 > 上游的通用文档（其他目标 profile、uCentral、Docker 构建）原样保存在 `OPENWIFI_README.md`。
 
 ```
@@ -21,18 +23,21 @@
 
 | 项 | 内容 |
 |---|---|
-| 上游项目 | [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) — TIP OpenWiFi 的 AP NOS |
-| fork 基线 | `a57beed6`（2026-11-02，上游 main） |
+| 上游主线 | [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) — TIP OpenWiFi 的 AP NOS |
+| 上游基线 | `a85083bc`（2026-10-28，上游 `main`） |
+| ER2 板级来源 | [zt406600/wlan-ap](https://github.com/zt406600/wlan-ap) `er2` 分支（上游本身没有 ER2 目标） |
 | OpenWrt 树 | `openwrt-25.12` @ `f0a60eee`（v25.12.5），叠加 `patches-25.12/` 共 157 个补丁 |
 | 板级代码 | `feeds/qca-wifi-7/`（QCA NSS / PPE / ECM / SSDK、ipq53xx target、ER2 DTS） |
 | 许可 | BSD-3-Clause，Copyright (c) 2024 Telecom Infra Project（见 `LICENSE`） |
 
 ### 与上游的差异
 
-| 维度 | 上游 `wlan-ap` | 本仓库 |
+对照基准是 `Telecominfraproject/wlan-ap` 的 `main`（`a85083bc`）：
+
+| 维度 | 上游 `wlan-ap` | EWRT |
 |---|---|---|
 | 目标 | 通用 AP NOS，约 70 个 board profile | 只维护 ER2 |
-| ER2 profile | 有 `profiles/jdcloud_er2.yml` | 有，并调整了包集合（aurora 主题、zh_Hans） |
+| ER2 target | **无** | 有（起步自 zt `er2` 分支，包集合另调 aurora 主题、zh_Hans） |
 | SSDK 补丁 | `0001` / `0005` / `0006` | 追加 `0007`（10G SerDes MISC2）、`0901`（模式弹跳恢复）、`0902`（2.5G 候选档保持） |
 | 内核载荷 | `kernel-bin \| gzip \| fit gzip` | `kernel-bin \| lzma \| fit lzma`（给 vendor blobs 腾空间） |
 | 热复位后 SFP | 不建链，无法自行恢复 | 12/30/60 tick 重试 + `23↔4` / `27↔4` 模式弹跳 |
@@ -55,8 +60,8 @@
 
 ```bash
 # 1. 取源码
-git clone https://github.com/LYOI/wlan-ap-er2-sfp.git wlan-ap-er2
-cd wlan-ap-er2
+git clone https://github.com/LYOI/EWRT.git
+cd EWRT
 
 # 2. 构建（自动拉 OpenWrt 树、打补丁、生成 .config）
 ./build.sh jdcloud_er2
@@ -139,7 +144,7 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 | 固件 | 软重启表现 | dmesg 证据 |
 |---|---|---|
 | 上游基线（无补丁） | **303s 仍 down，永不自愈** | 只有 `sfp_phy_init`，零 pulse |
-| 本仓库 | **39.03s 起链，1 次 pulse** | `mode bounce 23->4->23` |
+| EWRT | **39.03s 起链，1 次 pulse** | `mode bounce 23->4->23` |
 
 同一台机、同一支模块、同一根光纤，同一时段内前后对照 → 恢复能力确实来自模式弹跳。
 
@@ -293,15 +298,20 @@ OPENWIFI_README.md   上游 README 原文
 
 ## 九、致谢与许可
 
-本仓库的绝大部分工作来自上游与这些项目，特此致谢：
+EWRT 的绝大部分代码不是本项目写的。没有下面这些项目和工作，这个仓库不会存在：
 
 | 项目 | 作用 |
 |---|---|
-| [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) | 本仓库的上游：OpenWiFi AP NOS、板级支持、`patches-25.12` 系列 |
+| [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) | **上游主线**：OpenWiFi AP NOS、构建框架（`setup.py` / `build.sh` / `gen_config.py`）、`patches-25.12` 系列、qca-wifi-7 feed |
+| [zt406600/wlan-ap](https://github.com/zt406600/wlan-ap) | **ER2 板级支持的起点**：`er2` 分支的 ipq53xx target、ER2 DTS、`profiles/jdcloud_er2.yml`、`defconfig/jdc-er2.config`；本仓库的 SFP 修复即建立在这套板级代码之上 |
 | [OpenWrt](https://openwrt.org/) | 固件框架与 25.12 树 |
 | QCA / qca-wifi-7 feed | NSS / PPE / ECM / SSDK 驱动（本仓库的 SFP 补丁即打在 `qca-ssdk-qca` 上） |
 | [jerrykuku/luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon) | argon 主题 v3.1.2（vendored） |
 | [eamonxg/luci-theme-aurora](https://github.com/eamonxg/luci-theme-aurora) | aurora 主题（本仓库默认主题） |
 
-许可沿用上游 **BSD 3-Clause**（`LICENSE`，Copyright (c) 2024, Telecom Infra Project）。
+两份 `wlan-ap` 上游都是 BSD-3-Clause，本仓库的许可与版权声明随上游一并保留
+（`LICENSE`，Copyright (c) 2024, Telecom Infra Project）。
 内置第三方组件的许可随各自目录（例如 `feeds/extras/*/LICENSE`）。
+
+本仓库自己写的部分只有三块：SSDK 的 SFP 补丁（`0901` / `0902` / `0007`）、
+ER2 的包集合与默认主题调整、以及把上面这些跑通的构建与验收脚本。
