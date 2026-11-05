@@ -1,0 +1,54 @@
+--- a/src/hsl/phy/sfp_phy.c	1970-01-01 00:00:00.000000000 +0800
++++ b/src/hsl/phy/sfp_phy.c	2026-11-05 13:44:56.000000000 +0800
+@@ -802,6 +802,12 @@
+ 		return A_TRUE;
+ 	}
+ }
++/* Minimum number of link-poll rounds a candidate 2.5G interface mode is
++ * kept before trying the other one. The stock code alternates every poll,
++ * which re-inits UNIPHY/PCS constantly and starves auto-negotiation. */
++#define SFP_25G_MODE_HOLD	30
++static a_uint32_t sfp_25g_mode_hold[SW_MAX_NR_DEV][SW_MAX_NR_PORT];
++
+ sw_error_t sfp_phy_interface_get_mode_status(a_uint32_t dev_id,
+ 	a_uint32_t port_id, fal_port_interface_mode_t *interface_mode_status)
+ {
+@@ -866,7 +872,20 @@
+ 		if (sfp_status.link_status == PORT_LINK_DOWN) {
+ 			/*autoneg is for different speed switching on one SFP module*/
+ 			if (phydev->autoneg == AUTONEG_ENABLE) {
+-				if (sfp_status.link_status == PORT_LINK_DOWN) {
++				a_uint32_t *hold = &sfp_25g_mode_hold[dev_id][port_id];
++
++				if ((*interface_mode_status != PHY_SGMII_BASET) &&
++				    (*interface_mode_status != PORT_SGMII_PLUS)) {
++					/* first look: start from the mode a 2.5G stick uses */
++					*interface_mode_status = PORT_SGMII_PLUS;
++					*hold = 0;
++					SSDK_INFO("port%d sfp 2.5G down, start mode %d\n",
++						port_id, *interface_mode_status);
++				} else if (*hold < SFP_25G_MODE_HOLD) {
++					/* keep the current mode, give AN a full window */
++					(*hold)++;
++				} else {
++					*hold = 0;
+ 					if (*interface_mode_status == PHY_SGMII_BASET) {
+ 						*interface_mode_status = PORT_SGMII_PLUS;
+ 					} else {
+@@ -875,6 +894,8 @@
+ 						hsl_port_feature_clear(dev_id, port_id,
+ 							PHY_F_SFP_SGMII);
+ 					}
++					SSDK_INFO("port%d sfp 2.5G down, try mode %d\n",
++						port_id, *interface_mode_status);
+ 				}
+ 			} else {
+ 				*interface_mode_status = PORT_SGMII_PLUS;
+@@ -887,6 +908,7 @@
+ 				(*interface_mode_status != PORT_SGMII_PLUS)) {
+ 				*interface_mode_status = PORT_SGMII_PLUS;
+ 			}
++			sfp_25g_mode_hold[dev_id][port_id] = 0;
+ 			return SW_OK;
+ 		}
+ 	}
