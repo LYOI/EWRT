@@ -98,8 +98,38 @@ packages:
   - kmod-crypto-sha256
   - kmod-crypto-sha512
 
+  # --- 诊断 / 运维工具（Base-test 的底线：基础功能必须有）--------------
+  # Base-test 是试验分支，但"试验"不等于"残缺"：排障、取证、跑吞吐所需的
+  # 工具一律常驻，否则换内核 / 换驱动后连现象都测不出来。
+  - curl
+  - ethtool-full
+  - i2c-tools
+  - tcpdump
+  - iperf3
+  - ip-tiny
+  - bridge
+  - conntrack
+  - dmesg
+  - htop
+  - jq
+  - bc
+  - coreutils
+  - flock
+  - wget-ssl
+  - openssl-util
+  - lscpu
+  - etherwake
+  - mmc-utils
+  - nvme-cli
+  - smartmontools
+  - xz-utils
+
   # --- 用户界面：aurora 主题 + 中文（本地 extras feed）----------------
   - luci-mod-admin-full
+  - luci-app-package-manager
+  - luci-proto-ppp
+  - luci-proto-ipv6
+  - luci-ssl
   - luci-theme-aurora
   - luci-app-aurora-config
   - luci-app-firewall
@@ -107,7 +137,9 @@ packages:
   - luci-i18n-base-zh-cn
   # firewall 的中文包依赖 luci-app-firewall 本身：app 没选中时这个 i18n 符号
   # 在 Kconfig 里根本不存在，make defconfig 会静默丢掉这一行。
+  # 同理，package-manager 的中文包依赖 luci-app-package-manager。
   - luci-i18n-firewall-zh-cn
+  - luci-i18n-package-manager-zh-cn
 
 #include:
 #  - ucentral-ap
