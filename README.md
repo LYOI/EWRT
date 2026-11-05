@@ -4,7 +4,7 @@ EWRT 是一个独立维护的 OpenWrt 固件项目，目前只服务一个目标
 核心是 **SFP 光口的 2.5G / 10G 双速率兼容**——同一份固件、不改任何配置，
 插 2.5G 猫棒或 10G 光模块都能起链，冷启动、软重启、热插拔、模块互换全部可用。
 
-> 本项目不是 GitHub 意义上的 fork 分支，而是独立仓库：以
+> 本项目独立维护，不是上游某个分支的镜像：以
 > **[Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap)**
 > （TIP OpenWiFi AP NOS，BSD-3-Clause）为上游主线，ER2 的板级支持起步于
 > **[zt406600/wlan-ap](https://github.com/zt406600/wlan-ap)** 的 `er2` 分支。
