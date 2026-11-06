@@ -1,0 +1,89 @@
+diff --git a/modules/luci-base/po/zh_Hans/base.po b/modules/luci-base/po/zh_Hans/base.po
+index a0a9b537..f1547324 100644
+--- a/modules/luci-base/po/zh_Hans/base.po
++++ b/modules/luci-base/po/zh_Hans/base.po
+@@ -14129,3 +14129,11 @@ msgstr "{example_nx} 返回 {nxdomain}。"
+ #: modules/luci-compat/luasrc/view/cbi/delegator.htm:20
+ msgid "« Back"
+ msgstr "« 后退"
++
++#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js
++msgid "Link Speed"
++msgstr "链路速率"
++
++#: modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js
++msgid "Supported speeds: %s"
++msgstr "支持的速率：%s"
+diff --git a/modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js b/modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js
+index 5fad6f34..a1d551c7 100644
+--- a/modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js
++++ b/modules/luci-mod-network/htdocs/luci-static/resources/view/network/interfaces.js
+@@ -19,6 +19,17 @@ const callNetworkDeviceStatus = rpc.declare({
+ 	expect: { '': {} }
+ });
+ 
++let devStatus = null;
++
++function formatLinkSpeed(speed) {
++	if (speed >= 1000)
++		return (speed % 1000 == 0)
++			? '%d Gbit/s'.format(speed / 1000)
++			: '%.1f Gbit/s'.format(speed / 1000);
++
++	return '%d Mbit/s'.format(speed);
++}
++
+ var isReadonlyView = !L.hasViewPermission() || null;
+ 
+ function count_changes(section_id) {
+@@ -358,8 +369,12 @@ return view.extend({
+ 			network.getDSLModemType(),
+ 			network.getDevices(),
+ 			fs.lines('/etc/iproute2/rt_tables'),
+-			uci.changes()
+-		]);
++			uci.changes(),
++			L.resolveDefault(callNetworkDeviceStatus(), {})
++		]).then(function(res) {
++			devStatus = res[4] || {};
++			return res;
++		});
+ 	},
+ 
+ 	interfaceBridgeWithIfnameSections() {
+@@ -1737,6 +1752,35 @@ return view.extend({
+ 		o.textvalue = getDevTypeDesc;
+ 		o.modalonly = false;
+ 
++		o = s.option(form.DummyValue, '_speed', _('Link Speed'));
++		o.modalonly = false;
++		o.textvalue = function(section_id) {
++			const dev = getDevice(section_id);
++
++			if (!dev || !dev.getCarrier())
++				return '-';
++
++			const speed = dev.getSpeed();
++
++			if (!(speed > 0))
++				return '-';
++
++			const st = devStatus ? devStatus[dev.getName()] : null;
++			const supported = L.toArray(st ? st['link-supported'] : []).map(function(mode) {
++				const m = mode.match(/^(\d+)base/);
++
++				return m ? +m[1] : null;
++			}).filter(function(v, i, arr) { return v > 0 && arr.indexOf(v) == i; })
++			  .sort(function(a, b) { return a - b; });
++
++			if (!supported.length)
++				return formatLinkSpeed(speed);
++
++			return E('span', {
++				'title': _('Supported speeds: %s').format(supported.map(formatLinkSpeed).join(' / '))
++			}, [ formatLinkSpeed(speed) ]);
++		};
++
+ 		o = s.option(form.DummyValue, 'macaddr', _('MAC Address'));
+ 		o.modalonly = false;
+ 		o.textvalue = function(section_id) {

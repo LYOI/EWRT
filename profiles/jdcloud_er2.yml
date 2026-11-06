@@ -7,6 +7,15 @@ image: bin/targets/ipq53xx/generic/openwrt-ipq53xx-jdcloud_er2-squashfs-sysupgra
 feeds:
   - name: qca
     path: ../../feeds/qca-wifi-7
+  # bandix：流量看板（前端 luci-app-bandix + 后端 Rust eBPF 程序 bandix）。
+  # 后端需要 BTF 吗？实测不需要：内核没开 CONFIG_DEBUG_INFO_BTF，tcx 后端
+  # 依然能加载（0.12.12 验证过）。
+  - name: bandix
+    uri: https://github.com/timsaya/luci-app-bandix.git
+    branch: main
+  - name: bandixcore
+    uri: https://github.com/timsaya/openwrt-bandix.git
+    branch: main
     
 include:
   - webui

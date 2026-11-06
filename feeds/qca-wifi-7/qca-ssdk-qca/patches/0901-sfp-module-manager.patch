@@ -24,7 +24,7 @@
 + *
 + * Per-tick details stay at DEBUG (log_level 3) to avoid perturbing timing.
 + */
-+#define SFP_MGR_BOOT_TICKS	12	/* ~12s down before the first try    */
++#define SFP_MGR_BOOT_TICKS	22	/* ~22s down before the first try    */
 +#define SFP_MGR_RETRY_TICKS	30	/* ~30s down before the second       */
 +#define SFP_MGR_LAST_TICKS	60	/* ~60s down before the third        */
 +#define SFP_MGR_PULSE_MAX	3

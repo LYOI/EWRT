@@ -1,0 +1,8 @@
+source : https://github.com/RPDevs-Builds/luci-app-nfs (source/luci-app-nfs/)
+commit : fbb2cbcc698ee13822c968d565c8f441a727088e (2026-09-05)
+why    : 上游 Makefile 没写 PKG_NAME/PKG_VERSION、include 用的是 ../../luci.mk，
+         直接当 feed 会被 feeds 拒绝。
+local  : Makefile 补了 PKG_NAME/PKG_VERSION/PKG_RELEASE，并把 include 改成
+         $(TOPDIR)/feeds/luci/luci.mk。
+copied : 2026-11-05，去掉 .git/
+fix    : root/usr/bin/nfs-config-gen 上游权限是 644，rpcd 执行会失败，本地 chmod +x

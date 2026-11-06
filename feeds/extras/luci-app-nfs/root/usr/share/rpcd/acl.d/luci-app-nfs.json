@@ -1,0 +1,19 @@
+{
+	"luci-app-nfs": {
+		"description": "Grant access to LuCI app nfs",
+		"read": {
+			"file": {
+				"/etc/exports": [ "read" ],
+				"/etc/nfs.conf": [ "read" ]
+			},
+			"uci": [ "nfs" ]
+		},
+		"write": {
+			"file": {
+				"/etc/exports": [ "write" ],
+				"/etc/nfs.conf": [ "write" ]
+			},
+			"uci": [ "nfs" ]
+		}
+	}
+}

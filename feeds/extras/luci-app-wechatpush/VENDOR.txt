@@ -1,0 +1,5 @@
+source : https://github.com/tty228/luci-app-wechatpush
+commit : e7d4d49b14f3755039cc236130afa7cfc65b1e09 (2026-10-10)
+why    : 仓库根目录就是包目录，直接 src-git 当 feed 时 feeds 建索引会失败
+         （.files-packageinfo.mk: target pattern contains no %）。
+copied : 2026-11-05，去掉 .git/ 与 .github/

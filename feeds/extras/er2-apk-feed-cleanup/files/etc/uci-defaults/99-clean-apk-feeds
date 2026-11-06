@@ -1,0 +1,9 @@
+#!/bin/sh
+# distfeeds.list 里除官方 6 个 feed 之外的条目（bandix/bandixcore/extras/lucky/
+# openclash/viking/partexp/qbt 等自建源）在 downloads.openwrt.org 上并不存在，
+# 留着只会让 apk update 每次都 wget error 8。这里按白名单裁掉。
+f=/etc/apk/repositories.d/distfeeds.list
+if [ -f "$f" ]; then
+	sed -i -E "/\/(base|luci|packages|routing|telephony|video)\/packages\.adb\$/!d" "$f"
+fi
+exit 0

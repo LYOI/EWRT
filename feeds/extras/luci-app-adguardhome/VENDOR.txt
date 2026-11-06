@@ -1,0 +1,9 @@
+source : https://github.com/JaneCCP/luci-app-adguardhome
+commit : 2f17f5394c351f4bf7784baa26b10b56cc89dffe (2026-04-24)
+why    : 用户指定用这个 Lua 版界面。仓库根目录就是包目录，直接 src-git 当 feed
+         会失败（.files-packageinfo.mk: target pattern contains no %），所以照
+         feeds/extras 的老规矩拷进来。
+note   : 只有界面，不含 AdGuardHome 核心二进制/服务；首次要在界面里下载安装
+         （需联网）。因此不能同时启用 packages 源的 adguardhome 核心包——两边
+         都装 /etc/config/AdGuardHome 和 /etc/init.d/AdGuardHome 会撞。
+copied : 2026-11-05，去掉 .git/ .github/ screenshots/

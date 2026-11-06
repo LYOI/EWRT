@@ -1,0 +1,15 @@
+
+config globals 'globals'
+	option enabled '0'
+	option nfs_v3 '1'
+	option nfs_v4 '1'
+	option threads '16'
+	option port '2049'
+	option udp '0'
+	option tcp '1'
+	option log_level 'notice'
+
+config share
+	option path '/mnt/sda1'
+	option clients '*'
+	option options 'rw,sync,no_subtree_check'

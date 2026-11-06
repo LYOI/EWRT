@@ -1,0 +1,106 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:18
+msgid "NFS Shares"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:18
+msgid "Kernel-level NFS file sharing configuration. Allows sharing directories over the network to Linux/Unix clients."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:20
+msgid "General Settings"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:23
+msgid "Advanced Settings"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:25
+msgid "Enable NFS server"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:25
+msgid "Global switch to enable or disable the NFS server service."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:28
+msgid "Enable NFSv3"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:28
+msgid "Enable support for NFS version 3. Recommended for compatibility with older clients."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:32
+msgid "Enable NFSv4"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:32
+msgid "Enable support for NFS version 4. Provides better security and performance on modern networks."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:36
+msgid "Number of threads"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:36
+msgid "The number of worker threads to start. Higher values can improve performance under heavy load. Default is 16."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:41
+msgid "Port"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:41
+msgid "The port number the NFS server will listen on. Default is 2049."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:46
+msgid "Enable TCP"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:46
+msgid "Allow clients to connect using the TCP protocol. Recommended for reliability."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:50
+msgid "Enable UDP"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:50
+msgid "Allow clients to connect using the UDP protocol. Use only if required by legacy clients."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:55
+msgid "Shared Directories"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:56
+msgid "List of directories to be shared via NFS. Each entry defines a path and the clients allowed to access it."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:60
+msgid "Path"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:60
+msgid "The absolute path to the directory on this system that you wish to share."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:67
+msgid "Allowed Clients"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:67
+msgid "Specify which clients can access this share. Can be a single IP, a subnet (e.g., 192.168.1.0/24), or \"*\" for all."
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:71
+msgid "NFS Options"
+msgstr ""
+
+#: applications/luci-app-nfs/htdocs/luci-static/resources/view/nfs.js:71
+msgid "Comma-separated list of export options. Common options: rw (read-write), sync (immediate writes), no_subtree_check (improve performance), no_root_squash (trust root user)."
+msgstr ""

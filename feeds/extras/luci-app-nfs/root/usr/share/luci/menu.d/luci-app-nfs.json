@@ -1,0 +1,13 @@
+{
+	"admin/services/nfs": {
+		"title": "NFS Shares",
+		"action": {
+			"type": "view",
+			"path": "nfs"
+		},
+		"depends": {
+			"acl": [ "luci-app-nfs" ],
+			"uci": { "nfs": true }
+		}
+	}
+}
