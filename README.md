@@ -87,7 +87,7 @@ CH340 适配器是 3.3V，接线要小心：
 | `profiles/jdcloud_er2.yml` | 最小包集 + 第三方 feed 声明 |
 | `patches-25.12/` | 对 OpenWrt 树的补丁（含 fstools rootfs_data 相关） |
 | `feeds/extras/` | 本地 feed（主题、adguardhome、er2-vk-apps 等） |
-| `docs/` | 排查记录与方法论文档 |
+| `docs/` | 排查记录与方法论文档；`WRITING-RULES.md` 是结论/文档的写法规范 |
 | `kernel-debug/` | 带诊断打印的内核文件（排查 NVMe 用，非默认编译路径） |
 
 ## 致谢与许可
