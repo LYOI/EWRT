@@ -1,0 +1,59 @@
+# 版本记录
+
+## 2026.11.07
+
+首个可日常使用的定版。**不含任何调试打印**，只保留功能修复。
+
+| 镜像 | 大小 | md5 |
+|---|---|---|
+| `EWRT-ER2-20261107-release-factory.bin` | 100,663,300 | `8da8b1162f44faab453ba512109506d7` |
+| `EWRT-ER2-20261107-release-sysupgrade.bin` | 96,993,575 | `c83765099ff603e00805c46c55a756bf` |
+
+> 内核改动只走 factory.bin（sysupgrade 只写 rootfs，不更新 HLOS 里的内核）。
+
+### 内容
+
+- **f2fs overlay 修复**：镜像中含 `f2fs-tools` 时，fstools 的 `use_f2fs()` 会走 f2fs，
+  必须同时编入 `kmod-fs-f2fs`，否则 `mount -t f2fs` 报 `No such device`、刷机后不进系统。
+  这是此前 "64MB 以上镜像起不来" 的真实原因，与镜像体积无关
+- **rootfs_data 在 p22 尾部**：f2fs，1.9G，偏移按 squashfs 实际大小 + 64MiB 保留区计算
+- **应用全部编入 squashfs**：adguardhome、qbittorrent（含 qt6/rblibtorrent）、lucky、
+  luci-app-openclash，加上 partexp / samba4 / gecoosac / wolultra 与 6 个 vendored 小应用
+- **pciutils** 与 **`CONFIG_KERNEL_DEVMEM`** 打开（排查用）
+- **hostname 固定为 EWRT**：`feeds/qca-wifi-7/ipq53xx/base-files/etc/uci-defaults/98-er2-hostname`，
+  首次启动写入 `system.@system[0].hostname`
+- **分区布局**（本轮调整）：`p24` = swap 1GiB，`p25` = storage 54.1GiB（ext4，`LABEL=storage`）
+
+### 实测状态（2026-11-06/07）
+
+| 项 | 状态 | 证据 |
+|---|---|---|
+| 启动 | 通过 | 串口正常走到 `br-lan` forwarding，SSH 上线 |
+| overlay | 通过 | `/dev/loop0 ... type f2fs`；重启后 `/etc` 写入的标记文件仍在 |
+| hostname | 通过（运行态） | 重启后 `cat /proc/sys/kernel/hostname` = `EWRT` |
+| storage / swap | 通过 | `/mnt/storage` 52.9G 自动挂载；swap 1048572 KB 自动启用 |
+| SFP 光口 | 通过 | `port2 sfp link up`、`eth0 speed 2500` |
+| NVMe | **不识别** | LTSSM 停 0x3，见 `docs/er2-nvme-investigation.md` |
+| 刷机后 hostname 自动设置 | 未实测 | 脚本已进镜像，但本轮未在"刷机后首次启动"上验证 |
+
+### 已知问题
+
+- M.2 NVMe 不识别，排查记录见 `docs/er2-nvme-investigation.md`
+- 光口↔电口跨口转发未复测（详见 README 对应条目）
+
+### 刷机后需手动补的一步
+
+`fstab` 在 factory/sysupgrade 后会被重置，需要恢复 storage 与 swap（`anon_mount` 要关，
+否则 blockd 会挂到 `/mnt/mmcblk0p25` 而不是 `/mnt/storage`）：
+
+```sh
+uci set fstab.@global[0].anon_mount='0'
+uci add fstab swap
+uci set fstab.@swap[-1].device='/dev/mmcblk0p24'
+uci set fstab.@swap[-1].enabled='1'
+uci add fstab mount
+uci set fstab.@mount[-1].target='/mnt/storage'
+uci set fstab.@mount[-1].uuid='4894d600-73a2-4ded-a892-e3ef5c7912b5'
+uci set fstab.@mount[-1].enabled='1'
+uci commit fstab && block umount && block mount
+```
