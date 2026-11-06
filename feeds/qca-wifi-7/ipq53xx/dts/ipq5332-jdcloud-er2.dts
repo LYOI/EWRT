@@ -597,17 +597,30 @@
 
 /* M.2 slot: 2 lane PCIe1, PERST on GPIO47 */
 &pcie1_phy_x2 {
+	/* qti,phy-mux-regs 用 dtsi 里的厂商默认值（TCSR 2LANE 模式），不要删 */
 	status = "okay";
 };
 
 &pcie1 {
+	/*
+	 * gpio46 是全芯片唯一带 pcie1_clk 功能的引脚，之前实测它停在 func0，
+	 * 等于 M.2 槽的 100MHz refclk 没输出，端点不发送 -> LTSSM 卡在
+	 * 0x3 POLLING_COMPLIANCE。这里显式复用成时钟输出。
+	 * gpio47 = PERST（由驱动用 perst-gpios 控制），gpio48 = WAKE#。
+	 * SFP 不经过任何 GPIO，复用 gpio46 不影响光口识别。
+	 */
 	pinctrl-0 = <&pcie1_default_state>;
 	pinctrl-names = "default";
 	perst-gpios = <&tlmm 47 GPIO_ACTIVE_LOW>;
 	status = "okay";
 };
 
-/* The other two PCIe controllers are not wired up on this board */
+/*
+ * PCIe0 (1 lane, PERST on GPIO38) 保持关闭。
+ * 实测打开后 probe 直接失败（Failed to find NVMEM device），连 host bridge
+ * 都建不起来；而开荒固件把盘枚举在 0001:01:00.0，也就是 pcie1 上，
+ * 说明 M.2 槽确实接在 pcie1，这条不用管。
+ */
 &pcie0 {
 	status = "disabled";
 };
