@@ -1,0 +1,148 @@
+From c795fc9983bf14d2597d1b5165f22df06ed9d5dd Mon Sep 17 00:00:00 2001
+From: LYOI <lyoi@users.noreply.github.com>
+Date: Fri, 6 Nov 2026 17:04:09 +0800
+Subject: [PATCH] =?UTF-8?q?fstools:=20=E5=8F=AA=E5=9C=A8=E6=9C=AC=E9=95=9C?=
+ =?UTF-8?q?=E5=83=8F=E7=9C=9F=E7=9A=84=E5=B8=A6=20mkfs.f2fs=20=E6=97=B6?=
+ =?UTF-8?q?=E9=80=89=20f2fs=EF=BC=8C=E5=B9=B6=E7=BB=99=20rootfs=5Fdata=20?=
+ =?UTF-8?q?=E9=A2=84=E7=95=99=2064MiB?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ ...ailable-formatter-and-keep-a-reserve.patch | 123 ++++++++++++++++++
+ 1 file changed, 123 insertions(+)
+ create mode 100644 package/system/fstools/patches/0002-rootfs_data-pick-an-available-formatter-and-keep-a-reserve.patch
+
+diff --git a/package/system/fstools/patches/0002-rootfs_data-pick-an-available-formatter-and-keep-a-reserve.patch b/package/system/fstools/patches/0002-rootfs_data-pick-an-available-formatter-and-keep-a-reserve.patch
+new file mode 100644
+index 0000000000..58d9e3c46f
+--- /dev/null
++++ b/package/system/fstools/patches/0002-rootfs_data-pick-an-available-formatter-and-keep-a-reserve.patch
+@@ -0,0 +1,123 @@
++diff --git a/libfstools/common.c b/libfstools/common.c
++index a948321..c303cae 100644
++--- a/libfstools/common.c
+++++ b/libfstools/common.c
++@@ -126,22 +126,57 @@ int block_file_identify(FILE *f, uint64_t offset)
++ 	return FS_NONE;
++ }
++ 
+++static bool f2fs_formatter_present(void)
+++{
+++	static int cached = -1;
+++	const char *paths[] = { "/sbin/mkfs.f2fs", "/usr/sbin/mkfs.f2fs" };
+++	unsigned int i;
+++
+++	if (cached >= 0)
+++		return cached;
+++
+++	cached = 0;
+++	for (i = 0; i < ARRAY_SIZE(paths); i++)
+++		if (access(paths[i], X_OK) == 0) {
+++			cached = 1;
+++			break;
+++		}
+++
+++	return cached;
+++}
+++
++ static bool use_f2fs(struct volume *v, uint64_t offset, const char *bdev)
++ {
++ 	char typeparam[BUFLEN];
++ 	uint64_t size = 0;
+++	bool force_f2fs = false;
++ 	bool ret = false;
++ 	int fd;
++ 
++ 	if (get_var_from_file("/proc/cmdline", "fstools_overlay_fstype", typeparam, sizeof(typeparam))) {
++ 		if (!strcmp("f2fs", typeparam))
++-			return true;
+++			force_f2fs = true;
++ 		else if (!strcmp("ext4", typeparam))
++ 			return false;
++ 		else if (strcmp("auto", typeparam))
++ 			ULOG_ERR("unsupported overlay filesystem type: %s\n", typeparam);
++ 	}
++ 
+++	/*
+++	 * Never ask for a formatter this image does not ship. Without mkfs.f2fs the
+++	 * format step fails, rootfs_data stays unformatted and fstools quietly drops
+++	 * back to a tmpfs overlay, so every boot behaves like the first one and
+++	 * nothing installed by the user survives.
+++	 */
+++	if (!f2fs_formatter_present()) {
+++		if (force_f2fs)
+++			ULOG_WARN("fstools_overlay_fstype=f2fs but mkfs.f2fs is missing, using ext4\n");
+++		return false;
+++	}
+++
+++	if (force_f2fs)
+++		return true;
+++
++ 	fd = open(bdev, O_RDONLY);
++ 	if (fd < 0)
++ 		return false;
++diff --git a/libfstools/rootdisk.c b/libfstools/rootdisk.c
++index c54ea2a..c195356 100644
++--- a/libfstools/rootdisk.c
+++++ b/libfstools/rootdisk.c
++@@ -19,6 +19,15 @@
++ #define EROFS_MAGIC		0xE0F5E1E2
++ #define ROOTDEV_OVERLAY_ALIGN	(64ULL * 1024ULL)
++ 
+++/*
+++ * Rootfs images are written by the bootloader with exactly the image length,
+++ * so an image that grows lands on top of whatever sits right behind bytes_used.
+++ * Keep a fixed reserve in front of rootfs_data on partitions that can afford
+++ * it, so reflashing a somewhat bigger image does not destroy the overlay.
+++ */
+++#define ROOTDEV_OVERLAY_RESERVE	(64ULL * 1024ULL * 1024ULL)
+++#define ROOTDEV_OVERLAY_MINSIZE	(512ULL * 1024ULL * 1024ULL)
+++
++ struct squashfs_super_block {
++ 	uint32_t s_magic;
++ 	uint32_t pad0[9];
++@@ -102,6 +111,23 @@ static int get_squashfs(struct squashfs_super_block *sb)
++ 	return 0;
++ }
++ 
+++static uint64_t rootdev_size(void)
+++{
+++	uint64_t size = 0;
+++	FILE *f;
+++
+++	f = fopen(rootdev, "r");
+++	if (!f)
+++		return 0;
+++
+++	if (fseeko(f, 0, SEEK_END) == 0)
+++		size = ftello(f);
+++
+++	fclose(f);
+++
+++	return size;
+++}
+++
++ static int check_squashfs(uint64_t *offset)
++ {
++ 	const char *s_magic = SQUASHFS_MAGIC;
++@@ -188,10 +214,13 @@ static struct volume *rootdisk_volume_find(char *name)
++ 	p->v.drv = &rootdisk_driver;
++ 	p->v.name = "rootfs_data";
++ 
++-	p->offset = offset;
++-	p->offset = ((p->offset + (ROOTDEV_OVERLAY_ALIGN - 1)) &
+++	p->offset = ((offset + (ROOTDEV_OVERLAY_ALIGN - 1)) &
++ 		     ~(ROOTDEV_OVERLAY_ALIGN - 1));
++ 
+++	if (p->offset < ROOTDEV_OVERLAY_RESERVE &&
+++	    rootdev_size() > ROOTDEV_OVERLAY_RESERVE + ROOTDEV_OVERLAY_MINSIZE)
+++		p->offset = ROOTDEV_OVERLAY_RESERVE;
+++
++ 	return &p->v;
++ }
++ 
+-- 
+2.43.0
+
