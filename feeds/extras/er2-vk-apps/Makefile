@@ -20,6 +20,11 @@ PKG_LICENSE:=GPL-2.0
 
 include $(INCLUDE_DIR)/package.mk
 
+# 纯文件安装包，没有编译步骤；缺这一段 make 会去找 .built 而失败。
+define Build/Compile
+	true
+endef
+
 define Package/er2-vk-apps/Default
   SECTION:=utils
   CATEGORY:=Utilities
