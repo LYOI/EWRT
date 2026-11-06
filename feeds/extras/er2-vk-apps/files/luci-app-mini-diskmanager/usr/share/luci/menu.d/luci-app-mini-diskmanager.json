@@ -1,0 +1,41 @@
+{
+	"admin/system/mini-diskmanager": {
+		"title": "Disk Manager",
+		"order": 60,
+		"action": {
+			"type": "firstchild"
+		},
+		"depends": {
+			"acl": [ "luci-app-mini-diskmanager" ],
+			"uci": { "fstab": true }
+		}
+	},
+	
+	"admin/system/mini-diskmanager/minidiskmanager": {
+		"title": "Disk Manager",
+		"order": 10,
+		"action": {
+			"type": "view",
+			"path": "minidiskmanager"
+		}
+	},
+	
+	"admin/system/mini-diskmanager/mdmconfig": {
+		"title": "Configuration",
+		"order": 20,
+		"action": {
+			"type": "view",
+			"path": "mdmconfig"
+		}
+	},
+	
+	"admin/system/mini-diskmanager/mdmsupport": {
+		"title": "Package support",
+		"order": 30,
+		"action": {
+			"type": "view",
+			"path": "mdmsupport"
+		}
+	}
+	
+}

@@ -16,6 +16,24 @@ feeds:
   - name: bandixcore
     uri: https://github.com/timsaya/openwrt-bandix.git
     branch: main
+
+  # 以下是应用层需要的第三方 feed。defconfig 里一直有 CONFIG_FEED_<name>=y，
+  # 但 profile 没声明，干净构建会静默丢包（2026-11-06 对齐设备实装时补上）。
+  - name: openclash
+    uri: https://github.com/vernesong/OpenClash.git
+    branch: master
+  - name: viking
+    uri: https://github.com/VIKINGYFY/packages.git
+    branch: main
+  - name: lucky
+    uri: https://github.com/gdy666/luci-app-lucky.git
+    branch: main
+  - name: partexp
+    uri: https://github.com/sirpdboy/luci-app-partexp.git
+    branch: main
+  - name: qbt
+    uri: https://github.com/sbwml/luci-app-qbittorrent.git
+    branch: master
     
 include:
   - webui
