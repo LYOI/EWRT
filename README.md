@@ -80,83 +80,44 @@ curl -X POST -F auto_reboot=true http://192.168.1.1/result
 
 ---
 
-## 三、SFP 双速率兼容
+## 三、光口优化（SFP 2.5G / 10G）
 
-### 现象
+上游代码在**热复位**后 SFP 口不建链：冷启动能起来，`reboot` 之后一直
+`carrier=0 / speed=65535`，插拔模块也不恢复。EWRT 在 SSDK 里加了一个
+per-port 模块管理器把它解决掉——同一份固件、不改任何配置，2.5G 猫棒与
+10G 光模块都可插可换。
 
-上游代码在**热复位**后 SFP 口不建链：冷启动能起来，
-但 `reboot` 之后就一直是 `carrier=0 / speed=65535`，插拔模块也不恢复，
-等多久都不会自己好。
+| 场景 | 结果 |
+|---|---|
+| 断电冷启动 | 21~23s 上链 |
+| 软重启 | 2.5G 39~41s / 10G 24~25s |
+| 热插拔、模块互插 | 可用（2.5G 换档约 85s，10G 6~9s） |
+| 静置 | 无 flapping，`crc_err=0` |
 
-### 根因
+机制三条：
 
-| # | 根因 | 说明 |
-|---|---|---|
-| R1 | `TX_DISABLE` 兜底恒失败 | ER2 的 DTS `port@1` 只有 `media-type="sfp"`，**没有 `sfp_tx_dis_pin`**，`sfp_phy_tx_dis_status_set()` 恒返回 `-19`（SW_NOT_SUPPORTED），恢复路径在第一步就 `return`，PCS 从未被重配 |
-| R2 | 同模式重复 apply 是空操作 | 失败态下 `dt=23 cur=23 calc=23 rv=0` 但 `link=0`，再 apply 一次 23 不会产生任何硬件动作，必须**换一个模式再换回来**才能强制 PCS 重新编码 |
-| R3 | DEBUG 日志打乱节拍 | 3 级 `printk` 在 poll 线程里打印，实测让模式在 23/27 之间每秒翻转 124 次，自动协商永远起不来 |
+1. **管理器挂在 SSDK 周期任务里**（`mac_sw_sync_task`，约 1s 一个 tick），
+   纯内核上下文，不依赖任何用户态脚本——开机、重启、sysupgrade 后行为一致。
+   每个 tick 读模块在位状态，**插入沿立刻强制 MAC/PCS 重初始化**，
+   把 2.5G 棒子 83 秒的自动协商爬升压到 1~3 秒。
+2. **卡住时模拟拔插**：ER2 的笼子没有 `sfp_tx_dis_pin`，`TX_DISABLE` 脉冲恒返回
+   `-19` 走不通，于是改成**接口模式弹跳**（2.5G `23→4→23`、10G `27→4→27`）。
+   原理是同档位重复 apply 是空操作，必须换档才能逼 PCS 重新编码。
+   触发阈值 22 / 30 / 60 tick，最多 3 轮。
+3. **2.5G 候选档做滞回**（30 次轮询），避免每轮 re-init PCS 把自动协商饿死。
 
-### 修复
-
-`0901-sfp-module-manager.patch` 增加一个 per-port 管理线程：端口 down 满
-**12 / 30 / 60 tick** 时执行一次恢复，内容是 `TX_DISABLE` 保持（ER2 上走 rv=-19 分支）
-加**接口模式弹跳**：
-
-```
-2.5G 模块:  23 -> 4 -> 23      (2500BASE-X -> SGMII_BASET -> 2500BASE-X)
-10G  模块:  27 -> 4 -> 27      (10GBASE-R  -> SGMII_BASET -> 10GBASE-R)
-```
-
-中间那一档 `4`（SGMII_BASET）在链路里只存活约 2 秒，作用是逼 PCS 真正重新初始化；
-弹跳完成后模块约 1 秒重新训练。目标档**跟随实时读到的模块类型**，不是写死的。
-
-`0902-sfp-25g-mode-hysteresis.patch` 让 2.5G 的候选档保持 30 次轮询：
-原版在两个候选之间每轮切换，等于不停 re-init PCS，把自动协商饿死。
-
-原始日志示例（2.5G 软重启）：
-
-```
-[ 31.67] port2 still down after 12 ticks, pulse 1/3
-[ 31.68] port2 no tx_disable (rv=-19): mode bounce 23->4->23
-[ 33.89] port2 sfp recovery attempt done (pulse=1)
-[ 38.07] port2 link up: 15 tick(s), 1 pulse(s)
-[ 39.03] PHY Link up speed: 2500
-```
-
-### 实测（`loglevel=2`，值为 dmesg 时间戳）
-
-| 场景 | 2.5G 猫棒 | 10G 光模块 |
-|---|---|---|
-| 断电冷启动 | 23.2s | 21.19s |
-| 软重启 | 39.03 / 40.4 / 41.8s | 24.60 / 24.64s |
-| 热插拔 | 85.6s（78 tick，2 pulse） | 6.0 / 9.0s（0 pulse） |
-| 静置 | 13 分钟，`carrier_changes` 冻结 | 10 分钟 219 采样点，`crc_err=0` |
-| 模块互切 | 10G→2.5 = 85.6s | 2.5→10G = 6~9s，cchg 每轮只 +1 |
-| 恢复中被拔插 | — | 20.96s 自行恢复，不靠重启 |
-
-10G 冷启动比软重启快，是因为冷启动时 PCS 没有热复位残留态，插入沿的
-`force re-init` 一次就够，完全不需要进恢复流程。
-
-### 反向验证（ABAB）
-
-只测「打了补丁能过」不够，可能是环境变好。把 `0901`/`0902` 撤掉重编、刷回同一台机器：
-
-| 固件 | 软重启表现 | dmesg 证据 |
-|---|---|---|
-| 上游基线（无补丁） | **303s 仍 down，永不自愈** | 只有 `sfp_phy_init`，零 pulse |
-| EWRT | **39.03s 起链，1 次 pulse** | `mode bounce 23->4->23` |
-
-同一台机、同一支模块、同一根光纤，同一时段内前后对照 → 恢复能力确实来自模式弹跳。
-
-### 运行期调试旋钮
-
-只用于 bring-up，默认值即生产配置：
+运行期调试旋钮（只用于 bring-up，默认值即生产配置）：
 
 | 旋钮 | 作用 | 备注 |
 |---|---|---|
 | `sfp_dbg` | 打开一行诊断打印 | 默认 0 |
 | `sfp_force_mode` | 把接口模式记录改成指定值 | `23`=2.5G、`27`=10G、`4`=SGMII_BASET |
-| `sfp_kick` | 立即应用一次 `sfp_force_mode` | **只改 SSDK 内部记录，不改已 link 端口的硬件状态**，不要拿它当"制造失败态"的手段 |
+| `sfp_kick` | 立即应用一次 `sfp_force_mode` | 只改 SSDK 内部记录，不改已 link 端口的硬件状态 |
+
+完整的实测数据、反向验证（ABAB）、原始日志见
+[`docs/sfp-bench-archive.md`](docs/sfp-bench-archive.md)；
+自报 1G 的猫棒（华为 MA5671A 类）兼容方案见
+[`docs/sfp-onu-1g-modules.md`](docs/sfp-onu-1g-modules.md)。
 
 ---
 
