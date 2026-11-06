@@ -28,13 +28,13 @@
 
 | 项 | 状态 | 证据 |
 |---|---|---|
-| 启动 | 通过 | 串口正常走到 `br-lan` forwarding，SSH 上线 |
+| 启动 | 通过 | factory 刷写后 `LINK_UP speed=2500 uptime=55s`，427 包，SSH 上线 |
 | overlay | 通过 | `/dev/loop0 ... type f2fs`；重启后 `/etc` 写入的标记文件仍在 |
 | hostname | 通过（运行态） | 重启后 `cat /proc/sys/kernel/hostname` = `EWRT` |
 | storage / swap | 通过 | `/mnt/storage` 52.9G 自动挂载；swap 1048572 KB 自动启用 |
 | SFP 光口 | 通过 | `port2 sfp link up`、`eth0 speed 2500` |
 | NVMe | **不识别** | LTSSM 停 0x3，见 `docs/er2-nvme-investigation.md` |
-| 刷机后 hostname 自动设置 | 未实测 | 脚本已进镜像，但本轮未在"刷机后首次启动"上验证 |
+| 刷机后 hostname 自动设置 | 通过 | factory 刷写后首启即 `hostname=EWRT`（2026-11-07 01:49 实机验证） |
 
 ### 已知问题
 
