@@ -67,7 +67,11 @@ CH340 适配器是 3.3V，接线要小心：
   剩余差异在 5.4 厂商驱动写而 6.6 未写的寄存器层，详见提交 `04159dff`
 - **光口↔电口数据面未打通**：link 层双速率可用，但上游 `qcom_ppe` 对
   「PPE 直连口 host-bound RX」有未完成的 gap，跨口转发仍需软件路径
-- `pcie0`（1 lane，GPIO38）未接设备，打开会让 probe 报 `Failed to find NVMEM device`
+- `pcie0`（1 lane，GPIO38）未接设备。实测打开后 probe 起不来：dmesg 反复刷
+  `Early Cal not supported`，始终没有打出 `PCI host bridge to bus 0000:00`。
+  M.2 槽在 pcie1 上（开荒固件枚举到 `0001:01:00.0`），此条保持 disabled
+  > 顺带更正：串口里那条 `Failed to find NVMEM device` 不是 PCIe 的报错，
+  > 是 `fw_printenv` 找不到 u-boot env 设备时打的，与本节无关
 
 ## 目录
 
