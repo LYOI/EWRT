@@ -104,9 +104,19 @@ qcom-pcie 20000000.pcie: Phy link never came up. PARF_LTSSM: 0x100
    我们这套只用了 `PARF_LTSSM` 与中断）——这是当前最可疑的缺口
 3. **硬件验证**（软件已到头）：示波器看 M.2 槽 100MHz 差分参考时钟是否真的存在、
    PERST 波形时序；换一张已知良好的盘试
-4. **找 QSDK 12.x（6.6 内核）的 ipq53xx 内核源码**。已确认公开渠道拿不到：
+4. **刷同代第三方固件做 A/B**（比继续猜寄存器更省事）：
+   - `VIKINGYFY` 那份是 **6.18.55**（主线系，`compatible = "qcom,pcie-ipq5332",
+     "qcom,pcie-ipq9574"`，`num-lanes = <2>`，**不给 `perst-gpios`**）——最干净的
+     同代参照，优先试
+   - `jiang` 那份是 **6.6.47**（同代，DT 写法与我们一致，带 `perst-gpios`）
+   - 两份都是 6.x，能区分"主线路径能不能跑"和"厂商私有初始化是否有害"
+5. **找 QSDK 12.x（6.6 内核）的 ipq53xx 内核源码**。已确认公开渠道拿不到：
    - `github.com/zhoufuli/qsdk12.5`：构建树镜像，`qca/src`、`target/linux` 均为空
    - CodeLinaro `NHSS.QSDK.12.0.*`：4.4.60 老线，非 AP 内核
+
+## 八点五、其他归档线索
+
+SSDK 的 C45 / 10G 光口线索见 `docs/archived-leads.md`（已决定暂不采用，留档）。
 
 ## 九、复现与工具
 
