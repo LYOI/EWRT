@@ -40,6 +40,8 @@
 
 - M.2 NVMe 不识别，排查记录见 `docs/er2-nvme-investigation.md`
 - 光口↔电口跨口转发未复测（详见 README 对应条目）
+- 10G 光模块未验证；社区有一条 SSDK MDIO C45 适配的线索，已归档在
+  `docs/archived-sfp-c45-lead.md`，等有 10G 模块再动
 
 ### 刷机后需手动补的一步
 
