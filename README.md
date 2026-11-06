@@ -1,323 +1,81 @@
-# EWRT — JDCloud ER2 (IPQ5332) OpenWrt 固件
+# EWRT — 京东云 ER2（IPQ5332）OpenWrt 固件
 
-EWRT 是一个独立维护的 OpenWrt 固件项目，目前只服务一个目标：京东云 ER2。
-核心是 **SFP 光口的 2.5G / 10G 双速率兼容**——同一份固件、不改任何配置，
-插 2.5G 猫棒或 10G 光模块都能起链，冷启动、软重启、热插拔、模块互换全部可用。
-
-> 本项目独立维护，不是上游某个分支的镜像：以
-> **[Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap)**
-> （TIP OpenWiFi AP NOS，BSD-3-Clause）为上游主线，ER2 的板级支持起步于
-> **[zt406600/wlan-ap](https://github.com/zt406600/wlan-ap)** 的 `er2` 分支。
-> 这条线没有 ER2 目标，两份上游的工作是前提，详见[致谢](#九致谢与许可)。
-> 上游的通用文档（其他目标 profile、uCentral、Docker 构建）原样保存在 `OPENWIFI_README.md`。
+只服务一个目标：京东云太乙 Plus ER2。以
+[Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap)（TIP OpenWiFi AP NOS，
+BSD-3-Clause）为上游主线，ER2 板级支持起步于
+[zt406600/wlan-ap](https://github.com/zt406600/wlan-ap) 的 `er2` 分支——上游本身没有 ER2 目标。
 
 ```
-硬件   IPQ5332  ·  SFP 口 eth0 (dp1)  ·  2.5G 电口 eth1 (dp2)
-管理   192.168.1.1  ·  root 空密码  ·  LuCI 已装
-固件   squashfs + tmpfs overlay（/etc 改动不持久）
+SoC     Qualcomm IPQ5332（4×A53 + NSS/PPE 加速）
+网口    eth0 = SFP 光口（dp1）   eth1 = 2.5G 电口（dp2）
+无线    无（本板不启用 WiFi）
+管理    192.168.1.1（SSH / LuCI，用户 root）
+存储    eMMC 64G：rootfs 2G + swap 1G + storage 54G
 ```
 
----
+## 这版有什么
 
-## 一、上游与来源
+- **SFP 光口自动识别**：2.5G 猫棒与 10G 模块插入后自动起链，实测 `eth0 speed 2500`；
+  掉链有 pulse 恢复流程，全程有 `adpt_hppe_sfp_*` 日志可查
+- **持久 overlay**：rootfs_data 在 p22 尾部，f2fs，1.9G，重启不丢；偏移按 squashfs
+  实际大小 + 64MiB 保留区自动计算，刷不超 64MB 增量的新镜像不会覆盖它
+- **应用齐全（编进 squashfs，不需要后装）**：adguardhome、qbittorrent（含 qt6、
+  rblibtorrent）、lucky、openclash、partexp、samba4、gecoosac、wolultra，
+  外加 6 个从 vikinify 提取的小应用（automount / cpufreq / shellsync /
+  autoreboot / mini-diskmanager / router-tool）
+- **镜像约 100MB**，uboot 网页上传直刷即可
 
-| 项 | 内容 |
-|---|---|
-| 上游主线 | [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) — TIP OpenWiFi 的 AP NOS |
-| 上游基线 | `a85083bc`（2026-10-28，上游 `main`） |
-| ER2 板级来源 | [zt406600/wlan-ap](https://github.com/zt406600/wlan-ap) `er2` 分支（上游本身没有 ER2 目标） |
-| OpenWrt 树 | `openwrt-25.12` @ `f0a60eee`（v25.12.5），叠加 `patches-25.12/` 共 157 个补丁 |
-| 板级代码 | `feeds/qca-wifi-7/`（QCA NSS / PPE / ECM / SSDK、ipq53xx target、ER2 DTS） |
-| 许可 | BSD-3-Clause，Copyright (c) 2024 Telecom Infra Project（见 `LICENSE`） |
-
-### 与上游的差异
-
-对照基准是 `Telecominfraproject/wlan-ap` 的 `main`（`a85083bc`）：
-
-| 维度 | 上游 `wlan-ap` | EWRT |
-|---|---|---|
-| 目标 | 通用 AP NOS，约 70 个 board profile | 只维护 ER2 |
-| ER2 target | **无** | 有（起步自 zt `er2` 分支，包集合另调 aurora 主题、zh_Hans） |
-| SSDK 补丁 | `0001` / `0005` / `0006` | 追加 `0007`（10G SerDes MISC2）、`0901`（模式弹跳恢复）、`0902`（2.5G 候选档保持） |
-| 内核载荷 | `kernel-bin \| gzip \| fit gzip` | `kernel-bin \| lzma \| fit lzma`（给 vendor blobs 腾空间） |
-| 热复位后 SFP | 不建链，无法自行恢复 | 12/30/60 tick 重试 + `23↔4` / `27↔4` 模式弹跳 |
-| 默认主题 | argon（vendored v3.1.2） | 增加 aurora 主题并设为默认，含简体中文 LuCI |
-| 刷机 | `sysupgrade` | uboot web（ER2 的 `platform.sh` 没有该分支，见[已知限制](#六已知限制)） |
-| 文档 | 通用 README | 本 README，上游原文见 `OPENWIFI_README.md` |
-
-### 跟上游同步
+## 构建
 
 ```bash
-./setup.py --rebase     # 把 OpenWrt 树重置到 config.yml 里的 revision，再按序重打补丁
+git clone https://github.com/LYOI/EWRT.git && cd EWRT
+./build.sh                 # 自动拉 OpenWrt 树、打补丁、生成 .config、编译
 ```
 
-`patches-25.12/` 的 `01xx` 段**留给上游**（每次同步都会在末尾追加打包升级补丁），
-本仓库自有补丁一律从 `0200` 起，这样同步上游时不会产生编号冲突。
+产物在 `openwrt/bin/targets/ipq53xx/generic/`：
 
----
+- `*squashfs-factory.bin` —— uboot 网页刷写用（含内核）
+- `*squashfs-sysupgrade.bin` —— 只换 rootfs，**不含内核**
 
-## 二、快速开始
+> 注意：内核改动的验证必须走 factory.bin。sysupgrade 只写 p22 rootfs，
+> HLOS 分区里的内核不会更新。
 
-```bash
-# 1. 取源码
-git clone https://github.com/LYOI/EWRT.git
-cd EWRT
-
-# 2. 构建（自动拉 OpenWrt 树、打补丁、生成 .config）
-./build.sh jdcloud_er2
-
-# 3. 产物
-ls openwrt/bin/targets/ipq53xx/generic/openwrt-ipq53xx-jdcloud_er2-squashfs-factory.bin
-```
-
-刷机走 **uboot web**，不要用 `sysupgrade`（原因见[已知限制](#六已知限制)）：
-
-```bash
-# 断电 → 按住 reset 上电 → 进 uboot web（http://192.168.1.1/）
-curl -F firmware=@openwrt-ipq53xx-jdcloud_er2-squashfs-factory.bin http://192.168.1.1/upload
-curl -X POST -F auto_reboot=true http://192.168.1.1/result
-```
-
----
-
-## 三、光口优化（SFP 2.5G / 10G）
-
-上游代码在**热复位**后 SFP 口不建链：冷启动能起来，`reboot` 之后一直
-`carrier=0 / speed=65535`，插拔模块也不恢复。EWRT 在 SSDK 里加了一个
-per-port 模块管理器把它解决掉——同一份固件、不改任何配置，2.5G 猫棒与
-10G 光模块都可插可换。
-
-| 场景 | 结果 |
-|---|---|
-| 断电冷启动 | 21~23s 上链 |
-| 软重启 | 2.5G 39~41s / 10G 24~25s |
-| 热插拔、模块互插 | 可用（2.5G 换档约 85s，10G 6~9s） |
-| 静置 | 无 flapping，`crc_err=0` |
-
-机制三条：
-
-1. **管理器挂在 SSDK 周期任务里**（`mac_sw_sync_task`，约 1s 一个 tick），
-   纯内核上下文，不依赖任何用户态脚本——开机、重启、sysupgrade 后行为一致。
-   每个 tick 读模块在位状态，**插入沿立刻强制 MAC/PCS 重初始化**，
-   把 2.5G 棒子 83 秒的自动协商爬升压到 1~3 秒。
-2. **卡住时模拟拔插**：ER2 的笼子没有 `sfp_tx_dis_pin`，`TX_DISABLE` 脉冲恒返回
-   `-19` 走不通，于是改成**接口模式弹跳**（2.5G `23→4→23`、10G `27→4→27`）。
-   原理是同档位重复 apply 是空操作，必须换档才能逼 PCS 重新编码。
-   触发阈值 22 / 30 / 60 tick，最多 3 轮。
-3. **2.5G 候选档做滞回**（30 次轮询），避免每轮 re-init PCS 把自动协商饿死。
-
-运行期调试旋钮（只用于 bring-up，默认值即生产配置）：
-
-| 旋钮 | 作用 | 备注 |
-|---|---|---|
-| `sfp_dbg` | 打开一行诊断打印 | 默认 0 |
-| `sfp_force_mode` | 把接口模式记录改成指定值 | `23`=2.5G、`27`=10G、`4`=SGMII_BASET |
-| `sfp_kick` | 立即应用一次 `sfp_force_mode` | 只改 SSDK 内部记录，不改已 link 端口的硬件状态 |
-
-完整的实测数据、反向验证（ABAB）、原始日志见
-[`docs/sfp-bench-archive.md`](docs/sfp-bench-archive.md)；
-自报 1G 的猫棒（华为 MA5671A 类）兼容方案见
-[`docs/sfp-onu-1g-modules.md`](docs/sfp-onu-1g-modules.md)。
-
----
-
-## 四、构建
-
-本仓库有两条分支，分工固定：**`main` 是稳定版，`Base-test` 是试验场**。
-
-| 分支 | 定位 | 配置来源 | 包数 |
-|---|---|---|---|
-| `main` | **最全、最稳定**。功能齐全，只有实测过的改动才进得来 | `defconfig/jdc-er2.config`（手工维护） | 323 |
-| `Base-test` | **基础齐全 + 随时加东西**。换内核、换驱动、试补丁都在这里 | `profiles/jdcloud_er2.yml` → `gen_config.py` | 277 |
-
-两条线的流动方向是**单向**的：
-
-```
-Base-test  ← rebase main            承接 main 的稳定成果，不落后
-Base-test  → 手工择项 → main        先在 Base-test 上验证，稳定后决定加什么、去什么
-```
-
-Base-test 不是"残缺版"，它的底线是**基础功能一样不少**：板级、NSS/PPE/ECM/SSDK 驱动栈、
-全套排障工具（curl / ethtool-full / i2c-tools / tcpdump / iperf3 / conntrack / jq / htop /
-nvme-cli / smartmontools）、LuCI 全套（aurora 主题、软件包管理、防火墙、PPP/IPv6、中文）。
-差别只在于 main 还额外带一批应用（upnp、argon、ssl 证书链、额外的 nft/kmod 集合等）。
-
-Base-test 上允许做的事，`main` 上一律不做：
-
-- 换 Linux 内核版本 / 换 SSDK 分支，验证光口在新驱动下的行为
-- 大改 devicetree、改 PPE / ECM 参数
-- 加或删一整批软件包，看对起链时间和内存的影响
-
-验证稳了以后，把"要的"合并进 main、"不要的"留在 Base-test 或丢掉；main 始终只保留结论。
-
-### 方式 A：试验构建（`Base-test` 分支）
-
-```bash
-git checkout Base-test
-./scripts/check-config.sh            # profile 与 defconfig 是否一致
-
-cd openwrt
-rm -rf tmp
-./scripts/gen_config.py jdcloud_er2  # profile -> .config
-./scripts/feeds update -a
-./scripts/feeds install -a
-cd .. && ./setup.py --feed-patches
-
-cd openwrt
-cp ../defconfig/jdc-er2.config .config   # 用本分支存好的快照，保证可复现
-make defconfig
-make -j$(nproc) download V=s
-make -j$(nproc) V=s
-```
-
-`defconfig/jdc-er2.config` 在本分支上是 `gen_config.py` + `make defconfig` 的**真实产物**，
-不是手工堆的。改 profile 后必须重新生成一次快照再提交，否则两者会漂移。
-
-> ⚠️ `gen_config.py` 会按 profile 裁剪 `openwrt/package/feeds/`（1756 条 → 53 条）。
-> 切回 `main` 构建前**必须先跑 `./scripts/feeds install -a`**，否则 main 的 323 个包会
-> 静默掉 50 个，`make defconfig` 一声不响。
-
-### 方式 B：手动构建（`main` 分支）
-
-```bash
-sudo apt install build-essential libncurses5-dev gawk git libssl-dev gettext \
-  zlib1g-dev swig unzip time rsync python3 python3-setuptools python3-yaml
-
-./setup.py --setup                    # 首次；已存在 openwrt/ 时用 --rebase
-
-cd openwrt
-./scripts/gen_config.py jdcloud_er2   # 生成 feeds.conf
-./scripts/feeds update -a
-./scripts/feeds install -a
-cd .. && ./setup.py --feed-patches    # 套用 feeds-patches/<feed>/ 下的补丁
-
-cd openwrt
-cp ../defconfig/jdc-er2.config .config
-make defconfig
-make -j$(nproc) download V=s
-make -j$(nproc) V=s
-```
-
-> 两个方案不要混用：`./build.sh` 会用 `gen_config.py` 重新生成 `.config`，覆盖手工改动。
-
-国内网络下 `feeds update` / 部分包 Makefile 会访问 `github.com`、`codeload.github.com`，
-建议先设代理，或按需给 git 配镜像。
-
-### 不要做的三件事
-
-| 禁止 | 原因 |
-|---|---|
-| 启用 `patches-disabled/0008-...debug-log....disabled` | 它把 `ssdk_log_level` 从 2 抬到 3，冷启动从 19.99s 变成 282 秒一次 link 都没有；留在 `patches-disabled/` 只为复现该对照实验 |
-| 给 `ipq5332-jdcloud-er2.dts` 加 `sfp_rx_los_pin` / `sfp_tx_dis_pin` | 加上后 SSDK 从硬件 LOS 切到软件读 GPIO45，冷启动不建链；`bootargs-append` 保持只有 `clk_ignore_unused` |
-| 用 `sysupgrade` 刷机 | 见[已知限制](#六已知限制) |
-
-### 产物
-
-`openwrt/bin/targets/ipq53xx/generic/`：
-
-| 文件 | 用途 |
-|---|---|
-| `…-squashfs-factory.bin` | **刷机用**（uboot web 上传） |
-| `…-initramfs-kernel.bin` | 救援/救砖 |
-| `config.buildinfo`、`feeds.buildinfo`、`…manifest`、`sha256sums` | 构建记录 |
-
----
-
-## 五、刷机
-
-`/lib/upgrade/platform.sh` 的 `platform_do_upgrade` **没有 `jdcloud,er2` 分支**，
-`sysupgrade` 只会重启、不写盘（rootfs 是 squashfs + tmpfs overlay，`/etc` 改动不持久）。
-所以只能用 uboot web：
+## 刷机
 
 ```bash
 # 1. 断电，按住 reset 上电，进 uboot web 恢复模式
-# 2. 确认在位
-curl -s http://192.168.1.1/env/list | head
-# 3. 上传 + 写入 + 自动重启
-curl -F firmware=@openwrt-ipq53xx-jdcloud_er2-squashfs-factory.bin http://192.168.1.1/upload
-curl -X POST -F auto_reboot=true http://192.168.1.1/result
+# 2. 浏览器打开 http://192.168.1.1/ ，确认在 uboot（能看到 env 页面）
+# 3. 上传 factory.bin → 自动写入 → 自动重启
 ```
 
-写入成功时 `/upload` 会回传镜像 md5，可与本地 `md5sum` 对照。
+串口：`console=ttyMSM0,115200n8`，115200 8N1，GND + 板 TX → 适配器 RX。
 
-两个坑：
+## 已知限制
 
-- **写盘/重启瞬间不要按 reset**。uboot 检测到 reset 会重进 failsafe web，不走 `bootipq`，表现为"刷成功了但没进系统"。
-- 判断"是否刷完"先看 SSH 通不通，再看 `/env/list` 返回码；设备已进固件时 `/env/list` 未必返回 404。
+- **NVMe 不识别**。M.2 槽插盘后 `qcom-pcie 18000000.pcie: Phy link never came up`，
+  LTSSM 停在 `0x3 POLLING_COMPLIANCE`（发送侧已起，收不到对端训练序列）。
+  已排除：硬件与盘（开荒固件能把 UMIS 128G 枚举在 `0001:01:00.0`，协商 Gen3 x2）、
+  PERST、四路时钟、PHY 初始化寄存器、lane 数与速率、pcie0 走线。
+  剩余差异在 5.4 厂商驱动写而 6.6 未写的寄存器层，详见提交 `04159dff`
+- **光口↔电口数据面未打通**：link 层双速率可用，但上游 `qcom_ppe` 对
+  「PPE 直连口 host-bound RX」有未完成的 gap，跨口转发仍需软件路径
+- `pcie0`（1 lane，GPIO38）未接设备，打开会让 probe 报 `Failed to find NVMEM device`
 
----
+## 目录
 
-## 六、已知限制
-
-| 项 | 状态 |
+| 路径 | 内容 |
 |---|---|
-| 1G SFP 模块 | **不支持，也不打算支持**（电口已覆盖 1G，光口做 2.5G/10G 才有意义） |
-| `sysupgrade` | 不支持，见上一节 |
-| 10G 在位失败态下的 `27->4->27` | **未覆盖**。运行期旋钮不落硬件，构造不出"模块在位且链路卡死"的状态；这条分支只在"10G 拔出后的空槽"变体里真实执行过一次（执行后模块插回 5 tick 起链 10000） |
-| `PKG_MIRROR_HASH:=skip` | 见下 |
+| `feeds/qca-wifi-7/` | QCA NSS / PPE / ECM / SSDK、ipq53xx target、ER2 设备树 |
+| `defconfig/jdc-er2.config` | 完整包集（约 430 包） |
+| `profiles/jdcloud_er2.yml` | 最小包集 + 第三方 feed 声明 |
+| `patches-25.12/` | 对 OpenWrt 树的补丁（含 fstools rootfs_data 相关） |
+| `feeds/extras/` | 本地 feed（主题、adguardhome、er2-vk-apps 等） |
+| `docs/` | 排查记录与方法论文档 |
+| `kernel-debug/` | 带诊断打印的内核文件（排查 NVMe 用，非默认编译路径） |
 
-关于 `PKG_MIRROR_HASH`：`sources.openwrt.org` 上没有 `qca-ssdk-qca-1.0.tar.zst`（404），
-本地生成的 tarball 又与记录的 hash 不符，保留旧值会让每次构建在
-`Hash mismatch` 处失败，所以设成 `skip`。源码版本仍由
-`PKG_SOURCE_VERSION:=4a51edc0…` 固定，可复现性不受影响；等上游镜像真正有这个包后再还原。
+## 致谢与许可
 
-**给后来者的提醒**：未覆盖 ≠ 没问题。真遇到 10G 在位卡死，先抓 `dmesg` 确认
-`mode bounce` 的目标档是 `27` 而不是 `23`，不要直接套用 2.5G 的结论。
-
----
-
-## 七、补丁清单
-
-| 文件 | 作用 |
-|---|---|
-| `feeds/qca-wifi-7/qca-ssdk-qca/patches/0901-sfp-module-manager.patch` | SFP 管理线程：12/30/60 tick 重试 + 模式弹跳恢复 + 调试旋钮 |
-| `feeds/qca-wifi-7/qca-ssdk-qca/patches/0902-sfp-25g-mode-hysteresis.patch` | 2.5G 候选档保持 30 次轮询 |
-| `feeds/qca-wifi-7/qca-ssdk-qca/patches/0007-qca-ssdk-10g-r-program-misc2.patch` | 10GBASE-R 的 SerDes `MISC2 = 0x70`（2.5G 仍走原生 SGMII+ `0x50`） |
-| `feeds/qca-wifi-7/qca-ssdk-qca/patches-disabled/0008-…debug-log….disabled` | 故意不启用，用于复现日志干扰对照 |
-| `feeds/qca-wifi-7/ipq53xx/image/Makefile` | FIT 内核 gzip → lzma，给 vendor blobs 腾空间 |
-| `feeds/qca-wifi-7/qca-ssdk-qca/Makefile` | `PKG_MIRROR_HASH:=skip`，见上节 |
-
-上游已有的 `0001`（RTL 支持）、`0005`（QCA8385 VLAN）、`0006`（SFP GPIO `cansleep`）原样保留未改。
-
-补丁、构建源码、实机运行的 `qca-ssdk.ko` 三者已逐层核对一致
-（`patch -R --dry-run` 无 fuzz、`ko` md5 `a5377b72…` 与设备一致、`strings` 能捞到
-`mode bounce %d->%d->%d` 等日志格式串）。
-
----
-
-## 八、仓库结构
-
-```
-build.sh             构建入口（setup + gen_config + feed patches + 编译）
-setup.py             拉取/重置 OpenWrt 树，应用 patches-25.12 与 feeds-patches
-config.yml           OpenWrt 版本与补丁清单
-profiles/            方式 A 的包集合（jdcloud_er2.yml）
-defconfig/           完整 .config（方式 B）
-patches-25.12/       打进 OpenWrt 树的补丁（0200 段起为本仓库自有）
-feeds-patches/       针对 feed 包的补丁（luci 等）
-feeds/qca-wifi-7/    qca feed：ipq53xx target、NSS/SSDK、DTS、内核补丁
-feeds/extras/        vendored 第三方包（argon / aurora 主题）
-OPENWIFI_README.md   上游 README 原文
-```
-
----
-
-## 九、致谢与许可
-
-EWRT 的绝大部分代码不是本项目写的。没有下面这些项目和工作，这个仓库不会存在：
-
-| 项目 | 作用 |
-|---|---|
-| [Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap) | **上游主线**：OpenWiFi AP NOS、构建框架（`setup.py` / `build.sh` / `gen_config.py`）、`patches-25.12` 系列、qca-wifi-7 feed |
-| [zt406600/wlan-ap](https://github.com/zt406600/wlan-ap) | **ER2 板级支持的起点**：`er2` 分支的 ipq53xx target、ER2 DTS、`profiles/jdcloud_er2.yml`、`defconfig/jdc-er2.config`；本仓库的 SFP 修复即建立在这套板级代码之上 |
-| [OpenWrt](https://openwrt.org/) | 固件框架与 25.12 树 |
-| QCA / qca-wifi-7 feed | NSS / PPE / ECM / SSDK 驱动（本仓库的 SFP 补丁即打在 `qca-ssdk-qca` 上） |
-| [jerrykuku/luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon) | argon 主题 v3.1.2（vendored） |
-| [eamonxg/luci-theme-aurora](https://github.com/eamonxg/luci-theme-aurora) | aurora 主题（本仓库默认主题） |
-
-两份 `wlan-ap` 上游都是 BSD-3-Clause，本仓库的许可与版权声明随上游一并保留
-（`LICENSE`，Copyright (c) 2024, Telecom Infra Project）。
-内置第三方组件的许可随各自目录（例如 `feeds/extras/*/LICENSE`）。
-
-本仓库自己写的部分只有三块：SSDK 的 SFP 补丁（`0901` / `0902` / `0007`）、
-ER2 的包集合与默认主题调整、以及把上面这些跑通的构建与验收脚本。
+- 上游主线：[Telecominfraproject/wlan-ap](https://github.com/Telecominfraproject/wlan-ap)
+- ER2 板级与 QSDK 组件整理：[zt406600/wlan-ap](https://github.com/zt406600/wlan-ap) `er2` 分支
+- 许可证：BSD-3-Clause，Copyright (c) 2024 Telecom Infra Project（见 `LICENSE`）
+- 上游通用文档（其他目标 profile、uCentral、Docker 构建）见 `OPENWIFI_README.md`
