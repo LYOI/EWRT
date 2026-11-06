@@ -1,0 +1,14 @@
+#!/bin/sh
+# JDCloud ER2 (RE-CS-08): 主机名固定为 EWRT。
+#
+# 板级 base-files 没有自带 /etc/config/system，hostname 沿用 OpenWrt 包
+# 内置的默认值 "OpenWrt"，刷完固件在 LuCI 和 shell 提示符里都是 OpenWrt。
+# 这里在首次启动时改掉，和固件发行名（CONFIG_VERSION_DIST="EWRT"）保持一致。
+[ -f /etc/config/system ] || exit 0
+
+uci -q get system.@system[0] >/dev/null || exit 0
+
+uci set system.@system[0].hostname='EWRT'
+uci commit system
+
+exit 0
