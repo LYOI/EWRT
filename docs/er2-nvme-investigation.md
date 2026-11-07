@@ -114,6 +114,57 @@ qcom-pcie 20000000.pcie: Phy link never came up. PARF_LTSSM: 0x100
    - `github.com/zhoufuli/qsdk12.5`：构建树镜像，`qca/src`、`target/linux` 均为空
    - CodeLinaro `NHSS.QSDK.12.0.*`：4.4.60 老线，非 AP 内核
 
+## 八点六、QSDK 内核源码仓库与驱动逐项对比（2026-11-07）
+
+**仓库**：<https://git.codelinaro.org/clo/qsdk/oss/kernel> 下有完整的 IPQ 内核源码树，
+匿名可读（GitLab API 可用，无需账号）：
+
+| 子项目 | 项目 ID | 用途 |
+|---|---|---|
+| `linux-ipq-6.6` | 60352 | **我们在用的 6.6 内核来源**，分支 `win.linux.6.6.r23`~`r39` |
+| `linux-ipq-5.4` | 29162 | 5.4 树，分支 `NHSS.QSDK.12.4.r1`~`r5`（能认盘的那一代） |
+
+> 注意：这个仓库只有内核本体，**QCA 的 PCIe PHY 驱动与板级 DTS 不在其中**
+> （在 OpenWrt target 的补丁里，我们已有）。
+
+### 对比结果（6.6 的 `cfg_1_27_0` vs 5.4 的 `ops_2_9_0_ipq5332`）
+
+| 项 | 结论 |
+|---|---|
+| `phy-qca-pcie-uniphy.c` | **功能完全一致**，仅大括号风格差异（380 vs 381 行） |
+| 控制器 `post_init` | **等价**：`PARF_PHY_CTRL` / `DBI_BASE_ADDR` / `DEVICE_TYPE` / `MHI_CLOCK_RESET_CTRL` / `PARF_SYS_CTRL` / `Q2A_FLUSH` / `GEN3_RELATED_OFF` 全都有 |
+| 控制器 `init`（复位+时钟） | 等价；DT 里 `assigned-clock-rates` 已固定 aux=2MHz、axi_m=266.67MHz、axi_s/bridge=240MHz、rchng=100MHz，与 5.4 固件实测值一致 |
+| 设备树节点 | 等价：`reg-names` 含 `system_noc`、`axi-halt-val=0x1e`、`slv-addr-space-sz`、`cal-status-offset` 均在 |
+
+### 一次失败的实验（含方法教训）
+
+对比时按厂商宏名（`PCIE30_GEN3_RELATED_OFF` / `RXEQ_RGRDLESS_RXTS`）grep 本树，
+得到"6.6 缺少 Gen3 电气层设置"的错误结论，据此补写 `0x890 = 0x2001` 并刷机验证，
+**结果不变**。事后核对：我们用的宏名是 `GEN3_RELATED_OFF`（定义在
+`drivers/pci/controller/dwc/pcie-designware.h:117`，值同样是 0x890，位定义相同），
+驱动本来就在写这个值。
+
+> 教训：跨代码库对比不能只按符号名 grep，厂商与主线对同一寄存器常有两套命名。
+> 应先确认宏的**实际数值**再判断是否存在。
+
+### 新发现：iATU 入站窗口为 0
+
+本次刷机日志出现与历史不同的行：
+
+```
+qcom-pcie 18000000.pcie: iATU: unroll T, 8 ob, 0 ib, align 4K, limit 1024G
+```
+
+历史镜像均为 `8 ob, 8 ib`。入站窗口为 0 说明 `dma-ranges` 在 6.6 下未被正确解析，
+影响 EP→主机 DMA（不直接影响链路训练），是一个**独立待查缺陷**。
+
+### 当前判断
+
+厂商 PCIe 驱动在 6.6 与 5.4 上实质是同一份代码，差异不在驱动层。剩余可能：
+
+1. **DWC 核心版本差异**（5.4 与 6.6 的 `pcie-designware-host.c` 训练流程）
+2. 上面那个 `0 ib` 异常
+
 ## 八点五、其他归档线索
 
 SSDK 的 C45 / 10G 光口线索见 `docs/archived-leads.md`（已决定暂不采用，留档）。
