@@ -121,3 +121,49 @@ echo 1  > /sys/module/qca_ssdk/parameters/sfp_kick
 echo 1  > /sys/module/qca_ssdk/parameters/sfp_dbg
 dmesg | grep -E "sfp|Link up"
 ```
+
+## 九、2026-11-07：pulse 时机 / 滞回窗口三组对照（全部无效）
+
+起因：用户记得"有一版 2.5G 冷启动很快"。查到 11-05 有一条 22.97s 的记录
+（`er2-log-archive/timelines/v5-mode-bounce-20261105.md`，镜像 md5 `a187820f`），
+本日逐项复测。
+
+### 9.1 阈值三组对照（2.5G 猫棒，冷启动）
+
+| 固件 | `SFP_MGR_BOOT_TICKS` | module inserted | pulse done | sfp link up | PHY link up |
+|---|---|---|---|---|---|
+| sfpfast（11:03） | 3 | 25.56 | 29.93 | 56.97 | 57.85 |
+| sfp12（11:18） | 12 | 25.48 | 39.19 | 56.89 | 57.85 |
+| 定版 8bc（00:30） | 22 | 27.96 | 50.95 | 57.21 | — |
+| v5 重刷（11:52） | 12 | 19.65 | 33.35 | 57.29 | 58.25 |
+
+三档阈值结果完全重合在 56.9~57.3s，最大差 0.4s（在噪声内）。
+
+### 9.2 v5 的 22.97s 未复现
+
+同一镜像（md5 `a187820f8c5a82493d7ef3ffb0de0ac4`，刷前已校验）重刷后冷启动
+**57.29s**，且本次有完整串口序列：
+
+```
+[10.13] SFP port 2 init successfully
+[19.65] port2 sfp module inserted: force re-init
+[31.13] port2 sfp still down after 12 ticks, pulse 1/3
+[33.35] port2 sfp recovery attempt done (pulse=1)
+[57.29] port2 sfp link up: 34 tick(s), 1 pulse(s)
+[58.25] eth0: PHY Link up speed: 2500
+```
+
+11-05 那次无串口记录（只有 SSH 后抓的 dmesg），无法还原 22 秒前的状态。
+判定为**单次偶发**（推测模块处于温热/已初始化状态，模式一次应用即成功），
+不作为该版本的性能属性。同日 11-06 记录中 tick=22 曾出现 26.09s，本日复测为 57.21s，
+同属此类波动。
+
+### 9.3 结论
+
+- pulse 时机不是瓶颈：太早（2s）会打断模块自启动，太晚（22s）只是延后同样的结果；
+- `SFP_25G_MODE_HOLD`（模式滞回窗口，原值 30）也试过收到 5，未编入镜像即停止
+  （用户要求先停），理论上可缩短模式切换等待，但 9.1 表明瓶颈不在此；
+- 冷启动 ~57s 是这支 2.5G 模块从**上电**到可协商的物理时间，软件侧无进一步压缩空间；
+- 热重插仍是 5~6 秒（模块温热，零 pulse），见 `C-2G-HOT`。
+
+处置：维持 `SFP_MGR_BOOT_TICKS = 12`（当前镜像），不再针对启动时间调整参数。
