@@ -1,6 +1,30 @@
 # 版本记录
 
-## 2026.11.07
+## 2026.11.07（含 dae，当前定版）
+
+在下面那份基础上编入 **dae 2.1.1**（eBPF 透明代理），内核补齐 eBPF/BTF 支持。
+
+| 镜像 | 大小 | md5 |
+|---|---|---|
+| `EWRT-ER2-20261107-dae-factory.bin` | 112,984,068 | `35c96777d73ef715c249ee8a97351e8e` |
+| `EWRT-ER2-20261107-dae-sysupgrade.bin` | 110,111,015 | `b8b963d892752a154a94cb97a3d18fbf` |
+
+发布：<https://github.com/LYOI/EWRT/releases/tag/v2026.11.07>
+
+### 内容
+
+- 内核：`BPF_JIT` / `BPF_EVENTS` / `NET_ACT_BPF` / `XDP_SOCKETS` 打开，`DEBUG_INFO_BTF=y`
+  且关掉 `DEBUG_INFO_REDUCED`（否则 BTF 生成不出来）；`/sys/kernel/btf/vmlinux` 3.48MB
+- 包：`dae` + `luci-app-dae` + `luci-lib-daeuniverse` + `vmlinux-btf-builtin`（用内核自带 BTF，
+  不装 blob 包）+ `v2ray-geodata`
+- 实机验证：`Loaded eBPF programs and maps`，`Bind to LAN: br-lan` / `Bind to WAN: eth0`，
+  进程持有 12 × bpf_link / 20 × bpf_prog / 21 × bpf_map；唯一降级是
+  `bpf_get_current_task` 不支持，退回 `get_current_comm`
+- 离线环境需在 `/etc/dae/config.dae` 设 `disable_waiting_network: true`
+
+> honk 要求 Linux 6.12+，本板 6.6.88 不满足，故选同源的 dae。
+
+## 2026.11.07（不含 dae，历史产物）
 
 首个可日常使用的定版。**不含任何调试打印**，只保留功能修复。
 
