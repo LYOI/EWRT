@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"b672f1f44702eabda87da8ed900ad730","name":"EWRT-ER2-ltssm-20261106-2240-factory.bin"}}
+200

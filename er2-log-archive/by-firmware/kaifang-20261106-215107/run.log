@@ -1,0 +1,8 @@
+21:51:07 镜像 EWRT-KH-kaifang-factory.bin md5=1155259f790c6e008d168873f843970f size=55508996
+21:51:07 等待 uboot 恢复模式（/env/list 200，最长 900s）
+21:51:07   需要：断电后按住 reset 上电进入 uboot web
+21:52:01 uboot 就绪（第 9 次探测）
+21:52:01 上传并刷写（auto_reboot=true）
+21:52:17 上传 OK，触发写入
+21:52:20 写入已触发，等设备上线（max 300s）
+21:58:16 ABORT 300s 内未上线

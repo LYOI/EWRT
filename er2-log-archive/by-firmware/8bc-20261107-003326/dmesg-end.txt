@@ -1,0 +1,15 @@
+### speed
+2500
+### cchg
+2
+### boot_id
+b9eaaee2-88d0-43ab-9a6d-d874ae10d402
+### 链路日志
+[   11.772531] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   26.839373] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   48.729381] adpt_hppe_sfp_module_manager[4246]:INFO:port2 sfp still down after 22 ticks, pulse 1/3
+[   48.729423] adpt_hppe_sfp_power_pulse[4121]:INFO:port2 sfp recovery attempt: TX_DISABLE hold 3000ms
+[   48.737241] adpt_hppe_sfp_power_pulse[4153]:INFO:port2 sfp no tx_disable (rv=-19): mode bounce 23->4->23
+[   50.949200] adpt_hppe_sfp_power_pulse[4165]:INFO:port2 sfp recovery attempt done (pulse=1)
+[   57.209355] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 27 tick(s), 1 pulse(s)
+[   58.171457] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500

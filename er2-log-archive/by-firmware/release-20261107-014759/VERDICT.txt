@@ -1,0 +1,1 @@
+VERDICT FLASH_OK LINK_UP speed=2500 uptime=55s ko=d328feb1b40c95459fd0b53a0a94ca24

@@ -1,0 +1,9 @@
+TEST=C-10G-COLD
+VERDICT=PASS
+coldboot_link_up_s=21.192462   (dmesg uptime 时间戳, 预算 180s)
+sampled_link_up_uptime=27.29
+boot_id_changed=yes
+power_off_duration_s=73
+cchg_window=2 -> 2
+l7=PASS
+dir=/d/Work/Claw/er2-log-archive/by-firmware/coldboot-10g-20261105-161844

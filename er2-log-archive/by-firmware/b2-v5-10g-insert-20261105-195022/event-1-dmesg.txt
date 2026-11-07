@@ -1,0 +1,40 @@
+[   11.196731] nss_ppenl_init[217]:attaching family:nss_ppenl_acl
+[   11.203074] nss_ppenl_policer_init[304]:Init NSS PPE POLICER handler
+[   11.208803] nss_ppenl_init[217]:attaching family:nss_ppenl_poli
+[   11.215312] nss_ppenl_qos_init[138]:Init NSS PPE QOS handler
+[   11.220959] nss_ppenl_init[217]:attaching family:nss_ppenl_qos
+[   11.226852] nss_ppenl_exception_init[176]:Init NSS PPE EXCEPTION handler
+[   11.232509] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+[   11.239352] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+[   11.247033] GACT probability on
+[   11.252501] Mirror/redirect action on
+[   11.258205] u32 classifier
+[   11.258711]     input device check on
+[   11.261474]     Actions configured
+[   11.291967] xt_time: kernel timezone is -0000
+[   11.328164] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   11.328203] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   11.342418] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   14.434659] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+[   22.482383] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+[   22.482475] ECM database jhash random seed: 0xafa18545
+[   22.491549] ECM init complete
+[   22.705743] br-lan: port 1(eth0) entered blocking state
+[   22.705793] br-lan: port 1(eth0) entered disabled state
+[   22.709824] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   22.715839] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[   22.733394] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+[   22.733827] br-lan: port 2(eth1.2) entered blocking state
+[   22.738157] br-lan: port 2(eth1.2) entered disabled state
+[   22.744380] eth1.2: entered allmulticast mode
+[   22.748995] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+[   22.754883] eth1.2: entered promiscuous mode
+[   22.759288] br-lan: port 2(eth1.2) entered blocking state
+[   22.763630] br-lan: port 2(eth1.2) entered forwarding state
+[   23.620011] loop0: detected capacity change from 0 to 4179968
+[   23.650625] loop0: detected capacity change from 4179968 to 4145664
+[   23.653666] MTD: Attempt to mount non-MTD device "/dev/loop0"
+[   23.772134] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   24.792622] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000
+[   24.792709] br-lan: port 1(eth0) entered blocking state
+[   24.797353] br-lan: port 1(eth0) entered forwarding state

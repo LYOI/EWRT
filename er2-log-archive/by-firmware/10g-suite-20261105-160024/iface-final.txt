@@ -1,0 +1,5 @@
+rx_bytes=124687
+tx_bytes=181960
+rx_errors=0
+rx_crc_errors=0
+cchg=6 speed=10000

@@ -1,0 +1,6 @@
+== round 1 reboot 15:43:47
+round1 LINK_UP_10G uptime=24.60s
+round1 VERDICT PASS link=24.60s cchg=2 boot=c26a2115-2701-4c04-8c93-56f03f4e636c
+== round 2 reboot 15:45:42
+round2 LINK_UP_10G uptime=24.64s
+round2 VERDICT PASS link=24.64s cchg=2 boot=5a9fa7e3-f90c-4e40-8508-2d69ce2a59d4

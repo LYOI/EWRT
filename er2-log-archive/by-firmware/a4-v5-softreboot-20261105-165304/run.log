@@ -1,0 +1,6 @@
+16:53:04 START a4-v5-softreboot 目标speed=2500,10000 预算=180s 重启前 boot_id=44c488b1-143e-413e-8358-cf5de6b3902e
+16:53:05 已下发 reboot
+16:53:17 设备离线（fail=3）
+16:53:52 新 boot_id=e56b8257-f964-4193-a42d-63c50d750f56
+16:53:53 启动即时抓取完成 dmesg行=283 补丁特征=2
+16:54:09 LINK_UP speed=2500 uptime=40s

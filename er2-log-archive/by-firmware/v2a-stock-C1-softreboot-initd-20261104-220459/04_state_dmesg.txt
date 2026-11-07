@@ -1,0 +1,8 @@
+SFP_TYPE=2.5g-stick
+SFP_BITRATE=0x20
+SFP_ENC=0x3
+SFP_TRIES=1
+SFP_UPTIME=133.96
+SFP_LINK=down
+
+[    9.666539] sfp_phy_init[718]:INFO:SFP port 2 init successfully

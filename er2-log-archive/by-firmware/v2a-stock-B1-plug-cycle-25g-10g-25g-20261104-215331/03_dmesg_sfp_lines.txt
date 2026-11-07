@@ -1,0 +1,7 @@
+[    0.000000] OF: reserved mem: 0x000000004a100000..0x000000004a4fffff (4096 KiB) nomap non-reusable bootloader@4a100000
+[    0.000000]   node   0: [mem 0x000000004a100000-0x000000004a4fffff]
+[    0.022663] ramoops: using 0x100000@0x49c00000, ecc: 0
+[    2.006412] pci 0001:00:00.0: BAR 0: assigned [mem 0x18310000-0x18310fff]
+[    9.564776] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[ 1124.552526] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000
+[ 1234.792514] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500

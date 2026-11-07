@@ -1,0 +1,10 @@
+15:27:23 START label=dbg if=eth0 dev=root@192.168.1.1 budget=5s stable=3s speeds='2500 10000' peers='/'
+15:27:23 S0 WAIT_SSH (max 300s)
+15:27:24 S0 SSH_UP after 1s
+15:27:25 S0 boot_capture dmesg_link=40.790652s noise=16
+15:27:25 S1 LINK_DEADLINE 15:27:30
+15:27:29 S1 LINK_OK uptime=2463.66s dmesg_link=40.790652s noise_baseline=noise_lines
+15:27:30 S2 CONN1 A=% B=NA% B1472=% rx_delta=0
+15:27:33 S3 STABLE 3s carrier_changes 2 -> 2
+15:27:34 S4 CONN2 B=NA% B1472=%
+15:27:34 VERDICT FAIL_FAKE link_at=2463.66s A=% B=NA% B2=NA% cchg=2->2 rx_delta=0 reason=link up 但 rx 无增量

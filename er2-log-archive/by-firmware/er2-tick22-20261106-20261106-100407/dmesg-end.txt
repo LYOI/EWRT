@@ -1,0 +1,11 @@
+### speed
+2500
+### cchg
+2
+### boot_id
+ccba3224-b31d-49bd-b929-abbc39ae49c8
+### 链路日志
+[   10.378275] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   21.959381] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   25.130743] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 3 tick(s), 0 pulse(s)
+[   26.090963] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500

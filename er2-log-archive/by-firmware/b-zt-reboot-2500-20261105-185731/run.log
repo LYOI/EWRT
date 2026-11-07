@@ -1,0 +1,6 @@
+18:57:31 START b-zt-reboot-2500 目标speed=2500 预算=180s 重启前 boot_id=26a12be5-77fe-466d-921a-97cfe91aedda
+18:57:31 已下发 reboot
+18:57:44 设备离线（fail=3）
+18:58:15 新 boot_id=86e32e17-bdf1-4f03-85b8-05b76cb6ed42
+18:58:17 启动即时抓取完成 dmesg行=283 补丁特征=2
+18:58:36 LINK_UP speed=2500 uptime=41s

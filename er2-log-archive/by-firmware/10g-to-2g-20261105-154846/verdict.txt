@@ -1,0 +1,5 @@
+BASELINE 160.56,1,2,10000
+waiting change from cchg=2 (max 30min)
+CHANGE detected 201.00,0,3,65535
+LINK_UP speed=2500 uptime=286s
+VERDICT PASS speed=2500 link=286s cchg=4

@@ -1,0 +1,9 @@
+phase=selftest2
+start=15:07:03
+deadline=15:07:07
+budget=4s
+interval=2s
+why=deadline
+samples=2
+carrier_up=2
+last=15:07:06,1241.43,1,2,2500

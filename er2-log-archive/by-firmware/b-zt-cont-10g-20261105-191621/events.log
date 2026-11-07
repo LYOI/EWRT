@@ -1,0 +1,6 @@
+19:16:21 START label=b-zt-cont-10g wait=120min dense=300s
+boot_id=b6fe14c9-5dc2-4144-bc20-3044e120145e
+uptime=175.26
+ko_md5=ba44c6bf5d22d4871810a994a0c8038d
+loglevel=2
+dmesg_baseline=286

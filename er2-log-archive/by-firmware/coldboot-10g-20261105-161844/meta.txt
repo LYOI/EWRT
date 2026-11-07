@@ -1,0 +1,5 @@
+### cmdline
+ root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+### loglevel
+2### ko
+a5377b720dc2eec9397803b36a1c7364  /lib/modules/6.6.88/qca-ssdk.ko

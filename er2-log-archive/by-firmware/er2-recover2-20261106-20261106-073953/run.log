@@ -1,0 +1,3 @@
+07:39:54 镜像 er2-apps-20261105-factory.bin md5=ce2de6a59f0f8cb348b2de84ed8236f1 size=38797316
+07:39:54 等待 uboot 恢复模式（/env/list 200，最长 900s）
+07:39:54   需要：断电后按住 reset 上电进入 uboot web

@@ -1,0 +1,4 @@
+set1 -> value=1
+set0 -> value=0
+--- debug/gpio gpio34 ---
+ gpio34  : out low  func0 8mA pull down

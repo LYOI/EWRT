@@ -1,0 +1,65 @@
+gpiochip0: GPIOs 512-564, parent: platform/1000000.pinctrl, 1000000.pinctrl:
+ gpio0   : in  low  func0 2mA pull down
+ gpio1   : in  low  func0 2mA pull down
+ gpio2   : in  low  func0 2mA pull down
+ gpio3   : in  low  func0 2mA pull down
+ gpio4   : in  low  func0 2mA pull down
+ gpio5   : in  low  func0 2mA pull down
+ gpio6   : in  low  func0 2mA pull down
+ gpio7   : in  low  func0 2mA pull down
+ gpio8   : in  high func1 8mA pull up
+ gpio9   : in  high func1 8mA pull up
+ gpio10  : in  high func1 8mA pull up
+ gpio11  : in  high func1 8mA pull up
+ gpio12  : in  high func1 8mA pull up
+ gpio13  : in  low  func1 8mA no pull
+ gpio14  : out low  func1 8mA pull down
+ gpio15  : out low  func1 8mA pull down
+ gpio16  : in  low  func1 8mA pull down
+ gpio17  : out low  func1 8mA pull up
+ gpio18  : in  high func1 8mA pull up
+ gpio19  : in  high func1 8mA pull up
+ gpio20  : in  high func1 8mA pull down
+ gpio21  : in  low  func1 2mA pull down
+ gpio22  : in  low  func0 2mA pull down
+ gpio23  : in  low  func0 2mA pull down
+ gpio24  : out low  func0 8mA pull down
+ gpio25  : in  low  func1 2mA pull up
+ gpio26  : in  low  func1 2mA pull up
+ gpio27  : in  low  func1 8mA no pull
+ gpio28  : in  high func1 8mA pull up
+ gpio29  : in  high func3 8mA pull up
+ gpio30  : in  high func3 8mA pull up
+ gpio31  : in  high func0 8mA pull up
+ gpio32  : in  high func0 8mA pull up
+ gpio33  : out high func0 8mA pull down
+ gpio34  : out low  func0 8mA pull down
+ gpio35  : in  low  func0 2mA pull down
+ gpio36  : out high func0 8mA pull down
+ gpio37  : in  high func0 2mA pull down
+ gpio38  : in  low  func0 2mA pull down
+ gpio39  : in  low  func0 2mA pull down
+ gpio40  : in  low  func0 2mA pull down
+ gpio41  : in  low  func0 2mA pull down
+ gpio42  : in  low  func0 2mA pull down
+ gpio43  : in  low  func0 2mA pull down
+ gpio44  : in  low  func0 2mA pull down
+ gpio45  : in  high func5 2mA no pull
+ gpio46  : in  low  func1 8mA pull up
+ gpio47  : out high func0 8mA pull up
+ gpio48  : in  high func1 8mA pull up
+ gpio49  : out low  func0 8mA pull down
+ gpio50  : in  low  func0 2mA pull down
+ gpio51  : out high func0 2mA pull up
+ gpio52  : in  low  func0 2mA pull down
+---
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-lan state UP qlen 1000\    link/ether 16:00:a7:68:4b:ca brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000\    link/ether 16:00:a7:68:4b:c9 brd ff:ff:ff:ff:ff:ff
+4: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000\    link/ether 16:00:a7:68:4b:ca brd ff:ff:ff:ff:ff:ff
+5: eth1.2@eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP qlen 1000\    link/ether 16:00:a7:68:4b:ca brd ff:ff:ff:ff:ff:ff
+6: eth1.1@eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000\    link/ether 16:00:a7:68:4b:c9 brd ff:ff:ff:ff:ff:ff
+---
+console=ttyMSM0,115200n8 cnss2.bdf_pci1=0x2 clk_ignore_unused fstools_partname_fallback_scan=1 loglevel=3 log_buf_len=16M root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+---
+2

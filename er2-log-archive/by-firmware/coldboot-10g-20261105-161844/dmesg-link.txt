@@ -1,0 +1,3 @@
+[   10.215571] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   20.170796] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   21.192462] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000

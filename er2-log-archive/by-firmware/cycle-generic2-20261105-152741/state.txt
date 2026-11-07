@@ -1,0 +1,6 @@
+15:27:41 START label=generic2 if=eth0 dev=root@192.168.1.1 budget=10s stable=6s speeds='2500 10000' peers='192.168.1.10/192.168.1.123'
+15:27:41 S0 WAIT_SSH (max 300s)
+15:27:42 S0 SSH_UP after 1s
+15:27:43 S0 boot_capture dmesg_link=40.790652s noise=16
+15:27:43 S1 LINK_DEADLINE 15:27:53
+15:27:47 S1 LINK_OK uptime=2481.68s dmesg_link=40.790652s noise_baseline=

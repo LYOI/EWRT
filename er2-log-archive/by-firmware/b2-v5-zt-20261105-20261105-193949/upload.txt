@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"25952260","md5":"1259c2bad4c6c12df8e210ab68803996","name":"er2-b2-v5-zt-20261105-factory.bin"}}
+200

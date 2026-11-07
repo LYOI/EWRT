@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"102957060","md5":"4d1ad7badb897ef2535de0487e5f4dd6","name":"EWRT-QWRT-R26.09.25-factory.bin"}}
+200

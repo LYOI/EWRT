@@ -1,0 +1,30 @@
+[   10.357280] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+[   10.357284] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+[   10.358096] GACT probability on
+[   10.358700] Mirror/redirect action on
+[   10.363213] u32 classifier
+[   10.363230]     input device check on
+[   10.363232]     Actions configured
+[   10.388229] xt_time: kernel timezone is -0000
+[   10.420285] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   10.420302] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   10.422740] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   12.282684] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+[   15.597305] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+[   15.597378] ECM database jhash random seed: 0x92874391
+[   15.598792] ECM init complete
+[   15.842526] br-lan: port 1(eth0) entered blocking state
+[   15.842557] br-lan: port 1(eth0) entered disabled state
+[   15.842601] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   15.842965] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[   15.852661] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+[   15.852952] br-lan: port 2(eth1.2) entered blocking state
+[   15.852980] br-lan: port 2(eth1.2) entered disabled state
+[   15.853014] eth1.2: entered allmulticast mode
+[   15.853024] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+[   15.854352] eth1.2: entered promiscuous mode
+[   15.854686] br-lan: port 2(eth1.2) entered blocking state
+[   15.854707] br-lan: port 2(eth1.2) entered forwarding state
+[  418.312535] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+[  418.312615] br-lan: port 1(eth0) entered blocking state
+[  418.312626] br-lan: port 1(eth0) entered forwarding state

@@ -1,0 +1,30 @@
+[   10.296924] nss_ppenl_qos_init[138]:Init NSS PPE QOS handler
+[   10.296933] nss_ppenl_init[217]:attaching family:nss_ppenl_qos
+[   10.296938] nss_ppenl_exception_init[176]:Init NSS PPE EXCEPTION handler
+[   10.296947] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+[   10.296951] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+[   10.297759] GACT probability on
+[   10.298353] Mirror/redirect action on
+[   10.302532] u32 classifier
+[   10.302550]     input device check on
+[   10.302553]     Actions configured
+[   10.325745] xt_time: kernel timezone is -0000
+[   10.357149] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   10.357165] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   10.359978] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   12.329814] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+[   15.664014] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+[   15.664083] ECM database jhash random seed: 0xa489f18
+[   15.665418] ECM init complete
+[   15.843828] br-lan: port 1(eth0) entered blocking state
+[   15.843862] br-lan: port 1(eth0) entered disabled state
+[   15.843896] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   15.844262] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[   15.855603] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+[   15.856362] br-lan: port 2(eth1.2) entered blocking state
+[   15.856416] br-lan: port 2(eth1.2) entered disabled state
+[   15.856464] eth1.2: entered allmulticast mode
+[   15.856476] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+[   15.857793] eth1.2: entered promiscuous mode
+[   15.858013] br-lan: port 2(eth1.2) entered blocking state
+[   15.858037] br-lan: port 2(eth1.2) entered forwarding state

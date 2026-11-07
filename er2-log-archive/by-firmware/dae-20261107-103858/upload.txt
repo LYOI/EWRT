@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"112984068","md5":"73b09e3519bb05c4167bb9a702c4767d","name":"EWRT-ER2-dae-20261107-1033-factory.bin"}}
+200

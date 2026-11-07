@@ -1,0 +1,944 @@
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+### boot_id
+65da065f-5874-44e6-9f3e-87a19b3cefcd
+### uptime
+358.18 1408.62
+### dmesg
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51af8014]
+[    0.000000] Linux version 6.6.88 (shenlong@ASUS) (aarch64-openwrt-linux-musl-gcc (OpenWrt GCC 14.3.0 r33051-f5dae5ece4) 14.3.0, GNU ld (GNU Binutils) 2.44) #0 SMP PREEMPT Wed Nov  4 11:46:41 2026
+[    0.000000] Machine model: JDCloud ER2 (RE-CS-08)
+[    0.000000] OF: reserved mem: 0x0000000049600000..0x0000000049bfffff (6144 KiB) nomap non-reusable tzapp@49600000
+[    0.000000] OF: reserved mem: 0x0000000049c00000..0x0000000049cfffff (1024 KiB) map non-reusable ramoops@49c00000
+[    0.000000] OF: reserved mem: 0x000000004a100000..0x000000004a4fffff (4096 KiB) nomap non-reusable bootloader@4a100000
+[    0.000000] OF: reserved mem: 0x000000004a600000..0x000000004a7fffff (2048 KiB) nomap non-reusable tz@4a600000
+[    0.000000] OF: reserved mem: 0x000000004a800000..0x000000004a8fffff (1024 KiB) nomap non-reusable smem@4a800000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x00000000495fffff]
+[    0.000000]   node   0: [mem 0x0000000049600000-0x0000000049bfffff]
+[    0.000000]   node   0: [mem 0x0000000049c00000-0x000000004a0fffff]
+[    0.000000]   node   0: [mem 0x000000004a100000-0x000000004a4fffff]
+[    0.000000]   node   0: [mem 0x000000004a500000-0x000000004a5fffff]
+[    0.000000]   node   0: [mem 0x000000004a600000-0x000000004a8fffff]
+[    0.000000]   node   0: [mem 0x000000004a900000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 22 pages/cpu s52200 r8192 d29720 u90112
+[    0.000000] pcpu-alloc: s52200 r8192 d29720 u90112 alloc=22*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line:  root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 2031696K/2097152K available (9280K kernel code, 1058K rwdata, 3072K rodata, 576K init, 463K bss, 65456K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: range[mem 0x0b00c000-0x0b00cffc], SPI[640:671]
+[    0.000000] GICv2m: range[mem 0x0b00d000-0x0b00dffc], SPI[672:703]
+[    0.000000] GICv2m: range[mem 0x0b00e000-0x0b00effc], SPI[704:735]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 24.00MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000170] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.000183] pid_max: default: 32768 minimum: 301
+[    0.000340] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.000358] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.002046] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.002126] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.002307] rcu: Hierarchical SRCU implementation.
+[    0.002312] rcu: 	Max phase no-delay instances is 1000.
+[    0.003013] smp: Bringing up secondary CPUs ...
+[    0.004167] Detected VIPT I-cache on CPU1
+[    0.004288] CPU1: Booted secondary processor 0x0000000001 [0x51af8014]
+[    0.005654] Detected VIPT I-cache on CPU2
+[    0.005773] CPU2: Booted secondary processor 0x0000000002 [0x51af8014]
+[    0.007126] Detected VIPT I-cache on CPU3
+[    0.007241] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+[    0.007385] smp: Brought up 1 node, 4 CPUs
+[    0.007395] SMP: Total of 4 processors activated.
+[    0.007400] CPU features: detected: 32-bit EL0 Support
+[    0.007404] CPU features: detected: CRC32 instructions
+[    0.007474] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.007480] CPU: All CPU(s) started at EL1
+[    0.007483] alternatives: applying system-wide alternatives
+[    0.018089] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.018115] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.018283] pinctrl core: initialized pinctrl subsystem
+[    0.019517] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.020129] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.020185] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.020233] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.020605] thermal_sys: Registered thermal governor 'step_wise'
+[    0.020611] thermal_sys: Registered thermal governor 'user_space'
+[    0.020668] cpuidle: using governor menu
+[    0.020790] NET: Registered PF_QIPCRTR protocol family
+[    0.020954] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.021046] ASID allocator initialised with 65536 entries
+[    0.022166] pstore: Using crash dump compression: deflate
+[    0.022175] printk: console [ramoops0] enabled
+[    0.022595] pstore: Registered ramoops as persistent store backend
+[    0.022606] ramoops: using 0x100000@0x49c00000, ecc: 0
+[    0.028174] /soc@0/interrupt-controller@b000000: Fixed dependency cycle(s) with /soc@0/interrupt-controller@b000000
+[    0.035595] qcom,nsscc-ipq5332 39b00000.nsscc: Registered NSS CC clocks
+[    0.042940] Modules: 29120 pages in range for non-PLT usage
+[    0.042955] Modules: 520640 pages in range for PLT usage
+[    0.044799] SCSI subsystem initialized
+[    0.044955] libata version 3.00 loaded.
+[    0.045069] pps_core: LinuxPPS API ver. 1 registered
+[    0.045080] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.045102] PTP clock support registered
+[    0.045678] qcom_scm: convention: smc arm 64
+[    0.048552] Advanced Linux Sound Architecture Driver Initialized.
+[    0.050062] clocksource: Switched to clocksource arch_sys_counter
+[    0.051034] NET: Registered PF_INET protocol family
+[    0.051236] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.053570] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.053609] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.053631] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.053795] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    0.054324] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.054546] MPTCP token hash table entries: 2048 (order: 3, 49152 bytes, linear)
+[    0.054636] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.054704] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.054923] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.054970] PCI: CLS 0 bytes, default 64
+[    0.056680] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+[    0.057062] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.057074] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.099857] ipq_debug: reset_reason : System reset or reboot [0x10]
+[    0.104638] msm_serial 78af000.serial: msm_serial: detected port #0
+[    0.104691] msm_serial 78af000.serial: uartclk = 1843199
+[    0.104994] 78af000.serial: ttyMSM0 at MMIO 0x78af000 (irq = 20, base_baud = 115199) is a MSM
+[    0.105041] msm_serial: console setup on port #0
+[    0.105121] printk: console [ttyMSM0] enabled
+[    0.887442] msm_serial: driver initialized
+[    0.899030] brd: module loaded
+[    0.902829] loop: module loaded
+[    0.904234] MACsec IEEE 802.1AE
+[    0.960073] ipq4019-mdio 90000.mdio: CMN clock reset done
+[    1.450181] ipq4019-mdio 90000.mdio: Program EPHY reg 0xc90f018 with 0x320c41
+[    1.450356] ipq4019-mdio 90000.mdio: Program UNIPHY reg 0xc90f014 with 0x1cc5
+[    1.600038] i2c_dev: i2c /dev entries driver
+[    1.603240] sdhci: Secure Digital Host Controller Interface driver
+[    1.603415] sdhci: Copyright(c) Pierre Ossman
+[    1.609405] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.615135] random: crng init done
+[    1.624095] 
+[    1.624095] Version Rollback Feature Disabled
+[    1.627597]  cs_system_cfg: CoreSight Configuration manager initialised
+[    1.630919] NET: Registered PF_INET6 protocol family
+[    1.636208] Segment Routing with IPv6
+[    1.640636] In-situ OAM (IOAM) with IPv6
+[    1.644176] NET: Registered PF_PACKET protocol family
+[    1.648279] Bridge firewalling registered
+[    1.653167] 8021q: 802.1Q VLAN Support v1.8
+[    1.660092] mmc0: SDHCI controller on 7804000.mmc [7804000.mmc] using ADMA 64-bit
+[    1.672299] Key type .fscrypt registered
+[    1.672340] Key type fscrypt-provisioning registered
+[    1.714557] OEM_ID: 0, PROD_ID: 0
+[    1.714597] CPU: IPQ5322, SoC Version: 1.1
+[    1.717710] qcom-pcie 18000000.pcie: Early Cal not supported
+[    1.721297] qcom-pcie 18000000.pcie: host bridge /soc@0/pcie@18000000 ranges:
+[    1.726750] qcom-pcie 18000000.pcie:       IO 0x0018200000..0x00182fffff -> 0x0018200000
+[    1.734154] qcom-pcie 18000000.pcie:      MEM 0x0018300000..0x001fffffff -> 0x0018300000
+[    1.775699] mmc0: new HS200 MMC card at address 0001
+[    1.776395] mmcblk0: mmc0:0001 SLD64G 57.1 GiB
+[    1.809375] GPT:partition_entry_array_crc32 values don't match: 0x494abfed != 0xc7ab3043
+[    1.809427] GPT: Use GNU Parted to correct GPT errors.
+[    1.816641]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27
+[    1.824107] mmcblk0boot0: mmc0:0001 SLD64G 4.00 MiB
+[    1.833658] mmcblk0boot1: mmc0:0001 SLD64G 4.00 MiB
+[    1.838001] mmcblk0rpmb: mmc0:0001 SLD64G 4.00 MiB, chardev (238:0)
+[    1.871618] qcom-pcie 18000000.pcie: iATU: unroll T, 8 ob, 0 ib, align 4K, limit 1024G
+[    2.872626] qcom-pcie 18000000.pcie: Phy link never came up
+[    2.873041] qcom-pcie 18000000.pcie: PCI host bridge to bus 0001:00
+[    2.877004] pci_bus 0001:00: root bus resource [bus 00-ff]
+[    2.883281] pci_bus 0001:00: root bus resource [io  0x0000-0xfffff] (bus address [0x18200000-0x182fffff])
+[    2.888808] pci_bus 0001:00: root bus resource [mem 0x18300000-0x1fffffff]
+[    2.898482] pci 0001:00:00.0: [17cb:1005] type 01 class 0x060400
+[    2.905233] pci 0001:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    2.911389] pci 0001:00:00.0: reg 0x14: [mem 0x00000000-0x0000ffff]
+[    2.917422] pci 0001:00:00.0: PME# supported from D0 D3hot D3cold
+[    2.926609] pci 0001:00:00.0: BAR 1: assigned [mem 0x18300000-0x1830ffff]
+[    2.929869] pci 0001:00:00.0: BAR 0: assigned [mem 0x18310000-0x18310fff]
+[    2.936653] pci 0001:00:00.0: PCI bridge to [bus 01-ff]
+[    2.949133] clk: Not disabling unused clocks
+[    2.949170] ALSA device list:
+[    2.952985]   No soundcards found.
+[    2.959821] VFS: Mounted root (squashfs filesystem) readonly on device 179:22.
+[    2.960018] Freeing unused kernel memory: 576K
+[    2.965997] Run /sbin/init as init process
+[    2.970359]   with arguments:
+[    2.970361]     /sbin/init
+[    2.970364]   with environment:
+[    2.970367]     HOME=/
+[    2.970370]     TERM=linux
+[    3.155956] init: Console is alive
+[    3.156085] init: - watchdog -
+[    3.573383] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    3.593569] gpio_button_hotplug: loading out-of-tree module taints kernel.
+[    3.597347] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    3.602216] init: - preinit -
+[    8.736816] mount_root: loading kmods from internal overlay
+[    8.747113] kmodloader: loading kernel modules from //etc/modules-boot.d/*
+[    8.749412] kmodloader: done loading kernel modules from //etc/modules-boot.d/*
+[    8.965675] block: attempting to load /tmp/overlay/upper/etc/config/fstab
+[    8.965797] block: unable to load configuration (fstab: Entry not found)
+[    8.971521] block: attempting to load /tmp/overlay/etc/config/fstab
+[    8.978274] block: unable to load configuration (fstab: Entry not found)
+[    8.984286] block: attempting to load /etc/config/fstab
+[    8.991994] block: unable to load configuration (fstab: Entry not found)
+[    8.996136] block: no usable configuration
+[    9.003250] block: attempting to load /etc/config/fstab
+[    9.007005] block: unable to load configuration (fstab: Entry not found)
+[    9.012173] block: no usable configuration
+[    9.019619] loop0: detected capacity change from 0 to 4179968
+[    9.060067] loop0: detected capacity change from 4179968 to 4157056
+[    9.062792] mount_root: overlay filesystem in /dev/loop0 has not been formatted yet
+[    9.067166] mount_root: no usable overlay filesystem found, using tmpfs overlay
+[    9.074613] overlayfs: null uuid detected in lower fs '/', falling back to xino=off,index=off,nfs_export=off.
+[    9.082777] urandom-seed: Seed file not found (/etc/urandom.seed)
+[    9.107855] procd: - early -
+[    9.107946] procd: - watchdog -
+[    9.648031] procd: - watchdog -
+[    9.650806] procd: - ubus -
+[    9.803740] procd: - init -
+[   10.069932] kmodloader: loading kernel modules from /etc/modules.d/*
+[   10.091540] nss phy driver register successfully
+[   10.221698] urngd: v1.0.2 started.
+[   10.250401] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   10.250459] ssdk_dt_parse_interrupt[1056]:INFO:link-intr-gpio is not defined, link polling is enabled
+[   10.432285] regi_init[1898]:INFO:Initializing MPPE Done!!
+[   10.432431] ssdk_dt_parse_mac_mode[358]:INFO:mac mode2 doesn't exit!
+[   10.436839] ssdk_dt_parse_interrupt[1073]:INFO:interrupt gpio:0x217, interrupt number: 0x1b
+[   10.443122] ssdk_dt_parse[1434]:INFO:switch node is qca8386!
+[   10.605256] MHT GCC CLK initialization with clock mode 16 on port bmp 0x1f
+[   10.606851] ssdk_mht_pinctrl_init[390]:INFO: ssdk_mht_pinctrl_init done
+[   10.931691] ssdk_switch_register[1358]:INFO:intr_number:27, intr_name:switch1, intr_flag:4
+[   10.937820] regi_init[1871]:INFO:Initializing MHT Done!!
+[   10.938895] regi_init[1923]:INFO:qca-ssdk module init succeeded!
+[   10.946317] nat46: module (version 4c5beee236841724219598fabb1edc93d4f08ce5) loaded.
+[   10.951733] PPP generic driver version 2.4.2
+[   10.958648] NET: Registered PF_PPPOX protocol family
+[   10.973986] PPE-RULE module loaded successfully
+[   10.987833] tun: Universal TUN/TAP device driver, 1.6
+[   10.994912] DDR size: 80000000, DMA mask is ffffffff
+[   11.015663] GMAC1(ffffff8002704940) Invalid MAC@ - using a2:2a:ad:c3:d4:03
+[   11.016534] **********************************************************
+[   11.021486] * NSS Data Plane driver
+[   11.027944] **********************************************************
+[   11.132450] ppe_ds_module_init[107]:PPE-DS module loaded successfully 32768
+[   11.137489] nss_ppenl_init[201]:NSS Netlink manager loaded: Build Id: 11/05/26, 06:11:54
+[   11.143353] nss_ppenl_acl_init[340]:Init NSS PPE ACL handler
+[   11.151689] nss_ppenl_acl_init[351]:size of the msg in netlink = 1056
+[   11.157236] nss_ppenl_init[217]:attaching family:nss_ppenl_acl
+[   11.163582] nss_ppenl_policer_init[304]:Init NSS PPE POLICER handler
+[   11.169308] nss_ppenl_init[217]:attaching family:nss_ppenl_poli
+[   11.175820] nss_ppenl_qos_init[138]:Init NSS PPE QOS handler
+[   11.181464] nss_ppenl_init[217]:attaching family:nss_ppenl_qos
+[   11.187355] nss_ppenl_exception_init[176]:Init NSS PPE EXCEPTION handler
+[   11.193011] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+[   11.199857] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+[   11.207514] GACT probability on
+[   11.213010] Mirror/redirect action on
+[   11.218711] u32 classifier
+[   11.219216]     input device check on
+[   11.221838]     Actions configured
+[   11.245221] xt_time: kernel timezone is -0000
+[   11.270761] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   11.270799] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   11.279486] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   14.609501] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+[   19.643637] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+[   19.643730] ECM database jhash random seed: 0xa7627f4c
+[   19.653325] ECM init complete
+[   19.852703] br-lan: port 1(eth0) entered blocking state
+[   19.852779] br-lan: port 1(eth0) entered disabled state
+[   19.856810] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   19.863414] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[   19.877625] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+[   19.877958] br-lan: port 2(eth1.2) entered blocking state
+[   19.882891] br-lan: port 2(eth1.2) entered disabled state
+[   19.887875] eth1.2: entered allmulticast mode
+[   19.895332] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+[   19.898914] eth1.2: entered promiscuous mode
+[   19.904126] br-lan: port 2(eth1.2) entered blocking state
+[   19.907803] br-lan: port 2(eth1.2) entered forwarding state
+[   20.544019] loop0: detected capacity change from 0 to 4179968
+[   20.630477] loop0: detected capacity change from 4179968 to 4157056
+[   20.634224] MTD: Attempt to mount non-MTD device "/dev/loop0"
+[   20.910272] adpt_hppe_sfp_module_manager[4186]:INFO:port2 sfp module inserted: force re-init
+[   22.100086] adpt_hppe_sfp_module_manager[4200]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+[   22.971801] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+[   22.971891] br-lan: port 1(eth0) entered blocking state
+[   22.976532] br-lan: port 1(eth0) entered forwarding state
+### logread
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51af8014]
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [    0.000000] Linux version 6.6.88 (shenlong@ASUS) (aarch64-openwrt-linux-musl-gcc (OpenWrt GCC 14.3.0 r33051-f5dae5ece4) 14.3.0, GNU ld (GNU Binutils) 2.44) #0 SMP PREEMPT Wed Nov  4 11:46:41 2026
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Machine model: JDCloud ER2 (RE-CS-08)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x0000000049600000..0x0000000049bfffff (6144 KiB) nomap non-reusable tzapp@49600000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x0000000049c00000..0x0000000049cfffff (1024 KiB) map non-reusable ramoops@49c00000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x000000004a100000..0x000000004a4fffff (4096 KiB) nomap non-reusable bootloader@4a100000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x000000004a600000..0x000000004a7fffff (2048 KiB) nomap non-reusable tz@4a600000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x000000004a800000..0x000000004a8fffff (1024 KiB) nomap non-reusable smem@4a800000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Zone ranges:
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   DMA32    empty
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   Normal   empty
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Movable zone start for each node
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Early memory node ranges
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x0000000040000000-0x00000000495fffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x0000000049600000-0x0000000049bfffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x0000000049c00000-0x000000004a0fffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a100000-0x000000004a4fffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a500000-0x000000004a5fffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a600000-0x000000004a8fffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a900000-0x00000000bfffffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] psci: probing for conduit method from DT.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] psci: PSCIv1.0 detected in firmware.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] psci: Using standard PSCI v0.2 function IDs
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] psci: SMC Calling Convention v1.0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] percpu: Embedded 22 pages/cpu s52200 r8192 d29720 u90112
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    0.000000] pcpu-alloc: s52200 r8192 d29720 u90112 alloc=22*4096
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Detected VIPT I-cache on CPU0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] CPU features: detected: Spectre-v4
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] alternatives: applying boot alternatives
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [    0.000000] Kernel command line:  root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Memory: 2031696K/2097152K available (9280K kernel code, 1058K rwdata, 3072K rodata, 576K init, 463K bss, 65456K reserved, 0K cma-reserved)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] rcu: Preemptible hierarchical RCU implementation.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] 	Trampoline variant of Tasks RCU enabled.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] 	Tracing variant of Tasks RCU enabled.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] Root IRQ handler: gic_handle_irq
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] GICv2m: range[mem 0x0b00c000-0x0b00cffc], SPI[640:671]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] GICv2m: range[mem 0x0b00d000-0x0b00dffc], SPI[672:703]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] GICv2m: range[mem 0x0b00e000-0x0b00effc], SPI[704:735]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] arch_timer: cp15 and mmio timer(s) running at 24.00MHz (virt/virt).
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000170] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000183] pid_max: default: 32768 minimum: 301
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000340] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.000358] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.002046] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.002126] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.002307] rcu: Hierarchical SRCU implementation.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.002312] rcu: 	Max phase no-delay instances is 1000.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.003013] smp: Bringing up secondary CPUs ...
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.004167] Detected VIPT I-cache on CPU1
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.004288] CPU1: Booted secondary processor 0x0000000001 [0x51af8014]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.005654] Detected VIPT I-cache on CPU2
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.005773] CPU2: Booted secondary processor 0x0000000002 [0x51af8014]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007126] Detected VIPT I-cache on CPU3
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007241] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007385] smp: Brought up 1 node, 4 CPUs
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007395] SMP: Total of 4 processors activated.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007400] CPU features: detected: 32-bit EL0 Support
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007404] CPU features: detected: CRC32 instructions
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007474] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007480] CPU: All CPU(s) started at EL1
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.007483] alternatives: applying system-wide alternatives
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.018089] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.018115] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.018283] pinctrl core: initialized pinctrl subsystem
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.019517] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020129] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020185] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020233] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020605] thermal_sys: Registered thermal governor 'step_wise'
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020611] thermal_sys: Registered thermal governor 'user_space'
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020668] cpuidle: using governor menu
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020790] NET: Registered PF_QIPCRTR protocol family
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.020954] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.021046] ASID allocator initialised with 65536 entries
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.022166] pstore: Using crash dump compression: deflate
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.022175] printk: console [ramoops0] enabled
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.022595] pstore: Registered ramoops as persistent store backend
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.022606] ramoops: using 0x100000@0x49c00000, ecc: 0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.028174] /soc@0/interrupt-controller@b000000: Fixed dependency cycle(s) with /soc@0/interrupt-controller@b000000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.035595] qcom,nsscc-ipq5332 39b00000.nsscc: Registered NSS CC clocks
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.042940] Modules: 29120 pages in range for non-PLT usage
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.042955] Modules: 520640 pages in range for PLT usage
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [    0.044799] SCSI subsystem initialized
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    0.044955] libata version 3.00 loaded.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.045069] pps_core: LinuxPPS API ver. 1 registered
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.045080] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.045102] PTP clock support registered
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.045678] qcom_scm: convention: smc arm 64
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.048552] Advanced Linux Sound Architecture Driver Initialized.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.050062] clocksource: Switched to clocksource arch_sys_counter
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.051034] NET: Registered PF_INET protocol family
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.051236] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.053570] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.053609] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.053631] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.053795] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.054324] TCP: Hash tables configured (established 16384 bind 16384)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.054546] MPTCP token hash table entries: 2048 (order: 3, 49152 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.054636] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.054704] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.054923] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.054970] PCI: CLS 0 bytes, default 64
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.056680] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.057062] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.057074] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.099857] ipq_debug: reset_reason : System reset or reboot [0x10]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.104638] msm_serial 78af000.serial: msm_serial: detected port #0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.104691] msm_serial 78af000.serial: uartclk = 1843199
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.104994] 78af000.serial: ttyMSM0 at MMIO 0x78af000 (irq = 20, base_baud = 115199) is a MSM
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.105041] msm_serial: console setup on port #0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.105121] printk: console [ttyMSM0] enabled
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.887442] msm_serial: driver initialized
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.899030] brd: module loaded
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.902829] loop: module loaded
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.904234] MACsec IEEE 802.1AE
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    0.960073] ipq4019-mdio 90000.mdio: CMN clock reset done
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.450181] ipq4019-mdio 90000.mdio: Program EPHY reg 0xc90f018 with 0x320c41
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.450356] ipq4019-mdio 90000.mdio: Program UNIPHY reg 0xc90f014 with 0x1cc5
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.600038] i2c_dev: i2c /dev entries driver
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.603240] sdhci: Secure Digital Host Controller Interface driver
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.603415] sdhci: Copyright(c) Pierre Ossman
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.609405] sdhci-pltfm: SDHCI platform and OF driver helper
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [    1.615135] random: crng init done
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.624095]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.624095] Version Rollback Feature Disabled
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.627597]  cs_system_cfg: CoreSight Configuration manager initialised
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.630919] NET: Registered PF_INET6 protocol family
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.636208] Segment Routing with IPv6
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.640636] In-situ OAM (IOAM) with IPv6
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.644176] NET: Registered PF_PACKET protocol family
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [    1.648279] Bridge firewalling registered
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.653167] 8021q: 802.1Q VLAN Support v1.8
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.660092] mmc0: SDHCI controller on 7804000.mmc [7804000.mmc] using ADMA 64-bit
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [    1.672299] Key type .fscrypt registered
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [    1.672340] Key type fscrypt-provisioning registered
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.714557] OEM_ID: 0, PROD_ID: 0
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.714597] CPU: IPQ5322, SoC Version: 1.1
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.717710] qcom-pcie 18000000.pcie: Early Cal not supported
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.721297] qcom-pcie 18000000.pcie: host bridge /soc@0/pcie@18000000 ranges:
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.726750] qcom-pcie 18000000.pcie:       IO 0x0018200000..0x00182fffff -> 0x0018200000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.734154] qcom-pcie 18000000.pcie:      MEM 0x0018300000..0x001fffffff -> 0x0018300000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.775699] mmc0: new HS200 MMC card at address 0001
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.776395] mmcblk0: mmc0:0001 SLD64G 57.1 GiB
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [    1.809375] GPT:partition_entry_array_crc32 values don't match: 0x494abfed != 0xc7ab3043
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [    1.809427] GPT: Use GNU Parted to correct GPT errors.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.816641]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.824107] mmcblk0boot0: mmc0:0001 SLD64G 4.00 MiB
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.833658] mmcblk0boot1: mmc0:0001 SLD64G 4.00 MiB
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.838001] mmcblk0rpmb: mmc0:0001 SLD64G 4.00 MiB, chardev (238:0)
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    1.871618] qcom-pcie 18000000.pcie: iATU: unroll T, 8 ob, 0 ib, align 4K, limit 1024G
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.872626] qcom-pcie 18000000.pcie: Phy link never came up
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.873041] qcom-pcie 18000000.pcie: PCI host bridge to bus 0001:00
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.877004] pci_bus 0001:00: root bus resource [bus 00-ff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.883281] pci_bus 0001:00: root bus resource [io  0x0000-0xfffff] (bus address [0x18200000-0x182fffff])
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.888808] pci_bus 0001:00: root bus resource [mem 0x18300000-0x1fffffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.898482] pci 0001:00:00.0: [17cb:1005] type 01 class 0x060400
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.905233] pci 0001:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.911389] pci 0001:00:00.0: reg 0x14: [mem 0x00000000-0x0000ffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.917422] pci 0001:00:00.0: PME# supported from D0 D3hot D3cold
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.926609] pci 0001:00:00.0: BAR 1: assigned [mem 0x18300000-0x1830ffff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.929869] pci 0001:00:00.0: BAR 0: assigned [mem 0x18310000-0x18310fff]
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.936653] pci 0001:00:00.0: PCI bridge to [bus 01-ff]
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [    2.949133] clk: Not disabling unused clocks
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.949170] ALSA device list:
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.952985]   No soundcards found.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.959821] VFS: Mounted root (squashfs filesystem) readonly on device 179:22.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.960018] Freeing unused kernel memory: 576K
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    2.965997] Run /sbin/init as init process
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    2.970359]   with arguments:
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    2.970361]     /sbin/init
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    2.970364]   with environment:
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    2.970367]     HOME=/
+Wed Nov  4 11:46:45 2026 kern.debug kernel: [    2.970370]     TERM=linux
+Wed Nov  4 11:46:45 2026 user.info kernel: [    3.155956] init: Console is alive
+Wed Nov  4 11:46:45 2026 user.info kernel: [    3.156085] init: - watchdog -
+Wed Nov  4 11:46:45 2026 user.info kernel: [    3.573383] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [    3.593569] gpio_button_hotplug: loading out-of-tree module taints kernel.
+Wed Nov  4 11:46:45 2026 user.info kernel: [    3.597347] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+Wed Nov  4 11:46:45 2026 user.info kernel: [    3.602216] init: - preinit -
+Wed Nov  4 11:46:45 2026 user.info kernel: [    8.736816] mount_root: loading kmods from internal overlay
+Wed Nov  4 11:46:45 2026 user.info kernel: [    8.747113] kmodloader: loading kernel modules from //etc/modules-boot.d/*
+Wed Nov  4 11:46:45 2026 user.info kernel: [    8.749412] kmodloader: done loading kernel modules from //etc/modules-boot.d/*
+Wed Nov  4 11:46:45 2026 user.info kernel: [    8.965675] block: attempting to load /tmp/overlay/upper/etc/config/fstab
+Wed Nov  4 11:46:45 2026 user.err kernel: [    8.965797] block: unable to load configuration (fstab: Entry not found)
+Wed Nov  4 11:46:45 2026 user.info kernel: [    8.971521] block: attempting to load /tmp/overlay/etc/config/fstab
+Wed Nov  4 11:46:45 2026 user.err kernel: [    8.978274] block: unable to load configuration (fstab: Entry not found)
+Wed Nov  4 11:46:45 2026 user.info kernel: [    8.984286] block: attempting to load /etc/config/fstab
+Wed Nov  4 11:46:45 2026 user.err kernel: [    8.991994] block: unable to load configuration (fstab: Entry not found)
+Wed Nov  4 11:46:45 2026 user.err kernel: [    8.996136] block: no usable configuration
+Wed Nov  4 11:46:45 2026 user.info kernel: [    9.003250] block: attempting to load /etc/config/fstab
+Wed Nov  4 11:46:45 2026 user.err kernel: [    9.007005] block: unable to load configuration (fstab: Entry not found)
+Wed Nov  4 11:46:45 2026 user.err kernel: [    9.012173] block: no usable configuration
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    9.019619] loop0: detected capacity change from 0 to 4179968
+Wed Nov  4 11:46:45 2026 kern.info kernel: [    9.060067] loop0: detected capacity change from 4179968 to 4157056
+Wed Nov  4 11:46:45 2026 user.info kernel: [    9.062792] mount_root: overlay filesystem in /dev/loop0 has not been formatted yet
+Wed Nov  4 11:46:45 2026 user.warn kernel: [    9.067166] mount_root: no usable overlay filesystem found, using tmpfs overlay
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [    9.074613] overlayfs: null uuid detected in lower fs '/', falling back to xino=off,index=off,nfs_export=off.
+Wed Nov  4 11:46:45 2026 user.warn kernel: [    9.082777] urandom-seed: Seed file not found (/etc/urandom.seed)
+Wed Nov  4 11:46:45 2026 user.info kernel: [    9.107855] procd: - early -
+Wed Nov  4 11:46:45 2026 user.info kernel: [    9.107946] procd: - watchdog -
+Wed Nov  4 11:46:45 2026 user.info kernel: [    9.648031] procd: - watchdog -
+Wed Nov  4 11:46:45 2026 user.info kernel: [    9.650806] procd: - ubus -
+Wed Nov  4 11:46:45 2026 user.info kernel: [    9.803740] procd: - init -
+Wed Nov  4 11:46:45 2026 user.info kernel: [   10.069932] kmodloader: loading kernel modules from /etc/modules.d/*
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   10.091540] nss phy driver register successfully
+Wed Nov  4 11:46:45 2026 user.info kernel: [   10.221698] urngd: v1.0.2 started.
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.250401] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.250459] ssdk_dt_parse_interrupt[1056]:INFO:link-intr-gpio is not defined, link polling is enabled
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.432285] regi_init[1898]:INFO:Initializing MPPE Done!!
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.432431] ssdk_dt_parse_mac_mode[358]:INFO:mac mode2 doesn't exit!
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.436839] ssdk_dt_parse_interrupt[1073]:INFO:interrupt gpio:0x217, interrupt number: 0x1b
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.443122] ssdk_dt_parse[1434]:INFO:switch node is qca8386!
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   10.605256] MHT GCC CLK initialization with clock mode 16 on port bmp 0x1f
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.606851] ssdk_mht_pinctrl_init[390]:INFO: ssdk_mht_pinctrl_init done
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.931691] ssdk_switch_register[1358]:INFO:intr_number:27, intr_name:switch1, intr_flag:4
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.937820] regi_init[1871]:INFO:Initializing MHT Done!!
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.938895] regi_init[1923]:INFO:qca-ssdk module init succeeded!
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.946317] nat46: module (version 4c5beee236841724219598fabb1edc93d4f08ce5) loaded.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   10.951733] PPP generic driver version 2.4.2
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   10.958648] NET: Registered PF_PPPOX protocol family
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   10.973986] PPE-RULE module loaded successfully
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   10.987833] tun: Universal TUN/TAP device driver, 1.6
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   10.994912] DDR size: 80000000, DMA mask is ffffffff
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.015663] GMAC1(ffffff8002704940) Invalid MAC@ - using a2:2a:ad:c3:d4:03
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.016534] **********************************************************
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.021486] * NSS Data Plane driver
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.027944] **********************************************************
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.132450] ppe_ds_module_init[107]:PPE-DS module loaded successfully 32768
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.137489] nss_ppenl_init[201]:NSS Netlink manager loaded: Build Id: 11/05/26, 06:11:54
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.143353] nss_ppenl_acl_init[340]:Init NSS PPE ACL handler
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.151689] nss_ppenl_acl_init[351]:size of the msg in netlink = 1056
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.157236] nss_ppenl_init[217]:attaching family:nss_ppenl_acl
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.163582] nss_ppenl_policer_init[304]:Init NSS PPE POLICER handler
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.169308] nss_ppenl_init[217]:attaching family:nss_ppenl_poli
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.175820] nss_ppenl_qos_init[138]:Init NSS PPE QOS handler
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.181464] nss_ppenl_init[217]:attaching family:nss_ppenl_qos
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.187355] nss_ppenl_exception_init[176]:Init NSS PPE EXCEPTION handler
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.193011] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+Wed Nov  4 11:46:45 2026 kern.notice kernel: [   11.199857] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.207514] GACT probability on
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.213010] Mirror/redirect action on
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.218711] u32 classifier
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.219216]     input device check on
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.221838]     Actions configured
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.245221] xt_time: kernel timezone is -0000
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.270761] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+Wed Nov  4 11:46:45 2026 kern.info kernel: [   11.270799] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+Wed Nov  4 11:46:45 2026 user.info kernel: [   11.279486] kmodloader: done loading kernel modules from /etc/modules.d/*
+Wed Nov  4 11:46:45 2026 daemon.notice procd: /etc/rc.d/S16qca-ssdk:
+Wed Nov  4 11:46:45 2026 daemon.notice procd: /etc/rc.d/S16qca-ssdk: starting
+Wed Nov  4 11:46:45 2026 kern.warn kernel: [   14.609501] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+Wed Nov  4 11:46:45 2026 user.notice dnsmasq: DNS rebinding protection is active, will discard upstream RFC1918 responses!
+Wed Nov  4 11:46:46 2026 user.notice dnsmasq: Allowing 127.0.0.0/8 responses
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: started, version 2.93 cachesize 1000
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-nftset no-auth no-DNSSEC no-ID loop-detect inotify dumpfile
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: UBus support enabled: connected to system bus
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: using only locally-known addresses for test
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: using only locally-known addresses for onion
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: using only locally-known addresses for localhost
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: using only locally-known addresses for local
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: using only locally-known addresses for invalid
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: using only locally-known addresses for bind
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: using only locally-known addresses for lan
+Wed Nov  4 11:46:46 2026 daemon.warn dnsmasq[1683]: no servers found in /tmp/resolv.conf.d/resolv.conf.auto, will retry
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: read /etc/hosts - 12 names
+Wed Nov  4 11:46:46 2026 daemon.info dnsmasq[1683]: read /tmp/hosts/dhcp.cfg01411c - 0 names
+Wed Nov  4 11:46:48 2026 authpriv.info dropbear[1775]: Not backgrounding
+Wed Nov  4 11:46:48 2026 daemon.notice procd: /etc/rc.d/S19firewall: sh: /etc/firewall.d/qca-nss-ecm: line 19: iptables: not found
+Wed Nov  4 11:46:48 2026 daemon.notice procd: /etc/rc.d/S19firewall: sh: /etc/firewall.d/qca-nss-ecm: line 20: iptables: not found
+Wed Nov  4 11:46:48 2026 daemon.notice procd: /etc/rc.d/S19firewall: sh: /etc/firewall.d/qca-nss-ecm: line 20: iptables: not found
+Wed Nov  4 11:46:48 2026 daemon.notice procd: /etc/rc.d/S20network: cat: can't open '/var/run/swconfig.applied': No such file or directory
+Wed Nov  4 11:46:50 2026 user.notice ssdk-loglevel: set log_level=2 now=2
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: vrf
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: bonding
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: 8021ad
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: 8021q
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: macvlan
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: veth
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: bridge
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: Network device
+Wed Nov  4 11:46:50 2026 user.notice : Added device handler type: tunnel
+Wed Nov  4 11:46:50 2026 daemon.warn netifd: Wireless module not found
+Wed Nov  4 11:46:50 2026 kern.info kernel: [   19.643637] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+Wed Nov  4 11:46:50 2026 kern.info kernel: [   19.643730] ECM database jhash random seed: 0xa7627f4c
+Wed Nov  4 11:46:50 2026 kern.info kernel: [   19.653325] ECM init complete
+Wed Nov  4 11:46:50 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: net.bridge.bridge-nf-call-ip6tables = 1
+Wed Nov  4 11:46:50 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: net.bridge.bridge-nf-call-iptables = 1
+Wed Nov  4 11:46:50 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: /etc/rc.common: line 217: can't create /sys/kernel/debug/ecm/ecm_classifier_emesh/enabled: nonexistent directory
+Wed Nov  4 11:46:50 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: /etc/rc.common: line 218: can't create /sys/kernel/debug/ecm/ecm_classifier_emesh/sawf_enabled: nonexistent directory
+Wed Nov  4 11:46:50 2026 kern.info kernel: [   19.852703] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:46:50 2026 kern.info kernel: [   19.852779] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:46:50 2026 kern.info kernel: [   19.856810] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'lan' is enabled
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'lan' is setting up now
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.863414] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'lan' is now up
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.877625] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.877958] br-lan: port 2(eth1.2) entered blocking state
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.882891] br-lan: port 2(eth1.2) entered disabled state
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.887875] eth1.2: entered allmulticast mode
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.895332] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.898914] eth1.2: entered promiscuous mode
+Wed Nov  4 11:46:51 2026 daemon.notice procd: /etc/rc.d/S50uhttpd: 4+0 records in
+Wed Nov  4 11:46:51 2026 daemon.notice procd: /etc/rc.d/S50uhttpd: 4+0 records out
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.904126] br-lan: port 2(eth1.2) entered blocking state
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   19.907803] br-lan: port 2(eth1.2) entered forwarding state
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: bridge 'br-lan' link is up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'lan' has link connectivity
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: VLAN 'eth1.2' link is up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'loopback' is enabled
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'loopback' is setting up now
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'loopback' is now up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'wan' is enabled
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'wan6' is enabled
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: bridge 'br-lan' link is down
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'lan' has link connectivity loss
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Network device 'eth1' link is up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: VLAN 'eth1.2' link is down
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: VLAN 'eth1.2' link is up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: bridge 'br-lan' link is up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'lan' has link connectivity
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Network device 'lo' link is up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'loopback' has link connectivity
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: VLAN 'eth1.1' link is up
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'wan' has link connectivity
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'wan' is setting up now
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'wan6' has link connectivity
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: Interface 'wan6' is setting up now
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: wan (2358): udhcpc: started, v1.37.0
+Wed Nov  4 11:46:51 2026 user.notice firewall: Reloading firewall due to ifup of lan (br-lan)
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: wan (2358): udhcpc: broadcasting discover
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: wan6 (2433): Failed to send RS (Address not available)
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: wan6 (2433): eth1.1: error connecting LLA socket
+Wed Nov  4 11:46:51 2026 user.notice ucitrack: Setting up /etc/config/odhcpd reload dependency on /etc/config/dhcp
+Wed Nov  4 11:46:51 2026 user.notice ucitrack: Setting up /etc/config/dhcp reload dependency on /etc/config/network
+Wed Nov  4 11:46:51 2026 user.notice ucitrack: Setting up /etc/config/network reload dependency on /etc/config/wireless
+Wed Nov  4 11:46:51 2026 user.notice ucitrack: Setting up non-init /etc/config/fstab reload handler: /sbin/block mount
+Wed Nov  4 11:46:51 2026 user.notice ucitrack: Setting up /etc/config/system reload trigger for non-procd /etc/init.d/led
+Wed Nov  4 11:46:51 2026 user.notice ucitrack: Setting up /etc/config/luci_statistics reload dependency on /etc/config/system
+Wed Nov  4 11:46:51 2026 user.notice ucitrack: Setting up /etc/config/dhcp reload dependency on /etc/config/system
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   20.544019] loop0: detected capacity change from 0 to 4179968
+Wed Nov  4 11:46:51 2026 daemon.notice netifd: wan6 (2433): Failed to send SOLICIT message to ff02::1:2 (Address not available)
+Wed Nov  4 11:46:51 2026 daemon.info mount_root: overlay filesystem in /dev/loop0 has not been formatted yet
+Wed Nov  4 11:46:51 2026 daemon.err mount_root: no jffs2 marker found
+Wed Nov  4 11:46:51 2026 daemon.notice procd: /etc/rc.d/S95done: sh: mkfs.f2fs: not found
+Wed Nov  4 11:46:51 2026 daemon.err mount_root: failed - mount -t jffs2 /dev/loop0 /rom/overlay: Invalid argument
+Wed Nov  4 11:46:51 2026 kern.info kernel: [   20.630477] loop0: detected capacity change from 4179968 to 4157056
+Wed Nov  4 11:46:51 2026 kern.err kernel: [   20.634224] MTD: Attempt to mount non-MTD device "/dev/loop0"
+Wed Nov  4 11:46:51 2026 user.notice sfp-detect: init: sampler launched
+Wed Nov  4 11:46:51 2026 daemon.notice procd: /etc/rc.d/S96led: setting up led POWER
+Wed Nov  4 11:46:51 2026 user.notice sfp-detect: start boot=65da065f wait=0s
+Wed Nov  4 11:46:51 2026 daemon.notice procd: /etc/rc.d/S96led: setting up led BOOT
+Wed Nov  4 11:46:52 2026 daemon.notice procd: /etc/rc.d/S96led: setting up led SFP
+Wed Nov  4 11:46:52 2026 daemon.notice netifd: wan6 (2433): eth1.1: error connecting LLA socket
+Wed Nov  4 11:46:52 2026 kern.warn kernel: [   20.910272] adpt_hppe_sfp_module_manager[4186]:INFO:port2 sfp module inserted: force re-init
+Wed Nov  4 11:46:52 2026 daemon.info procd: - init complete -
+Wed Nov  4 11:46:52 2026 daemon.info urandom_seed[3378]: Seed saved (/etc/urandom.seed)
+Wed Nov  4 11:46:52 2026 user.notice sfp-detect: up=20.74 type=2.5g-stick link=down enc=0x3 br=0x20 tries=1
+Wed Nov  4 11:46:53 2026 daemon.warn odhcpd[2090]: No default route present, setting ra_lifetime to 0!
+Wed Nov  4 11:46:53 2026 daemon.warn odhcpd[2090]: rfc9096: br-lan: piofile updated
+Wed Nov  4 11:46:53 2026 kern.warn kernel: [   22.100086] adpt_hppe_sfp_module_manager[4200]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:46:53 2026 daemon.warn odhcpd[2090]: No default route present, setting ra_lifetime to 0!
+Wed Nov  4 11:46:53 2026 daemon.info dnsmasq[1683]: read /etc/hosts - 12 names
+Wed Nov  4 11:46:53 2026 daemon.info dnsmasq[1683]: read /tmp/hosts/dhcp.cfg01411c - 0 names
+Wed Nov  4 11:46:53 2026 daemon.info dnsmasq[1683]: read /tmp/hosts/dhcp.cfg01411c.2803 - 0 names
+Wed Nov  4 11:46:53 2026 daemon.info dnsmasq[1683]: read /tmp/hosts/odhcpd.hosts.lan - 2 names
+Wed Nov  4 11:46:53 2026 authpriv.info dropbear[3432]: Child connection from 192.168.1.2:9530
+Wed Nov  4 11:46:54 2026 kern.info kernel: [   22.971801] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:46:54 2026 kern.info kernel: [   22.971891] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:46:54 2026 kern.info kernel: [   22.976532] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:46:54 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:46:54 2026 authpriv.notice dropbear[3432]: Auth succeeded with blank password for 'root' from 192.168.1.2:9530
+Wed Nov  4 11:46:54 2026 authpriv.info dropbear[3432]: Exit (root) from <192.168.1.2:9530>: Disconnect received
+Wed Nov  4 11:46:54 2026 authpriv.info dropbear[3434]: Child connection from 192.168.1.2:53684
+Wed Nov  4 11:46:54 2026 daemon.notice netifd: wan (2358): udhcpc: broadcasting discover
+Wed Nov  4 11:46:54 2026 authpriv.notice dropbear[3434]: Auth succeeded with blank password for 'root' from 192.168.1.2:53684
+Wed Nov  4 11:46:54 2026 authpriv.info dropbear[3434]: Exit (root) from <192.168.1.2:53684>: Disconnect received
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[1683]: exiting on receipt of SIGTERM
+Wed Nov  4 11:46:55 2026 daemon.err procd: Got unexpected signal 1
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: started, version 2.93 cachesize 1000
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-nftset no-auth no-DNSSEC no-ID loop-detect inotify dumpfile
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: UBus support enabled: connected to system bus
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq-dhcp[3481]: DHCP, IP range 192.168.1.100 -- 192.168.1.249, lease time 12h
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: using only locally-known addresses for test
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: using only locally-known addresses for onion
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: using only locally-known addresses for localhost
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: using only locally-known addresses for local
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: using only locally-known addresses for invalid
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: using only locally-known addresses for bind
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: using only locally-known addresses for lan
+Wed Nov  4 11:46:55 2026 daemon.warn dnsmasq[3481]: no servers found in /tmp/resolv.conf.d/resolv.conf.auto, will retry
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: read /etc/hosts - 12 names
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: read /tmp/hosts/dhcp.cfg01411c - 4 names
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq[3481]: read /tmp/hosts/odhcpd.hosts.lan - 2 names
+Wed Nov  4 11:46:55 2026 daemon.info dnsmasq-dhcp[3481]: read /etc/ethers - 0 addresses
+Wed Nov  4 11:46:56 2026 user.notice sfp-detect: up=24.76 type=2.5g-stick link=up/2500 enc=0x3 br=0x20 tries=1
+Wed Nov  4 11:46:57 2026 daemon.notice netifd: wan (2358): udhcpc: broadcasting discover
+Wed Nov  4 11:47:00 2026 authpriv.info dropbear[3565]: Child connection from 192.168.1.2:21204
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq-dhcp[3481]: DHCPDISCOVER(br-lan) 192.168.1.247 00:e0:4c:68:bf:74
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq-dhcp[3481]: DHCPOFFER(br-lan) 192.168.1.247 00:e0:4c:68:bf:74
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq[3481]: read /etc/hosts - 12 names
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq[3481]: read /tmp/hosts/dhcp.cfg01411c - 4 names
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq[3481]: read /tmp/hosts/odhcpd.hosts.lan - 4 names
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq-dhcp[3481]: read /etc/ethers - 0 addresses
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq-dhcp[3481]: DHCPREQUEST(br-lan) 192.168.1.247 00:e0:4c:68:bf:74
+Wed Nov  4 11:47:00 2026 daemon.info dnsmasq-dhcp[3481]: DHCPACK(br-lan) 192.168.1.247 00:e0:4c:68:bf:74 Fnos-ARM
+Wed Nov  4 11:47:00 2026 authpriv.notice dropbear[3565]: Auth succeeded with blank password for 'root' from 192.168.1.2:21204
+Wed Nov  4 11:47:00 2026 authpriv.info dropbear[3565]: Exit (root) from <192.168.1.2:21204>: Disconnect received
+Wed Nov  4 11:47:05 2026 authpriv.info dropbear[3606]: Child connection from 192.168.1.2:27936
+Wed Nov  4 11:47:05 2026 authpriv.notice dropbear[3606]: Auth succeeded with blank password for 'root' from 192.168.1.2:27936
+Wed Nov  4 11:47:05 2026 authpriv.info dropbear[3606]: Exit (root) from <192.168.1.2:27936>: Disconnect received
+Wed Nov  4 11:47:08 2026 daemon.warn odhcpd[2090]: No default route present, setting ra_lifetime to 0!
+Wed Nov  4 11:47:11 2026 authpriv.info dropbear[3634]: Child connection from 192.168.1.2:47117
+Wed Nov  4 11:47:11 2026 authpriv.notice dropbear[3634]: Auth succeeded with blank password for 'root' from 192.168.1.2:47117
+Wed Nov  4 11:47:11 2026 authpriv.info dropbear[3634]: Exit (root) from <192.168.1.2:47117>: Disconnect received
+Wed Nov  4 11:47:16 2026 authpriv.info dropbear[3669]: Child connection from 192.168.1.2:3976
+Wed Nov  4 11:47:16 2026 authpriv.notice dropbear[3669]: Auth succeeded with blank password for 'root' from 192.168.1.2:3976
+Wed Nov  4 11:47:16 2026 authpriv.info dropbear[3669]: Exit (root) from <192.168.1.2:3976>: Disconnect received
+Wed Nov  4 11:47:22 2026 authpriv.info dropbear[3710]: Child connection from 192.168.1.2:6304
+Wed Nov  4 11:47:22 2026 authpriv.notice dropbear[3710]: Auth succeeded with blank password for 'root' from 192.168.1.2:6304
+Wed Nov  4 11:47:22 2026 authpriv.info dropbear[3710]: Exit (root) from <192.168.1.2:6304>: Disconnect received
+Wed Nov  4 11:47:28 2026 authpriv.info dropbear[3738]: Child connection from 192.168.1.2:20782
+Wed Nov  4 11:47:28 2026 authpriv.notice dropbear[3738]: Auth succeeded with blank password for 'root' from 192.168.1.2:20782
+Wed Nov  4 11:47:28 2026 authpriv.info dropbear[3738]: Exit (root) from <192.168.1.2:20782>: Disconnect received
+Wed Nov  4 11:47:33 2026 authpriv.info dropbear[3786]: Child connection from 192.168.1.2:38144
+Wed Nov  4 11:47:33 2026 authpriv.notice dropbear[3786]: Auth succeeded with blank password for 'root' from 192.168.1.2:38144
+Wed Nov  4 11:47:33 2026 authpriv.info dropbear[3786]: Exit (root) from <192.168.1.2:38144>: Disconnect received
+Wed Nov  4 11:47:39 2026 authpriv.info dropbear[3814]: Child connection from 192.168.1.2:18986
+Wed Nov  4 11:47:39 2026 authpriv.notice dropbear[3814]: Auth succeeded with blank password for 'root' from 192.168.1.2:18986
+Wed Nov  4 11:47:39 2026 authpriv.info dropbear[3814]: Exit (root) from <192.168.1.2:18986>: Disconnect received
+Wed Nov  4 11:47:44 2026 authpriv.info dropbear[3849]: Child connection from 192.168.1.2:6867
+Wed Nov  4 11:47:44 2026 authpriv.notice dropbear[3849]: Auth succeeded with blank password for 'root' from 192.168.1.2:6867
+Wed Nov  4 11:47:44 2026 authpriv.info dropbear[3849]: Exit (root) from <192.168.1.2:6867>: Disconnect received
+Wed Nov  4 11:47:50 2026 authpriv.info dropbear[3890]: Child connection from 192.168.1.2:20647
+Wed Nov  4 11:47:50 2026 authpriv.notice dropbear[3890]: Auth succeeded with blank password for 'root' from 192.168.1.2:20647
+Wed Nov  4 11:47:50 2026 authpriv.info dropbear[3890]: Exit (root) from <192.168.1.2:20647>: Disconnect received
+Wed Nov  4 11:47:55 2026 authpriv.info dropbear[3918]: Child connection from 192.168.1.2:5587
+Wed Nov  4 11:47:56 2026 authpriv.notice dropbear[3918]: Auth succeeded with blank password for 'root' from 192.168.1.2:5587
+Wed Nov  4 11:47:56 2026 authpriv.info dropbear[3918]: Exit (root) from <192.168.1.2:5587>: Disconnect received
+Wed Nov  4 11:48:01 2026 authpriv.info dropbear[3966]: Child connection from 192.168.1.2:27981
+Wed Nov  4 11:48:01 2026 authpriv.notice dropbear[3966]: Auth succeeded with blank password for 'root' from 192.168.1.2:27981
+Wed Nov  4 11:48:01 2026 authpriv.info dropbear[3966]: Exit (root) from <192.168.1.2:27981>: Disconnect received
+Wed Nov  4 11:48:07 2026 authpriv.info dropbear[3994]: Child connection from 192.168.1.2:9589
+Wed Nov  4 11:48:07 2026 authpriv.notice dropbear[3994]: Auth succeeded with blank password for 'root' from 192.168.1.2:9589
+Wed Nov  4 11:48:07 2026 authpriv.info dropbear[3994]: Exit (root) from <192.168.1.2:9589>: Disconnect received
+Wed Nov  4 11:48:12 2026 authpriv.info dropbear[4029]: Child connection from 192.168.1.2:4389
+Wed Nov  4 11:48:12 2026 authpriv.notice dropbear[4029]: Auth succeeded with blank password for 'root' from 192.168.1.2:4389
+Wed Nov  4 11:48:12 2026 authpriv.info dropbear[4029]: Exit (root) from <192.168.1.2:4389>: Disconnect received
+Wed Nov  4 11:48:18 2026 authpriv.info dropbear[4070]: Child connection from 192.168.1.2:57593
+Wed Nov  4 11:48:18 2026 authpriv.notice dropbear[4070]: Auth succeeded with blank password for 'root' from 192.168.1.2:57593
+Wed Nov  4 11:48:18 2026 authpriv.info dropbear[4070]: Exit (root) from <192.168.1.2:57593>: Disconnect received
+Wed Nov  4 11:48:24 2026 authpriv.info dropbear[4098]: Child connection from 192.168.1.2:7023
+Wed Nov  4 11:48:24 2026 authpriv.notice dropbear[4098]: Auth succeeded with blank password for 'root' from 192.168.1.2:7023
+Wed Nov  4 11:48:24 2026 authpriv.info dropbear[4098]: Exit (root) from <192.168.1.2:7023>: Disconnect received
+Wed Nov  4 11:48:29 2026 authpriv.info dropbear[4146]: Child connection from 192.168.1.2:29879
+Wed Nov  4 11:48:29 2026 authpriv.notice dropbear[4146]: Auth succeeded with blank password for 'root' from 192.168.1.2:29879
+Wed Nov  4 11:48:29 2026 authpriv.info dropbear[4146]: Exit (root) from <192.168.1.2:29879>: Disconnect received
+Wed Nov  4 11:48:35 2026 authpriv.info dropbear[4174]: Child connection from 192.168.1.2:14377
+Wed Nov  4 11:48:35 2026 authpriv.notice dropbear[4174]: Auth succeeded with blank password for 'root' from 192.168.1.2:14377
+Wed Nov  4 11:48:35 2026 authpriv.info dropbear[4174]: Exit (root) from <192.168.1.2:14377>: Disconnect received
+Wed Nov  4 11:48:40 2026 authpriv.info dropbear[4215]: Child connection from 192.168.1.2:44659
+Wed Nov  4 11:48:40 2026 authpriv.notice dropbear[4215]: Auth succeeded with blank password for 'root' from 192.168.1.2:44659
+Wed Nov  4 11:48:40 2026 authpriv.info dropbear[4215]: Exit (root) from <192.168.1.2:44659>: Disconnect received
+Wed Nov  4 11:48:46 2026 authpriv.info dropbear[4256]: Child connection from 192.168.1.2:4972
+Wed Nov  4 11:48:46 2026 authpriv.notice dropbear[4256]: Auth succeeded with blank password for 'root' from 192.168.1.2:4972
+Wed Nov  4 11:48:46 2026 authpriv.info dropbear[4256]: Exit (root) from <192.168.1.2:4972>: Disconnect received
+Wed Nov  4 11:48:49 2026 user.notice sfp-detect: done ok=30 final=2.5g-stick
+Wed Nov  4 11:48:51 2026 authpriv.info dropbear[4292]: Child connection from 192.168.1.2:39709
+Wed Nov  4 11:48:51 2026 authpriv.notice dropbear[4292]: Auth succeeded with blank password for 'root' from 192.168.1.2:39709
+Wed Nov  4 11:48:51 2026 authpriv.info dropbear[4292]: Exit (root) from <192.168.1.2:39709>: Disconnect received
+Wed Nov  4 11:48:57 2026 authpriv.info dropbear[4300]: Child connection from 192.168.1.2:44535
+Wed Nov  4 11:48:57 2026 authpriv.notice dropbear[4300]: Auth succeeded with blank password for 'root' from 192.168.1.2:44535
+Wed Nov  4 11:48:57 2026 authpriv.info dropbear[4300]: Exit (root) from <192.168.1.2:44535>: Disconnect received
+Wed Nov  4 11:49:02 2026 authpriv.info dropbear[4308]: Child connection from 192.168.1.2:55529
+Wed Nov  4 11:49:02 2026 authpriv.notice dropbear[4308]: Auth succeeded with blank password for 'root' from 192.168.1.2:55529
+Wed Nov  4 11:49:02 2026 authpriv.info dropbear[4308]: Exit (root) from <192.168.1.2:55529>: Disconnect received
+Wed Nov  4 11:49:08 2026 authpriv.info dropbear[4316]: Child connection from 192.168.1.2:55531
+Wed Nov  4 11:49:08 2026 authpriv.notice dropbear[4316]: Auth succeeded with blank password for 'root' from 192.168.1.2:55531
+Wed Nov  4 11:49:08 2026 authpriv.info dropbear[4316]: Exit (root) from <192.168.1.2:55531>: Disconnect received
+Wed Nov  4 11:49:13 2026 authpriv.info dropbear[4324]: Child connection from 192.168.1.2:34558
+Wed Nov  4 11:49:13 2026 authpriv.notice dropbear[4324]: Auth succeeded with blank password for 'root' from 192.168.1.2:34558
+Wed Nov  4 11:49:13 2026 authpriv.info dropbear[4324]: Exit (root) from <192.168.1.2:34558>: Disconnect received
+Wed Nov  4 11:49:19 2026 authpriv.info dropbear[4332]: Child connection from 192.168.1.2:44542
+Wed Nov  4 11:49:19 2026 authpriv.notice dropbear[4332]: Auth succeeded with blank password for 'root' from 192.168.1.2:44542
+Wed Nov  4 11:49:19 2026 authpriv.info dropbear[4332]: Exit (root) from <192.168.1.2:44542>: Disconnect received
+Wed Nov  4 11:49:24 2026 authpriv.info dropbear[4340]: Child connection from 192.168.1.2:5280
+Wed Nov  4 11:49:25 2026 authpriv.notice dropbear[4340]: Auth succeeded with blank password for 'root' from 192.168.1.2:5280
+Wed Nov  4 11:49:25 2026 authpriv.info dropbear[4340]: Exit (root) from <192.168.1.2:5280>: Disconnect received
+Wed Nov  4 11:49:30 2026 authpriv.info dropbear[4348]: Child connection from 192.168.1.2:17687
+Wed Nov  4 11:49:30 2026 authpriv.notice dropbear[4348]: Auth succeeded with blank password for 'root' from 192.168.1.2:17687
+Wed Nov  4 11:49:30 2026 authpriv.info dropbear[4348]: Exit (root) from <192.168.1.2:17687>: Disconnect received
+Wed Nov  4 11:49:36 2026 authpriv.info dropbear[4356]: Child connection from 192.168.1.2:7269
+Wed Nov  4 11:49:36 2026 authpriv.notice dropbear[4356]: Auth succeeded with blank password for 'root' from 192.168.1.2:7269
+Wed Nov  4 11:49:36 2026 authpriv.info dropbear[4356]: Exit (root) from <192.168.1.2:7269>: Disconnect received
+Wed Nov  4 11:49:41 2026 authpriv.info dropbear[4364]: Child connection from 192.168.1.2:19043
+Wed Nov  4 11:49:41 2026 authpriv.notice dropbear[4364]: Auth succeeded with blank password for 'root' from 192.168.1.2:19043
+Wed Nov  4 11:49:42 2026 authpriv.info dropbear[4364]: Exit (root) from <192.168.1.2:19043>: Disconnect received
+Wed Nov  4 11:49:47 2026 authpriv.info dropbear[4372]: Child connection from 192.168.1.2:11803
+Wed Nov  4 11:49:47 2026 authpriv.notice dropbear[4372]: Auth succeeded with blank password for 'root' from 192.168.1.2:11803
+Wed Nov  4 11:49:47 2026 authpriv.info dropbear[4372]: Exit (root) from <192.168.1.2:11803>: Disconnect received
+Wed Nov  4 11:49:52 2026 authpriv.info dropbear[4380]: Child connection from 192.168.1.2:51354
+Wed Nov  4 11:49:53 2026 authpriv.notice dropbear[4380]: Auth succeeded with blank password for 'root' from 192.168.1.2:51354
+Wed Nov  4 11:49:53 2026 authpriv.info dropbear[4380]: Exit (root) from <192.168.1.2:51354>: Disconnect received
+Wed Nov  4 11:49:58 2026 authpriv.info dropbear[4388]: Child connection from 192.168.1.2:51227
+Wed Nov  4 11:49:58 2026 authpriv.notice dropbear[4388]: Auth succeeded with blank password for 'root' from 192.168.1.2:51227
+Wed Nov  4 11:49:58 2026 authpriv.info dropbear[4388]: Exit (root) from <192.168.1.2:51227>: Disconnect received
+Wed Nov  4 11:50:04 2026 authpriv.info dropbear[4396]: Child connection from 192.168.1.2:56080
+Wed Nov  4 11:50:04 2026 authpriv.notice dropbear[4396]: Auth succeeded with blank password for 'root' from 192.168.1.2:56080
+Wed Nov  4 11:50:04 2026 authpriv.info dropbear[4396]: Exit (root) from <192.168.1.2:56080>: Disconnect received
+Wed Nov  4 11:50:09 2026 authpriv.info dropbear[4404]: Child connection from 192.168.1.2:36040
+Wed Nov  4 11:50:09 2026 authpriv.notice dropbear[4404]: Auth succeeded with blank password for 'root' from 192.168.1.2:36040
+Wed Nov  4 11:50:09 2026 authpriv.info dropbear[4404]: Exit (root) from <192.168.1.2:36040>: Disconnect received
+Wed Nov  4 11:50:15 2026 authpriv.info dropbear[4412]: Child connection from 192.168.1.2:22801
+Wed Nov  4 11:50:15 2026 authpriv.notice dropbear[4412]: Auth succeeded with blank password for 'root' from 192.168.1.2:22801
+Wed Nov  4 11:50:15 2026 authpriv.info dropbear[4412]: Exit (root) from <192.168.1.2:22801>: Disconnect received
+Wed Nov  4 11:50:21 2026 authpriv.info dropbear[4420]: Child connection from 192.168.1.2:50075
+Wed Nov  4 11:50:21 2026 authpriv.notice dropbear[4420]: Auth succeeded with blank password for 'root' from 192.168.1.2:50075
+Wed Nov  4 11:50:21 2026 authpriv.info dropbear[4420]: Exit (root) from <192.168.1.2:50075>: Disconnect received
+Wed Nov  4 11:50:26 2026 authpriv.info dropbear[4431]: Child connection from 192.168.1.2:36183
+Wed Nov  4 11:50:26 2026 authpriv.notice dropbear[4431]: Auth succeeded with blank password for 'root' from 192.168.1.2:36183
+Wed Nov  4 11:50:26 2026 authpriv.info dropbear[4431]: Exit (root) from <192.168.1.2:36183>: Disconnect received
+Wed Nov  4 11:50:32 2026 authpriv.info dropbear[4439]: Child connection from 192.168.1.2:34316
+Wed Nov  4 11:50:32 2026 authpriv.notice dropbear[4439]: Auth succeeded with blank password for 'root' from 192.168.1.2:34316
+Wed Nov  4 11:50:32 2026 authpriv.info dropbear[4439]: Exit (root) from <192.168.1.2:34316>: Disconnect received
+Wed Nov  4 11:50:37 2026 authpriv.info dropbear[4447]: Child connection from 192.168.1.2:48895
+Wed Nov  4 11:50:38 2026 authpriv.notice dropbear[4447]: Auth succeeded with blank password for 'root' from 192.168.1.2:48895
+Wed Nov  4 11:50:38 2026 authpriv.info dropbear[4447]: Exit (root) from <192.168.1.2:48895>: Disconnect received
+Wed Nov  4 11:50:43 2026 authpriv.info dropbear[4455]: Child connection from 192.168.1.2:14560
+Wed Nov  4 11:50:43 2026 authpriv.notice dropbear[4455]: Auth succeeded with blank password for 'root' from 192.168.1.2:14560
+Wed Nov  4 11:50:43 2026 authpriv.info dropbear[4455]: Exit (root) from <192.168.1.2:14560>: Disconnect received
+Wed Nov  4 11:50:48 2026 authpriv.info dropbear[4463]: Child connection from 192.168.1.2:13134
+Wed Nov  4 11:50:49 2026 authpriv.notice dropbear[4463]: Auth succeeded with blank password for 'root' from 192.168.1.2:13134
+Wed Nov  4 11:50:49 2026 authpriv.info dropbear[4463]: Exit (root) from <192.168.1.2:13134>: Disconnect received
+Wed Nov  4 11:50:54 2026 authpriv.info dropbear[4471]: Child connection from 192.168.1.2:1208
+Wed Nov  4 11:50:54 2026 authpriv.notice dropbear[4471]: Auth succeeded with blank password for 'root' from 192.168.1.2:1208
+Wed Nov  4 11:50:54 2026 authpriv.info dropbear[4471]: Exit (root) from <192.168.1.2:1208>: Disconnect received
+Wed Nov  4 11:51:00 2026 authpriv.info dropbear[4479]: Child connection from 192.168.1.2:20139
+Wed Nov  4 11:51:00 2026 authpriv.notice dropbear[4479]: Auth succeeded with blank password for 'root' from 192.168.1.2:20139
+Wed Nov  4 11:51:00 2026 authpriv.info dropbear[4479]: Exit (root) from <192.168.1.2:20139>: Disconnect received
+Wed Nov  4 11:51:05 2026 authpriv.info dropbear[4490]: Child connection from 192.168.1.2:3809
+Wed Nov  4 11:51:05 2026 authpriv.notice dropbear[4490]: Auth succeeded with blank password for 'root' from 192.168.1.2:3809
+Wed Nov  4 11:51:05 2026 authpriv.info dropbear[4490]: Exit (root) from <192.168.1.2:3809>: Disconnect received
+Wed Nov  4 11:51:11 2026 authpriv.info dropbear[4498]: Child connection from 192.168.1.2:3812
+Wed Nov  4 11:51:11 2026 authpriv.notice dropbear[4498]: Auth succeeded with blank password for 'root' from 192.168.1.2:3812
+Wed Nov  4 11:51:11 2026 authpriv.info dropbear[4498]: Exit (root) from <192.168.1.2:3812>: Disconnect received
+Wed Nov  4 11:51:16 2026 authpriv.info dropbear[4506]: Child connection from 192.168.1.2:43612
+Wed Nov  4 11:51:16 2026 authpriv.notice dropbear[4506]: Auth succeeded with blank password for 'root' from 192.168.1.2:43612
+Wed Nov  4 11:51:16 2026 authpriv.info dropbear[4506]: Exit (root) from <192.168.1.2:43612>: Disconnect received
+Wed Nov  4 11:51:22 2026 authpriv.info dropbear[4514]: Child connection from 192.168.1.2:16484
+Wed Nov  4 11:51:22 2026 authpriv.notice dropbear[4514]: Auth succeeded with blank password for 'root' from 192.168.1.2:16484
+Wed Nov  4 11:51:22 2026 authpriv.info dropbear[4514]: Exit (root) from <192.168.1.2:16484>: Disconnect received
+Wed Nov  4 11:51:27 2026 authpriv.info dropbear[4522]: Child connection from 192.168.1.2:1865
+Wed Nov  4 11:51:27 2026 authpriv.notice dropbear[4522]: Auth succeeded with blank password for 'root' from 192.168.1.2:1865
+Wed Nov  4 11:51:27 2026 authpriv.info dropbear[4522]: Exit (root) from <192.168.1.2:1865>: Disconnect received
+Wed Nov  4 11:51:33 2026 authpriv.info dropbear[4530]: Child connection from 192.168.1.2:16682
+Wed Nov  4 11:51:33 2026 authpriv.notice dropbear[4530]: Auth succeeded with blank password for 'root' from 192.168.1.2:16682
+Wed Nov  4 11:51:33 2026 authpriv.info dropbear[4530]: Exit (root) from <192.168.1.2:16682>: Disconnect received
+Wed Nov  4 11:51:38 2026 authpriv.info dropbear[4539]: Child connection from 192.168.1.2:13812
+Wed Nov  4 11:51:38 2026 authpriv.notice dropbear[4539]: Auth succeeded with blank password for 'root' from 192.168.1.2:13812
+Wed Nov  4 11:51:38 2026 authpriv.info dropbear[4539]: Exit (root) from <192.168.1.2:13812>: Disconnect received
+Wed Nov  4 11:51:44 2026 authpriv.info dropbear[4547]: Child connection from 192.168.1.2:53852
+Wed Nov  4 11:51:44 2026 authpriv.notice dropbear[4547]: Auth succeeded with blank password for 'root' from 192.168.1.2:53852
+Wed Nov  4 11:51:44 2026 authpriv.info dropbear[4547]: Exit (root) from <192.168.1.2:53852>: Disconnect received
+Wed Nov  4 11:51:50 2026 authpriv.info dropbear[4556]: Child connection from 192.168.1.2:46647
+Wed Nov  4 11:51:50 2026 authpriv.notice dropbear[4556]: Auth succeeded with blank password for 'root' from 192.168.1.2:46647
+Wed Nov  4 11:51:50 2026 authpriv.info dropbear[4556]: Exit (root) from <192.168.1.2:46647>: Disconnect received
+Wed Nov  4 11:51:55 2026 authpriv.info dropbear[4564]: Child connection from 192.168.1.2:29154
+Wed Nov  4 11:51:55 2026 authpriv.notice dropbear[4564]: Auth succeeded with blank password for 'root' from 192.168.1.2:29154
+Wed Nov  4 11:51:55 2026 authpriv.info dropbear[4564]: Exit (root) from <192.168.1.2:29154>: Disconnect received
+Wed Nov  4 11:52:01 2026 authpriv.info dropbear[4572]: Child connection from 192.168.1.2:53455
+Wed Nov  4 11:52:01 2026 authpriv.notice dropbear[4572]: Auth succeeded with blank password for 'root' from 192.168.1.2:53455
+Wed Nov  4 11:52:01 2026 authpriv.info dropbear[4572]: Exit (root) from <192.168.1.2:53455>: Disconnect received
+Wed Nov  4 11:52:06 2026 daemon.warn odhcpd[2090]: No default route present, setting ra_lifetime to 0!
+Wed Nov  4 11:52:07 2026 authpriv.info dropbear[4580]: Child connection from 192.168.1.2:52522
+Wed Nov  4 11:52:07 2026 authpriv.notice dropbear[4580]: Auth succeeded with blank password for 'root' from 192.168.1.2:52522
+Wed Nov  4 11:52:07 2026 authpriv.info dropbear[4580]: Exit (root) from <192.168.1.2:52522>: Disconnect received
+Wed Nov  4 11:52:12 2026 authpriv.info dropbear[4588]: Child connection from 192.168.1.2:6550
+Wed Nov  4 11:52:12 2026 authpriv.notice dropbear[4588]: Auth succeeded with blank password for 'root' from 192.168.1.2:6550
+Wed Nov  4 11:52:12 2026 authpriv.info dropbear[4588]: Exit (root) from <192.168.1.2:6550>: Disconnect received
+Wed Nov  4 11:52:18 2026 authpriv.info dropbear[4596]: Child connection from 192.168.1.2:28753
+Wed Nov  4 11:52:18 2026 authpriv.notice dropbear[4596]: Auth succeeded with blank password for 'root' from 192.168.1.2:28753
+Wed Nov  4 11:52:18 2026 authpriv.info dropbear[4596]: Exit (root) from <192.168.1.2:28753>: Disconnect received
+Wed Nov  4 11:52:23 2026 authpriv.info dropbear[4604]: Child connection from 192.168.1.2:28676
+Wed Nov  4 11:52:23 2026 authpriv.notice dropbear[4604]: Auth succeeded with blank password for 'root' from 192.168.1.2:28676
+Wed Nov  4 11:52:23 2026 authpriv.info dropbear[4604]: Exit (root) from <192.168.1.2:28676>: Disconnect received
+Wed Nov  4 11:52:29 2026 authpriv.info dropbear[4612]: Child connection from 192.168.1.2:28678
+Wed Nov  4 11:52:29 2026 authpriv.notice dropbear[4612]: Auth succeeded with blank password for 'root' from 192.168.1.2:28678
+### sfp
+SFP_TYPE=2.5g-stick
+SFP_BITRATE=0x20
+SFP_ENC=0x3
+SFP_TRIES=1
+SFP_UPTIME=137.44
+SFP_LINK=up/2500
+# start boot=65da065f wait=0s uptime=20.73
+up=20.74 carrier=0 oper=down speed=65535 cchg=1 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=24.76 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=28.79 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=32.81 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=36.84 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=40.86 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=44.89 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=48.91 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=52.93 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=56.96 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=60.98 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=65.01 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=69.03 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=73.05 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=77.08 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=81.10 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=85.13 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=89.15 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=93.18 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=97.20 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=101.22 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=105.25 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=109.27 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=113.30 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=117.32 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=121.34 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=125.37 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=129.39 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=133.42 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=137.44 carrier=1 oper=up speed=2500 cchg=2 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+# done up=138.46 ok=30 final=2.5g-stick
+### ko
+-rw-r--r--    1 root     root       2371184 Nov  4 11:46 /lib/modules/6.6.88/qca-ssdk.ko
+14:DEFAULT_LEVEL=2
+### params
+sfp_dbg
+sfp_force_mode
+sfp_kick
+### cmdline
+ root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused

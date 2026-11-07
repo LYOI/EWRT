@@ -1,0 +1,10 @@
+tag=conn1
+LOSS_mod=0
+LOSS_nas=NA
+LOSS_nas_1472=NA
+TCP_nas22=CLOSED
+rx_bytes_delta=-2536
+rx_errors=
+rx_crc_errors=
+carrier_changes=
+--- neigh

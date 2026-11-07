@@ -1,0 +1,402 @@
+1 t=319.00 eth0=1/up/2500/1/ eth1=1/2500/
+2 t=321.02 eth0=1/up/2500/1/ eth1=1/2500/
+3 t=323.05 eth0=1/up/2500/1/ eth1=1/2500/
+4 t=325.07 eth0=1/up/2500/1/ eth1=1/2500/
+5 t=327.09 eth0=1/up/2500/1/ eth1=1/2500/
+6 t=329.17 eth0=1/up/2500/1/ eth1=1/2500/
+7 t=331.20 eth0=1/up/2500/1/ eth1=1/2500/
+8 t=333.22 eth0=1/up/2500/1/ eth1=1/2500/
+9 t=335.24 eth0=1/up/2500/1/ eth1=1/2500/
+10 t=337.27 eth0=1/up/2500/1/ eth1=1/2500/
+11 t=339.34 eth0=1/up/2500/1/ eth1=1/2500/
+12 t=341.36 eth0=1/up/2500/1/ eth1=1/2500/
+13 t=343.38 eth0=1/up/2500/1/ eth1=1/2500/
+14 t=345.41 eth0=1/up/2500/1/ eth1=1/2500/
+15 t=347.43 eth0=1/up/2500/1/ eth1=1/2500/
+16 t=349.50 eth0=1/up/10000/1/ eth1=1/2500/
+17 t=351.53 eth0=1/up/10000/1/ eth1=1/2500/
+18 t=353.55 eth0=1/up/10000/1/ eth1=1/2500/
+19 t=355.57 eth0=1/up/10000/1/ eth1=1/2500/
+20 t=357.60 eth0=1/up/10000/1/ eth1=1/2500/
+21 t=359.67 eth0=1/up/10000/1/ eth1=1/2500/
+22 t=361.69 eth0=1/up/10000/1/ eth1=1/2500/
+23 t=363.72 eth0=1/up/10000/1/ eth1=1/2500/
+24 t=365.74 eth0=1/up/10000/1/ eth1=1/2500/
+25 t=367.76 eth0=1/up/10000/1/ eth1=1/2500/
+26 t=369.83 eth0=0/down/65535/2/ eth1=1/2500/
+27 t=371.86 eth0=0/down/65535/2/ eth1=1/2500/
+28 t=373.88 eth0=0/down/65535/2/ eth1=1/2500/
+29 t=375.91 eth0=0/down/65535/2/ eth1=1/2500/
+30 t=377.93 eth0=0/down/65535/2/ eth1=1/2500/
+31 t=380.00 eth0=0/down/65535/2/ eth1=1/2500/
+32 t=382.03 eth0=0/down/65535/2/ eth1=1/2500/
+33 t=384.05 eth0=0/down/65535/2/ eth1=1/2500/
+34 t=386.07 eth0=0/down/65535/2/ eth1=1/2500/
+35 t=388.10 eth0=0/down/65535/2/ eth1=1/2500/
+36 t=390.17 eth0=0/down/65535/2/ eth1=1/2500/
+37 t=392.20 eth0=0/down/65535/2/ eth1=1/2500/
+38 t=394.22 eth0=0/down/65535/2/ eth1=1/2500/
+39 t=396.25 eth0=0/down/65535/2/ eth1=1/2500/
+40 t=398.27 eth0=0/down/65535/2/ eth1=1/2500/
+41 t=400.34 eth0=0/down/65535/2/ eth1=1/2500/
+42 t=402.37 eth0=0/down/65535/2/ eth1=1/2500/
+43 t=404.39 eth0=0/down/65535/2/ eth1=1/2500/
+44 t=406.41 eth0=0/down/65535/2/ eth1=1/2500/
+45 t=408.44 eth0=0/down/65535/2/ eth1=1/2500/
+46 t=410.51 eth0=0/down/65535/2/ eth1=1/2500/
+47 t=412.53 eth0=0/down/65535/2/ eth1=1/2500/
+48 t=414.56 eth0=0/down/65535/2/ eth1=1/2500/
+49 t=416.58 eth0=0/down/65535/2/ eth1=1/2500/
+50 t=418.60 eth0=0/down/65535/2/ eth1=1/2500/
+51 t=420.68 eth0=0/down/65535/2/ eth1=1/2500/
+52 t=422.70 eth0=0/down/65535/2/ eth1=1/2500/
+53 t=424.72 eth0=0/down/65535/2/ eth1=1/2500/
+54 t=426.75 eth0=0/down/65535/2/ eth1=1/2500/
+55 t=428.77 eth0=0/down/65535/2/ eth1=1/2500/
+56 t=430.84 eth0=0/down/65535/2/ eth1=1/2500/
+57 t=432.86 eth0=0/down/65535/2/ eth1=1/2500/
+58 t=434.89 eth0=0/down/65535/2/ eth1=1/2500/
+59 t=436.91 eth0=0/down/65535/2/ eth1=1/2500/
+60 t=438.94 eth0=0/down/65535/2/ eth1=1/2500/
+61 t=441.01 eth0=0/down/65535/2/ eth1=1/2500/
+62 t=443.03 eth0=0/down/65535/2/ eth1=1/2500/
+63 t=445.05 eth0=0/down/65535/2/ eth1=1/2500/
+64 t=447.08 eth0=0/down/65535/2/ eth1=1/2500/
+65 t=449.10 eth0=0/down/65535/2/ eth1=1/2500/
+66 t=451.17 eth0=0/down/65535/2/ eth1=1/2500/
+67 t=453.20 eth0=0/down/65535/2/ eth1=1/2500/
+68 t=455.22 eth0=0/down/65535/2/ eth1=1/2500/
+69 t=457.25 eth0=0/down/65535/2/ eth1=1/2500/
+70 t=459.27 eth0=0/down/65535/2/ eth1=1/2500/
+71 t=461.34 eth0=0/down/65535/2/ eth1=1/2500/
+72 t=463.36 eth0=0/down/65535/2/ eth1=1/2500/
+73 t=465.39 eth0=0/down/65535/2/ eth1=1/2500/
+74 t=467.41 eth0=0/down/65535/2/ eth1=1/2500/
+75 t=469.44 eth0=0/down/65535/2/ eth1=1/2500/
+76 t=471.51 eth0=0/down/65535/2/ eth1=1/2500/
+77 t=473.53 eth0=0/down/65535/2/ eth1=1/2500/
+78 t=475.56 eth0=0/down/65535/2/ eth1=1/2500/
+79 t=477.58 eth0=0/down/65535/2/ eth1=1/2500/
+80 t=479.60 eth0=0/down/65535/2/ eth1=1/2500/
+81 t=481.68 eth0=0/down/65535/2/ eth1=1/2500/
+82 t=483.70 eth0=0/down/65535/2/ eth1=1/2500/
+83 t=485.73 eth0=0/down/65535/2/ eth1=1/2500/
+84 t=487.75 eth0=0/down/65535/2/ eth1=1/2500/
+85 t=489.77 eth0=0/down/65535/2/ eth1=1/2500/
+86 t=491.85 eth0=0/down/65535/2/ eth1=1/2500/
+87 t=493.87 eth0=0/down/65535/2/ eth1=1/2500/
+88 t=495.89 eth0=0/down/65535/2/ eth1=1/2500/
+89 t=497.92 eth0=0/down/65535/2/ eth1=1/2500/
+90 t=499.95 eth0=0/down/65535/2/ eth1=1/2500/
+91 t=502.02 eth0=0/down/65535/2/ eth1=1/2500/
+92 t=504.04 eth0=0/down/65535/2/ eth1=1/2500/
+93 t=506.06 eth0=0/down/65535/2/ eth1=1/2500/
+94 t=508.09 eth0=0/down/65535/2/ eth1=1/2500/
+95 t=510.11 eth0=0/down/65535/2/ eth1=1/2500/
+96 t=512.18 eth0=0/down/65535/2/ eth1=1/2500/
+97 t=514.21 eth0=0/down/65535/2/ eth1=1/2500/
+98 t=516.23 eth0=0/down/65535/2/ eth1=1/2500/
+99 t=518.25 eth0=0/down/65535/2/ eth1=1/2500/
+100 t=520.28 eth0=0/down/65535/2/ eth1=1/2500/
+101 t=522.35 eth0=0/down/65535/2/ eth1=1/2500/
+102 t=524.37 eth0=0/down/65535/2/ eth1=1/2500/
+103 t=526.40 eth0=0/down/65535/2/ eth1=1/2500/
+104 t=528.42 eth0=0/down/65535/2/ eth1=1/2500/
+105 t=530.44 eth0=0/down/65535/2/ eth1=1/2500/
+106 t=532.52 eth0=0/down/65535/2/ eth1=1/2500/
+107 t=534.53 eth0=0/down/65535/2/ eth1=1/2500/
+108 t=536.55 eth0=0/down/65535/2/ eth1=1/2500/
+109 t=538.57 eth0=0/down/65535/2/ eth1=1/2500/
+110 t=540.59 eth0=0/down/65535/2/ eth1=1/2500/
+111 t=542.65 eth0=0/down/65535/2/ eth1=1/2500/
+112 t=544.67 eth0=0/down/65535/2/ eth1=1/2500/
+113 t=546.70 eth0=0/down/65535/2/ eth1=1/2500/
+114 t=548.72 eth0=0/down/65535/2/ eth1=1/2500/
+115 t=550.75 eth0=0/down/65535/2/ eth1=1/2500/
+116 t=552.82 eth0=0/down/65535/2/ eth1=1/2500/
+117 t=554.84 eth0=0/down/65535/2/ eth1=1/2500/
+118 t=556.86 eth0=0/down/65535/2/ eth1=1/2500/
+119 t=558.89 eth0=0/down/65535/2/ eth1=1/2500/
+120 t=560.91 eth0=0/down/65535/2/ eth1=1/2500/
+121 t=562.99 eth0=0/down/65535/2/ eth1=1/2500/
+122 t=565.01 eth0=0/down/65535/2/ eth1=1/2500/
+123 t=567.03 eth0=0/down/65535/2/ eth1=1/2500/
+124 t=569.06 eth0=0/down/65535/2/ eth1=1/2500/
+125 t=571.08 eth0=0/down/65535/2/ eth1=1/2500/
+126 t=573.15 eth0=0/down/65535/2/ eth1=1/2500/
+127 t=575.17 eth0=0/down/65535/2/ eth1=1/2500/
+128 t=577.20 eth0=0/down/65535/2/ eth1=1/2500/
+129 t=579.22 eth0=0/down/65535/2/ eth1=1/2500/
+130 t=581.25 eth0=0/down/65535/2/ eth1=1/2500/
+131 t=583.32 eth0=0/down/65535/2/ eth1=1/2500/
+132 t=585.34 eth0=0/down/65535/2/ eth1=1/2500/
+133 t=587.36 eth0=0/down/65535/2/ eth1=1/2500/
+134 t=589.39 eth0=0/down/65535/2/ eth1=1/2500/
+135 t=591.41 eth0=0/down/65535/2/ eth1=1/2500/
+136 t=593.49 eth0=0/down/65535/2/ eth1=1/2500/
+137 t=595.51 eth0=0/down/65535/2/ eth1=1/2500/
+138 t=597.53 eth0=0/down/65535/2/ eth1=1/2500/
+139 t=599.56 eth0=0/down/65535/2/ eth1=1/2500/
+140 t=601.58 eth0=0/down/65535/2/ eth1=1/2500/
+141 t=603.65 eth0=0/down/65535/2/ eth1=1/2500/
+142 t=605.68 eth0=0/down/65535/2/ eth1=1/2500/
+143 t=607.70 eth0=0/down/65535/2/ eth1=1/2500/
+144 t=609.74 eth0=0/down/65535/2/ eth1=1/2500/
+145 t=611.76 eth0=0/down/65535/2/ eth1=1/2500/
+146 t=613.81 eth0=0/down/65535/2/ eth1=1/2500/
+147 t=615.83 eth0=0/down/65535/2/ eth1=1/2500/
+148 t=617.85 eth0=0/down/65535/2/ eth1=1/2500/
+149 t=619.86 eth0=0/down/65535/2/ eth1=1/2500/
+150 t=621.89 eth0=0/down/65535/2/ eth1=1/2500/
+151 t=623.96 eth0=0/down/65535/2/ eth1=1/2500/
+152 t=625.99 eth0=0/down/65535/2/ eth1=1/2500/
+153 t=628.01 eth0=0/down/65535/2/ eth1=1/2500/
+154 t=630.03 eth0=0/down/65535/2/ eth1=1/2500/
+155 t=632.06 eth0=0/down/65535/2/ eth1=1/2500/
+156 t=634.13 eth0=0/down/65535/2/ eth1=1/2500/
+157 t=636.15 eth0=0/down/65535/2/ eth1=1/2500/
+158 t=638.17 eth0=0/down/65535/2/ eth1=1/2500/
+159 t=640.20 eth0=0/down/65535/2/ eth1=1/2500/
+160 t=642.22 eth0=0/down/65535/2/ eth1=1/2500/
+161 t=644.29 eth0=0/down/65535/2/ eth1=1/2500/
+162 t=646.32 eth0=0/down/65535/2/ eth1=1/2500/
+163 t=648.34 eth0=0/down/65535/2/ eth1=1/2500/
+164 t=650.36 eth0=0/down/65535/2/ eth1=1/2500/
+165 t=652.39 eth0=0/down/65535/2/ eth1=1/2500/
+166 t=654.46 eth0=0/down/65535/2/ eth1=1/2500/
+167 t=656.48 eth0=0/down/65535/2/ eth1=1/2500/
+168 t=658.50 eth0=0/down/65535/2/ eth1=1/2500/
+169 t=660.53 eth0=0/down/65535/2/ eth1=1/2500/
+170 t=662.55 eth0=0/down/65535/2/ eth1=1/2500/
+171 t=664.62 eth0=0/down/65535/2/ eth1=1/2500/
+172 t=666.65 eth0=0/down/65535/2/ eth1=1/2500/
+173 t=668.67 eth0=0/down/65535/2/ eth1=1/2500/
+174 t=670.70 eth0=0/down/65535/2/ eth1=1/2500/
+175 t=672.72 eth0=0/down/65535/2/ eth1=1/2500/
+176 t=674.79 eth0=0/down/65535/2/ eth1=1/2500/
+177 t=676.81 eth0=0/down/65535/2/ eth1=1/2500/
+178 t=678.84 eth0=0/down/65535/2/ eth1=1/2500/
+179 t=680.86 eth0=0/down/65535/2/ eth1=1/2500/
+180 t=682.89 eth0=0/down/65535/2/ eth1=1/2500/
+181 t=684.96 eth0=0/down/65535/2/ eth1=1/2500/
+182 t=686.98 eth0=0/down/65535/2/ eth1=1/2500/
+183 t=689.01 eth0=0/down/65535/2/ eth1=1/2500/
+184 t=691.03 eth0=0/down/65535/2/ eth1=1/2500/
+185 t=693.05 eth0=0/down/65535/2/ eth1=1/2500/
+186 t=695.13 eth0=0/down/65535/2/ eth1=1/2500/
+187 t=697.15 eth0=0/down/65535/2/ eth1=1/2500/
+188 t=699.17 eth0=0/down/65535/2/ eth1=1/2500/
+189 t=701.20 eth0=0/down/65535/2/ eth1=1/2500/
+190 t=703.22 eth0=0/down/65535/2/ eth1=1/2500/
+191 t=705.29 eth0=0/down/65535/2/ eth1=1/2500/
+192 t=707.32 eth0=0/down/65535/2/ eth1=1/2500/
+193 t=709.34 eth0=0/down/65535/2/ eth1=1/2500/
+194 t=711.36 eth0=0/down/65535/2/ eth1=1/2500/
+195 t=713.39 eth0=0/down/65535/2/ eth1=1/2500/
+196 t=715.46 eth0=0/down/65535/2/ eth1=1/2500/
+197 t=717.48 eth0=0/down/65535/2/ eth1=1/2500/
+198 t=719.51 eth0=0/down/65535/2/ eth1=1/2500/
+199 t=721.53 eth0=0/down/65535/2/ eth1=1/2500/
+200 t=723.56 eth0=0/down/65535/2/ eth1=1/2500/
+DONE
+=====DMESG=====
+--- #5 t=327.09 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #10 t=337.27 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #15 t=347.43 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #20 t=357.60 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #25 t=367.76 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #30 t=377.93 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #35 t=388.10 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #40 t=398.27 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #45 t=408.44 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #50 t=418.60 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #55 t=428.77 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #60 t=438.94 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #65 t=449.10 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #70 t=459.27 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #75 t=469.44 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #80 t=479.60 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #85 t=489.77 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #90 t=499.95 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #95 t=510.11 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #100 t=520.28 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #105 t=530.44 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #110 t=540.59 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #115 t=550.75 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #120 t=560.91 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #125 t=571.08 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #130 t=581.25 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #135 t=591.41 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #140 t=601.58 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #145 t=611.76 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #150 t=621.89 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #155 t=632.06 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #160 t=642.22 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #165 t=652.39 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #170 t=662.55 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #175 t=672.72 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #180 t=682.89 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #185 t=693.05 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #190 t=703.22 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #195 t=713.39 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000
+--- #200 t=723.56 ---
+[    9.163309] sfp_phy_init[679]:INFO:SFP phy id is 0xaaaabbbb
+[    9.273326] QCA SFP i2c:i2c-0:1d: no of_node; not parsing pinctrl DT
+[   21.111467] sfp_startup_recovery_evaluate[1280]:INFO:dev0 port2 startup PCS timeout after 1 attempts; multi-rate probe bouncing to sgmii_fiber (EEPROM not required)
+[   22.071492] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 1000

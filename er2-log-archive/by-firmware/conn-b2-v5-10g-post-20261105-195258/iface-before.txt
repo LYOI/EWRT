@@ -1,0 +1,7 @@
+boot_id=e2e62e0c-0a5e-4611-ab6c-ce613e0715c4
+uptime=98.97
+carrier=1 cchg=2 speed=10000
+rx_bytes=35787
+tx_bytes=60114
+rx_errors=0
+rx_crc_errors=0

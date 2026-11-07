@@ -1,0 +1,1 @@
+VERDICT NO_LINK 300s 内未起链 cchg=1 boot_id=c280cf89-add3-4927-a7c2-ad6f64edf7b1

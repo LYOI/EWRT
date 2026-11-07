@@ -1,0 +1,45 @@
+### boot_id
+2feddd0d-07bc-4d28-bb2e-e162ee1593a4
+### dmesg-noise
+[    0.000000] OF: reserved mem: 0x0000000049c00000..0x0000000049cfffff (1024 KiB) map non-reusable ramoops@49c00000
+[    0.022172] printk: console [ramoops0] enabled
+[    0.022586] pstore: Registered ramoops as persistent store backend
+[    0.022597] ramoops: using 0x100000@0x49c00000, ecc: 0
+[    1.799347] GPT: Use GNU Parted to correct GPT errors.
+[    3.163942] init: - watchdog -
+[    9.128973] procd: - watchdog -
+[    9.667688] procd: - watchdog -
+### dmesg-sfp
+[   10.238260] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   33.912404] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+### ifaces
+BusyBox v1.37.0 (2026-11-03 01:33:04 UTC) multi-call binary.
+
+Usage: ip [OPTIONS] address|route|link|neigh|rule [ARGS]
+
+OPTIONS := -f[amily] inet|inet6|link | -o[neline]
+
+ip addr add|del IFADDR dev IFACE | show|flush [dev IFACE] [to PREFIX]
+ip route list|flush|add|del|change|append|replace|test ROUTE
+ip link set IFACE [up|down] [arp on|off] [multicast on|off]
+	[promisc on|off] [mtu NUM] [name NAME] [qlen NUM] [address MAC]
+	[master IFACE | nomaster] [netns PID]
+ip neigh show|flush [to PREFIX] [dev DEV] [nud STATE]
+ip rule [list] | add|del SELECTOR ACTION
+BusyBox v1.37.0 (2026-11-03 01:33:04 UTC) multi-call binary.
+
+Usage: ip [OPTIONS] address|route|link|neigh|rule [ARGS]
+
+OPTIONS := -f[amily] inet|inet6|link | -o[neline]
+
+ip addr add|del IFADDR dev IFACE | show|flush [dev IFACE] [to PREFIX]
+ip route list|flush|add|del|change|append|replace|test ROUTE
+ip link set IFACE [up|down] [arp on|off] [multicast on|off]
+	[promisc on|off] [mtu NUM] [name NAME] [qlen NUM] [address MAC]
+	[master IFACE | nomaster] [netns PID]
+ip neigh show|flush [to PREFIX] [dev DEV] [nud STATE]
+ip rule [list] | add|del SELECTOR ACTION
+### rateencode
+
+operation done.
+

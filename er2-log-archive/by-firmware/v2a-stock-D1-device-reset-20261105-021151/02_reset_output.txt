@@ -1,0 +1,9 @@
+SENT
+
+ SSDK Init OK!
+ Welcome to SSDK Shell version: 3.1.0, at 2026-11-03-02:36:51.
+dev0@qca>debug device reset
+
+This request is not support    
+
+dev0@qca>ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿexit.

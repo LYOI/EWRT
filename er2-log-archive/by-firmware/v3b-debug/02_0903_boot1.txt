@@ -1,0 +1,1493 @@
+# 固件: v3b-debug
+# 抓取: 09:03:07
+# 说明: 16M 未生效期（128KB 缓冲） ｜ 源 er2-powercycle-capture-0903-keep.txt
+# 行数: 1488 ｜ 内核秒: 811.2 → 959.5
+
+[  811.201994] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  811.211820] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  811.220371] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  811.228393] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  811.228399] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  811.234817] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  811.253131] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  812.312757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  812.312784] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  812.321987] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  812.331810] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  812.340364] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  812.348385] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  812.348391] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  812.354809] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  812.373123] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  813.432770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  813.432812] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  813.442010] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  813.451843] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  813.460398] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  813.468409] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  813.468415] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  813.474831] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  813.493144] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  814.552758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  814.552786] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  814.561989] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  814.571813] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  814.580365] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  814.588387] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  814.588393] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  814.594810] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  814.613125] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  815.672770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  815.672809] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  815.682009] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  815.691841] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  815.700397] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  815.708409] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  815.708415] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  815.714830] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  815.733144] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  816.792804] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  816.792845] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  816.802037] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  816.811872] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  816.821599] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  816.828447] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  816.834857] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  816.844251] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  816.852158] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  816.858421] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  816.867461] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  816.876801] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  816.876822] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  816.884861] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  816.923761] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  816.924787] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  816.933018] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  816.953573] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  816.992764] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  816.992784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  816.998527] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  816.998533] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  817.019359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  818.072759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  818.072786] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  818.081989] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  818.091814] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  818.100364] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  818.108387] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  818.108393] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  818.124009] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  818.133123] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  818.141099] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  818.147360] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  818.156404] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  818.165774] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  818.173836] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  818.173848] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  818.181556] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  818.202397] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  818.202403] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  818.221315] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  818.221321] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  818.252754] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  818.283753] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  818.283786] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  818.303319] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  818.342762] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  818.342782] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  818.348521] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  818.348527] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  818.369358] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  819.432771] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  819.432814] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  819.442013] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  819.451847] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  819.460400] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  819.468411] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  819.468418] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  819.474833] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  819.493147] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  820.552760] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  820.552789] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  820.561993] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  820.571819] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  820.580369] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  820.588390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  820.588397] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  820.594815] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  820.613127] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  821.672772] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  821.672812] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  821.682011] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  821.691843] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  821.700400] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  821.708412] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  821.708419] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  821.714832] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  821.733145] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  822.792776] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  822.792816] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  822.802015] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  822.811848] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  822.820406] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  822.828415] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  822.828422] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  822.834836] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  822.853150] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  823.912773] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  823.912813] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  823.922012] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  823.931844] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  823.940402] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  823.948413] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  823.948419] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  823.954833] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  823.973147] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  825.032784] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  825.032827] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  825.042025] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  825.051863] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  825.060416] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  825.068425] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  825.068432] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  825.074846] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  825.093159] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  826.152806] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  826.152840] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  826.162039] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  826.171878] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  826.182365] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  826.188438] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  826.188444] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  826.194861] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  826.213173] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  827.272758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  827.272784] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  827.281987] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  827.291811] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  827.300362] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  827.308385] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  827.308392] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  827.314808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  827.333122] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  828.392765] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  828.392803] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  828.402002] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  828.411832] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  828.420378] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  828.428402] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  828.428409] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  828.434824] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  828.453138] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  829.512765] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  829.512798] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  829.522000] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  829.531827] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  829.540376] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  829.548398] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  829.548404] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  829.554820] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  829.573135] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  830.632758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  830.632784] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  830.641988] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  830.651810] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  830.660364] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  830.668387] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  830.668394] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  830.674808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  830.693124] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  831.752772] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  831.752813] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  831.762012] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  831.771843] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  831.780393] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  831.788411] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  831.788417] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  831.794833] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  831.813147] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  832.872760] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  832.872789] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  832.881992] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  832.891819] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  832.900369] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  832.908391] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  832.908397] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  832.914813] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  832.933127] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  833.992758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  833.992785] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  834.001989] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  834.011812] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  834.020363] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  834.028385] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  834.028391] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  834.034809] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  834.053123] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  835.112759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  835.112785] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  835.121989] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  835.131813] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  835.140365] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  835.148386] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  835.148392] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  835.154810] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  835.173124] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  836.232759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  836.232789] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  836.241992] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  836.251817] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  836.260367] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  836.268390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  836.268396] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  836.274813] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  836.293126] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  837.352776] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  837.352817] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  837.362015] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  837.371851] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  837.380407] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  837.388415] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  837.388422] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  837.394837] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  837.413151] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  838.472759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  838.472787] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  838.481991] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  838.491815] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  838.500367] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  838.508390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  838.508396] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  838.514811] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  838.533125] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  839.592758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  839.592785] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  839.601989] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  839.611812] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  839.620363] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  839.628388] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  839.628394] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  839.634810] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  839.653123] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  840.712800] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  840.712840] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  840.722034] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  840.731867] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  840.741595] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  840.748444] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  840.754856] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  840.764138] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  840.772114] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  840.778375] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  840.787418] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  840.796791] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  840.796807] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  840.804853] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  840.843757] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  840.844781] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  840.853007] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  840.873567] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  840.912763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  840.912783] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  840.918523] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  840.918528] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  840.939358] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  841.992760] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  841.992790] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  842.001992] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  842.011819] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  842.020368] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  842.028389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  842.028396] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  842.044012] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  842.053127] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  842.061103] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  842.067364] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  842.076406] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  842.085778] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  842.093839] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  842.093853] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  842.101560] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  842.122400] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  842.122406] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  842.141318] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  842.141324] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  842.172753] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  842.203753] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  842.203786] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  842.223319] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  842.262763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  842.262784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  842.268523] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  842.268528] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  842.289360] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  843.352775] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  843.352816] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  843.362016] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  843.371850] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  843.380407] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  843.388416] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  843.388423] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  843.394836] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  843.413150] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  844.472762] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  844.472793] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  844.481995] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  844.491823] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  844.500373] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  844.508394] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  844.508400] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  844.514816] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  844.533130] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  845.592759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  845.592787] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  845.601990] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  845.611815] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  845.620366] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  845.628389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  845.628395] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  845.634812] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  845.653125] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  846.712763] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  846.712793] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  846.721996] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  846.731823] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  846.740373] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  846.748395] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  846.748401] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  846.754817] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  846.773131] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  847.832768] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  847.832808] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  847.842007] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  847.851839] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  847.860390] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  847.868407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  847.868414] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  847.874828] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  847.893143] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  848.952769] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  848.952809] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  848.962008] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  848.971837] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  848.980391] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  848.988408] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  848.988415] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  848.994880] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  849.013146] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  850.072803] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  850.072845] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  850.082038] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  850.091875] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  850.102305] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  850.108434] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  850.108441] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  850.114856] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  850.133170] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  851.192766] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  851.192800] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  851.202003] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  851.211831] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  851.220379] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  851.228403] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  851.228410] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  851.234824] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  851.253138] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  852.312758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  852.312784] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  852.321987] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  852.331811] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  852.340363] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  852.348386] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  852.348393] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  852.354809] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  852.373123] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  853.432761] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  853.432791] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  853.441993] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  853.451820] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  853.460368] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  853.468392] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  853.468399] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  853.474815] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  853.493129] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  854.552769] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  854.552810] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  854.562010] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  854.571842] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  854.580384] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  854.588411] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  854.588417] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  854.594830] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  854.613144] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  855.672767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  855.672808] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  855.682007] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  855.691839] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  855.700384] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  855.708407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  855.708414] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  855.714829] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  855.733142] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  856.792758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  856.792783] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  856.801988] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  856.811809] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  856.820361] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  856.828384] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  856.828391] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  856.834808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  856.853122] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  857.912759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  857.912788] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  857.921992] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  857.931815] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  857.940367] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  857.948390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  857.948397] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  857.954812] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  857.973127] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  859.032772] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  859.032814] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  859.042013] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  859.051847] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  859.060398] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  859.068413] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  859.068420] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  859.074833] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  859.093147] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  860.152764] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  860.152792] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  860.161996] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  860.171823] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  860.180374] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  860.188394] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  860.188401] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  860.194817] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  860.213130] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  861.272767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  861.272808] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  861.282006] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  861.291840] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  861.300394] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  861.308407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  861.308414] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  861.314828] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  861.333143] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  862.392757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  862.392782] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  862.401985] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  862.411807] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  862.420361] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  862.428384] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  862.428390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  862.434807] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  862.453121] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  863.512758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  863.512786] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  863.521990] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  863.531814] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  863.540366] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  863.548389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  863.548395] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  863.554810] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  863.573125] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  864.632809] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  864.632854] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  864.642046] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  864.651883] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  864.661606] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  864.668455] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  864.674867] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  864.684150] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  864.692125] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  864.698387] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  864.707431] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  864.716801] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  864.716817] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  864.724865] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  864.763758] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  864.764782] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  864.773008] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  864.793568] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  864.832763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  864.832784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  864.838525] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  864.838530] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  864.859359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  865.912758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  865.912788] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  865.921990] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  865.931816] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  865.940366] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  865.948388] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  865.948394] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  865.964011] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  865.973125] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  865.981102] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  865.987362] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  865.996403] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  866.005774] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  866.013837] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  866.013851] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  866.021558] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  866.042398] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  866.042404] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  866.061316] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  866.061322] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  866.092753] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  866.123753] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  866.123784] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  866.143319] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  866.182762] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  866.182783] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  866.188522] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  866.188528] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  866.209358] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  867.272771] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  867.272812] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  867.282011] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  867.291845] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  867.300407] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  867.308412] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  867.308419] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  867.314831] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  867.333146] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  868.392762] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  868.392793] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  868.401996] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  868.411872] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  868.420377] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  868.428396] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  868.428402] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  868.434815] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  868.453129] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  869.512760] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  869.512787] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  869.521992] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  869.531819] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  869.540368] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  869.548389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  869.548395] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  869.554810] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  869.573126] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  870.632763] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  870.632795] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  870.641998] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  870.651825] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  870.660376] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  870.668399] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  870.668405] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  870.674820] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  870.693133] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  871.752761] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  871.752790] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  871.761993] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  871.771818] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  871.780372] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  871.788391] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  871.788398] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  871.794814] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  871.813128] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  872.872764] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  872.872797] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  872.881998] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  872.891825] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  872.900379] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  872.908397] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  872.908403] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  872.914819] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  872.933133] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  873.992823] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  873.992880] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  874.002082] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  874.011924] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  874.021643] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  874.028492] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  874.034902] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  874.044186] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  874.052161] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  874.058421] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  874.067466] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  874.076838] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  874.076854] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  874.084900] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  874.123756] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  874.124781] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  874.133006] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  874.153570] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  874.192764] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  874.192784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  874.198525] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  874.198530] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  874.219359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  875.272767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  875.272808] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  875.282008] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  875.291840] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  875.300384] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  875.308408] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  875.308415] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  875.324028] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  875.333142] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  875.341118] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  875.347379] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  875.356424] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  875.365794] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  875.373854] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  875.373871] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  875.381575] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  875.402415] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  875.402421] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  875.421334] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  875.421340] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  875.452753] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  875.483754] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  875.483788] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  875.503321] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  875.542765] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  875.542786] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  875.548527] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  875.548533] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  875.569360] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  876.632757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  876.632784] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  876.641988] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  876.651812] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  876.660363] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  876.668386] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  876.668393] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  876.674808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  876.693123] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  877.752769] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  877.752809] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  877.762009] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  877.771840] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  877.780390] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  877.788410] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  877.788416] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  877.794830] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  877.813144] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  878.872785] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  878.872823] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  878.882024] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  878.891857] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  878.900411] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  878.908425] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  878.908432] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  878.914845] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  878.933158] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  879.992770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  879.992811] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  880.002010] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  880.011839] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  880.020390] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  880.028409] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  880.028416] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  880.034831] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  880.053144] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  881.112758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  881.112783] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  881.121986] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  881.131810] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  881.140362] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  881.148383] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  881.148390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  881.154808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  881.173122] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  882.232761] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  882.232794] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  882.241996] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  882.251823] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  882.260377] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  882.268396] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  882.268402] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  882.274817] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  882.293132] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  883.352808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  883.352854] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  883.362045] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  883.371883] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  883.381606] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  883.388455] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  883.394865] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  883.404150] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  883.412125] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  883.418386] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  883.427431] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  883.436803] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  883.436818] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  883.444864] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  883.483757] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  883.484781] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  883.493007] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  883.513569] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  883.552763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  883.552783] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  883.558525] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  883.558530] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  883.579358] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  884.632758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  884.632785] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  884.641989] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  884.651814] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  884.660364] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  884.668387] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  884.668393] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  884.684008] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  884.693124] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  884.701100] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  884.707361] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  884.716401] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  884.725773] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  884.733835] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  884.733850] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  884.741557] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  884.762394] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  884.762400] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  884.781315] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  884.781321] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  884.812759] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  884.843752] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  884.843786] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  884.863319] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  884.902765] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  884.902786] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  884.908527] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  884.908532] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  884.929362] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  885.992768] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  885.992809] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  886.002008] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  886.011838] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  886.020384] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  886.028407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  886.028414] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  886.034828] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  886.053142] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  887.112768] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  887.112807] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  887.122007] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  887.131837] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  887.140385] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  887.148406] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  887.148413] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  887.154828] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  887.173141] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  888.232759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  888.232788] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  888.241991] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  888.251816] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  888.260370] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  888.268389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  888.268396] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  888.274813] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  888.293125] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  889.352767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  889.352807] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  889.362007] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  889.371838] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  889.380393] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  889.388404] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  889.388411] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  889.394827] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  889.413140] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  890.472757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  890.472782] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  890.481985] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  890.491808] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  890.500361] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  890.508383] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  890.508389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  890.514807] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  890.533120] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  891.592770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  891.592810] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  891.602010] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  891.611841] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  891.620399] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  891.628410] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  891.628417] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  891.634831] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  891.653145] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  892.712800] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  892.712840] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  892.722035] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  892.731870] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  892.741595] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  892.748443] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  892.754857] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  892.764138] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  892.772115] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  892.778374] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  892.787421] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  892.796792] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  892.796808] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  892.804852] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  892.843757] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  892.844782] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  892.853007] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  892.873568] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  892.912763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  892.912784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  892.918524] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  892.918529] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  892.939360] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  893.992756] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  893.992784] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  894.001988] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  894.011812] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  894.020362] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  894.028386] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  894.028392] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  894.044007] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  894.053123] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  894.061099] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  894.067360] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  894.076402] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  894.085770] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  894.093835] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  894.093847] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  894.101555] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  894.122395] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  894.122401] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  894.141313] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  894.141319] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  894.172753] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  894.203754] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  894.203788] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  894.223320] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  894.262764] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  894.262785] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  894.268525] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  894.268530] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  894.289359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  895.352757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  895.352783] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  895.361987] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  895.371811] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  895.380361] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  895.388384] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  895.388391] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  895.394808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  895.413121] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  896.472757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  896.472782] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  896.481986] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  896.491808] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  896.500360] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  896.508383] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  896.508390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  896.514807] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  896.533121] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  897.592770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  897.592811] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  897.602010] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  897.611843] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  897.620400] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  897.628411] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  897.628418] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  897.634832] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  897.653146] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  898.712757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  898.712783] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  898.721987] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  898.731809] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  898.740362] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  898.748385] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  898.748392] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  898.754808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  898.773122] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  899.832757] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  899.832782] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  899.841986] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  899.851809] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  899.860362] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  899.868383] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  899.868389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  899.874807] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  899.893122] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  900.952761] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  900.952790] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  900.961992] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  900.971816] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  900.980369] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  900.988389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  900.988396] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  900.994814] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  901.013128] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  902.072834] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  902.072880] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  902.082079] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  902.091925] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  902.101703] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  902.108491] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  902.114903] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  902.124187] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  902.132163] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  902.138424] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  902.147467] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  902.156844] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  902.156861] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  902.164902] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  902.203757] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  902.204782] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  902.213008] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  902.233568] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  902.272764] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  902.272784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  902.278525] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  902.278531] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  902.299359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  903.352767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  903.352807] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  903.362007] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  903.371838] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  903.380383] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  903.388408] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  903.388414] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  903.404029] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  903.413143] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  903.421118] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  903.427379] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  903.436422] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  903.445795] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  903.453854] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  903.453870] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  903.461575] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  903.482413] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  903.482419] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  903.501332] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  903.501338] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  903.532754] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  903.563754] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  903.563787] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  903.583326] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  903.622763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  903.622784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  903.628523] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  903.628528] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  903.649359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  904.712761] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  904.712791] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  904.721995] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  904.731820] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  904.740372] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  904.748394] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  904.748400] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  904.754815] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  904.773129] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  905.832759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  905.832785] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  905.841988] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  905.851811] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  905.860364] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  905.868386] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  905.868392] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  905.874809] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  905.893122] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  906.952771] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  906.952809] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  906.962009] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  906.971842] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  906.980397] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  906.988409] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  906.988416] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  906.994829] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  907.013143] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  908.072776] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  908.072818] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  908.082017] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  908.091852] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  908.100411] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  908.108421] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  908.108428] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  908.114837] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  908.133151] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  909.192783] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  909.192825] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  909.202024] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  909.211861] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  909.220412] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  909.228424] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  909.228431] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  909.234845] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  909.253158] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  910.312768] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  910.312806] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  910.322007] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  910.331840] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  910.340395] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  910.348407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  910.348414] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  910.354828] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  910.373142] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  911.432801] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  911.432840] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  911.442035] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  911.451868] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  911.461594] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  911.468444] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  911.474857] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  911.484139] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  911.492113] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  911.498375] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  911.507419] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  911.516792] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  911.516808] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  911.524854] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  911.563757] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  911.564782] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  911.573006] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  911.593569] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  911.632764] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  911.632784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  911.638524] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  911.638529] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  911.659359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  912.712773] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  912.712814] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  912.722013] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  912.731848] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  912.740405] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  912.748414] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  912.748421] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  912.764033] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  912.773148] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  912.781124] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  912.787384] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  912.796432] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  912.805802] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  912.813859] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  912.813878] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  912.821580] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  912.842420] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  912.842426] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  912.861338] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  912.861344] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  912.892755] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  912.923754] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  912.923789] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  912.943323] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  912.982763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  912.982783] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  912.988522] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  912.988528] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  913.009358] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  914.072758] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  914.072784] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  914.081987] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  914.091812] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  914.100364] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  914.108384] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  914.108390] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  914.114808] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  914.133123] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  915.192780] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  915.192823] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  915.202023] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  915.211858] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  915.220415] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  915.228422] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  915.228429] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  915.234843] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  915.253157] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  916.312766] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  916.312801] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  916.322002] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  916.331831] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  916.340382] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  916.348401] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  916.348407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  916.354823] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  916.373137] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  917.432756] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  917.432782] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  917.441986] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  917.451808] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  917.460361] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  917.468383] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  917.468389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  917.474807] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  917.493121] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  918.552770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  918.552811] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  918.562011] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  918.571839] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  918.580390] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  918.588410] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  918.588417] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  918.594832] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  918.613145] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  919.672759] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  919.672789] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  919.681992] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  919.691818] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  919.700369] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  919.708389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  919.708396] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  919.714812] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  919.733126] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  920.792831] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  920.792874] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  920.802074] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  920.811918] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  920.822405] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  920.828474] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  920.828481] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  920.834895] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  920.853210] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  921.912769] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  921.912811] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  921.922011] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  921.931843] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  921.940387] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  921.948410] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  921.948417] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  921.954830] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  921.973145] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  923.032771] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  923.032813] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  923.042012] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  923.051845] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  923.060390] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  923.068412] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  923.068419] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  923.074832] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  923.093146] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  924.152762] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  924.152791] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  924.161995] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  924.171819] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  924.180370] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  924.188391] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  924.188398] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  924.194813] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  924.213129] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  925.272773] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  925.272816] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  925.282015] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  925.291848] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  925.300407] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  925.308417] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  925.308425] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  925.314836] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  925.333149] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  926.392827] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  926.392867] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  926.402072] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  926.411967] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  926.420461] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  926.428468] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  926.428476] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  926.434887] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  926.453202] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  927.512774] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  927.512816] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  927.522015] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  927.531846] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  927.540405] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  927.548416] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  927.548423] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  927.554835] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  927.573149] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  928.632772] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  928.632816] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  928.642013] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  928.651846] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  928.660398] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  928.668416] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  928.668422] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  928.674836] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  928.693149] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  929.752822] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  929.752868] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  929.762074] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  929.771898] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  929.780453] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  929.788467] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  929.788474] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  929.794889] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  929.813199] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  930.872770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  930.872812] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  930.882011] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  930.891844] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  930.900391] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  930.908411] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  930.908418] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  930.914832] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  930.933146] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  931.992760] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  931.992788] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  932.001991] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  932.011816] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  932.020368] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  932.028389] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  932.028395] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  932.034812] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  932.053127] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  933.112786] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  933.112831] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  933.122028] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  933.131867] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  933.140420] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  933.148429] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  933.148436] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  933.154850] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  933.173163] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  934.232755] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  934.232781] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  934.241985] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  934.251806] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  934.260361] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  934.268381] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  934.268388] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  934.274806] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  934.293120] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  935.352833] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  935.352878] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  935.362077] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  935.371921] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  935.381702] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  935.388491] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  935.394902] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  935.404184] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  935.412161] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  935.418422] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  935.427468] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  935.436838] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  935.436855] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  935.444900] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  935.483757] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  935.484782] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  935.493008] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  935.513569] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  935.552763] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  935.552783] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  935.558526] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  935.558531] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  935.579359] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  936.632768] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  936.632811] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  936.642009] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  936.651842] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  936.660387] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  936.668411] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  936.668418] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+[  936.684030] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  936.693144] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+[  936.701120] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+[  936.707381] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+[  936.716429] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  936.725798] __adpt_hppe_uniphy_sgmiiplus_mode_set[840]:DEBUG:uniphy 1 is sgmiiplus mode
+[  936.733856] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x50
+[  936.733874] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  936.741577] __adpt_hppe_uniphy_sgmiiplus_mode_set[881]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+[  936.762416] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  936.762422] __qca_mppe_uniphy_cal_restart[814]:DEBUG:uniphy 1 do calibration restart
+[  936.781335] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4\x0a and value:0x0
+[  936.781341] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  936.812754] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4\x0a and value:0x5a
+[  936.843753] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  936.843787] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+[  936.863321] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+[  936.902783] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  936.902816] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+[  936.908557] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  936.908564] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  936.929416] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  937.992765] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  937.992800] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  938.002002] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  938.011832] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  938.020382] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  938.028401] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  938.028408] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  938.034823] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  938.053137] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  939.112780] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  939.112824] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  939.122022] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  939.131860] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  939.140629] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  939.148437] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  939.148445] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  939.154873] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  939.173214] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  940.232770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  940.232813] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  940.242011] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  940.251848] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  940.260401] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  940.268413] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  940.268421] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  940.274893] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  940.293182] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  941.352767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  941.352804] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  941.362005] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  941.371837] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  941.380396] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  941.388407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  941.388414] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  941.394914] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  941.413177] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  942.472764] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  942.472796] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  942.481999] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  942.491826] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  942.500381] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  942.508399] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  942.508407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  942.514876] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  942.533171] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  943.592767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  943.592802] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  943.602003] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  943.611835] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  943.620389] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  943.628405] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  943.628412] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  943.634876] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  943.653190] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  944.712820] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  944.712861] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  944.722062] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  944.731903] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  944.742398] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  944.748465] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  944.748472] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  944.754937] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  944.773247] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  945.832769] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  945.832811] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  945.842011] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  945.851844] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  945.860394] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  945.868412] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  945.868419] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  945.874921] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  945.893182] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  946.952767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  946.952804] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  946.962003] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  946.971835] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  946.980386] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  946.988406] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  946.988413] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  946.994909] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  947.013175] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  948.072762] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  948.072796] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  948.081998] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  948.091827] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  948.100380] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  948.108400] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  948.108407] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  948.114877] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  948.133171] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  949.192765] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  949.192797] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  949.202006] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  949.211828] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  949.220380] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  949.228401] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  949.228408] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  949.234873] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  949.253170] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  950.312766] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  950.312807] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  950.322006] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  950.331844] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  950.340400] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  950.348409] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  950.348417] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  950.354871] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  950.373177] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  951.432771] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  951.432812] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  951.442012] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  951.451848] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  951.460402] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  951.468412] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  951.468418] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  951.474928] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  951.493181] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  952.552770] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  952.552811] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  952.562009] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  952.571845] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  952.580400] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  952.588412] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  952.588419] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  952.594888] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  952.613181] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  953.672766] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  953.672804] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  953.682005] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  953.691836] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  953.700389] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  953.708406] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  953.708413] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  953.714877] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  953.733175] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  954.792763] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  954.792795] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  954.801997] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  954.811827] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  954.820378] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  954.828399] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  954.828405] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  954.834872] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  954.853166] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  955.912763] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  955.912796] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  955.921998] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  955.931827] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  955.940383] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  955.948400] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  955.948406] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  955.954880] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  955.973171] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  957.032833] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  957.032875] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  957.042074] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  957.051914] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  957.060466] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  957.068475] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  957.068481] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  957.074989] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  957.093243] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  958.152767] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  958.152799] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  958.162001] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  958.171828] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  958.180385] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+[  958.188402] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  958.188408] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  958.194881] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  958.213174] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+[  959.272821] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+[  959.272873] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+[  959.282066] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+[  959.291907] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+[  959.301634] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+[  959.308554] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+[  959.314986] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+[  959.324175] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+[  959.332196] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+[  959.338412] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+[  959.347454] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+[  959.356825] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218\x0a and value:0x70
+[  959.356843] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c\x0a and value:0x0
+[  959.364931] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c\x0a and value:0x20
+[  959.403761] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  959.404787] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0\x0a and value:0x0
+[  959.413018] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+[  959.433610] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+[  959.472764] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+[  959.472784] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+[  959.478527] sfp_phy_rx_los_status_get[936]:DEBUG:port2 sfp rx_los_pin is 557, the rx_los_status is 1
+[  959.478533] qca_hppe_mac_sw_sync_task[4066]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+[  959.499399] qca_hppe_mac_sw_sync_task[4218]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535

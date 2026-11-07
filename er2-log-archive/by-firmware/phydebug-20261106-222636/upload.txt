@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"973dff54a38b582842d053aa4ccaa03a","name":"EWRT-ER2-phydebug-20261106-2225-factory.bin"}}
+200

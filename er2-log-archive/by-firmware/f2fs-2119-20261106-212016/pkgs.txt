@@ -1,0 +1,6 @@
+i2c-tools PRESENT
+qca-ssdk-shell PRESENT
+luci-app-aurora-config PRESENT
+cfdisk PRESENT
+sgdisk PRESENT
+count=423

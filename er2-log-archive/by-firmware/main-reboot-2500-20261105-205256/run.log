@@ -1,0 +1,6 @@
+20:52:56 START main-reboot-2500 目标speed=2500 预算=180s 重启前 boot_id=28a3e5ec-0bc5-47e2-9ae6-ebe43a5f103e
+20:52:57 已下发 reboot
+20:53:09 设备离线（fail=3）
+20:53:45 新 boot_id=87dc5189-a171-41ab-a417-01aed806df23
+20:53:45 启动即时抓取完成 dmesg行=283 补丁特征=2
+20:54:05 LINK_UP speed=2500 uptime=44s

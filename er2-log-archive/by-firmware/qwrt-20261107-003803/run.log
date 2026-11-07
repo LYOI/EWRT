@@ -1,0 +1,8 @@
+00:38:04 镜像 EWRT-QWRT-R26.09.25-factory.bin md5=4d1ad7badb897ef2535de0487e5f4dd6 size=102957060
+00:38:04 等待 uboot 恢复模式（/env/list 200，最长 900s）
+00:38:04   需要：断电后按住 reset 上电进入 uboot web
+00:38:04 uboot 就绪（第 1 次探测）
+00:38:05 上传并刷写（auto_reboot=true）
+00:38:32 上传 OK，触发写入
+00:38:37 写入已触发，等设备上线（max 300s）
+00:46:28 ABORT 300s 内未上线

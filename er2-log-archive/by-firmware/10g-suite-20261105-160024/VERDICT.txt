@@ -1,0 +1,22 @@
+=== VERDICT 16:02:19 ===
+C-10G-HOT      = PASS  (elapsed=9s from removal)
+C-10G-L7       = PASS  (pre-bounce 200+body)
+C-BOUNCE-10G   = PASS  (bounce27=1 recovered=1 elapsed=4s boot_stable=yes)
+C-10G-L7-POST  = PASS  (after bounce)
+final_state    = 972.42,1,6,10000
+dir            = /d/Work/Claw/er2-log-archive/by-firmware/10g-suite-20261105-160024
+
+=== 复核修订 16:05（原判定 C-BOUNCE-10G=PASS 作废）===
+原因：判据用全量 grep 计数，统计到的 bounce 27->4->27 来自 uptime 210.23 的旧日志（15:49 拔 10G 那次），
+      不是本次 927s 注入产生的。注入期采样 carrier 恒为 1、speed 恒 10000、cchg 恒 6，链路从未中断。
+差分证据（927s 之后新增 dmesg）：
+  [927.190826] port2 kick: force mode 4 (was 27)
+  [927.310530] port2 kick done
+  —— 无 Link is down、无 pulse、无 bounce
+结论：
+  C-10G-HOT     = PASS (9s)
+  C-10G-L7      = PASS (1.247 200/4853B, 1.1 200/664B)
+  C-BOUNCE-10G  = 注入无效 INVALID_INJECT，非 PASS
+  C-10G-L7-POST = 未验证（链路未中断，post 测试无区分力）
+  后续探测：kick 到 23 同样不落硬件（1015.83 kick force mode 23 -> 全程 carrier=1 speed=10000）
+  => sfp_kick+sfp_force_mode 只改 SSDK 内部记录，不改已 link 端口的硬件状态，无法构造"在位失败态"

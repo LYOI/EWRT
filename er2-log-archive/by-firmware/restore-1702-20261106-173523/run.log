@@ -1,0 +1,7 @@
+17:35:24 镜像 EWRT-ER2-p22overlay-20261106-1702-factory.bin md5=3ff935557f83aa4e03e628b29ea76efe size=28835844
+17:35:24 等待 uboot 恢复模式（/env/list 200，最长 900s）
+17:35:24   需要：断电后按住 reset 上电进入 uboot web
+17:35:24 uboot 就绪（第 1 次探测）
+17:35:24 上传并刷写（auto_reboot=true）
+17:35:33 上传 OK，触发写入
+17:35:35 写入已触发，等设备上线（max 300s）

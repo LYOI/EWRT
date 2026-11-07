@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"28835844","md5":"3ff935557f83aa4e03e628b29ea76efe","name":"EWRT-ER2-p22overlay-20261106-1702-factory.bin"}}
+200

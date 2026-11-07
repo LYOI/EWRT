@@ -1,0 +1,12 @@
+22:16:10 镜像 EWRT-ER2-nomux-20261106-2220-factory.bin md5=5a6701b6a78bbeda1a16cff51fba160f size=100663300
+22:16:10 等待 uboot 恢复模式（/env/list 200，最长 900s）
+22:16:10   需要：断电后按住 reset 上电进入 uboot web
+22:16:10 uboot 就绪（第 1 次探测）
+22:16:11 上传并刷写（auto_reboot=true）
+22:16:38 上传 OK，触发写入
+22:16:43 写入已触发，等设备上线（max 300s）
+22:17:45 SSH 上线 uptime=27.33
+22:17:46 指纹 ko=cda6014c4141a54b538e2fb5c81a8f76 补丁特征行=1
+22:17:46 ⚠️ ko md5 不等于本次构建（期望 e34370fe9fd5c02f998787e90dee3a10）
+22:17:46 包抽查: i2c-tools PRESENT qca-ssdk-shell PRESENT luci-app-aurora-config PRESENT cfdisk PRESENT sgdisk PRESENT count=427 
+22:18:17 LINK_UP speed=2500 uptime=59s

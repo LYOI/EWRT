@@ -1,0 +1,1 @@
+VERDICT LINK_UP speed=10000 uptime=25s cchg=2 boot_id=9ea54a5c-cf76-4fce-8464-bbee52ad8b8b

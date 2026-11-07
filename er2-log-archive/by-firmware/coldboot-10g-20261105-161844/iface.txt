@@ -1,0 +1,4 @@
+rx_bytes=15854
+tx_bytes=57181
+rx_errors=0
+rx_crc_errors=0

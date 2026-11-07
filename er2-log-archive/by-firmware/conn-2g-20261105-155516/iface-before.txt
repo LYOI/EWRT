@@ -1,0 +1,7 @@
+boot_id=5a9fa7e3-f90c-4e40-8508-2d69ce2a59d4
+uptime=551.01
+carrier=1 cchg=4 speed=2500
+rx_bytes=86428
+tx_bytes=128274
+rx_errors=0
+rx_crc_errors=0

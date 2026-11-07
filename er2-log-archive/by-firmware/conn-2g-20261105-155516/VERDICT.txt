@@ -1,0 +1,7 @@
+TEST=CONN-LAYERS label=2g
+targets=3 pass_l7=3
+detail:
+  192.168.1.10:80    L3=0%/0% L4=1 L7=200(419B) -> PASS
+  192.168.1.247:80   L3=0%/0% L4=1 L7=200(4853B) -> PASS
+  192.168.1.1:80     L3=0%/0% L4=1 L7=200(664B) -> PASS
+dir=/d/Work/Claw/er2-log-archive/by-firmware/conn-2g-20261105-155516

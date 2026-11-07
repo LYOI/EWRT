@@ -1,0 +1,33 @@
+### uptime
+3415.98
+### speed
+10000
+### cchg
+4
+### rx0
+231818
+### neigh
+192.168.1.123 dev br-lan lladdr 22:f3:a5:7a:6e:db used 0/0/0 probes 1 STALE
+### ping_nas
+ping: invalid number '0.2'
+### ping_nas_big
+10 packets transmitted, 10 packets received, 0% packet loss
+round-trip min/avg/max = 0.821/0.923/1.114 ms
+### rx1
+247126
+### errs
+0
+0
+### dmesg_tail
+[   34.398513] adpt_hppe_sfp_power_pulse[4153]:INFO:port2 sfp no tx_disable (rv=-19): mode bounce 23->4->23
+[   36.610504] adpt_hppe_sfp_power_pulse[4165]:INFO:port2 sfp recovery attempt done (pulse=1)
+[   40.790652] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 15 tick(s), 1 pulse(s)
+[   41.752169] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+[   41.752266] br-lan: port 1(eth0) entered blocking state
+[   41.756900] br-lan: port 1(eth0) entered forwarding state
+[ 3311.510587] nss-dp 3a504000.dp1 eth0: PHY Link is down
+[ 3311.510848] br-lan: port 1(eth0) entered disabled state
+[ 3316.870777] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 6 tick(s), 0 pulse(s)
+[ 3317.752743] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000
+[ 3317.752831] br-lan: port 1(eth0) entered blocking state
+[ 3317.757473] br-lan: port 1(eth0) entered forwarding state

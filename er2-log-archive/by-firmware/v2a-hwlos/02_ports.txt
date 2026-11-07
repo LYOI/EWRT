@@ -1,0 +1,2 @@
+eth0 state=down speed=65535 cc=1
+eth1 state=up speed=2500 cc=2

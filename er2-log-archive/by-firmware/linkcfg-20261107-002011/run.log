@@ -1,0 +1,12 @@
+00:20:12 镜像 EWRT-ER2-linkcfg-20261107-0020-factory.bin md5=9bd5353b230677fefc796918a4029c3a size=100663300
+00:20:12 等待 uboot 恢复模式（/env/list 200，最长 900s）
+00:20:12   需要：断电后按住 reset 上电进入 uboot web
+00:20:12 uboot 就绪（第 1 次探测）
+00:20:13 上传并刷写（auto_reboot=true）
+00:20:39 上传 OK，触发写入
+00:20:44 写入已触发，等设备上线（max 300s）
+00:21:46 SSH 上线 uptime=27.52
+00:21:47 指纹 ko=b1385d5ccc8085ddaa16dedbfbc319f4 补丁特征行=1
+00:21:47 ⚠️ ko md5 不等于本次构建（期望 e34370fe9fd5c02f998787e90dee3a10）
+00:21:48 包抽查: i2c-tools PRESENT qca-ssdk-shell PRESENT luci-app-aurora-config PRESENT cfdisk PRESENT sgdisk PRESENT count=427 
+00:22:19 LINK_UP speed=2500 uptime=60s

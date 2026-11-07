@@ -1,0 +1,12 @@
+20:51:11 镜像 er2-main-20261105-factory.bin md5=d1e7a9b047740f5d87761b92a1dbc31f size=26214404
+20:51:11 等待 uboot 恢复模式（/env/list 200，最长 900s）
+20:51:11   需要：断电后按住 reset 上电进入 uboot web
+20:51:11 uboot 就绪（第 1 次探测）
+20:51:11 上传并刷写（auto_reboot=true）
+20:51:20 上传 OK，触发写入
+20:51:21 写入已触发，等设备上线（max 300s）
+20:52:03 SSH 上线 uptime=22.32
+20:52:04 指纹 ko=e34370fe9fd5c02f998787e90dee3a10 补丁特征行=1
+20:52:04 ✅ ko md5 与本次构建一致
+20:52:05 包抽查: i2c-tools PRESENT qca-ssdk-shell PRESENT luci-app-aurora-config PRESENT cfdisk PRESENT sgdisk PRESENT count=319 
+20:52:21 LINK_UP speed=2500 uptime=39s

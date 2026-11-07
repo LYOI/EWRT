@@ -1,0 +1,11 @@
+15:21:06 START label=dryrun3 link_budget=10s stable=5s peer_mod=192.168.1.10 peer_nas=192.168.1.123 expect=auto
+15:21:06 LINK_DEADLINE 15:21:16
+15:21:06 S0 WAIT_SSH (max 300s)
+15:21:07 S0 SSH_UP after 1s
+15:21:08 S0 boot_capture dmesg_link=41.752169 noise_lines=22
+15:21:12 S1 LINK_OK uptime=2086.37s dmesg_link=41.752169s (连续 3 次采样确认)
+15:21:12 S1 noise_baseline=noise_lines
+15:22:06 S2 CONN1 mod=0% nas=100% nas1472=100% rx_delta=6304
+15:22:12 S3 STABLE done 5s carrier_changes 2 -> 2
+15:23:06 S4 CONN2 nas=100% nas1472=100%
+15:23:06 VERDICT FAIL_CONN1  link_at=2086.37s  conn1_nas=100%  conn2_nas=100%  cchg=2->2  rx_delta=6304  L2/L3 首测不通 nas=100%

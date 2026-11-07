@@ -1,0 +1,7 @@
+15:18:39 START label=dryrun2 link_budget=10s stable=6s peer_mod=192.168.1.10 peer_nas=192.168.1.123 expect=auto
+15:18:39 LINK_DEADLINE 15:18:49
+15:18:44 S1 LINK_OK uptime=1938.03s (连续 3 次采样确认)
+15:19:38 S2 CONN1 mod=0% nas=100% nas1472=100% rx_delta=4172
+15:19:46 S3 STABLE done 6s carrier_changes 2 -> 2
+15:20:39 S4 CONN2 nas=100% nas1472=100%
+15:20:39 VERDICT FAIL_CONN1  link_at=1938.03s  conn1_nas=100%  conn2_nas=100%  cchg=2->2  rx_delta=4172  L2/L3 首测不通 nas=100%

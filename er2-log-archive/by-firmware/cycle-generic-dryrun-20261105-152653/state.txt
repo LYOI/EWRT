@@ -1,0 +1,10 @@
+15:26:53 START label=generic-dryrun if=eth0 dev=root@192.168.1.1 budget=10s stable=6s speeds='2500 10000' peers='192.168.1.10/192.168.1.123'
+15:26:53 S0 WAIT_SSH (max 300s)
+15:26:54 S0 SSH_UP after 1s
+15:26:55 S0 boot_capture dmesg_link=40.790652s noise=16
+15:26:55 S1 LINK_DEADLINE 15:27:05
+15:26:59 S1 LINK_OK uptime=2433.71s dmesg_link=40.790652s noise_baseline=noise_lines
+15:27:00 S2 CONN1 A=% B=NA% B1472=% rx_delta=0
+15:27:06 S3 STABLE 6s carrier_changes 2 -> 2
+15:27:07 S4 CONN2 B=NA% B1472=%
+15:27:07 VERDICT FAIL_CONN1 link_at=2433.71s A=% B=NA% B2=NA% cchg=2->2 rx_delta=0 reason=首测不通 B=NA%

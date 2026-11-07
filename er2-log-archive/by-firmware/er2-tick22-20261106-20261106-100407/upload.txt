@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"28835844","md5":"44c4c38a25292f6b43d67ae9d771e52e","name":"er2-base-tick22-20261106-1001-factory.bin"}}
+200

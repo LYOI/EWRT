@@ -1,0 +1,12 @@
+21:42:32 镜像 EWRT-ER2-pcie0-20261106-2140-factory.bin md5=eb8e273037e361999bfd26bf3732cc61 size=100663300
+21:42:32 等待 uboot 恢复模式（/env/list 200，最长 900s）
+21:42:32   需要：断电后按住 reset 上电进入 uboot web
+21:42:32 uboot 就绪（第 1 次探测）
+21:42:32 上传并刷写（auto_reboot=true）
+21:42:59 上传 OK，触发写入
+21:43:05 写入已触发，等设备上线（max 300s）
+21:44:12 SSH 上线 uptime=29.11
+21:44:13 指纹 ko=70b94ee71f5baac1f2d5152c8cec689d 补丁特征行=1
+21:44:13 ⚠️ ko md5 不等于本次构建（期望 e34370fe9fd5c02f998787e90dee3a10）
+21:44:14 包抽查: i2c-tools PRESENT qca-ssdk-shell PRESENT luci-app-aurora-config PRESENT cfdisk PRESENT sgdisk PRESENT count=427 
+21:44:45 LINK_UP speed=2500 uptime=61s

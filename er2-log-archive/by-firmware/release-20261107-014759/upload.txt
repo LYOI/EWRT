@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"8da8b1162f44faab453ba512109506d7","name":"EWRT-ER2-20261107-release-factory.bin"}}
+200

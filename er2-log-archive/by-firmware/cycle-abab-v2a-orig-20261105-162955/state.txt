@@ -1,0 +1,11 @@
+16:29:55 START label=abab-v2a-orig link_budget=180s stable=60s peer_mod=192.168.1.10 peer_nas=192.168.1.123 expect=auto
+16:29:55 LINK_DEADLINE 16:32:55
+16:29:55 S0 WAIT_SSH (max 300s)
+16:30:33 S0 SSH_UP after 38s
+16:30:34 S0 boot_capture dmesg_link=none noise_lines=21
+16:30:51 S1 LINK_OK uptime=37.80s dmesg_link=nones (连续 3 次采样确认)
+16:30:51 S1 noise_baseline=8
+16:31:39 S2 CONN1 mod=0% nas=NA% nas1472=NA% rx_delta=-2536
+16:32:45 S3 STABLE done 60s carrier_changes  -> 
+16:33:16 S4 CONN2 nas=NA% nas1472=NA%
+16:33:16 VERDICT FAIL_CONN1  link_at=37.80s  conn1_nas=NA%  conn2_nas=NA%  cchg=->  rx_delta=-2536  L2/L3 首测不通 nas=NA%

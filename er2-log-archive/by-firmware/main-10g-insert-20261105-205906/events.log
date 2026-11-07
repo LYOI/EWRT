@@ -1,0 +1,29 @@
+20:59:06 START label=main-10g-insert wait=30min dense=300s
+boot_id=87dc5189-a171-41ab-a417-01aed806df23
+uptime=346.25
+ko_md5=e34370fe9fd5c02f998787e90dee3a10
+loglevel=2
+dmesg_baseline=291
+20:59:21 EVENT#1 361.23,0,3,65535,2  (prev=1,2,2500)
+20:59:23 EVENT#2 363.23,1,4,10000,2  (prev=0,3,65535)
+20:59:24 EVENT#2 LINK_UP speed=10000 uptime=363.23
+21:00:24 STABLE 60s after link up, settle
+4
+[   10.404920] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   22.490867] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   34.070471] adpt_hppe_sfp_module_manager[4246]:INFO:port2 sfp still down after 12 ticks, pulse 1/3
+[   34.070513] adpt_hppe_sfp_power_pulse[4121]:INFO:port2 sfp recovery attempt: TX_DISABLE hold 3000ms
+[   34.078324] adpt_hppe_sfp_power_pulse[4153]:INFO:port2 sfp no tx_disable (rv=-19): mode bounce 23->4->23
+[   36.290316] adpt_hppe_sfp_power_pulse[4165]:INFO:port2 sfp recovery attempt done (pulse=1)
+[   40.470468] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 15 tick(s), 1 pulse(s)
+[   41.431981] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+[  358.630378] nss-dp 3a504000.dp1 eth0: PHY Link is down
+[  361.920628] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 4 tick(s), 0 pulse(s)
+[  362.792540] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000
+21:02:33 EVENT#3 24.56,1,2,10000,2  (prev=1,4,10000)
+21:02:33 EVENT#3 LINK_UP speed=10000 uptime=24.56
+21:03:33 STABLE 60s after link up, settle
+2
+[   10.346389] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   20.570943] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   21.602619] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000

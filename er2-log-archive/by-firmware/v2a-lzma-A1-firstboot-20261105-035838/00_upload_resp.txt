@@ -1,0 +1,1 @@
+{"status":"success","info":{"type":"FIT Image","size":"20185092","md5":"5c3fcbc76a370566222ef7b82396588f","name":"EWRT-ER2-v2a-lzma-factory.bin"}}

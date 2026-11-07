@@ -1,0 +1,1107 @@
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.940011] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.948022] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.954447] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.963645] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.971620] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.977881] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.986930] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  239.996298] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.004358] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.004358]  and value:0x50
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.004376] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.004376]  and value:0x0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.012077] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.032917] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.032917]  and value:0x20
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.032922] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.051838] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.051838]  and value:0x0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.051843] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.051843]  and value:0x5a
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.082384] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.082384]  and value:0x5a
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.113384] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.113384]  and value:0x0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.113419] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.132952] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.172394] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.172414] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.178154] adpt_hppe_sfp_module_manager[4136]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.189618] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.198297] qca_hppe_mac_sw_sync_task[4231]:DEBUG:Port 2 change to link up status
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.208450] qca_hppe_mac_sw_sync_task[4238]:DEBUG:Port 2 the interface mode switched
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.235845] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.235867] qca_hppe_mac_sw_sync_task[4282]:DEBUG:Port 2 is link up and speed change to 2500
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.242293] qca_hppe_mac_sw_sync_task[4295]:DEBUG:Port 2 is link up and duplex change to 1
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.250727] adpt_hppe_uniphy_port_adapter_reset[3554]:DEBUG:port 2, uniphy_index 1, port_mode 0x17
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.258800] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x480
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.258800]  and value:0x0
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.258806] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.258806]  and value:0x44
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.267738] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.267738]  and value:0x44
+Wed Nov  4 11:50:31 2026 kern.warn kernel: [  240.278069] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:31 2026 authpriv.info dropbear[4786]: Child connection from 192.168.1.2:7626
+Wed Nov  4 11:50:31 2026 authpriv.notice dropbear[4786]: Auth succeeded with blank password for 'root' from 192.168.1.2:7626
+Wed Nov  4 11:50:31 2026 kern.info kernel: [  240.720491] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:50:31 2026 kern.info kernel: [  240.720583] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:50:31 2026 kern.info kernel: [  240.725240] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:50:31 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:50:31 2026 authpriv.info dropbear[4786]: Exit (root) from <192.168.1.2:7626>: Disconnect received
+Wed Nov  4 11:50:32 2026 kern.warn kernel: [  241.352400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:32 2026 kern.warn kernel: [  241.352443] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:32 2026 kern.warn kernel: [  241.361642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:32 2026 kern.warn kernel: [  241.371472] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:32 2026 kern.warn kernel: [  241.380033] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:32 2026 kern.warn kernel: [  241.388069] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:32 2026 kern.warn kernel: [  241.394464] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:33 2026 authpriv.info dropbear[4800]: Child connection from 192.168.1.2:14079
+Wed Nov  4 11:50:33 2026 authpriv.notice dropbear[4800]: Auth succeeded with blank password for 'root' from 192.168.1.2:14079
+Wed Nov  4 11:50:33 2026 authpriv.info dropbear[4800]: Exit (root) from <192.168.1.2:14079>: Disconnect received
+Wed Nov  4 11:50:33 2026 kern.warn kernel: [  242.472400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:33 2026 kern.warn kernel: [  242.472443] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:33 2026 kern.warn kernel: [  242.481641] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:33 2026 kern.warn kernel: [  242.491471] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:33 2026 kern.warn kernel: [  242.500032] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:33 2026 kern.warn kernel: [  242.508042] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:33 2026 kern.warn kernel: [  242.514462] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:34 2026 kern.warn kernel: [  243.592389] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:34 2026 kern.warn kernel: [  243.592421] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:34 2026 kern.warn kernel: [  243.601623] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:34 2026 kern.warn kernel: [  243.611448] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:34 2026 kern.warn kernel: [  243.619999] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:34 2026 kern.warn kernel: [  243.628024] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:34 2026 kern.warn kernel: [  243.634444] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:34 2026 authpriv.info dropbear[4814]: Child connection from 192.168.1.2:14080
+Wed Nov  4 11:50:35 2026 authpriv.notice dropbear[4814]: Auth succeeded with blank password for 'root' from 192.168.1.2:14080
+Wed Nov  4 11:50:35 2026 authpriv.info dropbear[4814]: Exit (root) from <192.168.1.2:14080>: Disconnect received
+Wed Nov  4 11:50:35 2026 kern.warn kernel: [  244.712400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:35 2026 kern.warn kernel: [  244.712444] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:35 2026 kern.warn kernel: [  244.721640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:35 2026 kern.warn kernel: [  244.731473] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:35 2026 kern.warn kernel: [  244.740034] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:35 2026 kern.warn kernel: [  244.748041] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:35 2026 kern.warn kernel: [  244.754464] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:36 2026 authpriv.info dropbear[4828]: Child connection from 192.168.1.2:14081
+Wed Nov  4 11:50:36 2026 authpriv.notice dropbear[4828]: Auth succeeded with blank password for 'root' from 192.168.1.2:14081
+Wed Nov  4 11:50:36 2026 authpriv.info dropbear[4828]: Exit (root) from <192.168.1.2:14081>: Disconnect received
+Wed Nov  4 11:50:37 2026 kern.warn kernel: [  245.832401] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:37 2026 kern.warn kernel: [  245.832444] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:37 2026 kern.warn kernel: [  245.841642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:37 2026 kern.warn kernel: [  245.851477] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:37 2026 kern.warn kernel: [  245.860035] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:37 2026 kern.warn kernel: [  245.868042] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:37 2026 kern.warn kernel: [  245.874463] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:37 2026 authpriv.info dropbear[4842]: Child connection from 192.168.1.2:41485
+Wed Nov  4 11:50:38 2026 authpriv.notice dropbear[4842]: Auth succeeded with blank password for 'root' from 192.168.1.2:41485
+Wed Nov  4 11:50:38 2026 authpriv.info dropbear[4842]: Exit (root) from <192.168.1.2:41485>: Disconnect received
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  246.952443] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  246.952492] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  246.961689] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  246.971578] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  246.981317] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  246.988103] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  246.994517] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.003797] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.011772] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.018035] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.027081] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.036454] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.036454]  and value:0x70
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.036472] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.036472]  and value:0x0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.044511] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.044511]  and value:0x20
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.054666] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x570
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.054666]  and value:0x0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.065082] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x570
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.065082]  and value:0xc0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.103387] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.103387]  and value:0x0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.104412] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.104412]  and value:0x0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.112639] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.133197] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.172393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.172414] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.178156] adpt_hppe_sfp_module_manager[4150]:DEBUG:port2 sfp down=1 ticks present=1 pulses=0
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.189620] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+Wed Nov  4 11:50:38 2026 kern.warn kernel: [  247.198296] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+Wed Nov  4 11:50:39 2026 daemon.notice netifd: Network device 'eth0' link is down
+Wed Nov  4 11:50:39 2026 kern.info kernel: [  247.994095] nss-dp 3a504000.dp1 eth0: PHY Link is down
+Wed Nov  4 11:50:39 2026 kern.info kernel: [  247.994345] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.232395] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.232426] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.241627] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.251456] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.260010] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.268026] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.274450] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.283648] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.291624] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.297883] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.306930] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.316301] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:50:39 2026 authpriv.info dropbear[4856]: Child connection from 192.168.1.2:41487
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.324359] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.324359]  and value:0x50
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.324377] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.324377]  and value:0x0
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.332080] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.352927] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.352927]  and value:0x20
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.352936] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.371849] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.371849]  and value:0x0
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.371856] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.371856]  and value:0x5a
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.402392] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.402392]  and value:0x5a
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.433387] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.433387]  and value:0x0
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.433433] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:50:39 2026 authpriv.notice dropbear[4856]: Auth succeeded with blank password for 'root' from 192.168.1.2:41487
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.452975] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:50:39 2026 authpriv.info dropbear[4856]: Exit (root) from <192.168.1.2:41487>: Disconnect received
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.501106] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.501147] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.506919] adpt_hppe_sfp_module_manager[4136]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.518344] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.527023] qca_hppe_mac_sw_sync_task[4231]:DEBUG:Port 2 change to link up status
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.537188] qca_hppe_mac_sw_sync_task[4238]:DEBUG:Port 2 the interface mode switched
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.564590] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.564614] qca_hppe_mac_sw_sync_task[4282]:DEBUG:Port 2 is link up and speed change to 2500
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.571039] qca_hppe_mac_sw_sync_task[4295]:DEBUG:Port 2 is link up and duplex change to 1
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.579474] adpt_hppe_uniphy_port_adapter_reset[3554]:DEBUG:port 2, uniphy_index 1, port_mode 0x17
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.587552] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x480
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.587552]  and value:0x0
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.587558] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.587558]  and value:0x44
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.596482] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.596482]  and value:0x44
+Wed Nov  4 11:50:39 2026 kern.warn kernel: [  248.606820] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:40 2026 kern.info kernel: [  249.034063] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:50:40 2026 kern.info kernel: [  249.034132] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:50:40 2026 kern.info kernel: [  249.038779] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:50:40 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:50:40 2026 kern.warn kernel: [  249.672399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:40 2026 kern.warn kernel: [  249.672441] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:40 2026 kern.warn kernel: [  249.681639] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:40 2026 kern.warn kernel: [  249.691472] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:40 2026 kern.warn kernel: [  249.700031] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:40 2026 kern.warn kernel: [  249.708041] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:40 2026 kern.warn kernel: [  249.714462] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:41 2026 authpriv.info dropbear[4870]: Child connection from 192.168.1.2:41489
+Wed Nov  4 11:50:41 2026 authpriv.notice dropbear[4870]: Auth succeeded with blank password for 'root' from 192.168.1.2:41489
+Wed Nov  4 11:50:41 2026 authpriv.info dropbear[4870]: Exit (root) from <192.168.1.2:41489>: Disconnect received
+Wed Nov  4 11:50:42 2026 kern.warn kernel: [  250.792398] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:42 2026 kern.warn kernel: [  250.792442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:42 2026 kern.warn kernel: [  250.801640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:42 2026 kern.warn kernel: [  250.811472] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:42 2026 kern.warn kernel: [  250.820030] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:42 2026 kern.warn kernel: [  250.828040] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:42 2026 kern.warn kernel: [  250.834462] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:42 2026 authpriv.info dropbear[4884]: Child connection from 192.168.1.2:22800
+Wed Nov  4 11:50:42 2026 authpriv.notice dropbear[4884]: Auth succeeded with blank password for 'root' from 192.168.1.2:22800
+Wed Nov  4 11:50:42 2026 authpriv.info dropbear[4884]: Exit (root) from <192.168.1.2:22800>: Disconnect received
+Wed Nov  4 11:50:43 2026 kern.warn kernel: [  251.912406] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:43 2026 kern.warn kernel: [  251.912453] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:43 2026 kern.warn kernel: [  251.921650] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:43 2026 kern.warn kernel: [  251.931483] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:43 2026 kern.warn kernel: [  251.940039] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:43 2026 kern.warn kernel: [  251.948053] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:43 2026 kern.warn kernel: [  251.954472] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:44 2026 kern.warn kernel: [  253.032397] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:44 2026 kern.warn kernel: [  253.032434] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:44 2026 kern.warn kernel: [  253.041634] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:44 2026 kern.warn kernel: [  253.051463] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:44 2026 kern.warn kernel: [  253.060015] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:44 2026 kern.warn kernel: [  253.068035] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:44 2026 kern.warn kernel: [  253.074456] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:44 2026 authpriv.info dropbear[4898]: Child connection from 192.168.1.2:41193
+Wed Nov  4 11:50:44 2026 authpriv.notice dropbear[4898]: Auth succeeded with blank password for 'root' from 192.168.1.2:41193
+Wed Nov  4 11:50:44 2026 authpriv.info dropbear[4898]: Exit (root) from <192.168.1.2:41193>: Disconnect received
+Wed Nov  4 11:50:45 2026 kern.warn kernel: [  254.152399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:45 2026 kern.warn kernel: [  254.152442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:45 2026 kern.warn kernel: [  254.161640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:45 2026 kern.warn kernel: [  254.171474] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:45 2026 kern.warn kernel: [  254.180031] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:45 2026 kern.warn kernel: [  254.188040] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:45 2026 kern.warn kernel: [  254.194462] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:45 2026 authpriv.info dropbear[4912]: Child connection from 192.168.1.2:55859
+Wed Nov  4 11:50:46 2026 authpriv.notice dropbear[4912]: Auth succeeded with blank password for 'root' from 192.168.1.2:55859
+Wed Nov  4 11:50:46 2026 authpriv.info dropbear[4912]: Exit (root) from <192.168.1.2:55859>: Disconnect received
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.272466] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.272514] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.281711] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.291556] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.301333] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.308122] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.314539] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.323821] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.331795] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.338056] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.347101] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.356472] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.356472]  and value:0x70
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.356488] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.356488]  and value:0x0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.364533] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.364533]  and value:0x20
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.374690] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x570
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.374690]  and value:0x0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.385105] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x570
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.385105]  and value:0xc0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.423389] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.423389]  and value:0x0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.424414] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.424414]  and value:0x0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.432641] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.453199] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.492393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.492413] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.498154] adpt_hppe_sfp_module_manager[4150]:DEBUG:port2 sfp down=1 ticks present=1 pulses=0
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.509618] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+Wed Nov  4 11:50:46 2026 kern.warn kernel: [  255.518296] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+Wed Nov  4 11:50:47 2026 daemon.notice netifd: Network device 'eth0' link is down
+Wed Nov  4 11:50:47 2026 kern.info kernel: [  256.314086] nss-dp 3a504000.dp1 eth0: PHY Link is down
+Wed Nov  4 11:50:47 2026 kern.info kernel: [  256.314328] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:50:47 2026 authpriv.info dropbear[4926]: Child connection from 192.168.1.2:55860
+Wed Nov  4 11:50:47 2026 authpriv.notice dropbear[4926]: Auth succeeded with blank password for 'root' from 192.168.1.2:55860
+Wed Nov  4 11:50:47 2026 authpriv.info dropbear[4926]: Exit (root) from <192.168.1.2:55860>: Disconnect received
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.552456] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.552500] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.561699] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.571533] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.580091] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.588101] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.594522] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.603718] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.611695] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.617955] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.627002] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.636371] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.644429] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.644429]  and value:0x50
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.644447] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.644447]  and value:0x0
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.652151] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.672990] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.672990]  and value:0x20
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.672996] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.691912] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.691912]  and value:0x0
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.691917] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.691917]  and value:0x5a
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.732382] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.732382]  and value:0x5a
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.763384] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.763384]  and value:0x0
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.763417] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:50:47 2026 kern.warn kernel: [  256.782950] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.822394] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.822414] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.828155] adpt_hppe_sfp_module_manager[4136]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.839618] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.848296] qca_hppe_mac_sw_sync_task[4231]:DEBUG:Port 2 change to link up status
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.858450] qca_hppe_mac_sw_sync_task[4238]:DEBUG:Port 2 the interface mode switched
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.885846] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.885868] qca_hppe_mac_sw_sync_task[4282]:DEBUG:Port 2 is link up and speed change to 2500
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.892294] qca_hppe_mac_sw_sync_task[4295]:DEBUG:Port 2 is link up and duplex change to 1
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.900728] adpt_hppe_uniphy_port_adapter_reset[3554]:DEBUG:port 2, uniphy_index 1, port_mode 0x17
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.908802] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x480
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.908802]  and value:0x0
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.908808] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.908808]  and value:0x44
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.917738] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.917738]  and value:0x44
+Wed Nov  4 11:50:48 2026 kern.warn kernel: [  256.928069] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:48 2026 kern.info kernel: [  257.354067] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:50:48 2026 kern.info kernel: [  257.354150] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:50:48 2026 kern.info kernel: [  257.358795] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:50:48 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:50:49 2026 authpriv.info dropbear[4940]: Child connection from 192.168.1.2:46867
+Wed Nov  4 11:50:49 2026 kern.warn kernel: [  257.992411] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:49 2026 kern.warn kernel: [  257.992454] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:49 2026 kern.warn kernel: [  258.001658] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:49 2026 kern.warn kernel: [  258.011483] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:49 2026 kern.warn kernel: [  258.020045] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:49 2026 kern.warn kernel: [  258.028055] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:49 2026 kern.warn kernel: [  258.034475] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:49 2026 authpriv.notice dropbear[4940]: Auth succeeded with blank password for 'root' from 192.168.1.2:46867
+Wed Nov  4 11:50:49 2026 authpriv.info dropbear[4940]: Exit (root) from <192.168.1.2:46867>: Disconnect received
+Wed Nov  4 11:50:50 2026 kern.warn kernel: [  259.112400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:50 2026 kern.warn kernel: [  259.112445] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:50 2026 kern.warn kernel: [  259.121642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:50 2026 kern.warn kernel: [  259.131479] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:50 2026 kern.warn kernel: [  259.140030] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:50 2026 kern.warn kernel: [  259.148043] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:50 2026 kern.warn kernel: [  259.154465] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:50 2026 authpriv.info dropbear[4954]: Child connection from 192.168.1.2:46868
+Wed Nov  4 11:50:50 2026 authpriv.notice dropbear[4954]: Auth succeeded with blank password for 'root' from 192.168.1.2:46868
+Wed Nov  4 11:50:50 2026 authpriv.info dropbear[4954]: Exit (root) from <192.168.1.2:46868>: Disconnect received
+Wed Nov  4 11:50:51 2026 kern.warn kernel: [  260.232399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:51 2026 kern.warn kernel: [  260.232443] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:51 2026 kern.warn kernel: [  260.241641] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:51 2026 kern.warn kernel: [  260.251474] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:51 2026 kern.warn kernel: [  260.260031] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:51 2026 kern.warn kernel: [  260.268041] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:51 2026 kern.warn kernel: [  260.274463] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:52 2026 authpriv.info dropbear[4968]: Child connection from 192.168.1.2:5481
+Wed Nov  4 11:50:52 2026 authpriv.notice dropbear[4968]: Auth succeeded with blank password for 'root' from 192.168.1.2:5481
+Wed Nov  4 11:50:52 2026 authpriv.info dropbear[4968]: Exit (root) from <192.168.1.2:5481>: Disconnect received
+Wed Nov  4 11:50:52 2026 kern.warn kernel: [  261.352404] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:52 2026 kern.warn kernel: [  261.352448] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:52 2026 kern.warn kernel: [  261.361647] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:52 2026 kern.warn kernel: [  261.371478] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:52 2026 kern.warn kernel: [  261.380041] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:52 2026 kern.warn kernel: [  261.388046] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:52 2026 kern.warn kernel: [  261.394469] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:53 2026 kern.warn kernel: [  262.472389] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:53 2026 kern.warn kernel: [  262.472417] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:53 2026 kern.warn kernel: [  262.481619] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:53 2026 kern.warn kernel: [  262.491445] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:53 2026 kern.warn kernel: [  262.499996] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:53 2026 kern.warn kernel: [  262.508019] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:53 2026 kern.warn kernel: [  262.514442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:53 2026 authpriv.info dropbear[4982]: Child connection from 192.168.1.2:5482
+Wed Nov  4 11:50:53 2026 authpriv.notice dropbear[4982]: Auth succeeded with blank password for 'root' from 192.168.1.2:5482
+Wed Nov  4 11:50:53 2026 authpriv.info dropbear[4982]: Exit (root) from <192.168.1.2:5482>: Disconnect received
+Wed Nov  4 11:50:54 2026 kern.warn kernel: [  263.592463] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:54 2026 kern.warn kernel: [  263.592507] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:54 2026 kern.warn kernel: [  263.601706] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:54 2026 kern.warn kernel: [  263.611549] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:54 2026 kern.warn kernel: [  263.622036] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:54 2026 kern.warn kernel: [  263.628105] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:54 2026 kern.warn kernel: [  263.634529] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:55 2026 authpriv.info dropbear[4996]: Child connection from 192.168.1.2:5483
+Wed Nov  4 11:50:55 2026 authpriv.notice dropbear[4996]: Auth succeeded with blank password for 'root' from 192.168.1.2:5483
+Wed Nov  4 11:50:55 2026 authpriv.info dropbear[4996]: Exit (root) from <192.168.1.2:5483>: Disconnect received
+Wed Nov  4 11:50:55 2026 kern.warn kernel: [  264.712399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:55 2026 kern.warn kernel: [  264.712442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:55 2026 kern.warn kernel: [  264.721640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:55 2026 kern.warn kernel: [  264.731473] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:55 2026 kern.warn kernel: [  264.740016] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:55 2026 kern.warn kernel: [  264.748041] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:55 2026 kern.warn kernel: [  264.754461] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:56 2026 authpriv.info dropbear[5010]: Child connection from 192.168.1.2:5486
+Wed Nov  4 11:50:57 2026 authpriv.notice dropbear[5010]: Auth succeeded with blank password for 'root' from 192.168.1.2:5486
+Wed Nov  4 11:50:57 2026 kern.warn kernel: [  265.832487] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:57 2026 kern.warn kernel: [  265.832531] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:57 2026 kern.warn kernel: [  265.841744] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:57 2026 kern.warn kernel: [  265.851605] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:57 2026 kern.warn kernel: [  265.860173] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:57 2026 kern.warn kernel: [  265.868171] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:57 2026 kern.warn kernel: [  265.874559] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:57 2026 authpriv.info dropbear[5010]: Exit (root) from <192.168.1.2:5486>: Disconnect received
+Wed Nov  4 11:50:58 2026 kern.warn kernel: [  266.952397] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:58 2026 kern.warn kernel: [  266.952438] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:58 2026 kern.warn kernel: [  266.961637] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:58 2026 kern.warn kernel: [  266.971467] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:58 2026 kern.warn kernel: [  266.980014] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:58 2026 kern.warn kernel: [  266.988038] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:58 2026 kern.warn kernel: [  266.994458] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:58 2026 authpriv.info dropbear[5024]: Child connection from 192.168.1.2:5487
+Wed Nov  4 11:50:58 2026 authpriv.notice dropbear[5024]: Auth succeeded with blank password for 'root' from 192.168.1.2:5487
+Wed Nov  4 11:50:58 2026 authpriv.info dropbear[5024]: Exit (root) from <192.168.1.2:5487>: Disconnect received
+Wed Nov  4 11:50:59 2026 kern.warn kernel: [  268.072399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:59 2026 kern.warn kernel: [  268.072443] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:50:59 2026 kern.warn kernel: [  268.081642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:50:59 2026 kern.warn kernel: [  268.091473] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:50:59 2026 kern.warn kernel: [  268.100021] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:50:59 2026 kern.warn kernel: [  268.108042] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:50:59 2026 kern.warn kernel: [  268.114461] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:00 2026 authpriv.info dropbear[5041]: Child connection from 192.168.1.2:51379
+Wed Nov  4 11:51:00 2026 authpriv.notice dropbear[5041]: Auth succeeded with blank password for 'root' from 192.168.1.2:51379
+Wed Nov  4 11:51:00 2026 authpriv.info dropbear[5041]: Exit (root) from <192.168.1.2:51379>: Disconnect received
+Wed Nov  4 11:51:00 2026 kern.warn kernel: [  269.192407] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:00 2026 kern.warn kernel: [  269.192451] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:00 2026 kern.warn kernel: [  269.201649] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:00 2026 kern.warn kernel: [  269.211485] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:00 2026 kern.warn kernel: [  269.220039] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:00 2026 kern.warn kernel: [  269.228051] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:00 2026 kern.warn kernel: [  269.234472] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:01 2026 kern.warn kernel: [  270.312400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:01 2026 kern.warn kernel: [  270.312442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:01 2026 kern.warn kernel: [  270.321640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:01 2026 kern.warn kernel: [  270.331475] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:01 2026 kern.warn kernel: [  270.340031] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:01 2026 kern.warn kernel: [  270.348044] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:01 2026 kern.warn kernel: [  270.354463] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:01 2026 authpriv.info dropbear[5055]: Child connection from 192.168.1.2:51383
+Wed Nov  4 11:51:01 2026 authpriv.notice dropbear[5055]: Auth succeeded with blank password for 'root' from 192.168.1.2:51383
+Wed Nov  4 11:51:01 2026 authpriv.info dropbear[5055]: Exit (root) from <192.168.1.2:51383>: Disconnect received
+Wed Nov  4 11:51:02 2026 kern.warn kernel: [  271.432398] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:02 2026 kern.warn kernel: [  271.432441] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:02 2026 kern.warn kernel: [  271.441639] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:02 2026 kern.warn kernel: [  271.451471] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:02 2026 kern.warn kernel: [  271.460018] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:02 2026 kern.warn kernel: [  271.468039] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:02 2026 kern.warn kernel: [  271.474462] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:03 2026 authpriv.info dropbear[5069]: Child connection from 192.168.1.2:51385
+Wed Nov  4 11:51:03 2026 authpriv.notice dropbear[5069]: Auth succeeded with blank password for 'root' from 192.168.1.2:51385
+Wed Nov  4 11:51:03 2026 authpriv.info dropbear[5069]: Exit (root) from <192.168.1.2:51385>: Disconnect received
+Wed Nov  4 11:51:03 2026 kern.warn kernel: [  272.552400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:03 2026 kern.warn kernel: [  272.552443] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:03 2026 kern.warn kernel: [  272.561641] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:03 2026 kern.warn kernel: [  272.571472] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:03 2026 kern.warn kernel: [  272.580031] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:03 2026 kern.warn kernel: [  272.588041] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:03 2026 kern.warn kernel: [  272.594463] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:04 2026 authpriv.info dropbear[5083]: Child connection from 192.168.1.2:51386
+Wed Nov  4 11:51:04 2026 authpriv.notice dropbear[5083]: Auth succeeded with blank password for 'root' from 192.168.1.2:51386
+Wed Nov  4 11:51:04 2026 authpriv.info dropbear[5083]: Exit (root) from <192.168.1.2:51386>: Disconnect received
+Wed Nov  4 11:51:04 2026 kern.warn kernel: [  273.672763] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:04 2026 kern.warn kernel: [  273.672809] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:04 2026 kern.warn kernel: [  273.682017] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:04 2026 kern.warn kernel: [  273.691836] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:04 2026 kern.warn kernel: [  273.700427] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:04 2026 kern.warn kernel: [  273.708410] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:04 2026 kern.warn kernel: [  273.714826] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:06 2026 kern.warn kernel: [  274.792391] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:06 2026 kern.warn kernel: [  274.792426] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:06 2026 kern.warn kernel: [  274.801627] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:06 2026 kern.warn kernel: [  274.811456] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:06 2026 kern.warn kernel: [  274.820006] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:06 2026 kern.warn kernel: [  274.828027] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:06 2026 kern.warn kernel: [  274.834449] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:06 2026 authpriv.info dropbear[5097]: Child connection from 192.168.1.2:37532
+Wed Nov  4 11:51:06 2026 authpriv.notice dropbear[5097]: Auth succeeded with blank password for 'root' from 192.168.1.2:37532
+Wed Nov  4 11:51:06 2026 authpriv.info dropbear[5097]: Exit (root) from <192.168.1.2:37532>: Disconnect received
+Wed Nov  4 11:51:07 2026 kern.warn kernel: [  275.912402] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:07 2026 kern.warn kernel: [  275.912444] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:07 2026 kern.warn kernel: [  275.921642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:07 2026 kern.warn kernel: [  275.931475] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:07 2026 kern.warn kernel: [  275.940035] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:07 2026 kern.warn kernel: [  275.948043] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:07 2026 kern.warn kernel: [  275.954463] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:07 2026 authpriv.info dropbear[5111]: Child connection from 192.168.1.2:35544
+Wed Nov  4 11:51:07 2026 authpriv.notice dropbear[5111]: Auth succeeded with blank password for 'root' from 192.168.1.2:35544
+Wed Nov  4 11:51:07 2026 authpriv.info dropbear[5111]: Exit (root) from <192.168.1.2:35544>: Disconnect received
+Wed Nov  4 11:51:08 2026 kern.warn kernel: [  277.032400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:08 2026 kern.warn kernel: [  277.032442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:08 2026 kern.warn kernel: [  277.041641] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:08 2026 kern.warn kernel: [  277.051472] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:08 2026 kern.warn kernel: [  277.060031] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:08 2026 kern.warn kernel: [  277.068039] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:08 2026 kern.warn kernel: [  277.074462] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.152461] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.152508] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.161707] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.171549] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:09 2026 authpriv.info dropbear[5125]: Child connection from 192.168.1.2:57276
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.181327] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.188176] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.194569] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.203819] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.211789] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.218054] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.227100] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.236470] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.236470]  and value:0x70
+Wed Nov  4 11:51:09 2026 authpriv.notice dropbear[5125]: Auth succeeded with blank password for 'root' from 192.168.1.2:57276
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.236488] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.236488]  and value:0x0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.244531] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.244531]  and value:0x20
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.254731] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x570
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.254731]  and value:0x0
+Wed Nov  4 11:51:09 2026 authpriv.info dropbear[5125]: Exit (root) from <192.168.1.2:57276>: Disconnect received
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.265134] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x570
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.265134]  and value:0xc0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.303413] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.303413]  and value:0x0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.304454] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.304454]  and value:0x0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.312720] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.333237] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.372397] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.372420] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.378162] adpt_hppe_sfp_module_manager[4150]:DEBUG:port2 sfp down=1 ticks present=1 pulses=0
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.389624] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:09 2026 kern.warn kernel: [  278.398301] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:10 2026 daemon.notice netifd: Network device 'eth0' link is down
+Wed Nov  4 11:51:10 2026 kern.info kernel: [  279.194083] nss-dp 3a504000.dp1 eth0: PHY Link is down
+Wed Nov  4 11:51:10 2026 kern.info kernel: [  279.194329] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.432394] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.432425] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.441627] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.451455] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.460015] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.468025] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.474450] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.483648] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.491623] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.497882] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.506929] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.516300] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.524359] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.524359]  and value:0x50
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.524376] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.524376]  and value:0x0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.532079] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.552918] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.552918]  and value:0x20
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.552924] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.571840] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.571840]  and value:0x0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.571845] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.571845]  and value:0x5a
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.602389] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.602389]  and value:0x5a
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.633384] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.633384]  and value:0x0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.633419] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.652951] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.692393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.692414] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.698155] adpt_hppe_sfp_module_manager[4136]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.709617] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.718295] qca_hppe_mac_sw_sync_task[4231]:DEBUG:Port 2 change to link up status
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.728449] qca_hppe_mac_sw_sync_task[4238]:DEBUG:Port 2 the interface mode switched
+Wed Nov  4 11:51:10 2026 authpriv.info dropbear[5139]: Child connection from 192.168.1.2:57277
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.755851] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.755888] qca_hppe_mac_sw_sync_task[4282]:DEBUG:Port 2 is link up and speed change to 2500
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.762311] qca_hppe_mac_sw_sync_task[4295]:DEBUG:Port 2 is link up and duplex change to 1
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.770763] adpt_hppe_uniphy_port_adapter_reset[3554]:DEBUG:port 2, uniphy_index 1, port_mode 0x17
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.778824] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x480
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.778824]  and value:0x0
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.778830] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:10 2026 kern.warn kernel: [  279.778830]  and value:0x44
+Wed Nov  4 11:51:11 2026 kern.warn kernel: [  279.787756] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:11 2026 kern.warn kernel: [  279.787756]  and value:0x44
+Wed Nov  4 11:51:11 2026 kern.warn kernel: [  279.798090] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:11 2026 authpriv.notice dropbear[5139]: Auth succeeded with blank password for 'root' from 192.168.1.2:57277
+Wed Nov  4 11:51:11 2026 authpriv.info dropbear[5139]: Exit (root) from <192.168.1.2:57277>: Disconnect received
+Wed Nov  4 11:51:11 2026 kern.info kernel: [  280.234056] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:51:11 2026 kern.info kernel: [  280.234142] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:51:11 2026 kern.info kernel: [  280.238786] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:51:11 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:51:12 2026 kern.warn kernel: [  280.872401] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:12 2026 kern.warn kernel: [  280.872443] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:12 2026 kern.warn kernel: [  280.881642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:12 2026 kern.warn kernel: [  280.891479] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:12 2026 kern.warn kernel: [  280.900034] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:12 2026 kern.warn kernel: [  280.908043] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:12 2026 kern.warn kernel: [  280.914463] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:12 2026 authpriv.info dropbear[5153]: Child connection from 192.168.1.2:23473
+Wed Nov  4 11:51:12 2026 authpriv.notice dropbear[5153]: Auth succeeded with blank password for 'root' from 192.168.1.2:23473
+Wed Nov  4 11:51:12 2026 authpriv.info dropbear[5153]: Exit (root) from <192.168.1.2:23473>: Disconnect received
+Wed Nov  4 11:51:13 2026 kern.warn kernel: [  281.992400] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:13 2026 kern.warn kernel: [  281.992445] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:13 2026 kern.warn kernel: [  282.001642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:13 2026 kern.warn kernel: [  282.011477] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:13 2026 kern.warn kernel: [  282.020031] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:13 2026 kern.warn kernel: [  282.028042] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:13 2026 kern.warn kernel: [  282.034465] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:14 2026 authpriv.info dropbear[5167]: Child connection from 192.168.1.2:23474
+Wed Nov  4 11:51:14 2026 authpriv.notice dropbear[5167]: Auth succeeded with blank password for 'root' from 192.168.1.2:23474
+Wed Nov  4 11:51:14 2026 authpriv.info dropbear[5167]: Exit (root) from <192.168.1.2:23474>: Disconnect received
+Wed Nov  4 11:51:14 2026 kern.warn kernel: [  283.112409] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:14 2026 kern.warn kernel: [  283.112452] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:14 2026 kern.warn kernel: [  283.121650] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:14 2026 kern.warn kernel: [  283.131484] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:14 2026 kern.warn kernel: [  283.140067] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:14 2026 kern.warn kernel: [  283.148053] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:14 2026 kern.warn kernel: [  283.154472] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:15 2026 kern.warn kernel: [  284.232398] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:15 2026 kern.warn kernel: [  284.232441] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:15 2026 kern.warn kernel: [  284.241640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:15 2026 kern.warn kernel: [  284.251472] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:15 2026 kern.warn kernel: [  284.260027] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:15 2026 kern.warn kernel: [  284.268039] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:15 2026 kern.warn kernel: [  284.274459] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:15 2026 authpriv.info dropbear[5181]: Child connection from 192.168.1.2:35576
+Wed Nov  4 11:51:15 2026 authpriv.notice dropbear[5181]: Auth succeeded with blank password for 'root' from 192.168.1.2:35576
+Wed Nov  4 11:51:15 2026 authpriv.info dropbear[5181]: Exit (root) from <192.168.1.2:35576>: Disconnect received
+Wed Nov  4 11:51:16 2026 kern.warn kernel: [  285.352404] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:16 2026 kern.warn kernel: [  285.352448] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:16 2026 kern.warn kernel: [  285.361645] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:16 2026 kern.warn kernel: [  285.371480] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:16 2026 kern.warn kernel: [  285.380036] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:16 2026 kern.warn kernel: [  285.388047] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:16 2026 kern.warn kernel: [  285.394466] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:17 2026 authpriv.info dropbear[5195]: Child connection from 192.168.1.2:35578
+Wed Nov  4 11:51:17 2026 authpriv.notice dropbear[5195]: Auth succeeded with blank password for 'root' from 192.168.1.2:35578
+Wed Nov  4 11:51:17 2026 authpriv.info dropbear[5195]: Exit (root) from <192.168.1.2:35578>: Disconnect received
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.472464] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.472509] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.481708] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.491551] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.501329] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.508118] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.514534] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.523815] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.531791] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.538051] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.547097] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.556467] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.556467]  and value:0x70
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.556483] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.556483]  and value:0x0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.564530] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.564530]  and value:0x20
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.574685] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x570
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.574685]  and value:0x0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.585101] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x570
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.585101]  and value:0xc0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.623388] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.623388]  and value:0x0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.624412] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.624412]  and value:0x0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.632638] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.653198] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.692393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.692413] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.698155] adpt_hppe_sfp_module_manager[4150]:DEBUG:port2 sfp down=1 ticks present=1 pulses=0
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.709618] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:17 2026 kern.warn kernel: [  286.718296] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:18 2026 authpriv.info dropbear[5209]: Child connection from 192.168.1.2:35579
+Wed Nov  4 11:51:18 2026 daemon.notice netifd: Network device 'eth0' link is down
+Wed Nov  4 11:51:18 2026 kern.info kernel: [  287.514133] nss-dp 3a504000.dp1 eth0: PHY Link is down
+Wed Nov  4 11:51:18 2026 kern.info kernel: [  287.514421] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:51:18 2026 authpriv.notice dropbear[5209]: Auth succeeded with blank password for 'root' from 192.168.1.2:35579
+Wed Nov  4 11:51:18 2026 authpriv.info dropbear[5209]: Exit (root) from <192.168.1.2:35579>: Disconnect received
+Wed Nov  4 11:51:18 2026 kern.warn kernel: [  287.752404] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:18 2026 kern.warn kernel: [  287.752448] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:18 2026 kern.warn kernel: [  287.761646] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:18 2026 kern.warn kernel: [  287.771479] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:18 2026 kern.warn kernel: [  287.780040] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:18 2026 kern.warn kernel: [  287.788046] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.794473] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.803667] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.811643] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.817903] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.826952] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.836320] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.844378] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.844378]  and value:0x50
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.844397] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.844397]  and value:0x0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.852098] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.872939] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.872939]  and value:0x20
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.872945] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.891859] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.891859]  and value:0x0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.891865] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.891865]  and value:0x5a
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.922390] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.922390]  and value:0x5a
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.953385] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.953385]  and value:0x0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.953418] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  287.972951] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.012393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.012413] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.018153] adpt_hppe_sfp_module_manager[4136]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.029616] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.038296] qca_hppe_mac_sw_sync_task[4231]:DEBUG:Port 2 change to link up status
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.048450] qca_hppe_mac_sw_sync_task[4238]:DEBUG:Port 2 the interface mode switched
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.075845] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.075866] qca_hppe_mac_sw_sync_task[4282]:DEBUG:Port 2 is link up and speed change to 2500
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.082294] qca_hppe_mac_sw_sync_task[4295]:DEBUG:Port 2 is link up and duplex change to 1
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.090727] adpt_hppe_uniphy_port_adapter_reset[3554]:DEBUG:port 2, uniphy_index 1, port_mode 0x17
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.098802] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x480
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.098802]  and value:0x0
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.098807] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.098807]  and value:0x44
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.107738] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.107738]  and value:0x44
+Wed Nov  4 11:51:19 2026 kern.warn kernel: [  288.118070] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:19 2026 kern.info kernel: [  288.554051] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:51:19 2026 kern.info kernel: [  288.554117] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:51:19 2026 kern.info kernel: [  288.558765] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:51:19 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:51:20 2026 authpriv.info dropbear[5223]: Child connection from 192.168.1.2:40193
+Wed Nov  4 11:51:20 2026 kern.warn kernel: [  289.192408] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:20 2026 kern.warn kernel: [  289.192451] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:20 2026 kern.warn kernel: [  289.201650] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:20 2026 kern.warn kernel: [  289.211481] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:20 2026 kern.warn kernel: [  289.220041] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:20 2026 kern.warn kernel: [  289.228053] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:20 2026 kern.warn kernel: [  289.234521] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:20 2026 authpriv.notice dropbear[5223]: Auth succeeded with blank password for 'root' from 192.168.1.2:40193
+Wed Nov  4 11:51:20 2026 authpriv.info dropbear[5223]: Exit (root) from <192.168.1.2:40193>: Disconnect received
+Wed Nov  4 11:51:21 2026 kern.warn kernel: [  290.312399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:21 2026 kern.warn kernel: [  290.312444] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:21 2026 kern.warn kernel: [  290.321641] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:21 2026 kern.warn kernel: [  290.331474] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:21 2026 kern.warn kernel: [  290.340030] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:21 2026 kern.warn kernel: [  290.348040] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:21 2026 kern.warn kernel: [  290.354464] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:21 2026 authpriv.info dropbear[5237]: Child connection from 192.168.1.2:40194
+Wed Nov  4 11:51:22 2026 authpriv.notice dropbear[5237]: Auth succeeded with blank password for 'root' from 192.168.1.2:40194
+Wed Nov  4 11:51:22 2026 authpriv.info dropbear[5237]: Exit (root) from <192.168.1.2:40194>: Disconnect received
+Wed Nov  4 11:51:22 2026 kern.warn kernel: [  291.432399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:22 2026 kern.warn kernel: [  291.432443] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:22 2026 kern.warn kernel: [  291.441641] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:22 2026 kern.warn kernel: [  291.451473] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:22 2026 kern.warn kernel: [  291.460036] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:22 2026 kern.warn kernel: [  291.468040] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:22 2026 kern.warn kernel: [  291.474461] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:23 2026 authpriv.info dropbear[5251]: Child connection from 192.168.1.2:40195
+Wed Nov  4 11:51:23 2026 authpriv.notice dropbear[5251]: Auth succeeded with blank password for 'root' from 192.168.1.2:40195
+Wed Nov  4 11:51:23 2026 authpriv.info dropbear[5251]: Exit (root) from <192.168.1.2:40195>: Disconnect received
+Wed Nov  4 11:51:23 2026 kern.warn kernel: [  292.552471] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:23 2026 kern.warn kernel: [  292.552515] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:23 2026 kern.warn kernel: [  292.561713] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:23 2026 kern.warn kernel: [  292.571549] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:23 2026 kern.warn kernel: [  292.580106] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:23 2026 kern.warn kernel: [  292.588116] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:23 2026 kern.warn kernel: [  292.594535] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:24 2026 kern.warn kernel: [  293.672386] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:24 2026 kern.warn kernel: [  293.672414] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:24 2026 kern.warn kernel: [  293.681616] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:24 2026 kern.warn kernel: [  293.691441] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:24 2026 kern.warn kernel: [  293.699994] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:24 2026 kern.warn kernel: [  293.708016] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:24 2026 kern.warn kernel: [  293.714439] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:25 2026 authpriv.info dropbear[5265]: Child connection from 192.168.1.2:41591
+Wed Nov  4 11:51:25 2026 authpriv.notice dropbear[5265]: Auth succeeded with blank password for 'root' from 192.168.1.2:41591
+Wed Nov  4 11:51:25 2026 authpriv.info dropbear[5265]: Exit (root) from <192.168.1.2:41591>: Disconnect received
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.792465] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.792508] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.801706] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.811552] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.821328] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.828118] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.834533] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.843814] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.851790] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.858051] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.867095] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.876465] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.876465]  and value:0x70
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.876481] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.876481]  and value:0x0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.884529] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.884529]  and value:0x20
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.894684] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x570
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.894684]  and value:0x0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.905100] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x570
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.905100]  and value:0xc0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.943387] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.943387]  and value:0x0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.944412] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.944412]  and value:0x0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.952637] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  294.973197] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  295.012393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  295.012414] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  295.018155] adpt_hppe_sfp_module_manager[4150]:DEBUG:port2 sfp down=1 ticks present=1 pulses=0
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  295.029618] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:26 2026 kern.warn kernel: [  295.038299] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:26 2026 authpriv.info dropbear[5279]: Child connection from 192.168.1.2:41594
+Wed Nov  4 11:51:26 2026 authpriv.notice dropbear[5279]: Auth succeeded with blank password for 'root' from 192.168.1.2:41594
+Wed Nov  4 11:51:26 2026 authpriv.info dropbear[5279]: Exit (root) from <192.168.1.2:41594>: Disconnect received
+Wed Nov  4 11:51:27 2026 daemon.notice netifd: Network device 'eth0' link is down
+Wed Nov  4 11:51:27 2026 kern.info kernel: [  295.834105] nss-dp 3a504000.dp1 eth0: PHY Link is down
+Wed Nov  4 11:51:27 2026 kern.info kernel: [  295.834347] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.072394] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.072425] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.081627] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.091455] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.100011] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.108024] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.114449] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.123646] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.131623] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.137883] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.146930] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.156300] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.164359] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.164359]  and value:0x50
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.164376] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.164376]  and value:0x0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.172078] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.192918] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.192918]  and value:0x20
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.192924] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.211841] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.211841]  and value:0x0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.211847] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.211847]  and value:0x5a
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.242384] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.242384]  and value:0x5a
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.273384] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.273384]  and value:0x0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.273417] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.292950] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.332393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.332413] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.338154] adpt_hppe_sfp_module_manager[4136]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.349617] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.358295] qca_hppe_mac_sw_sync_task[4231]:DEBUG:Port 2 change to link up status
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.368450] qca_hppe_mac_sw_sync_task[4238]:DEBUG:Port 2 the interface mode switched
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.395845] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.395867] qca_hppe_mac_sw_sync_task[4282]:DEBUG:Port 2 is link up and speed change to 2500
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.402294] qca_hppe_mac_sw_sync_task[4295]:DEBUG:Port 2 is link up and duplex change to 1
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.410726] adpt_hppe_uniphy_port_adapter_reset[3554]:DEBUG:port 2, uniphy_index 1, port_mode 0x17
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.418802] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x480
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.418802]  and value:0x0
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.418808] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.418808]  and value:0x44
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.427738] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.427738]  and value:0x44
+Wed Nov  4 11:51:27 2026 kern.warn kernel: [  296.438070] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:28 2026 kern.info kernel: [  296.874044] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:51:28 2026 kern.info kernel: [  296.874105] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:51:28 2026 kern.info kernel: [  296.878758] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:51:28 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:51:28 2026 authpriv.info dropbear[5293]: Child connection from 192.168.1.2:51151
+Wed Nov  4 11:51:28 2026 authpriv.notice dropbear[5293]: Auth succeeded with blank password for 'root' from 192.168.1.2:51151
+Wed Nov  4 11:51:28 2026 authpriv.info dropbear[5293]: Exit (root) from <192.168.1.2:51151>: Disconnect received
+Wed Nov  4 11:51:28 2026 kern.warn kernel: [  297.512401] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:28 2026 kern.warn kernel: [  297.512444] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:28 2026 kern.warn kernel: [  297.521642] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:28 2026 kern.warn kernel: [  297.531473] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:28 2026 kern.warn kernel: [  297.540033] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:28 2026 kern.warn kernel: [  297.548043] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:28 2026 kern.warn kernel: [  297.554465] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:29 2026 authpriv.info dropbear[5307]: Child connection from 192.168.1.2:51152
+Wed Nov  4 11:51:29 2026 kern.warn kernel: [  298.632412] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:29 2026 kern.warn kernel: [  298.632456] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:29 2026 kern.warn kernel: [  298.641654] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:29 2026 kern.warn kernel: [  298.651488] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:29 2026 kern.warn kernel: [  298.660051] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:29 2026 kern.warn kernel: [  298.668128] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:29 2026 kern.warn kernel: [  298.674476] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:29 2026 authpriv.notice dropbear[5307]: Auth succeeded with blank password for 'root' from 192.168.1.2:51152
+Wed Nov  4 11:51:29 2026 authpriv.info dropbear[5307]: Exit (root) from <192.168.1.2:51152>: Disconnect received
+Wed Nov  4 11:51:30 2026 kern.warn kernel: [  299.752399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:30 2026 kern.warn kernel: [  299.752442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:30 2026 kern.warn kernel: [  299.761640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:30 2026 kern.warn kernel: [  299.771473] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:30 2026 kern.warn kernel: [  299.780029] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:30 2026 kern.warn kernel: [  299.788041] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:31 2026 kern.warn kernel: [  299.794461] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:31 2026 authpriv.info dropbear[5321]: Child connection from 192.168.1.2:51154
+Wed Nov  4 11:51:31 2026 authpriv.notice dropbear[5321]: Auth succeeded with blank password for 'root' from 192.168.1.2:51154
+Wed Nov  4 11:51:31 2026 authpriv.info dropbear[5321]: Exit (root) from <192.168.1.2:51154>: Disconnect received
+Wed Nov  4 11:51:32 2026 kern.warn kernel: [  300.872399] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:32 2026 kern.warn kernel: [  300.872441] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:32 2026 kern.warn kernel: [  300.881640] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:32 2026 kern.warn kernel: [  300.891472] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:32 2026 kern.warn kernel: [  300.900032] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:32 2026 kern.warn kernel: [  300.908040] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:32 2026 kern.warn kernel: [  300.914462] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:32 2026 authpriv.info dropbear[5335]: Child connection from 192.168.1.2:18442
+Wed Nov  4 11:51:32 2026 authpriv.notice dropbear[5335]: Auth succeeded with blank password for 'root' from 192.168.1.2:18442
+Wed Nov  4 11:51:32 2026 authpriv.info dropbear[5335]: Exit (root) from <192.168.1.2:18442>: Disconnect received
+Wed Nov  4 11:51:33 2026 kern.warn kernel: [  301.992401] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:33 2026 kern.warn kernel: [  301.992445] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:33 2026 kern.warn kernel: [  302.001643] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:33 2026 kern.warn kernel: [  302.011478] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:33 2026 kern.warn kernel: [  302.020032] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:33 2026 kern.warn kernel: [  302.028045] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:33 2026 kern.warn kernel: [  302.034465] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:34 2026 authpriv.info dropbear[5349]: Child connection from 192.168.1.2:25034
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.119923] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.119967] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.129255] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.139016] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.148736] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.155579] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.161979] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.171273] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+Wed Nov  4 11:51:34 2026 authpriv.notice dropbear[5349]: Auth succeeded with blank password for 'root' from 192.168.1.2:25034
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.179338] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.185586] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.194614] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.203961] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.203961]  and value:0x70
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.203986] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.203986]  and value:0x0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.211980] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.211980]  and value:0x20
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.222193] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x570
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.222193]  and value:0x0
+Wed Nov  4 11:51:34 2026 authpriv.info dropbear[5349]: Exit (root) from <192.168.1.2:25034>: Disconnect received
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.232587] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x570
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.232587]  and value:0xc0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.273403] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.273403]  and value:0x0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.274437] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.274437]  and value:0x0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.282671] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.303219] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.342395] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.342416] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.348159] adpt_hppe_sfp_module_manager[4150]:DEBUG:port2 sfp down=1 ticks present=1 pulses=0
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.359621] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:34 2026 kern.warn kernel: [  303.368301] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:35 2026 daemon.notice netifd: Network device 'eth0' link is down
+Wed Nov  4 11:51:35 2026 kern.info kernel: [  304.154060] nss-dp 3a504000.dp1 eth0: PHY Link is down
+Wed Nov  4 11:51:35 2026 kern.info kernel: [  304.154317] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.392395] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.392428] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.401630] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.411465] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.420019] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.428028] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.434452] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.443652] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.451626] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.457886] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.466935] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.476303] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.484362] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.484362]  and value:0x50
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.484380] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.484380]  and value:0x0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.492082] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.512922] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.512922]  and value:0x20
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.512928] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.531844] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.531844]  and value:0x0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.531850] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.531850]  and value:0x5a
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.562384] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.562384]  and value:0x5a
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.593384] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.593384]  and value:0x0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.593418] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.612951] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:35 2026 authpriv.info dropbear[5363]: Child connection from 192.168.1.2:25038
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.652402] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.652427] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xc, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.658172] adpt_hppe_sfp_module_manager[4136]:INFO:port2 sfp link up: 1 tick(s), 0 pulse(s)
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.669658] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.678312] qca_hppe_mac_sw_sync_task[4231]:DEBUG:Port 2 change to link up status
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.688467] qca_hppe_mac_sw_sync_task[4238]:DEBUG:Port 2 the interface mode switched
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.715875] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.715903] qca_hppe_mac_sw_sync_task[4282]:DEBUG:Port 2 is link up and speed change to 2500
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.722327] qca_hppe_mac_sw_sync_task[4295]:DEBUG:Port 2 is link up and duplex change to 1
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.730768] adpt_hppe_uniphy_port_adapter_reset[3554]:DEBUG:port 2, uniphy_index 1, port_mode 0x17
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.738840] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x480
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.738840]  and value:0x0
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.738846] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.738846]  and value:0x44
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.747771] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x480
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.747771]  and value:0x44
+Wed Nov  4 11:51:35 2026 kern.warn kernel: [  304.758105] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:35 2026 authpriv.notice dropbear[5363]: Auth succeeded with blank password for 'root' from 192.168.1.2:25038
+Wed Nov  4 11:51:36 2026 authpriv.info dropbear[5363]: Exit (root) from <192.168.1.2:25038>: Disconnect received
+Wed Nov  4 11:51:36 2026 kern.info kernel: [  305.194068] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+Wed Nov  4 11:51:36 2026 kern.info kernel: [  305.194153] br-lan: port 1(eth0) entered blocking state
+Wed Nov  4 11:51:36 2026 kern.info kernel: [  305.198797] br-lan: port 1(eth0) entered forwarding state
+Wed Nov  4 11:51:36 2026 daemon.notice netifd: Network device 'eth0' link is up
+Wed Nov  4 11:51:37 2026 kern.warn kernel: [  305.832395] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:37 2026 kern.warn kernel: [  305.832435] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:37 2026 kern.warn kernel: [  305.841634] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:37 2026 kern.warn kernel: [  305.851464] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:37 2026 kern.warn kernel: [  305.860025] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:37 2026 kern.warn kernel: [  305.868034] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:37 2026 kern.warn kernel: [  305.874456] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:37 2026 authpriv.info dropbear[5378]: Child connection from 192.168.1.2:25039
+Wed Nov  4 11:51:37 2026 authpriv.notice dropbear[5378]: Auth succeeded with blank password for 'root' from 192.168.1.2:25039
+Wed Nov  4 11:51:37 2026 authpriv.info dropbear[5378]: Exit (root) from <192.168.1.2:25039>: Disconnect received
+Wed Nov  4 11:51:38 2026 kern.warn kernel: [  306.952398] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:38 2026 kern.warn kernel: [  306.952442] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:38 2026 kern.warn kernel: [  306.961639] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:38 2026 kern.warn kernel: [  306.971475] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:38 2026 kern.warn kernel: [  306.980033] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:38 2026 kern.warn kernel: [  306.988039] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:38 2026 kern.warn kernel: [  306.994464] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:39 2026 authpriv.info dropbear[5392]: Child connection from 192.168.1.2:25041
+Wed Nov  4 11:51:39 2026 authpriv.notice dropbear[5392]: Auth succeeded with blank password for 'root' from 192.168.1.2:25041
+Wed Nov  4 11:51:39 2026 authpriv.info dropbear[5392]: Exit (root) from <192.168.1.2:25041>: Disconnect received
+Wed Nov  4 11:51:39 2026 kern.warn kernel: [  308.072405] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:39 2026 kern.warn kernel: [  308.072449] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:39 2026 kern.warn kernel: [  308.081646] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:39 2026 kern.warn kernel: [  308.091479] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:39 2026 kern.warn kernel: [  308.100037] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:39 2026 kern.warn kernel: [  308.108050] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:39 2026 kern.warn kernel: [  308.114507] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:40 2026 kern.warn kernel: [  309.192394] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:40 2026 kern.warn kernel: [  309.192431] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:40 2026 kern.warn kernel: [  309.201630] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:40 2026 kern.warn kernel: [  309.211461] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:40 2026 kern.warn kernel: [  309.220014] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:40 2026 kern.warn kernel: [  309.228031] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:40 2026 kern.warn kernel: [  309.234453] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:40 2026 authpriv.info dropbear[5406]: Child connection from 192.168.1.2:25042
+Wed Nov  4 11:51:40 2026 authpriv.notice dropbear[5406]: Auth succeeded with blank password for 'root' from 192.168.1.2:25042
+Wed Nov  4 11:51:40 2026 authpriv.info dropbear[5406]: Exit (root) from <192.168.1.2:25042>: Disconnect received
+Wed Nov  4 11:51:41 2026 kern.warn kernel: [  310.312398] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:41 2026 kern.warn kernel: [  310.312441] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:41 2026 kern.warn kernel: [  310.321639] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:41 2026 kern.warn kernel: [  310.331475] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:41 2026 kern.warn kernel: [  310.340033] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:41 2026 kern.warn kernel: [  310.348040] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:41 2026 kern.warn kernel: [  310.354461] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 1 and speed is 2500
+Wed Nov  4 11:51:42 2026 authpriv.info dropbear[5420]: Child connection from 192.168.1.2:25044
+Wed Nov  4 11:51:42 2026 authpriv.notice dropbear[5420]: Auth succeeded with blank password for 'root' from 192.168.1.2:25044
+Wed Nov  4 11:51:42 2026 authpriv.info dropbear[5420]: Exit (root) from <192.168.1.2:25044>: Disconnect received
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.432467] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.432527] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.441728] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.451572] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.461289] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:255
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.468136] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 27 from 23
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.474552] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.483833] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 1b
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.491808] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:c, mode2_old:0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.498069] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:e, mode2_new:ff
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.507114] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.516485] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.516485]  and value:0x70
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.516501] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.516501]  and value:0x0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.524546] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.524546]  and value:0x20
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.534702] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x570
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.534702]  and value:0x0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.545118] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x570
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.545118]  and value:0xc0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.583388] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.583388]  and value:0x0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.584412] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.584412]  and value:0x0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.592637] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:e, rv:0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.613198] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x1b
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.652393] _adpt_appe_port_mux_mac_set[96]:DEBUG:appe port 2 mac type is 2
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.652413] adpt_hppe_port_mac_uniphy_phy_config[2333]:DEBUG:configure mac, port_id 2, mode0 0xc, mode1 0xe, mode2 0xff, rv 0x0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.658154] adpt_hppe_sfp_module_manager[4150]:DEBUG:port2 sfp down=1 ticks present=1 pulses=0
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.669616] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:42 2026 kern.warn kernel: [  311.678297] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 2 link status is 0 and speed is 65535
+Wed Nov  4 11:51:43 2026 daemon.notice netifd: Network device 'eth0' link is down
+Wed Nov  4 11:51:43 2026 kern.info kernel: [  312.474649] nss-dp 3a504000.dp1 eth0: PHY Link is down
+Wed Nov  4 11:51:43 2026 kern.info kernel: [  312.474896] br-lan: port 1(eth0) entered disabled state
+Wed Nov  4 11:51:43 2026 authpriv.info dropbear[5434]: Child connection from 192.168.1.2:25045
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.712407] qca_hppe_mac_sw_sync_task[4195]:DEBUG:polling task external phy 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.712451] qca_hppe_mac_sw_sync_task[4347]:DEBUG:polling task PPE port 1 link status is 1 and speed is 2500
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.721649] adpt_hppe_sfp_interface_mode_switch[3969]:DEBUG:sfp port 2 change interface mode!
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.731481] hsl_phy_phydev_get[469]:DEBUG:phy[30]: device 90000.mdio-1:1e, driver QCA SFP
+Wed Nov  4 11:51:43 2026 authpriv.notice dropbear[5434]: Auth succeeded with blank password for 'root' from 192.168.1.2:25045
+Wed Nov  4 11:51:43 2026 authpriv.info dropbear[5434]: Exit (root) from <192.168.1.2:25045>: Disconnect received
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.740088] sfp_phy_interface_get_mode_status[822]:DEBUG:sfp_speed:32
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.748095] adpt_hppe_port_interface_mode_switch[3950]:DEBUG:Port 2 change interface mode to 23 from 27
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.754482] _adpt_hppe_instance0_mode_get[1988]:DEBUG:port_id:1, port_interface_mode:23
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.763670] _adpt_hppe_instance1_mode_get[2122]:DEBUG:port_id:2: 17
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.771645] _adpt_hppe_port_interface_mode_apply[2385]:DEBUG:mode0_old: c, mode1_old:e, mode2_old:0
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.777905] _adpt_hppe_port_interface_mode_apply[2387]:DEBUG:mode0_new: c, mode1_new:c, mode2_new:ff
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.786954] _adpt_hppe_port_interface_mode_apply[2402]:DEBUG:need to configure instance1
+Wed Nov  4 11:51:43 2026 kern.warn kernel: [  312.796323] __adpt_hppe_uniphy_sgmiiplus_mode_set[839]:DEBUG:uniphy 1 is sgmiiplus mode
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.804383] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x218
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.804383]  and value:0x50
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.804402] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x46c
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.804402]  and value:0x0
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.812100] __adpt_hppe_uniphy_sgmiiplus_mode_set[880]:DEBUG:uniphy 1 is a sgmiiplus fiber port!
+Wed Nov  4 11:51:44 2026 authpriv.info dropbear[5436]: Child connection from 192.168.1.2:25046
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.832963] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0x46c
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.832963]  and value:0x20
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.832973] __qca_mppe_uniphy_cal_restart[813]:DEBUG:uniphy 1 do calibration restart
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.851884] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0xb4
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.851884]  and value:0x0
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.851893] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.851893]  and value:0x5a
+Wed Nov  4 11:51:44 2026 authpriv.notice dropbear[5436]: Auth succeeded with blank password for 'root' from 192.168.1.2:25046
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.882402] qca_uniphy_reg_write[643]:DEBUG:qca_uniphy_reg_write function reg:0xb4
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.882402]  and value:0x5a
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.913415] qca_uniphy_reg_read[597]:DEBUG:qca_uniphy_reg_read function reg:0x1e0
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.913415]  and value:0x0
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.913484] adpt_hppe_port_mac_uniphy_phy_config[2320]:DEBUG:configure uniphy mode_index:1, mode:c, rv:0
+Wed Nov  4 11:51:44 2026 kern.warn kernel: [  312.933021] _adpt_hppe_xgmac_speed_set[1570]:DEBUG:port 2 interface mode is 0x17

@@ -1,0 +1,17 @@
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+### uptime
+1244.14 4945.43
+### dmesg
+[    0.000000] OF: reserved mem: 0x000000004a100000..0x000000004a4fffff (4096 KiB) nomap non-reusable bootloader@4a100000
+[    0.000000]   node   0: [mem 0x000000004a100000-0x000000004a4fffff]
+[    0.022940] ramoops: using 0x100000@0x49c00000, ecc: 0
+[    0.100002] ipq_debug: reset_reason : System reset or reboot [0x10]
+[    2.940306] pci 0001:00:00.0: BAR 0: assigned [mem 0x18310000-0x18310fff]
+[   10.227390] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   22.810740] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   34.390661] adpt_hppe_sfp_module_manager[4246]:INFO:port2 sfp still down after 12 ticks, pulse 1/3
+[   34.390701] adpt_hppe_sfp_power_pulse[4121]:INFO:port2 sfp recovery attempt: TX_DISABLE hold 3000ms
+[   34.398513] adpt_hppe_sfp_power_pulse[4153]:INFO:port2 sfp no tx_disable (rv=-19): mode bounce 23->4->23
+[   36.610504] adpt_hppe_sfp_power_pulse[4165]:INFO:port2 sfp recovery attempt done (pulse=1)
+[   40.790652] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 15 tick(s), 1 pulse(s)
+[   41.752169] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500

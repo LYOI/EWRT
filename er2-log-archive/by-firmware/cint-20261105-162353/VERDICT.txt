@@ -1,0 +1,17 @@
+TEST=C-INT (恢复流程中拔插)
+VERDICT=PASS
+removal_to_linkup_s=25
+insertion_edge_detected_at_s=NA
+recovery_attempts_in_window=2  bounces_in_window=1
+oops_or_trace=0
+boot_stable=yes
+l7=PASS
+--- 本轮新增链路日志 ---
+[  264.550270] nss-dp 3a504000.dp1 eth0: PHY Link is down
+[  275.030315] adpt_hppe_sfp_module_manager[4246]:INFO:port2 sfp still down after 12 ticks, pulse 1/3
+[  275.030357] adpt_hppe_sfp_power_pulse[4121]:INFO:port2 sfp recovery attempt: TX_DISABLE hold 3000ms
+[  275.038168] adpt_hppe_sfp_power_pulse[4153]:INFO:port2 sfp no tx_disable (rv=-19): mode bounce 27->4->27
+[  277.220199] adpt_hppe_sfp_power_pulse[4165]:INFO:port2 sfp recovery attempt done (pulse=1)
+[  284.472750] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 18 tick(s), 1 pulse(s)
+[  285.512614] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000
+dir=/d/Work/Claw/er2-log-archive/by-firmware/cint-20261105-162353

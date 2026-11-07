@@ -1,0 +1,60 @@
+[    9.258297] nss phy driver register successfully
+[    9.409564] urngd: v1.0.2 started.
+[    9.430672] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[    9.430712] ssdk_dt_parse_interrupt[1056]:INFO:link-intr-gpio is not defined, link polling is enabled
+[    9.612608] regi_init[1898]:INFO:Initializing MPPE Done!!
+[    9.612736] ssdk_dt_parse_mac_mode[358]:INFO:mac mode2 doesn't exit!
+[    9.612921] ssdk_dt_parse_interrupt[1073]:INFO:interrupt gpio:0x217, interrupt number: 0x1b
+[    9.612949] ssdk_dt_parse[1434]:INFO:switch node is qca8386!
+[    9.761775] MHT GCC CLK initialization with clock mode 16 on port bmp 0x1f
+[    9.763272] ssdk_mht_pinctrl_init[390]:INFO: ssdk_mht_pinctrl_init done
+[   10.092566] ssdk_switch_register[1358]:INFO:intr_number:27, intr_name:switch1, intr_flag:4
+[   10.100086] regi_init[1871]:INFO:Initializing MHT Done!!
+[   10.100176] regi_init[1923]:INFO:qca-ssdk module init succeeded!
+[   10.102279] nat46: module (version 4c5beee236841724219598fabb1edc93d4f08ce5) loaded.
+[   10.103746] PPP generic driver version 2.4.2
+[   10.104386] NET: Registered PF_PPPOX protocol family
+[   10.118386] PPE-RULE module loaded successfully
+[   10.135473] tun: Universal TUN/TAP device driver, 1.6
+[   10.144140] DDR size: 80000000, DMA mask is ffffffff
+[   10.166956] GMAC1(ffffff8006ef3940) Invalid MAC@ - using 42:02:27:35:cf:b8
+[   10.167780] **********************************************************
+[   10.167794] * NSS Data Plane driver
+[   10.167797] **********************************************************
+[   10.211845] ppe_ds_module_init[107]:PPE-DS module loaded successfully 32768
+[   10.216907] nss_ppenl_init[201]:NSS Netlink manager loaded: Build Id: 11/03/26, 03:55:02
+[   10.216930] nss_ppenl_acl_init[340]:Init NSS PPE ACL handler
+[   10.216959] nss_ppenl_acl_init[351]:size of the msg in netlink = 1056
+[   10.216963] nss_ppenl_init[217]:attaching family:nss_ppenl_acl
+[   10.216968] nss_ppenl_policer_init[304]:Init NSS PPE POLICER handler
+[   10.216978] nss_ppenl_init[217]:attaching family:nss_ppenl_poli
+[   10.216983] nss_ppenl_qos_init[138]:Init NSS PPE QOS handler
+[   10.216992] nss_ppenl_init[217]:attaching family:nss_ppenl_qos
+[   10.216996] nss_ppenl_exception_init[176]:Init NSS PPE EXCEPTION handler
+[   10.217005] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+[   10.217010] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+[   10.217804] GACT probability on
+[   10.218420] Mirror/redirect action on
+[   10.222904] u32 classifier
+[   10.222942]     input device check on
+[   10.222945]     Actions configured
+[   10.248680] xt_time: kernel timezone is -0000
+[   10.279577] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   10.279593] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   10.282317] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   12.296105] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+[   15.571591] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+[   15.571719] ECM database jhash random seed: 0x3ccfe79c
+[   15.573445] ECM init complete
+[   15.802169] br-lan: port 1(eth0) entered blocking state
+[   15.802219] br-lan: port 1(eth0) entered disabled state
+[   15.802274] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   15.803915] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[   15.813660] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+[   15.813994] br-lan: port 2(eth1.2) entered blocking state
+[   15.814028] br-lan: port 2(eth1.2) entered disabled state
+[   15.814071] eth1.2: entered allmulticast mode
+[   15.814083] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+[   15.815380] eth1.2: entered promiscuous mode
+[   15.815707] br-lan: port 2(eth1.2) entered blocking state
+[   15.815728] br-lan: port 2(eth1.2) entered forwarding state

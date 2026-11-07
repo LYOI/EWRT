@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"7732419db108f6c4bf081986d7ef8e89","name":"EWRT-ER2-nopinctrl-20261106-2300-factory.bin"}}
+200

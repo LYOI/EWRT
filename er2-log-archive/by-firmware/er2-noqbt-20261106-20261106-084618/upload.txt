@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"84148228","md5":"b8e09a4a31be9c816e0089edc83abba2","name":"er2-noqbt-20261106-0842-factory.bin"}}
+200

@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"67579420","md5":"0d7cd3d3a1646b1e85a64c623535f3c5","name":"VIKINGYFY-6.18.55-factory.bin"}}
+200

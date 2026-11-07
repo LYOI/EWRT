@@ -1,0 +1,9 @@
+phase=stoptest
+start=15:06:54
+deadline=15:07:54
+budget=60s
+interval=2s
+why=flag
+samples=2
+carrier_up=2
+last=15:06:57,1232.02,1,2,2500

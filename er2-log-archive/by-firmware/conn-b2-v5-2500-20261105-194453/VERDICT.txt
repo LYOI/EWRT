@@ -1,0 +1,5 @@
+TEST=CONN-LAYERS label=b2-v5-2500
+targets=1 pass_l7=0
+detail:
+  192.168.1.123:80   L3=0%/100% L4=0 L7=000(0B) -> FAIL
+dir=/d/Work/Claw/er2-log-archive/by-firmware/conn-b2-v5-2500-20261105-194453

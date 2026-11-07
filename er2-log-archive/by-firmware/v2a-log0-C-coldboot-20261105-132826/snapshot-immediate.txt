@@ -1,0 +1,27 @@
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+== boot_id
+588dc5c7-b8d7-4005-83aa-38c2249ccca3
+== uptime
+123.46 474.16
+== version
+ApNos-41377275
+r33051-f5dae5ece4
+  _______                     ________ __ ______ __
+ |       |.-----.-----.-----.|  |  |  |__|   ___|__|
+ |   -   ||  _  |  -__|     ||  |  |  |  |   ___|  |
+== loglevel
+0== initd-default
+9:# 关闭本脚本：删除 /etc/ssdk-loglevel 并把 DEFAULT_LEVEL 改成 0，或 touch /etc/ssdk-loglevel.off
+14:DEFAULT_LEVEL=0
+20:	L=$DEFAULT_LEVEL
+== carrier
+eth0: 0
+eth1: 1
+== ethtool eth0
+== operstate
+eth0 down
+ speed=65535
+ carrier_changes=1
+eth1 up
+ speed=2500
+ carrier_changes=2

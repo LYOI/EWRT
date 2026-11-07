@@ -1,0 +1,16 @@
+16:00:25 START 10g-suite boot_id=5a9fa7e3-f90c-4e40-8508-2d69ce2a59d4
+16:00:26 P0 baseline(2.5G)=859.99,1,4,2500
+16:00:26 P1 等待拔出 2.5G（max 180s）-- 请拔模块
+16:00:41 P1 OUT detected at 16:00:41  state=875.24,0,5,65535
+16:00:41 P2 等待 10G link up speed=10000（拔出自 180s 预算）
+16:00:51 P2 LINK UP 10000，从拔出自 9s
+16:00:51 P3 settle 15s
+16:01:07 P4 连通分层（10G，PC侧穿光口）targets=1.247 1.1
+16:01:19   [pre] 192.168.1.247  L3=0%/0%  L7=200/4853B => PASS
+16:01:32   [pre] 192.168.1.1  L3=0%/0%  L7=200/664B => PASS
+16:01:32 P4 计数 rx/tx: 124379 181474 -> 124687 181960
+16:01:32 P5 inject force_mode=4 + kick（人为断链 → 12 tick pulse → 27->4->27）
+16:01:37 P5 bounce27=1 recovered=1 elapsed=4s down_seen=0
+16:01:50   [post] 192.168.1.247  L3=0%/0%  L7=200/4853B => PASS
+16:02:02   [post] 192.168.1.1  L3=0%/0%  L7=200/664B => PASS
+16:02:03 P5 restore force_mode=-1, settle 15s

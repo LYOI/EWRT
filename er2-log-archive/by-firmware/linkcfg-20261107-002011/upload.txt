@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"9bd5353b230677fefc796918a4029c3a","name":"EWRT-ER2-linkcfg-20261107-0020-factory.bin"}}
+200

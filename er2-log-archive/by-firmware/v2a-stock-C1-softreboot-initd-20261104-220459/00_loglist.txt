@@ -1,0 +1,2 @@
+/root/sfp-detect/boot-a53c73cf.log
+/root/sfp-detect/boot-47ae8068.log

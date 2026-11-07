@@ -1,0 +1,6 @@
+[    9.666539] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   16.064981] br-lan: port 1(eth0) entered blocking state
+[   16.065021] br-lan: port 1(eth0) entered disabled state
+[   16.065056] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   16.065431] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[15400.395179] br-lan: port 1(eth0) entered disabled state

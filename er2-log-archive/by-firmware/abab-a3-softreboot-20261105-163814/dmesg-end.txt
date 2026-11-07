@@ -1,0 +1,15 @@
+### speed
+65535
+### cchg
+1
+### boot_id
+c280cf89-add3-4927-a7c2-ad6f64edf7b1
+### uptime
+303.94
+### 链路日志
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51af8014]
+[    1.450593] ipq4019-mdio 90000.mdio: Program EPHY reg 0xc90f018 with 0x320c41
+[    1.450768] ipq4019-mdio 90000.mdio: Program UNIPHY reg 0xc90f014 with 0x1cc5
+[    2.883065] qcom-pcie 18000000.pcie: Phy link never came up
+[   10.052207] nss phy driver register successfully
+[   10.210783] sfp_phy_init[718]:INFO:SFP port 2 init successfully

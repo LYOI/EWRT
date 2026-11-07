@@ -1,0 +1,8 @@
+txdis=1 (1)
+txdis=0 (0)
+eth0 down rc=0
+eth0 up rc=0
+--- link 状态 ---
+0
+down
+65535

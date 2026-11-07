@@ -1,0 +1,28 @@
+TEST=SOAK-10g
+VERDICT=FAIL_CRC
+window_min=10 samples=219 iv=2s
+cchg=6 -> 6
+rx_bytes=0 -> 0 (delta=0)
+rx_errors=0 -> 0 ; crc=188792 -> 196308
+new_dmesg_lines=0 link_events_in_window=0
+boot_stable=yes
+exit_reason=deadline
+dir=/d/Work/Claw/er2-log-archive/by-firmware/soak-10g-20261105-160603
+
+=== 复核修订 16:17（原 FAIL_CRC 作废，属脚本列索引 bug）===
+原因：CSV 行有 wall 前缀共 9 列，但 $base/$last 变量取自 rd() 未含 wall 的 8 字段，
+      脚本却按 CSV 的列号 cut，导致把 tx_bytes 当成 crc_err 比较（188792 -> 196308 被判成 CRC 增长）。
+真值（从 samples.csv 严格重算，仅取 9 列且 uptime/speed 为数字的行）：
+  samples=219   window 600s（uptime 1199.4 -> 1799.0）
+  cchg       6 -> 6            冻结
+  carrier    恒 1              零掉链
+  speed      恒 10000          零降速
+  rx_bytes   129581 -> 130559  (+978)
+  tx_bytes   188792 -> 196308  (+7516)
+  rx_errors  0 -> 0
+  crc_err    0 -> 0
+  新增 dmesg 0 行；link/down/bounce/pulse 事件 0
+  boot_id 稳定
+结束 L7：1.247 = 200/4853B，1.1 = 200/664B
+修正结论：SOAK-10G = PASS（10 分钟零 flap、零错误、L7 仍通）
+已修脚本：er2-soak.sh 的 cut 索引改为与变量实际字段对齐（f5/f6/f7）

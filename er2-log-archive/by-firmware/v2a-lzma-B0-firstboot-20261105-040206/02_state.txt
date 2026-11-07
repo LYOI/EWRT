@@ -1,0 +1,23 @@
+ root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+---
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000\    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq master br-lan state UP qlen 1000\    link/ether e2:92:02:aa:23:d4 brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000\    link/ether e2:92:02:aa:23:d3 brd ff:ff:ff:ff:ff:ff
+4: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000\    link/ether e2:92:02:aa:23:d4 brd ff:ff:ff:ff:ff:ff
+5: eth1.2@eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP qlen 1000\    link/ether e2:92:02:aa:23:d4 brd ff:ff:ff:ff:ff:ff
+6: eth1.1@eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000\    link/ether e2:92:02:aa:23:d3 brd ff:ff:ff:ff:ff:ff
+---
+2
+---
+2500
+---
+2500
+---
+
+ SSDK Init OK!
+[Rate Encode] 
+[encode]:0x3 [nominal_bit_rate]:0x20
+[rate_id]:0x0
+
+
+operation done.

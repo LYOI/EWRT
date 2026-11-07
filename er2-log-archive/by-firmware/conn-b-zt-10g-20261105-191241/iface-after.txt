@@ -1,0 +1,7 @@
+### after
+rx_bytes=74104
+tx_bytes=88414
+rx_errors=0
+rx_crc_errors=0
+### cchg=4
+### speed=10000

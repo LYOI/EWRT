@@ -1,0 +1,11 @@
+# sfp-detect boot=a53c73cf wait_ssdk=0s start_uptime=1742.57
+up=1742.57 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1746.60 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1750.62 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1754.66 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1758.68 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1762.70 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1766.72 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1770.75 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1774.77 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick
+up=1778.79 carrier=1 oper=up speed=2500 cchg=4 tries=1 enc=0x3 br=0x20 type=2.5g-stick

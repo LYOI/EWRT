@@ -1,0 +1,6 @@
+21:01:44 START main-reboot-10g 目标speed=10000 预算=180s 重启前 boot_id=87dc5189-a171-41ab-a417-01aed806df23
+21:01:44 已下发 reboot
+21:01:57 设备离线（fail=3）
+21:02:32 新 boot_id=9ea54a5c-cf76-4fce-8464-bbee52ad8b8b
+21:02:33 启动即时抓取完成 dmesg行=286 补丁特征=2
+21:02:34 LINK_UP speed=10000 uptime=25s

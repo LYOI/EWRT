@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"55508996","md5":"1155259f790c6e008d168873f843970f","name":"EWRT-KH-kaifang-factory.bin"}}
+200

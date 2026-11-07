@@ -1,0 +1,12 @@
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+uptime=132.20
+1
+up
+2500
+2
+-- sfp/phy 关键行 --
+[    2.012989] qcom-pcie 18000000.pcie: Phy link never came up
+[    9.523577] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   58.552646] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+-- cmdline --
+console=ttyMSM0,115200n8 cnss2.bdf_pci1=0x2 clk_ignore_unused fstools_partname_fallback_scan=1 loglevel=3 log_buf_len=16M root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused

@@ -1,0 +1,8 @@
+[    9.666539] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[    9.666578] ssdk_dt_parse_interrupt[1056]:INFO:link-intr-gpio is not defined, link polling is enabled
+[    9.852731] ssdk_dt_parse_mac_mode[358]:INFO:mac mode2 doesn't exit!
+[    9.852916] ssdk_dt_parse_interrupt[1073]:INFO:interrupt gpio:0x217, interrupt number: 0x1b
+[    9.852943] ssdk_dt_parse[1434]:INFO:switch node is qca8386!
+[   10.003355] ssdk_mht_pinctrl_init[390]:INFO: ssdk_mht_pinctrl_init done
+[   10.322738] ssdk_switch_register[1358]:INFO:intr_number:27, intr_name:switch1, intr_flag:4
+[   10.328868] regi_init[1923]:INFO:qca-ssdk module init succeeded!

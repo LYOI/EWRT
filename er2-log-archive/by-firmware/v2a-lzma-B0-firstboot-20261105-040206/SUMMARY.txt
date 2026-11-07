@@ -1,0 +1,18 @@
+标签: v2a-lzma 刷机后首启(手动 /result 触发)
+link 速度: 2500 @uptime 405
+重启次数: 0
+Link up speed 计数: 2500=1 1000=0 10000=0
+cmdline:  root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+
+== 补充事实（人工核对） ==
+固件: EWRT-ER2-v2a-lzma-factory.bin size=20185092 md5=5c3fcbc76a370566222ef7b82396588f
+FIT: totalsize=4853712 (4.63MB), kernel lzma 数据 4800689 字节
+进程/脚本: 镜像内未包含 files/etc/init.d/sfp-detect（设备无 /root/sfp-detect、ps 无 sfp），
+            因此本次 link 与用户态采样脚本无关。
+dmesg: 10.148s sfp_phy_init port2 OK；19.6s~404.7s 内核无任何 SFP/PHY 打印；
+       404.712s nss-dp dp1 eth0 PHY Link up speed: 2500（自发恢复，无外部触发）。
+cmdline: 已无 log_buf_len=16M；Memory: 2031696K/2097152K available（2GB 全可用）。
+RateEncode: encode=0x3 nominal_bit_rate=0x20 → 2.5G 模块识别正常。
+对比: v2-a gzip 首启 443s 仍不 link；本版 405s link 2500。
+      差异不来自压缩算法（压缩只影响 FIT 体积/加载时长，不改变 SSDK SFP 初始化时序），
+      更可能是模块/PCS 侧自恢复的随机性，需重复首启验证分布。

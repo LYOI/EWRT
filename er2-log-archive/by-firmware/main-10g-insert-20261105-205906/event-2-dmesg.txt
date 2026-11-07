@@ -1,0 +1,40 @@
+[   11.349024]     input device check on
+[   11.351648]     Actions configured
+[   11.382181] xt_time: kernel timezone is -0000
+[   11.418578] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   11.418618] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   11.432854] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   14.546534] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+[   21.238771] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+[   21.238867] ECM database jhash random seed: 0x421206bc
+[   21.248114] ECM init complete
+[   21.415759] br-lan: port 1(eth0) entered blocking state
+[   21.415808] br-lan: port 1(eth0) entered disabled state
+[   21.420463] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   21.425411] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[   21.446580] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+[   21.447852] br-lan: port 2(eth1.2) entered blocking state
+[   21.451726] br-lan: port 2(eth1.2) entered disabled state
+[   21.456826] eth1.2: entered allmulticast mode
+[   21.465854] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+[   21.469338] eth1.2: entered promiscuous mode
+[   21.472664] br-lan: port 2(eth1.2) entered blocking state
+[   21.476779] br-lan: port 2(eth1.2) entered forwarding state
+[   22.490867] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   22.548973] loop0: detected capacity change from 0 to 4179968
+[   22.590698] loop0: detected capacity change from 4179968 to 4145152
+[   22.593458] MTD: Attempt to mount non-MTD device "/dev/loop0"
+[   34.070471] adpt_hppe_sfp_module_manager[4246]:INFO:port2 sfp still down after 12 ticks, pulse 1/3
+[   34.070513] adpt_hppe_sfp_power_pulse[4121]:INFO:port2 sfp recovery attempt: TX_DISABLE hold 3000ms
+[   34.078324] adpt_hppe_sfp_power_pulse[4153]:INFO:port2 sfp no tx_disable (rv=-19): mode bounce 23->4->23
+[   36.290316] adpt_hppe_sfp_power_pulse[4165]:INFO:port2 sfp recovery attempt done (pulse=1)
+[   40.470468] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 15 tick(s), 1 pulse(s)
+[   41.431981] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500
+[   41.432070] br-lan: port 1(eth0) entered blocking state
+[   41.436710] br-lan: port 1(eth0) entered forwarding state
+[  358.630378] nss-dp 3a504000.dp1 eth0: PHY Link is down
+[  358.630634] br-lan: port 1(eth0) entered disabled state
+[  361.920628] adpt_hppe_sfp_module_manager[4222]:INFO:port2 sfp link up: 4 tick(s), 0 pulse(s)
+[  362.792540] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000
+[  362.792625] br-lan: port 1(eth0) entered blocking state
+[  362.797269] br-lan: port 1(eth0) entered forwarding state

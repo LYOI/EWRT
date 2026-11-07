@@ -1,0 +1,16 @@
+### speed
+2500
+### cchg
+2
+### boot_id
+2fd14e48-ee64-4510-b18a-fce0b33da483
+### uptime
+148.91
+### link日志
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51af8014]
+[    1.450267] ipq4019-mdio 90000.mdio: Program EPHY reg 0xc90f018 with 0x320c41
+[    1.450442] ipq4019-mdio 90000.mdio: Program UNIPHY reg 0xc90f014 with 0x1cc5
+[    2.882720] qcom-pcie 18000000.pcie: Phy link never came up
+[   10.001861] nss phy driver register successfully
+[   10.170478] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   59.751797] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 2500

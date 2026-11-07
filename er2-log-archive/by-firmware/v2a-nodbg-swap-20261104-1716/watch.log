@@ -1,0 +1,14 @@
+[17:16:29] === 热插拔观测开始（nodbg 20261104-1710）===
+[17:16:29] 基线: up=211.02 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:17:29] 稳定: up=270.58 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:18:34] 稳定: up=335.94 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:19:39] 稳定: up=401.30 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:19:59] 变化: up=420.96 car=1 st=up cc=2 sp=2500 gpio=: in
+[17:20:45] 稳定: up=467.01 car=1 st=up cc=2 sp=2500 gpio=: in
+[17:21:49] 变化: 
+[17:22:01] 稳定: SSH失败
+[17:22:22] 变化: up=17.97 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:23:15] 稳定: up=70.84 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:24:21] 稳定: up=136.28 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:25:26] 稳定: up=201.60 car=0 st=down cc=1 sp=65535 gpio=: in
+[17:26:31] 稳定: up=266.95 car=0 st=down cc=1 sp=65535 gpio=: in

@@ -1,0 +1,1 @@
+[   24.792622] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000

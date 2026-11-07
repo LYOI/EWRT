@@ -1,0 +1,11 @@
+16:47:36 镜像 v5/openwrt-ipq53xx-jdcloud_er2-squashfs-factory.bin md5=a187820f8c5a82493d7ef3ffb0de0ac4 size=20185092
+16:47:36 等待 uboot 恢复模式（/env/list 200，最长 900s）
+16:47:36   需要：断电后按 reset 上电进入 uboot web
+16:47:49 uboot 就绪（第 2 次探测）
+16:47:49 上传并刷写（auto_reboot=true）
+16:47:56 上传 OK，触发写入
+16:47:57 写入已触发，等设备上线（max 300s）
+16:52:00 SSH 上线 uptime=24.69
+16:52:01 指纹 ko=a5377b720dc2eec9397803b36a1c7364 补丁特征行=1
+16:52:01 ✅ ko md5 与 v5 一致
+16:52:17 LINK_UP speed=2500 uptime=41s

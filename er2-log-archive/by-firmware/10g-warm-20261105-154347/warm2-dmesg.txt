@@ -1,0 +1,8 @@
+### cchg
+2
+### speed
+10000
+### dmesg
+[   10.160833] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   21.931580] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   22.952793] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000

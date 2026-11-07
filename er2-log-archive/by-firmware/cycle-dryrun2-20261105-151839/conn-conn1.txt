@@ -1,0 +1,16 @@
+tag=conn1
+LOSS_mod=0
+LOSS_nas=100
+LOSS_nas_1472=100
+TCP_nas22=CLOSED
+rx_bytes_delta=4172
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+rx_errors=0
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+rx_crc_errors=0
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+carrier_changes=2
+--- neigh
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+192.168.1.10 dev br-lan lladdr ac:9a:96:00:02:00 ref 1 used 0/0/0 probes 1 REACHABLE
+192.168.1.123 dev br-lan  used 0/0/0 probes 6 FAILED

@@ -1,0 +1,624 @@
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51af8014]
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [    0.000000] Linux version 6.6.88 (shenlong@ASUS) (aarch64-openwrt-linux-musl-gcc (OpenWrt GCC 14.3.0 r33051-f5dae5ece4) 14.3.0, GNU ld (GNU Binutils) 2.44) #0 SMP PREEMPT Fri Nov  6 09:04:09 2026
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Machine model: JDCloud ER2 (RE-CS-08)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x0000000049600000..0x0000000049bfffff (6144 KiB) nomap non-reusable tzapp@49600000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x0000000049c00000..0x0000000049cfffff (1024 KiB) map non-reusable ramoops@49c00000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x000000004a100000..0x000000004a4fffff (4096 KiB) nomap non-reusable bootloader@4a100000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x000000004a600000..0x000000004a7fffff (2048 KiB) nomap non-reusable tz@4a600000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] OF: reserved mem: 0x000000004a800000..0x000000004a8fffff (1024 KiB) nomap non-reusable smem@4a800000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Zone ranges:
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   DMA32    empty
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   Normal   empty
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Movable zone start for each node
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Early memory node ranges
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x0000000040000000-0x00000000495fffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x0000000049600000-0x0000000049bfffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x0000000049c00000-0x000000004a0fffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a100000-0x000000004a4fffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a500000-0x000000004a5fffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a600000-0x000000004a8fffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000]   node   0: [mem 0x000000004a900000-0x00000000bfffffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] psci: probing for conduit method from DT.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] psci: PSCIv1.0 detected in firmware.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] psci: Using standard PSCI v0.2 function IDs
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] psci: SMC Calling Convention v1.0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] percpu: Embedded 22 pages/cpu s52200 r8192 d29720 u90112
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    0.000000] pcpu-alloc: s52200 r8192 d29720 u90112 alloc=22*4096
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Detected VIPT I-cache on CPU0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] CPU features: detected: Spectre-v4
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] alternatives: applying boot alternatives
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [    0.000000] Kernel command line:  root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Memory: 2031696K/2097152K available (9280K kernel code, 1058K rwdata, 3072K rodata, 576K init, 463K bss, 65456K reserved, 0K cma-reserved)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] rcu: Preemptible hierarchical RCU implementation.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] 	Trampoline variant of Tasks RCU enabled.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] 	Tracing variant of Tasks RCU enabled.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] Root IRQ handler: gic_handle_irq
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] GICv2m: range[mem 0x0b00c000-0x0b00cffc], SPI[640:671]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] GICv2m: range[mem 0x0b00d000-0x0b00dffc], SPI[672:703]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] GICv2m: range[mem 0x0b00e000-0x0b00effc], SPI[704:735]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] arch_timer: cp15 and mmio timer(s) running at 24.00MHz (virt/virt).
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000166] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000180] pid_max: default: 32768 minimum: 301
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000339] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.000357] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.002021] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.002098] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.002277] rcu: Hierarchical SRCU implementation.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.002282] rcu: 	Max phase no-delay instances is 1000.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.002973] smp: Bringing up secondary CPUs ...
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.004122] Detected VIPT I-cache on CPU1
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.004245] CPU1: Booted secondary processor 0x0000000001 [0x51af8014]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.005605] Detected VIPT I-cache on CPU2
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.005722] CPU2: Booted secondary processor 0x0000000002 [0x51af8014]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007072] Detected VIPT I-cache on CPU3
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007188] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007333] smp: Brought up 1 node, 4 CPUs
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007342] SMP: Total of 4 processors activated.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007348] CPU features: detected: 32-bit EL0 Support
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007352] CPU features: detected: CRC32 instructions
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007422] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007427] CPU: All CPU(s) started at EL1
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.007430] alternatives: applying system-wide alternatives
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.017742] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.017770] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.017940] pinctrl core: initialized pinctrl subsystem
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.019158] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.019738] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.019793] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.019841] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.020243] thermal_sys: Registered thermal governor 'step_wise'
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.020249] thermal_sys: Registered thermal governor 'user_space'
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.020304] cpuidle: using governor menu
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.020424] NET: Registered PF_QIPCRTR protocol family
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.020586] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.020678] ASID allocator initialised with 65536 entries
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.021772] pstore: Using crash dump compression: deflate
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.021783] printk: console [ramoops0] enabled
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.022190] pstore: Registered ramoops as persistent store backend
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.022201] ramoops: using 0x100000@0x49c00000, ecc: 0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.027768] /soc@0/interrupt-controller@b000000: Fixed dependency cycle(s) with /soc@0/interrupt-controller@b000000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.034457] qcom,nsscc-ipq5332 39b00000.nsscc: Registered NSS CC clocks
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.041933] Modules: 29120 pages in range for non-PLT usage
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.041949] Modules: 520640 pages in range for PLT usage
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [    0.043750] SCSI subsystem initialized
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    0.043905] libata version 3.00 loaded.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.044022] pps_core: LinuxPPS API ver. 1 registered
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.044034] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.044056] PTP clock support registered
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.044628] qcom_scm: convention: smc arm 64
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.047436] Advanced Linux Sound Architecture Driver Initialized.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.048948] clocksource: Switched to clocksource arch_sys_counter
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.049881] NET: Registered PF_INET protocol family
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.050146] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.052482] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.052522] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.052543] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.052708] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.053240] TCP: Hash tables configured (established 16384 bind 16384)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.053462] MPTCP token hash table entries: 2048 (order: 3, 49152 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.053546] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.053615] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.053830] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.053879] PCI: CLS 0 bytes, default 64
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.055654] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.056037] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.056050] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    0.094836] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY mux=2LANE ret=-2
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    0.094865] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY resources ok: gen3=1 x2=1 mode=2 shared_ahb=0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.098448] ipq_debug: reset_reason : Power on Reset [0x20]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.103211] msm_serial 78af000.serial: msm_serial: detected port #0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.103265] msm_serial 78af000.serial: uartclk = 1843199
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.103564] 78af000.serial: ttyMSM0 at MMIO 0x78af000 (irq = 20, base_baud = 115199) is a MSM
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.103610] msm_serial: console setup on port #0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.103692] printk: console [ttyMSM0] enabled
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.900341] msm_serial: driver initialized
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.912068] brd: module loaded
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.915916] loop: module loaded
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.917323] MACsec IEEE 802.1AE
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    0.978972] ipq4019-mdio 90000.mdio: CMN clock reset done
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.469059] ipq4019-mdio 90000.mdio: Program EPHY reg 0xc90f018 with 0x320c41
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.469232] ipq4019-mdio 90000.mdio: Program UNIPHY reg 0xc90f014 with 0x1cc5
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.619010] i2c_dev: i2c /dev entries driver
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.622190] sdhci: Secure Digital Host Controller Interface driver
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.622350] sdhci: Copyright(c) Pierre Ossman
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.628333] sdhci-pltfm: SDHCI platform and OF driver helper
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [    1.633918] random: crng init done
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.641976]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.641976] Version Rollback Feature Disabled
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.645454]  cs_system_cfg: CoreSight Configuration manager initialised
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.649546] NET: Registered PF_INET6 protocol family
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.654947] Segment Routing with IPv6
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.659323] In-situ OAM (IOAM) with IPv6
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.662860] NET: Registered PF_PACKET protocol family
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [    1.666829] Bridge firewalling registered
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.671655] mmc0: SDHCI controller on 7804000.mmc [7804000.mmc] using ADMA 64-bit
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.671842] 8021q: 802.1Q VLAN Support v1.8
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [    1.696722] Key type .fscrypt registered
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [    1.696761] Key type fscrypt-provisioning registered
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.738799] OEM_ID: 0, PROD_ID: 0
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.738838] CPU: IPQ5322, SoC Version: 1.1
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.741994] qcom-pcie 18000000.pcie: Early Cal not supported
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.745405] qcom-pcie 18000000.pcie: host bridge /soc@0/pcie@18000000 ranges:
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.751028] qcom-pcie 18000000.pcie:       IO 0x0018200000..0x00182fffff -> 0x0018200000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.757954] qcom-pcie 18000000.pcie:      MEM 0x0018300000..0x001fffffff -> 0x0018300000
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.773229] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY power_on enter
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.774339] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY reset done
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.780181] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY pipe set_rate ret=0 rate=250000000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.784990] mmc0: new HS200 MMC card at address 0001
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.791012] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY pipe enable ret=0 rate=250000000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.794362] mmcblk0: mmc0:0001 SLD64G 57.1 GiB
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.798737] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY lane_m enable ret=0 rate=266666666
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.810664] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY lane_s enable ret=0 rate=240000000
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.818534] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY ahb enable ret=0 rate=99999999
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.826418] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] gen3=1 x2=1 mode=2
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.833827] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 000=00008020
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.835832]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.840931] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 004=00000020
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.840944] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 008=00000760
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.850282] mmcblk0boot0: mmc0:0001 SLD64G 4.00 MiB
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.858120] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 00c=0000f00b
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.865992] mmcblk0boot1: mmc0:0001 SLD64G 4.00 MiB
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.871572] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 010=0000a802
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    1.877154] mmcblk0rpmb: mmc0:0001 SLD64G 4.00 MiB, chardev (238:0)
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.883203] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 080=00000208
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.900951] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 084=0000013b
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.907855] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 09c=00000000
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.914641] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 0a0=00000875
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.921405] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 0a4=000066c0
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.928168] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 0a8=00008346
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.934947] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 0ac=00000dc6
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.941717] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 2d8=0000f341
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.948480] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 220=00000023
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.955261] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 3e4=0000533f
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.962037] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[pre-init] 3e8=00000080
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.968801] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] gen3=1 x2=1 mode=2
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.975576] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 000=00008020
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.983037] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 004=00000020
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.989723] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 008=00000760
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    1.996570] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 00c=0000f00b
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.003439] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 010=0000a802
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.010294] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 080=00000208
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.017144] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 084=0000013b
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.024011] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 09c=00000000
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.030874] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 0a0=00000875
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.037716] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 0a4=000066c0
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.044585] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 0a8=00008346
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.051440] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 0ac=00000dc6
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.058289] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 2d8=0000f341
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.065156] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 220=00000030
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.072013] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 3e4=000053ef
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.078861] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-init] 3e8=000000cf
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.087838] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] gen3=1 x2=1 mode=2
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.092602] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 000=00008020
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.099811] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 004=00000020
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.106726] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 008=00000760
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.113509] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 00c=0000f00b
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.120279] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 010=0000a802
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.127038] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 080=00000208
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.133819] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 084=0000013b
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.140590] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 09c=00000000
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.147351] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 0a0=00000875
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.154139] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 0a4=000066c0
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.160904] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 0a8=00008346
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.167665] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 0ac=00000dc6
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.174445] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 2d8=0000f341
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.181215] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 220=00000030
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.187977] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 3e4=000053ef
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.194758] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY[post-2ms] 3e8=000000cf
+Fri Nov  6 09:04:15 2026 kern.err kernel: [    2.201525] qca-uni-pcie-phy 4b1000.phy_x2: ER2PHY power_on done
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    2.320495] qcom-pcie 18000000.pcie: iATU: unroll T, 8 ob, 0 ib, align 4K, limit 1024G
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.319017] qcom-pcie 18000000.pcie: Phy link never came up (LTSSM=0x3 L0=0x11 dbg0=00b5bc43 dbg1=08000000)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.319426] qcom-pcie 18000000.pcie: PCI host bridge to bus 0001:00
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.327565] pci_bus 0001:00: root bus resource [bus 00-ff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.333837] pci_bus 0001:00: root bus resource [io  0x0000-0xfffff] (bus address [0x18200000-0x182fffff])
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.339382] pci_bus 0001:00: root bus resource [mem 0x18300000-0x1fffffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.349042] pci 0001:00:00.0: [17cb:1005] type 01 class 0x060400
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.355784] pci 0001:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.361952] pci 0001:00:00.0: reg 0x14: [mem 0x00000000-0x0000ffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.367985] pci 0001:00:00.0: PME# supported from D0 D3hot D3cold
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.377070] pci 0001:00:00.0: BAR 1: assigned [mem 0x18300000-0x1830ffff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.380447] pci 0001:00:00.0: BAR 0: assigned [mem 0x18310000-0x18310fff]
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.387201] pci 0001:00:00.0: PCI bridge to [bus 01-ff]
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [    3.399408] clk: Not disabling unused clocks
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.399442] ALSA device list:
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.403509]   No soundcards found.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.410457] VFS: Mounted root (squashfs filesystem) readonly on device 179:22.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.410657] Freeing unused kernel memory: 576K
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    3.416599] Run /sbin/init as init process
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    3.421006]   with arguments:
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    3.421009]     /sbin/init
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    3.421011]   with environment:
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    3.421014]     HOME=/
+Fri Nov  6 09:04:15 2026 kern.debug kernel: [    3.421017]     TERM=linux
+Fri Nov  6 09:04:15 2026 user.info kernel: [    3.584640] init: Console is alive
+Fri Nov  6 09:04:15 2026 user.info kernel: [    3.584764] init: - watchdog -
+Fri Nov  6 09:04:15 2026 user.info kernel: [    4.182199] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.211639] raid6: skipped pq benchmark and selected neonx8
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.211679] raid6: using neon recovery algorithm
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.220230] xor: measuring software checksum speed
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.221891]    8regs           :  3250 MB/sec
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.226484]    32regs          :  3261 MB/sec
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.231168]    arm64_neon      :  2942 MB/sec
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.234246] xor: using function: 32regs (3261 MB/sec)
+Fri Nov  6 09:04:15 2026 kern.info kernel: [    4.312167] Btrfs loaded, zoned=no, fsverity=no
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [    4.321600] gpio_button_hotplug: loading out-of-tree module taints kernel.
+Fri Nov  6 09:04:15 2026 user.info kernel: [    4.325716] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+Fri Nov  6 09:04:15 2026 user.info kernel: [    4.332940] init: - preinit -
+Fri Nov  6 09:04:15 2026 user.warn kernel: [    9.604441] Scanning for Btrfs filesystems
+Fri Nov  6 09:04:15 2026 user.info kernel: [    9.847312] mount_root: loading kmods from internal overlay
+Fri Nov  6 09:04:15 2026 user.info kernel: [    9.858433] kmodloader: loading kernel modules from //etc/modules-boot.d/*
+Fri Nov  6 09:04:15 2026 user.info kernel: [    9.860910] kmodloader: done loading kernel modules from //etc/modules-boot.d/*
+Fri Nov  6 09:04:15 2026 user.info kernel: [   10.031650] block: attempting to load /tmp/overlay/upper/etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   10.031777] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.info kernel: [   10.037461] block: attempting to load /tmp/overlay/etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   10.044499] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.info kernel: [   10.050408] block: attempting to load /etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   10.059410] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.err kernel: [   10.062114] block: no usable configuration
+Fri Nov  6 09:04:15 2026 user.info kernel: [   10.069210] block: attempting to load /etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   10.072981] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.err kernel: [   10.078081] block: no usable configuration
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   10.085981] loop0: detected capacity change from 0 to 4179968
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   10.128952] loop0: detected capacity change from 4179968 to 4000000
+Fri Nov  6 09:04:15 2026 user.info kernel: [   10.133341] mount_root: overlay filesystem in /dev/loop0 has not been formatted yet
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   10.947612] F2FS-fs (loop0): Found nat_bits in checkpoint
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   10.970752] F2FS-fs (loop0): Mounted with checkpoint version = d70cacb
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.111187] block: attempting to load /tmp/overlay/upper/etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   11.111309] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.116996] block: attempting to load /tmp/overlay/etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   11.123828] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.129763] block: attempting to load /etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   11.136720] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.err kernel: [   11.141652] block: no usable configuration
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.148711] block: attempting to load /etc/config/fstab
+Fri Nov  6 09:04:15 2026 user.err kernel: [   11.152578] block: unable to load configuration (fstab: Entry not found)
+Fri Nov  6 09:04:15 2026 user.err kernel: [   11.157615] block: no usable configuration
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.165484] mount_root: overlay filesystem has not been fully initialized yet
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.168722] mount_root: switching to f2fs overlay
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   11.177949] overlayfs: null uuid detected in lower fs '/', falling back to xino=off,index=off,nfs_export=off.
+Fri Nov  6 09:04:15 2026 user.warn kernel: [   11.182881] urandom-seed: Seed file not found (/etc/urandom.seed)
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.220202] procd: - early -
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.220293] procd: - watchdog -
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.758654] procd: - watchdog -
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.775087] procd: - ubus -
+Fri Nov  6 09:04:15 2026 user.info kernel: [   11.929176] procd: - init -
+Fri Nov  6 09:04:15 2026 user.info kernel: [   12.306212] kmodloader: loading kernel modules from /etc/modules.d/*
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   12.335382] nss phy driver register successfully
+Fri Nov  6 09:04:15 2026 user.info kernel: [   12.484948] urngd: v1.0.2 started.
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   12.509329] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   12.509389] ssdk_dt_parse_interrupt[1056]:INFO:link-intr-gpio is not defined, link polling is enabled
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   12.711224] regi_init[1898]:INFO:Initializing MPPE Done!!
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   12.711375] ssdk_dt_parse_mac_mode[358]:INFO:mac mode2 doesn't exit!
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   12.715784] ssdk_dt_parse_interrupt[1073]:INFO:interrupt gpio:0x217, interrupt number: 0x1b
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   12.722090] ssdk_dt_parse[1434]:INFO:switch node is qca8386!
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   12.880856] MHT GCC CLK initialization with clock mode 16 on port bmp 0x1f
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   12.882353] ssdk_mht_pinctrl_init[390]:INFO: ssdk_mht_pinctrl_init done
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   13.210498] ssdk_switch_register[1358]:INFO:intr_number:27, intr_name:switch1, intr_flag:4
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   13.216232] regi_init[1871]:INFO:Initializing MHT Done!!
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   13.217736] regi_init[1923]:INFO:qca-ssdk module init succeeded!
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   13.225422] nat46: module (version 4c5beee236841724219598fabb1edc93d4f08ce5) loaded.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.230749] PPP generic driver version 2.4.2
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.237569] NET: Registered PF_PPPOX protocol family
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   13.253943] PPE-RULE module loaded successfully
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.269954] tun: Universal TUN/TAP device driver, 1.6
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.280155] DDR size: 80000000, DMA mask is ffffffff
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.315661] GMAC1(ffffff80020c7980) Invalid MAC@ - using da:23:9d:d7:c4:d3
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.316475] **********************************************************
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.321458] * NSS Data Plane driver
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.327935] **********************************************************
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.370537] ppe_ds_module_init[107]:PPE-DS module loaded successfully 32768
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.375921] nss_ppenl_init[201]:NSS Netlink manager loaded: Build Id: 11/06/26, 14:48:10
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.381749] nss_ppenl_acl_init[340]:Init NSS PPE ACL handler
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.390096] nss_ppenl_acl_init[351]:size of the msg in netlink = 1056
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.395673] nss_ppenl_init[217]:attaching family:nss_ppenl_acl
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.402094] nss_ppenl_policer_init[304]:Init NSS PPE POLICER handler
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.407772] nss_ppenl_init[217]:attaching family:nss_ppenl_poli
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.414277] nss_ppenl_qos_init[138]:Init NSS PPE QOS handler
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.419995] nss_ppenl_init[217]:attaching family:nss_ppenl_qos
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.425796] nss_ppenl_exception_init[176]:Init NSS PPE EXCEPTION handler
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.431498] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+Fri Nov  6 09:04:15 2026 kern.notice kernel: [   13.438296] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.446221] GACT probability on
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.451658] Mirror/redirect action on
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.458327] u32 classifier
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.458360]     input device check on
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.460362]     Actions configured
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.494336] xt_time: kernel timezone is -0000
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.534806] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   13.534844] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+Fri Nov  6 09:04:15 2026 user.info kernel: [   13.546229] kmodloader: done loading kernel modules from /etc/modules.d/*
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   18.237752] EXT4-fs (mmcblk0p25): recovery complete
+Fri Nov  6 09:04:15 2026 kern.info kernel: [   18.237906] EXT4-fs (mmcblk0p25): mounted filesystem 4894d600-73a2-4ded-a892-e3ef5c7912b5 r/w with ordered data mode. Quota mode: disabled.
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S13openssl: Generating engines.cnf
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S13openssl: Generating providers.cnf
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S16qca-ssdk:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S16qca-ssdk: starting
+Fri Nov  6 09:04:15 2026 kern.warn kernel: [   18.750401] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: Syntax error: Unable to compile module '/usr/share/router-tool/auto.uc':
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Syntax error: Unable to compile module '/usr/share/router-tool/snapshot.uc':
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | In /usr/share/router-tool/snapshot.uc, line 9, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | In /usr/share/router-tool/snapshot.uc, line 29, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | In /usr/share/router-tool/snapshot.uc, line 42, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | In /usr/share/router-tool/snapshot.uc, line 98, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | In /usr/share/router-tool/snapshot.uc, line 117, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | In /usr/share/router-tool/snapshot.uc, line 128, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   | In /usr/share/router-tool/snapshot.uc, line 169, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |  `}`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   |    ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | In /usr/share/router-tool/auto.uc, line 2, byte 140:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |  `import { read_snapshot, record_option, custom_option, tracked_option, lan_context, saved_lan, equal, finish_snapshot } from './snapshot.uc';`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   Near here ---------------------------------------------------------------------------------------------------------------------------------^
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | In /usr/share/router-tool/auto.uc, line 229, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |  `}`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |    ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: In /usr/libexec/router-tool-auto, line 7, byte 61:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:  `import { synchronize } from '/usr/share/router-tool/auto.uc';`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   Near here --------------------------------------------------^
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: Syntax error: Unable to compile module '/usr/share/router-tool/wireless.uc':
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | In /usr/share/router-tool/wireless.uc, line 108, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |  `}`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |    ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: In /usr/libexec/router-tool-auto, line 8, byte 74:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:  `import { synchronize_wireless } from '/usr/share/router-tool/wireless.uc';`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   Near here ---------------------------------------------------------------^
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: Syntax error: Circular dependency
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: In /usr/libexec/router-tool-auto, line 9, byte 47:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:  `import { read_snapshot, check_snapshot } from '/usr/share/router-tool/snapshot.uc';`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   Near here ------------------------------------^
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: Syntax error: Unable to compile module '/usr/share/router-tool/transaction.uc':
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Syntax error: Circular dependency
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | In /usr/share/router-tool/transaction.uc, line 4, byte 52:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |  `import { equal, section_values, value_valid } from './snapshot.uc';`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   Near here -----------------------------------------^
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | In /usr/share/router-tool/transaction.uc, line 12, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Syntax error: Unexpected token
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | Expecting ';'
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   | In /usr/share/router-tool/transaction.uc, line 43, byte 1:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |  ``
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   |   ^-- Near here
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool: In /usr/libexec/router-tool-auto, line 10, byte 121:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:  `import { configuration, transaction, save_transaction, commit_transaction } from '/usr/share/router-tool/transaction.uc';`
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:   Near here --------------------------------------------------------------------------------------------------------------^
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:15 2026 daemon.notice procd: /etc/rc.d/S18router-tool:
+Fri Nov  6 09:04:16 2026 user.notice dnsmasq: DNS rebinding protection is active, will discard upstream RFC1918 responses!
+Fri Nov  6 09:04:16 2026 user.notice dnsmasq: Allowing 127.0.0.0/8 responses
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: started, version 2.93 cachesize 1000
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: compile time options: IPv6 GNU-getopt no-DBus UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP conntrack no-ipset nftset auth DNSSEC no-ID loop-detect inotify dumpfile
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: UBus support enabled: connected to system bus
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: using only locally-known addresses for test
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: using only locally-known addresses for onion
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: using only locally-known addresses for localhost
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: using only locally-known addresses for local
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: using only locally-known addresses for invalid
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: using only locally-known addresses for bind
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: using only locally-known addresses for lan
+Fri Nov  6 09:04:16 2026 daemon.warn dnsmasq[1]: no servers found in /tmp/resolv.conf.d/resolv.conf.auto, will retry
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: read /etc/hosts - 12 names
+Fri Nov  6 09:04:16 2026 daemon.info dnsmasq[1]: read /tmp/hosts/dhcp.cfg01411c - 0 names
+Fri Nov  6 09:04:19 2026 authpriv.info dropbear[2597]: Not backgrounding
+Fri Nov  6 09:04:20 2026 daemon.notice procd: /etc/rc.d/S19firewall: sh: /etc/firewall.d/qca-nss-ecm: line 19: iptables: not found
+Fri Nov  6 09:04:20 2026 daemon.notice procd: /etc/rc.d/S19firewall: sh: /etc/firewall.d/qca-nss-ecm: line 20: iptables: not found
+Fri Nov  6 09:04:20 2026 daemon.notice procd: /etc/rc.d/S19firewall: sh: /etc/firewall.d/qca-nss-ecm: line 20: iptables: not found
+Fri Nov  6 09:04:20 2026 daemon.notice procd: /etc/rc.d/S20network: cat: can't open '/var/run/swconfig.applied': No such file or directory
+Fri Nov  6 09:04:22 2026 user.notice ssdk-loglevel: set log_level=2 now=2
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: vrf
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: bonding
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: 8021ad
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: 8021q
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: macvlan
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: veth
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: bridge
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: Network device
+Fri Nov  6 09:04:22 2026 user.notice : Added device handler type: tunnel
+Fri Nov  6 09:04:22 2026 daemon.warn netifd: Wireless module not found
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.701380] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.701474] ECM database jhash random seed: 0xa13fae4f
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.710611] ECM init complete
+Fri Nov  6 09:04:22 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: net.bridge.bridge-nf-call-ip6tables = 1
+Fri Nov  6 09:04:22 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: net.bridge.bridge-nf-call-iptables = 1
+Fri Nov  6 09:04:22 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: /etc/rc.common: line 217: can't create /sys/kernel/debug/ecm/ecm_classifier_emesh/enabled: nonexistent directory
+Fri Nov  6 09:04:22 2026 daemon.notice procd: /etc/rc.d/S26qca-nss-ecm: /etc/rc.common: line 218: can't create /sys/kernel/debug/ecm/ecm_classifier_emesh/sawf_enabled: nonexistent directory
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.865879] br-lan: port 1(eth0) entered blocking state
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.865925] br-lan: port 1(eth0) entered disabled state
+Fri Nov  6 09:04:22 2026 daemon.notice procd: /etc/rc.d/S50autoreboot: crontab: can't open 'root': No such file or directory
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.872102] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.875564] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'lan' is enabled
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'lan' is setting up now
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'lan' is now up
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.896896] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.897205] br-lan: port 2(eth1.2) entered blocking state
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.901775] br-lan: port 2(eth1.2) entered disabled state
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.907139] eth1.2: entered allmulticast mode
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.916141] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.918191] eth1.2: entered promiscuous mode
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.924455] br-lan: port 2(eth1.2) entered blocking state
+Fri Nov  6 09:04:22 2026 kern.info kernel: [   25.927096] br-lan: port 2(eth1.2) entered forwarding state
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: bridge 'br-lan' link is up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'lan' has link connectivity
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: VLAN 'eth1.2' link is up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'loopback' is enabled
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'loopback' is setting up now
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'loopback' is now up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'wan' is enabled
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'wan6' is enabled
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: bridge 'br-lan' link is down
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'lan' has link connectivity loss
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Network device 'eth1' link is up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: VLAN 'eth1.2' link is down
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: VLAN 'eth1.2' link is up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: bridge 'br-lan' link is up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'lan' has link connectivity
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Network device 'lo' link is up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'loopback' has link connectivity
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: VLAN 'eth1.1' link is up
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'wan' has link connectivity
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'wan' is setting up now
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'wan6' has link connectivity
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: Interface 'wan6' is setting up now
+Fri Nov  6 09:04:22 2026 daemon.notice netifd: wan (3277): udhcpc: started, v1.37.0
+Fri Nov  6 09:04:22 2026 user.notice firewall: Reloading firewall due to ifup of lan (br-lan)
+Fri Nov  6 09:04:23 2026 cron.err crond[3281]: crond (busybox 1.37.0) started, log level 7
+Fri Nov  6 09:04:23 2026 daemon.notice netifd: wan6 (3332): Failed to send RS (Address not available)
+Fri Nov  6 09:04:23 2026 daemon.notice netifd: wan6 (3332): eth1.1: error connecting LLA socket
+Fri Nov  6 09:04:23 2026 daemon.notice netifd: wan (3277): udhcpc: broadcasting discover
+Fri Nov  6 09:04:23 2026 daemon.info dbus-daemon[3422]: jail: exec-ing /usr/bin/dbus-daemon
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Found user 'avahi' (UID 105) and group 'avahi' (GID 105).
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Successfully dropped root privileges.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: avahi-daemon 0.9-rc4 starting up.
+Fri Nov  6 09:04:23 2026 daemon.warn avahi-daemon[3499]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: No service file found in /etc/avahi/services.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Joining mDNS multicast group on interface br-lan.IPv4 with address 192.168.1.1.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: New relevant interface br-lan.IPv4 for mDNS.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Joining mDNS multicast group on interface lo.IPv6 with address ::1.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: New relevant interface lo.IPv6 for mDNS.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Joining mDNS multicast group on interface lo.IPv4 with address 127.0.0.1.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: New relevant interface lo.IPv4 for mDNS.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Network interface enumeration completed.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Registering new address record for 192.168.1.1 on br-lan.IPv4.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Registering new address record for ::1 on lo.*.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Registering new address record for 127.0.0.1 on lo.IPv4.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Registering HINFO record with values 'AARCH64'/'LINUX'.
+Fri Nov  6 09:04:23 2026 user.notice ucitrack: Setting up /etc/config/luci-splash reload dependency on /etc/config/firewall
+Fri Nov  6 09:04:23 2026 user.notice ucitrack: Setting up /etc/config/qos reload dependency on /etc/config/firewall
+Fri Nov  6 09:04:23 2026 user.notice ucitrack: Setting up /etc/config/miniupnpd reload dependency on /etc/config/firewall
+Fri Nov  6 09:04:23 2026 daemon.notice netifd: wan6 (3332): eth1.1: error connecting LLA socket
+Fri Nov  6 09:04:23 2026 daemon.notice netifd: wan6 (3332): Failed to send SOLICIT message to ff02::1:2 (Address not available)
+Fri Nov  6 09:04:23 2026 kern.warn kernel: [   26.999371] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+Fri Nov  6 09:04:23 2026 user.notice ucitrack: Setting up /etc/config/odhcpd reload dependency on /etc/config/dhcp
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Joining mDNS multicast group on interface br-lan.IPv6 with address fd18:ffb8:b135::1.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: New relevant interface br-lan.IPv6 for mDNS.
+Fri Nov  6 09:04:23 2026 daemon.info avahi-daemon[3499]: Registering new address record for fd18:ffb8:b135::1 on br-lan.*.
+Fri Nov  6 09:04:24 2026 user.notice ucitrack: Setting up /etc/config/dhcp reload dependency on /etc/config/network
+Fri Nov  6 09:04:24 2026 user.notice ucitrack: Setting up /etc/config/network reload dependency on /etc/config/wireless
+Fri Nov  6 09:04:24 2026 user.notice ucitrack: Setting up non-init /etc/config/fstab reload handler: /sbin/block mount
+Fri Nov  6 09:04:24 2026 user.notice ucitrack: Setting up /etc/config/system reload trigger for non-procd /etc/init.d/led
+Fri Nov  6 09:04:24 2026 user.notice ucitrack: Setting up /etc/config/luci_statistics reload dependency on /etc/config/system
+Fri Nov  6 09:04:24 2026 user.notice ucitrack: Setting up /etc/config/dhcp reload dependency on /etc/config/system
+Fri Nov  6 09:04:24 2026 daemon.info avahi-daemon[3499]: Joining mDNS multicast group on interface eth1.1.IPv6 with address fe80::d823:9dff:fed7:c4d3.
+Fri Nov  6 09:04:24 2026 daemon.info avahi-daemon[3499]: New relevant interface eth1.1.IPv6 for mDNS.
+Fri Nov  6 09:04:24 2026 daemon.info avahi-daemon[3499]: Registering new address record for fe80::d823:9dff:fed7:c4d3 on eth1.1.*.
+Fri Nov  6 09:04:24 2026 daemon.info avahi-daemon[3499]: Joining mDNS multicast group on interface eth1.IPv6 with address fe80::d823:9dff:fed7:c4d3.
+Fri Nov  6 09:04:24 2026 daemon.info avahi-daemon[3499]: New relevant interface eth1.IPv6 for mDNS.
+Fri Nov  6 09:04:24 2026 daemon.info avahi-daemon[3499]: Registering new address record for fe80::d823:9dff:fed7:c4d3 on eth1.*.
+Fri Nov  6 09:04:24 2026 user.notice sfp-detect: init: sampler launched
+Fri Nov  6 09:04:24 2026 user.notice sfp-detect: start boot=54f29809 wait=0s
+Fri Nov  6 09:04:24 2026 daemon.notice procd: /etc/rc.d/S96led: setting up led POWER
+Fri Nov  6 09:04:24 2026 daemon.notice procd: /etc/rc.d/S96led: setting up led BOOT
+Fri Nov  6 09:04:24 2026 daemon.notice procd: /etc/rc.d/S96led: setting up led SFP
+Fri Nov  6 09:04:25 2026 daemon.info avahi-daemon[3499]: Server startup complete. Host name is OpenWrt.local. Local service cookie is 167860223.
+Fri Nov  6 09:04:25 2026 daemon.notice procd: /etc/rc.d/S99openclash: OpenClash Restart...
+Fri Nov  6 09:04:25 2026 user.notice sfp-detect: up=27.74 type=2.5g-stick link=down enc=0x3 br=0x20 tries=1
+Fri Nov  6 09:04:26 2026 daemon.notice netifd: wan (3277): udhcpc: broadcasting discover
+Fri Nov  6 09:04:26 2026 authpriv.info dropbear[4883]: Child connection from 192.168.1.2:7174
+Fri Nov  6 09:04:26 2026 authpriv.notice dropbear[4883]: Auth succeeded with blank password for 'root' from 192.168.1.2:7174
+Fri Nov  6 09:04:26 2026 authpriv.info dropbear[4883]: Exit (root) from <192.168.1.2:7174>: Disconnect received
+Fri Nov  6 09:04:26 2026 authpriv.info dropbear[4962]: Child connection from 192.168.1.2:7175
+Fri Nov  6 09:04:26 2026 authpriv.notice dropbear[4962]: Auth succeeded with blank password for 'root' from 192.168.1.2:7175
+Fri Nov  6 09:04:26 2026 authpriv.info dropbear[4962]: Exit (root) from <192.168.1.2:7175>: Disconnect received
+Fri Nov  6 09:04:26 2026 daemon.err smbd[4537]: [2026/11/06 09:04:26.598078,  0] ../../source3/passdb/pdb_smbpasswd.c:250(startsmbfilepwent)
+Fri Nov  6 09:04:26 2026 daemon.err smbd[4537]:   startsmbfilepwent_internal: file /etc/samba/smbpasswd did not exist. File successfully created.
+Fri Nov  6 09:04:26 2026 authpriv.info dropbear[5070]: Child connection from 192.168.1.2:7176
+Fri Nov  6 09:04:26 2026 authpriv.notice dropbear[5070]: Auth succeeded with blank password for 'root' from 192.168.1.2:7176
+Fri Nov  6 09:04:26 2026 authpriv.info dropbear[5070]: Exit (root) from <192.168.1.2:7176>: Disconnect received
+Fri Nov  6 09:04:26 2026 authpriv.info dropbear[5088]: Child connection from 192.168.1.2:7180
+Fri Nov  6 09:04:27 2026 authpriv.notice dropbear[5088]: Auth succeeded with blank password for 'root' from 192.168.1.2:7180

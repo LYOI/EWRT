@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"c298332bbf23ecf81e3b77e3d65fee9a","name":"EWRT-ER2-clk46-20261106-2332-factory.bin"}}
+200

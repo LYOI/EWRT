@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"eb8e273037e361999bfd26bf3732cc61","name":"EWRT-ER2-pcie0-20261106-2140-factory.bin"}}
+200

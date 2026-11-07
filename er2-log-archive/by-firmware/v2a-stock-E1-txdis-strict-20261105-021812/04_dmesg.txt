@@ -1,0 +1,1 @@
+[    9.666539] sfp_phy_init[718]:INFO:SFP port 2 init successfully

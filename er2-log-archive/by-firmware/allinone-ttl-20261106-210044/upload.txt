@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100139012","md5":"2a2401caa59a1eba39a48698e6e6a245","name":"EWRT-ER2-allinone-20261106-1729-factory.bin"}}
+200

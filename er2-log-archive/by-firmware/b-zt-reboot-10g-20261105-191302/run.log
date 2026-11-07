@@ -1,0 +1,6 @@
+19:13:02 START b-zt-reboot-10g 目标speed=10000 预算=180s 重启前 boot_id=86e32e17-bdf1-4f03-85b8-05b76cb6ed42
+19:13:03 已下发 reboot
+19:13:15 设备离线（fail=3）
+19:13:50 新 boot_id=b6fe14c9-5dc2-4144-bc20-3044e120145e
+19:13:51 启动即时抓取完成 dmesg行=286 补丁特征=2
+19:13:52 LINK_UP speed=10000 uptime=25s

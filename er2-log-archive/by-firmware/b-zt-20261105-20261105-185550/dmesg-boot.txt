@@ -1,0 +1,283 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51af8014]
+[    0.000000] Linux version 6.6.88 (shenlong@ASUS) (aarch64-openwrt-linux-musl-gcc (OpenWrt GCC 14.3.0 r33051-f5dae5ece4) 14.3.0, GNU ld (GNU Binutils) 2.44) #0 SMP PREEMPT Thu Nov  5 10:33:29 2026
+[    0.000000] Machine model: JDCloud ER2 (RE-CS-08)
+[    0.000000] OF: reserved mem: 0x0000000049600000..0x0000000049bfffff (6144 KiB) nomap non-reusable tzapp@49600000
+[    0.000000] OF: reserved mem: 0x0000000049c00000..0x0000000049cfffff (1024 KiB) map non-reusable ramoops@49c00000
+[    0.000000] OF: reserved mem: 0x000000004a100000..0x000000004a4fffff (4096 KiB) nomap non-reusable bootloader@4a100000
+[    0.000000] OF: reserved mem: 0x000000004a600000..0x000000004a7fffff (2048 KiB) nomap non-reusable tz@4a600000
+[    0.000000] OF: reserved mem: 0x000000004a800000..0x000000004a8fffff (1024 KiB) nomap non-reusable smem@4a800000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x00000000495fffff]
+[    0.000000]   node   0: [mem 0x0000000049600000-0x0000000049bfffff]
+[    0.000000]   node   0: [mem 0x0000000049c00000-0x000000004a0fffff]
+[    0.000000]   node   0: [mem 0x000000004a100000-0x000000004a4fffff]
+[    0.000000]   node   0: [mem 0x000000004a500000-0x000000004a5fffff]
+[    0.000000]   node   0: [mem 0x000000004a600000-0x000000004a8fffff]
+[    0.000000]   node   0: [mem 0x000000004a900000-0x00000000bfffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000bfffffff]
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] percpu: Embedded 22 pages/cpu s52200 r8192 d29720 u90112
+[    0.000000] pcpu-alloc: s52200 r8192 d29720 u90112 alloc=22*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: Spectre-v4
+[    0.000000] CPU features: kernel page table isolation disabled by kernel configuration
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line:  root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 516096
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 2031696K/2097152K available (9280K kernel code, 1058K rwdata, 3072K rodata, 576K init, 463K bss, 65456K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv2m: range[mem 0x0b00c000-0x0b00cffc], SPI[640:671]
+[    0.000000] GICv2m: range[mem 0x0b00d000-0x0b00dffc], SPI[672:703]
+[    0.000000] GICv2m: range[mem 0x0b00e000-0x0b00effc], SPI[704:735]
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 and mmio timer(s) running at 24.00MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+[    0.000000] sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+[    0.000168] Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=240000)
+[    0.000182] pid_max: default: 32768 minimum: 301
+[    0.000337] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.000356] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.002039] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.002118] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+[    0.002304] rcu: Hierarchical SRCU implementation.
+[    0.002308] rcu: 	Max phase no-delay instances is 1000.
+[    0.003016] smp: Bringing up secondary CPUs ...
+[    0.004177] Detected VIPT I-cache on CPU1
+[    0.004301] CPU1: Booted secondary processor 0x0000000001 [0x51af8014]
+[    0.005668] Detected VIPT I-cache on CPU2
+[    0.005789] CPU2: Booted secondary processor 0x0000000002 [0x51af8014]
+[    0.007146] Detected VIPT I-cache on CPU3
+[    0.007267] CPU3: Booted secondary processor 0x0000000003 [0x51af8014]
+[    0.007412] smp: Brought up 1 node, 4 CPUs
+[    0.007421] SMP: Total of 4 processors activated.
+[    0.007427] CPU features: detected: 32-bit EL0 Support
+[    0.007431] CPU features: detected: CRC32 instructions
+[    0.007501] CPU features: emulated: Privileged Access Never (PAN) using TTBR0_EL1 switching
+[    0.007507] CPU: All CPU(s) started at EL1
+[    0.007510] alternatives: applying system-wide alternatives
+[    0.017951] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.017977] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.018146] pinctrl core: initialized pinctrl subsystem
+[    0.019383] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.019960] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.020047] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.020097] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.020471] thermal_sys: Registered thermal governor 'step_wise'
+[    0.020478] thermal_sys: Registered thermal governor 'user_space'
+[    0.020535] cpuidle: using governor menu
+[    0.020655] NET: Registered PF_QIPCRTR protocol family
+[    0.020822] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.020916] ASID allocator initialised with 65536 entries
+[    0.022032] pstore: Using crash dump compression: deflate
+[    0.022043] printk: console [ramoops0] enabled
+[    0.022453] pstore: Registered ramoops as persistent store backend
+[    0.022463] ramoops: using 0x100000@0x49c00000, ecc: 0
+[    0.028046] /soc@0/interrupt-controller@b000000: Fixed dependency cycle(s) with /soc@0/interrupt-controller@b000000
+[    0.035482] qcom,nsscc-ipq5332 39b00000.nsscc: Registered NSS CC clocks
+[    0.043063] Modules: 29120 pages in range for non-PLT usage
+[    0.043079] Modules: 520640 pages in range for PLT usage
+[    0.044752] SCSI subsystem initialized
+[    0.044907] libata version 3.00 loaded.
+[    0.045019] pps_core: LinuxPPS API ver. 1 registered
+[    0.045031] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.045053] PTP clock support registered
+[    0.045627] qcom_scm: convention: smc arm 64
+[    0.048454] Advanced Linux Sound Architecture Driver Initialized.
+[    0.049980] clocksource: Switched to clocksource arch_sys_counter
+[    0.050949] NET: Registered PF_INET protocol family
+[    0.051150] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.053488] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.053528] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.053550] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.053716] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    0.054246] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.054472] MPTCP token hash table entries: 2048 (order: 3, 49152 bytes, linear)
+[    0.054559] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.054627] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.054847] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.054895] PCI: CLS 0 bytes, default 64
+[    0.056676] workingset: timestamp_bits=46 max_order=19 bucket_order=0
+[    0.057058] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.057070] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.099882] ipq_debug: reset_reason : System reset or reboot [0x10]
+[    0.104658] msm_serial 78af000.serial: msm_serial: detected port #0
+[    0.104711] msm_serial 78af000.serial: uartclk = 1843199
+[    0.105014] 78af000.serial: ttyMSM0 at MMIO 0x78af000 (irq = 20, base_baud = 115199) is a MSM
+[    0.105060] msm_serial: console setup on port #0
+[    0.105139] printk: console [ttyMSM0] enabled
+[    0.887458] msm_serial: driver initialized
+[    0.899077] brd: module loaded
+[    0.902899] loop: module loaded
+[    0.904299] MACsec IEEE 802.1AE
+[    0.959991] ipq4019-mdio 90000.mdio: CMN clock reset done
+[    1.450099] ipq4019-mdio 90000.mdio: Program EPHY reg 0xc90f018 with 0x320c41
+[    1.450277] ipq4019-mdio 90000.mdio: Program UNIPHY reg 0xc90f014 with 0x1cc5
+[    1.600026] i2c_dev: i2c /dev entries driver
+[    1.603188] sdhci: Secure Digital Host Controller Interface driver
+[    1.603365] sdhci: Copyright(c) Pierre Ossman
+[    1.609354] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.614962] random: crng init done
+[    1.623080] 
+               Version Rollback Feature Disabled
+[    1.626655]  cs_system_cfg: CoreSight Configuration manager initialised
+[    1.630597] NET: Registered PF_INET6 protocol family
+[    1.635882] Segment Routing with IPv6
+[    1.640339] In-situ OAM (IOAM) with IPv6
+[    1.643875] NET: Registered PF_PACKET protocol family
+[    1.647852] Bridge firewalling registered
+[    1.652689] mmc0: SDHCI controller on 7804000.mmc [7804000.mmc] using ADMA 64-bit
+[    1.652860] 8021q: 802.1Q VLAN Support v1.8
+[    1.679169] Key type .fscrypt registered
+[    1.679208] Key type fscrypt-provisioning registered
+[    1.722100] OEM_ID: 0, PROD_ID: 0
+[    1.722139] CPU: IPQ5322, SoC Version: 1.1
+[    1.725231] qcom-pcie 18000000.pcie: Early Cal not supported
+[    1.728695] qcom-pcie 18000000.pcie: host bridge /soc@0/pcie@18000000 ranges:
+[    1.734292] qcom-pcie 18000000.pcie:       IO 0x0018200000..0x00182fffff -> 0x0018200000
+[    1.741321] qcom-pcie 18000000.pcie:      MEM 0x0018300000..0x001fffffff -> 0x0018300000
+[    1.795761] mmc0: new HS200 MMC card at address 0001
+[    1.796419] mmcblk0: mmc0:0001 SLD64G 57.1 GiB
+[    1.828764] GPT:partition_entry_array_crc32 values don't match: 0x494abfed != 0xc7ab3043
+[    1.828804] GPT: Use GNU Parted to correct GPT errors.
+[    1.836013]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27
+[    1.843439] mmcblk0boot0: mmc0:0001 SLD64G 4.00 MiB
+[    1.853040] mmcblk0boot1: mmc0:0001 SLD64G 4.00 MiB
+[    1.857390] mmcblk0rpmb: mmc0:0001 SLD64G 4.00 MiB, chardev (238:0)
+[    1.881544] qcom-pcie 18000000.pcie: iATU: unroll T, 8 ob, 0 ib, align 4K, limit 1024G
+[    2.882577] qcom-pcie 18000000.pcie: Phy link never came up
+[    2.883005] qcom-pcie 18000000.pcie: PCI host bridge to bus 0001:00
+[    2.886955] pci_bus 0001:00: root bus resource [bus 00-ff]
+[    2.893233] pci_bus 0001:00: root bus resource [io  0x0000-0xfffff] (bus address [0x18200000-0x182fffff])
+[    2.898762] pci_bus 0001:00: root bus resource [mem 0x18300000-0x1fffffff]
+[    2.908434] pci 0001:00:00.0: [17cb:1005] type 01 class 0x060400
+[    2.915187] pci 0001:00:00.0: reg 0x10: [mem 0x00000000-0x00000fff]
+[    2.921342] pci 0001:00:00.0: reg 0x14: [mem 0x00000000-0x0000ffff]
+[    2.927375] pci 0001:00:00.0: PME# supported from D0 D3hot D3cold
+[    2.936554] pci 0001:00:00.0: BAR 1: assigned [mem 0x18300000-0x1830ffff]
+[    2.939821] pci 0001:00:00.0: BAR 0: assigned [mem 0x18310000-0x18310fff]
+[    2.946606] pci 0001:00:00.0: PCI bridge to [bus 01-ff]
+[    2.958896] clk: Not disabling unused clocks
+[    2.958931] ALSA device list:
+[    2.962932]   No soundcards found.
+[    2.969958] VFS: Mounted root (squashfs filesystem) readonly on device 179:22.
+[    2.970197] Freeing unused kernel memory: 576K
+[    2.976139] Run /sbin/init as init process
+[    2.980536]   with arguments:
+[    2.980539]     /sbin/init
+[    2.980542]   with environment:
+[    2.980544]     HOME=/
+[    2.980547]     TERM=linux
+[    3.160505] init: Console is alive
+[    3.160633] init: - watchdog -
+[    3.630342] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+[    3.650926] gpio_button_hotplug: loading out-of-tree module taints kernel.
+[    3.654732] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+[    3.667113] init: - preinit -
+[    8.729064] mount_root: loading kmods from internal overlay
+[    8.739354] kmodloader: loading kernel modules from //etc/modules-boot.d/*
+[    8.740337] kmodloader: done loading kernel modules from //etc/modules-boot.d/*
+[    8.971001] block: attempting to load /tmp/overlay/upper/etc/config/fstab
+[    8.971123] block: unable to load configuration (fstab: Entry not found)
+[    8.976810] block: attempting to load /tmp/overlay/etc/config/fstab
+[    8.984125] block: unable to load configuration (fstab: Entry not found)
+[    8.989571] block: attempting to load /etc/config/fstab
+[    8.997903] block: unable to load configuration (fstab: Entry not found)
+[    9.001833] block: no usable configuration
+[    9.008552] block: attempting to load /etc/config/fstab
+[    9.012344] block: unable to load configuration (fstab: Entry not found)
+[    9.017431] block: no usable configuration
+[    9.024968] loop0: detected capacity change from 0 to 4179968
+[    9.079985] loop0: detected capacity change from 4179968 to 4154496
+[    9.082806] mount_root: overlay filesystem in /dev/loop0 has not been formatted yet
+[    9.088327] mount_root: no usable overlay filesystem found, using tmpfs overlay
+[    9.093221] overlayfs: null uuid detected in lower fs '/', falling back to xino=off,index=off,nfs_export=off.
+[    9.101349] urandom-seed: Seed file not found (/etc/urandom.seed)
+[    9.134476] procd: - early -
+[    9.134570] procd: - watchdog -
+[    9.673496] procd: - watchdog -
+[    9.676171] procd: - ubus -
+[    9.837643] procd: - init -
+[   10.106560] kmodloader: loading kernel modules from /etc/modules.d/*
+[   10.128872] nss phy driver register successfully
+[   10.271168] urngd: v1.0.2 started.
+[   10.283982] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   10.284039] ssdk_dt_parse_interrupt[1056]:INFO:link-intr-gpio is not defined, link polling is enabled
+[   10.472203] regi_init[1898]:INFO:Initializing MPPE Done!!
+[   10.472346] ssdk_dt_parse_mac_mode[358]:INFO:mac mode2 doesn't exit!
+[   10.476753] ssdk_dt_parse_interrupt[1073]:INFO:interrupt gpio:0x217, interrupt number: 0x1b
+[   10.483041] ssdk_dt_parse[1434]:INFO:switch node is qca8386!
+[   10.645296] MHT GCC CLK initialization with clock mode 16 on port bmp 0x1f
+[   10.646894] ssdk_mht_pinctrl_init[390]:INFO: ssdk_mht_pinctrl_init done
+[   10.961617] ssdk_switch_register[1358]:INFO:intr_number:27, intr_name:switch1, intr_flag:4
+[   10.967768] regi_init[1871]:INFO:Initializing MHT Done!!
+[   10.968821] regi_init[1923]:INFO:qca-ssdk module init succeeded!
+[   10.976296] nat46: module (version 4c5beee236841724219598fabb1edc93d4f08ce5) loaded.
+[   10.981680] PPP generic driver version 2.4.2
+[   10.988578] NET: Registered PF_PPPOX protocol family
+[   11.003971] PPE-RULE module loaded successfully
+[   11.016794] tun: Universal TUN/TAP device driver, 1.6
+[   11.024696] DDR size: 80000000, DMA mask is ffffffff
+[   11.045425] GMAC1(ffffff8001f8c980) Invalid MAC@ - using 86:54:82:7f:68:99
+[   11.046346] **********************************************************
+[   11.051426] * NSS Data Plane driver
+[   11.057710] **********************************************************
+[   11.121652] ppe_ds_module_init[107]:PPE-DS module loaded successfully 32768
+[   11.126745] nss_ppenl_init[201]:NSS Netlink manager loaded: Build Id: 11/05/26, 10:50:35
+[   11.132746] nss_ppenl_acl_init[340]:Init NSS PPE ACL handler
+[   11.140884] nss_ppenl_acl_init[351]:size of the msg in netlink = 1056
+[   11.146489] nss_ppenl_init[217]:attaching family:nss_ppenl_acl
+[   11.152834] nss_ppenl_policer_init[304]:Init NSS PPE POLICER handler
+[   11.158563] nss_ppenl_init[217]:attaching family:nss_ppenl_poli
+[   11.165071] nss_ppenl_qos_init[138]:Init NSS PPE QOS handler
+[   11.170719] nss_ppenl_init[217]:attaching family:nss_ppenl_qos
+[   11.176610] nss_ppenl_exception_init[176]:Init NSS PPE EXCEPTION handler
+[   11.182266] nss_ppenl_exception_init[187]:size of the msg in netlink = 112
+[   11.189112] nss_ppenl_init[217]:attaching family:nss_ppenl_exp
+[   11.196818] GACT probability on
+[   11.202297] Mirror/redirect action on
+[   11.207971] u32 classifier
+[   11.208470]     input device check on
+[   11.211098]     Actions configured
+[   11.241498] xt_time: kernel timezone is -0000
+[   11.277491] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[   11.277530] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[   11.291641] kmodloader: done loading kernel modules from /etc/modules.d/*
+[   14.266648] edma_cfg_rx_rps[1836]:EDMA RPS configured to use 4 cores
+[   18.374097] ECM init: selected_front_end=5, register_ip_post_routing=1, register_br_post_routing=1
+[   18.374191] ECM database jhash random seed: 0xe4cd9f43
+[   18.383295] ECM init complete
+[   18.558848] br-lan: port 1(eth0) entered blocking state
+[   18.558905] br-lan: port 1(eth0) entered disabled state
+[   18.564731] nss-dp 3a504000.dp1 eth0: entered allmulticast mode
+[   18.574596] nss-dp 3a504000.dp1 eth0: entered promiscuous mode
+[   18.585015] nss-dp 3a500000.dp2 eth1: entered promiscuous mode
+[   18.585307] br-lan: port 2(eth1.2) entered blocking state
+[   18.590289] br-lan: port 2(eth1.2) entered disabled state
+[   18.595282] eth1.2: entered allmulticast mode
+[   18.601334] nss-dp 3a500000.dp2 eth1: entered allmulticast mode
+[   18.606239] eth1.2: entered promiscuous mode
+[   18.611534] br-lan: port 2(eth1.2) entered blocking state
+[   18.615202] br-lan: port 2(eth1.2) entered forwarding state
+[   19.405625] loop0: detected capacity change from 0 to 4179968
+[   19.490258] loop0: detected capacity change from 4179968 to 4154496
+[   19.493862] MTD: Attempt to mount non-MTD device "/dev/loop0"
+[   19.720073] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init

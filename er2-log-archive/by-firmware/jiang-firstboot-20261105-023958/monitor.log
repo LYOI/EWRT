@@ -1,0 +1,19 @@
+02:39:58 监控启动 (jiang 固件, 刷写完成 02:39:23)
+02:40:04 192.168.1.1 首次可达, 刷写后 6s
+02:40:04 开始轮询 SFP 状态
+02:40:05 [1] ** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+up=22.00
+eth0=0 65535 0 
+eth1=1 2500 2 
+DISTRIB_ID='OpenWrt' DISTRIB_RELEASE='SNAPSHOT' 
+02:40:10 [2] ** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+up=27.52
+eth0=1 2500 1 
+eth1=1 2500 2 
+DISTRIB_ID='OpenWrt' DISTRIB_RELEASE='SNAPSHOT' 
+02:40:10 SFP link 2500 达成
+02:40:11 归档完成 D:/Work/Claw/er2-log-archive/by-firmware/jiang-firstboot-20261105-023958

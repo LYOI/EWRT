@@ -1,0 +1,12 @@
+11:05:00 镜像 EWRT-ER2-sfpfast-20261107-1103-factory.bin md5=900860ce4567d06b18fbdbc2d9322dfa size=112984068
+11:05:00 等待 uboot 恢复模式（/env/list 200，最长 900s）
+11:05:00   需要：断电后按住 reset 上电进入 uboot web
+11:05:00 uboot 就绪（第 1 次探测）
+11:05:00 上传并刷写（auto_reboot=true）
+11:05:30 上传 OK，触发写入
+11:05:35 写入已触发，等设备上线（max 300s）
+11:06:34 SSH 上线 uptime=29.31
+11:06:35 指纹 ko=1e7440a3b91c48f8c349b63df521b67a 补丁特征行=4
+11:06:35 ⚠️ ko md5 不等于本次构建（期望 e34370fe9fd5c02f998787e90dee3a10）
+11:06:36 包抽查: i2c-tools PRESENT qca-ssdk-shell PRESENT luci-app-aurora-config PRESENT cfdisk PRESENT sgdisk PRESENT count=436 
+11:07:06 LINK_UP speed=2500 uptime=61s

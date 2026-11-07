@@ -1,0 +1,19 @@
+### uptime
+109.44
+### rx0
+23178
+### neigh
+192.168.1.123 dev br-lan lladdr 22:f3:a5:7a:6e:db ref 1 used 0/0/0 probes 1 REACHABLE
+### ping_1472
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 0.775/0.912/1.039 ms
+### ping_64
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 0.610/0.879/1.050 ms
+### rx1
+55866
+### errs
+0
+0
+### cchg
+2

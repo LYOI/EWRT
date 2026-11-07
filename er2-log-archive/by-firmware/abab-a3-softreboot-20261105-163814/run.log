@@ -1,0 +1,5 @@
+16:38:15 START abab-a3-softreboot 目标speed=2500,10000 预算=300s 重启前 boot_id=2fd14e48-ee64-4510-b18a-fce0b33da483
+16:38:15 已下发 reboot
+16:38:28 设备离线（fail=3）
+16:39:02 新 boot_id=c280cf89-add3-4927-a7c2-ad6f64edf7b1
+16:39:03 启动即时抓取完成 dmesg行=282 补丁特征=1

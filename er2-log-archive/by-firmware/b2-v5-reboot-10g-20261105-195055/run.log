@@ -1,0 +1,6 @@
+19:50:56 START b2-v5-reboot-10g 目标speed=10000 预算=180s 重启前 boot_id=8a75d04e-dbc9-4730-b294-9fa3cb3f92f6
+19:50:56 已下发 reboot
+19:51:09 设备离线（fail=3）
+19:51:45 新 boot_id=e2e62e0c-0a5e-4611-ab6c-ce613e0715c4
+19:51:46 启动即时抓取完成 dmesg行=286 补丁特征=2
+19:51:47 LINK_UP speed=10000 uptime=26s

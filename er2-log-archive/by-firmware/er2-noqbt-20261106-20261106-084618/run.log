@@ -1,0 +1,9 @@
+08:46:19 镜像 er2-noqbt-20261106-0842-factory.bin md5=b8e09a4a31be9c816e0089edc83abba2 size=84148228
+08:46:19 等待 uboot 恢复模式（/env/list 200，最长 900s）
+08:46:19   需要：断电后按住 reset 上电进入 uboot web
+08:47:06   仍在等 uboot… 第 10 次 probe=404
+08:47:58   仍在等 uboot… 第 20 次 probe=404
+08:48:20 uboot 就绪（第 23 次探测）
+08:48:20 上传并刷写（auto_reboot=true）
+08:48:43 上传 OK，触发写入
+08:48:47 写入已触发，等设备上线（max 300s）

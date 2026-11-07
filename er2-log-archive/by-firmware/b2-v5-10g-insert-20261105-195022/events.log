@@ -1,0 +1,13 @@
+19:50:22 START label=b2-v5-10g-insert wait=30min dense=300s
+boot_id=8a75d04e-dbc9-4730-b294-9fa3cb3f92f6
+uptime=444.65
+ko_md5=ba44c6bf5d22d4871810a994a0c8038d
+loglevel=2
+dmesg_baseline=297
+19:51:47 EVENT#1 27.47,1,2,10000,2  (prev=1,4,10000)
+19:51:48 EVENT#1 LINK_UP speed=10000 uptime=27.47
+19:52:48 STABLE 60s after link up, settle
+2
+[   10.304103] sfp_phy_init[718]:INFO:SFP port 2 init successfully
+[   23.772134] adpt_hppe_sfp_module_manager[4208]:INFO:port2 sfp module inserted: force re-init
+[   24.792622] nss-dp 3a504000.dp1 eth0: PHY Link up speed: 10000

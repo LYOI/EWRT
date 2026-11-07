@@ -1,0 +1,1 @@
+{"status":"success","info":{"type":"FIT Image","size":"20185092","md5":"5061e369d3195a42bcef306bfda26ae1","name":"EWRT-ER2-v2a-wsl-full-factory.bin"}}

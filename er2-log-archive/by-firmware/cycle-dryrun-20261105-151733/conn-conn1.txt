@@ -1,0 +1,24 @@
+=== tag=conn1 time=15:17:38
+--- counters
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+119298
+293039
+0
+0
+2
+--- neigh
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+192.168.1.10 dev br-lan lladdr ac:9a:96:00:02:00 ref 1 used 0/0/0 probes 1 REACHABLE
+--- ping mod 192.168.1.10
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+ping: invalid number '0.2'
+--- ping nas 192.168.1.123
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+ping: invalid number '0.2'
+--- ping nas 1472
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+--- 192.168.1.123 ping statistics ---
+10 packets transmitted, 0 packets received, 100% packet loss
+--- tcp nas:22
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+TCP_CLOSED

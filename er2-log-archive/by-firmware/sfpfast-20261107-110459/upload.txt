@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"112984068","md5":"900860ce4567d06b18fbdbc2d9322dfa","name":"EWRT-ER2-sfpfast-20261107-1103-factory.bin"}}
+200

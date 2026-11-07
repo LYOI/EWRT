@@ -1,0 +1,7 @@
+15:17:33 START label=dryrun link_budget=10s stable=8s peer_mod=192.168.1.10 peer_nas=192.168.1.123 expect=auto
+15:17:33 LINK_DEADLINE 15:17:43
+15:17:37 S1 LINK_OK uptime=1871.83s (连续 3 次采样确认)
+15:17:49 S2 CONN1 mod_loss=NA% nas_loss=NA%
+15:18:00 S3 STABLE done 8s carrier_changes 2 -> 2
+15:18:11 S4 CONN2 nas_loss=NA%
+15:18:12 VERDICT FAIL_CONN2  link_at=1871.83s  conn1_nas=NA%  conn2_nas=NA%  cchg=2->2

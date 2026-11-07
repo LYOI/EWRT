@@ -1,0 +1,2 @@
+[ 1015.830860] adpt_hppe_sfp_module_manager[4186]:INFO:port2 kick: force mode 23 (was 27)
+[ 1015.970517] adpt_hppe_sfp_module_manager[4194]:INFO:port2 kick done

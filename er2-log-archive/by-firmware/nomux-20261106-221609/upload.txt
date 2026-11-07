@@ -1,0 +1,2 @@
+{"status":"success","info":{"type":"FIT Image","size":"100663300","md5":"5a6701b6a78bbeda1a16cff51fba160f","name":"EWRT-ER2-nomux-20261106-2220-factory.bin"}}
+200

@@ -1,0 +1,49 @@
+Warning: Permanently added '192.168.1.1' (ED25519) to the list of known hosts.
+=== UPTIME ===
+ 11:50:44 up 4 min,  load average: 0.04, 0.09, 0.04
+=== CMDLINE ===
+ root=PARTUUID=ec400a2a-a2f3-140f-2c76-834cca1ac6ac gpt rootwait clk_ignore_unused
+=== NET eth0 ===
+carrier=0
+operstate=down
+speed=65535
+duplex=unknown
+carrier_changes=1
+=== NET eth1 ===
+carrier=1
+operstate=up
+speed=2500
+carrier_changes=2
+=== LED ===
+led_blue: 0
+led_green: 1
+led_red: 0
+led_sfp: 0
+mmc0::: 0
+=== RateEncode ===
+
+ SSDK Init OK!
+[Rate Encode] 
+[encode]:0x3 [nominal_bit_rate]:0x20
+[rate_id]:0x0
+
+
+operation done.
+
+=== SFP eeprom speed ===
+
+ SSDK Init OK!invalid or incomplete command.
+
+=== ip link ===
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq master br-lan state DOWN qlen 1000
+    link/ether aa:c8:fd:cc:ad:1a brd ff:ff:ff:ff:ff:ff
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000
+    link/ether aa:c8:fd:cc:ad:19 brd ff:ff:ff:ff:ff:ff
+4: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
+    link/ether aa:c8:fd:cc:ad:1a brd ff:ff:ff:ff:ff:ff
+5: eth1.2@eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP qlen 1000
+    link/ether aa:c8:fd:cc:ad:1a brd ff:ff:ff:ff:ff:ff
+6: eth1.1@eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
+    link/ether aa:c8:fd:cc:ad:19 brd ff:ff:ff:ff:ff:ff

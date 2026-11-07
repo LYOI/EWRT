@@ -1,0 +1,8 @@
+21:00:44 镜像 EWRT-ER2-allinone-20261106-1729-factory.bin md5=2a2401caa59a1eba39a48698e6e6a245 size=100139012
+21:00:45 等待 uboot 恢复模式（/env/list 200，最长 900s）
+21:00:45   需要：断电后按住 reset 上电进入 uboot web
+21:00:45 uboot 就绪（第 1 次探测）
+21:00:45 上传并刷写（auto_reboot=true）
+21:01:12 上传 OK，触发写入
+21:01:17 写入已触发，等设备上线（max 300s）
+21:11:32 ABORT 300s 内未上线

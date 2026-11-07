@@ -1,0 +1,2 @@
+[    0.660648] ipq4019-mdio 90000.mdio: Program UNIPHY reg 0xc90f014 with 0x1cc5
+[    9.443626] sfp_phy_init[718]:INFO:SFP port 2 init successfully
