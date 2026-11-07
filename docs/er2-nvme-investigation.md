@@ -165,6 +165,69 @@ qcom-pcie 18000000.pcie: iATU: unroll T, 8 ob, 0 ib, align 4K, limit 1024G
 1. **DWC 核心版本差异**（5.4 与 6.6 的 `pcie-designware-host.c` 训练流程）
 2. 上面那个 `0 ib` 异常
 
+## 八点七、6.6 独有的 early-cal 交接层（2026-11-07 复核）
+
+6.6 树比 5.4 多出一层「uboot 初始化过 PHY/RC → 内核要先复位」的交接逻辑，
+**5.4 的 `pcie-qcom.c` 里完全没有这个概念**（`grep -c early_cal` 为 0）。
+
+### 代码路径（实测，`drivers/pci/controller/dwc/pcie-qcom.c`）
+
+```
+probe()
+  └─ 找 pcie 端点子节点，检查属性 qcom,early_cal_enabled == "okay"
+       ├─ 有 → 起 kthread 走 deferred probe（等 uboot 校准完）
+       └─ 无 → 打印 "Early Cal not supported" → __qcom_pcie_probe(pdev, false)
+```
+
+`reset_before_init=false` 的含义（源码注释原文）：
+
+> reset_before_init is set if host and phy were initialized by the bootloader
+> and requires a reset before initialization here. This is to avoid causing the
+> clocks to go a bad state.
+
+### 本板走的是哪条
+
+今天 12:23 那轮刷机的串口（`backup/ttl-gen3.log`）第 1.752s：
+
+```
+[    1.748380] CPU: IPQ5322, SoC Version: 1.1
+[    1.752070] qcom-pcie 18000000.pcie: Early Cal not supported
+```
+
+即：**端点子节点没有 `qcom,early_cal_enabled`，走 false 分支，不做交接复位。**
+（注意：这条信息此前被误判为"来自 11-04 归档日志"，实为当日实测。）
+
+### 相关补丁（均在本仓库 `feeds/qca-wifi-7/ipq53xx/patches-6.6/`）
+
+| 补丁 | 内容 |
+|---|---|
+| `0891-pci-dwc-pcie-qcom-Add-deferred-probe-for-early-coldb.patch` | early coldboot 的 deferred probe |
+| `0912-drivers-pci-pcie-qcom-Skip-Deferred-probe-if-rp-ep-n.patch` | RP/EP 不匹配时跳过 deferred probe |
+| `0942-drivers-pci-pcie-qcom-Reset-Host-and-Phy-before-enum.patch` | 枚举前复位 Host 与 PHY |
+| `0951-drivers-pci-qcom-Disable-clocks-directly-to-reset-RC.patch` | 直接关时钟以复位 RC |
+
+`0942` 里的 `qmp_pcie_reset` 是给主线 QMP PHY 写的，而 ER2 用的是 `phy-qca-pcie-uniphy.c`，
+其 `phy_ops` 只有 `.power_on` / `.power_off`，**没有 `.reset`** —— 所以即便走 true 分支，
+复位也只能落在控制器侧。
+
+### 顺带修正一处参数记载
+
+链路等待不是「100 次 × 10ms」，实际为（`pcie-designware.h:64-66`）：
+
+```c
+#define LINK_WAIT_MAX_RETRIES   10
+#define LINK_WAIT_USLEEP_MIN    90000    /* 90ms  */
+#define LINK_WAIT_USLEEP_MAX    100000   /* 100ms */
+```
+
+即 **10 次 × 90~100ms，总计约 1 秒**，与 5.4 同量级；且 6.6 额外支持 DT 的
+`link_retries_count` 覆盖。
+
+### 下一步（唯一从 6.6 独有差异推出的实验）
+
+强制 `__qcom_pcie_probe(pdev, false)` → `true`，让内核在枚举前复位 Host/PHY 一次，
+观察链路是否起来。一行改动，编译+刷机约 20 分钟。若仍失败，可判定与交接层无关。
+
 ## 八点五、其他归档线索
 
 SSDK 的 C45 / 10G 光口线索见 `docs/archived-leads.md`（已决定暂不采用，留档）。
@@ -176,5 +239,4 @@ SSDK 的 C45 / 10G 光口线索见 `docs/archived-leads.md`（已决定暂不采
   `er2_program_link_cfg()`（调用点在 `qcom_pcie_start_link()`）
 - 取内核：`python3 fit_extract_kernel.py <factory.bin> out.img`
 - 读 PHY 寄存器：uboot 里 `md 0x4b1000 10`（**不要读 0x4b1200，会复位**）
-- 当前板子状态：刷的是 QWRT R26.09.25（NVMe 能认、猫棒不认），**需要时刷回
-  `EWRT-ER2-8bc-20261107-0030-factory.bin`**
+- 当前板子状态：`EWRT-ER2-20261107-dae-factory.bin`（含 dae 的定版，NVMe 仍不认、猫棒/光口正常）
